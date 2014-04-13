@@ -1,0 +1,277 @@
+/*------------------------------------------------------------------
+	ICOMOON ICON FONTS
+-------------------------------------------------------------------*/
+
+@font-face {
+	font-family: 'as-ui';
+	src:url('../_fonts/as-ui.eot?-dc6wb0');
+	src:url('../_fonts/as-ui.eot?#iefix-dc6wb0') format('embedded-opentype'),
+		url('../_fonts/as-ui.woff?-dc6wb0') format('woff'),
+		url('../_fonts/as-ui.ttf?-dc6wb0') format('truetype'),
+		url('../_fonts/as-ui.svg?-dc6wb0#as-ui') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="as-icon-"], [class*=" as-icon-"] {
+	font-family: 'as-ui';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.mls {
+	@extend .ir;
+}
+
+.as-icon-ui-search:before {
+	content: "\30";
+}
+.as-icon-ui-cart:before {
+	content: "\31";
+}
+.as-icon-ui-account:before {
+	content: "\32";
+}
+.as-icon-pinterest:before {
+	content: "\33";
+}
+.as-icon-instagram:before {
+	content: "\34";
+}
+.as-icon-facebook:before {
+	content: "\35";
+}
+
+/*------------------------------------------------------------------
+	@FONT FACE DECLARATIONS
+-------------------------------------------------------------------*/
+
+@font-face {
+	font-family: 'VerlagLightItalic';
+	src: url('../_fonts/verlag-lightitalic.eot');
+	src: url('../_fonts/verlag-lightitalic.eot') format('embedded-opentype'),
+		 url('../_fonts/verlag-lightitalic.woff') format('woff'),
+		 url('../_fonts/verlag-lightitalic.ttf') format('truetype'),
+		 url('../_fonts/verlag-lightitalic.svg#VerlagLightItalic') format('svg');
+}
+
+@font-face {
+	font-family: 'VerlagBlack';
+	src: url('../_fonts/verlag-black.eot');
+	src: url('../_fonts/verlag-black.eot') format('embedded-opentype'),
+		 url('../_fonts/verlag-black.woff') format('woff'),
+		 url('../_fonts/verlag-black.ttf') format('truetype'),
+		 url('../_fonts/verlag-black.svg#VerlagBlack') format('svg');
+}
+
+@font-face {
+	font-family: 'ArcherLightItalic';
+	src: url('../_fonts/archer-lightital-pro.eot');
+	src: url('../_fonts/archer-lightital-pro.eot') format('embedded-opentype'),
+		 url('../_fonts/archer-lightital-pro.woff') format('woff'),
+		 url('../_fonts/archer-lightital-pro.ttf') format('truetype'),
+		 url('../_fonts/archer-lightital-pro.svg#ArcherLightItalic') format('svg');
+}
+
+@font-face {
+	font-family: 'ArcherBook';
+	src: url('../_fonts/archer-book-pro.eot');
+	src: url('../_fonts/archer-book-pro.eot') format('embedded-opentype'),
+		 url('../_fonts/archer-book-pro.woff') format('woff'),
+		 url('../_fonts/archer-book-pro.ttf') format('truetype'),
+		 url('../_fonts/archer-book-pro.svg#ArcherBook') format('svg');
+}
+
+@font-face {
+	font-family: 'ArcherMedium';
+	src: url('../_fonts/archer-medium-pro.eot');
+	src: url('../_fonts/archer-medium-pro.eot') format('embedded-opentype'),
+		 url('../_fonts/archer-medium-pro.woff') format('woff'),
+		 url('../_fonts/archer-medium-pro.ttf') format('truetype'),
+		 url('../_fonts/archer-medium-pro.svg#ArcherMedium') format('svg');
+}
+
+@font-face {
+	font-family: 'ArcherMediumItalic';
+	src: url('../_fonts/archer-mediumital-pro.eot');
+	src: url('../_fonts/archer-mediumital-pro.eot') format('embedded-opentype'),
+		 url('../_fonts/archer-mediumital-pro.woff') format('woff'),
+		 url('../_fonts/archer-mediumital-pro.ttf') format('truetype'),
+		 url('../_fonts/archer-mediumital-pro.svg#ArcherMediumItalic') format('svg');
+}
+
+@font-face {
+	font-family: 'ArcherBoldItalic';
+	src: url('../_fonts/archer-boldital-pro.eot');
+	src: url('../_fonts/archer-boldital-pro.eot') format('embedded-opentype'),
+		 url('../_fonts/archer-boldital-pro.woff') format('woff'),
+		 url('../_fonts/archer-boldital-pro.ttf') format('truetype'),
+		 url('../_fonts/archer-boldital-pro.svg#ArcherBoldItalic') format('svg');
+}
+
+.archer-light-ital {
+	font-family: "ArcherLightItalic", serif;
+	font-weight: normal;
+}
+
+.archer-med {
+	font-family: "ArcherMedium", serif;
+	font-weight: normal;
+}
+
+.archer-med-ital {
+	font-family: "ArcherMediumItalic", serif;
+	font-weight: normal;
+}
+
+.archer-bold-ital {
+	font-family: "ArcherBoldItalic", serif;
+	font-weight: normal;
+}
+
+.archer-book {
+	font-family: "ArcherBook", serif;
+	font-weight: normal;
+}
+
+.verlag-light-ital {
+	font-family: "VerlagLightItalic", serif;
+	font-weight: normal;
+}
+
+.verlag-black {
+	font-family: "VerlagBlack", Arial, sans-serif;
+	font-weight: normal;
+}
+
+/*------------------------------------------------------------------
+	TYPE
+-------------------------------------------------------------------*/
+
+html {
+	font: normal 62.5% "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif;
+	line-height: 100%;
+}
+
+body {
+	font-size: 14px; // IE7 & 8 support
+	line-height: 22px; // IE7 & 8 support
+	font-size: 1.4rem;
+	line-height: 2.2rem;
+}
+
+/*------------------------------------------------------------------
+	HEADLINES
+-------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 {
+
+	&.section__headline {
+		@extend .archer-med-ital;
+		color: $primary-copy;
+		font-size: 28px;
+		font-size: 2.8rem;
+		margin: 0 0 60px 0;
+	}
+
+	&.featured-products__headline {
+		@extend .archer-med-ital;
+		color: $primary-copy;
+		font-size: 30px;
+		font-size: 3.0rem;
+	}
+
+}
+
+h2 {}
+
+h3 {
+
+	&.footer__sign-up__head {
+		@extend .archer-med-ital;
+		color: $red;
+		font-size: 4.2rem;
+		line-height: 4.4rem;
+		margin: 0 0 70px 0;
+	}
+
+}
+
+h4 {}
+
+h5 {
+
+	&.footer__primary__contact__head {
+		@extend .archer-bold-ital;
+		color: $red;
+		font-size: 24px;
+		font-size: 2.4rem;
+		line-height: 30px;
+		line-height: 3.0rem;
+	}
+
+}
+
+h6 {}
+
+/*------------------------------------------------------------------
+	PARAGRAPH STYLES
+-------------------------------------------------------------------*/
+
+p {
+	@extend .archer-book;
+	color: $primary-copy;
+	font-size: 20px;
+	font-size: 2.0rem;
+	line-height: 25px;
+	line-height: 2.5rem;
+
+	&.featured-recipes__lead-copy {
+		font-size: 22px;
+		font-size: 2.2rem;
+		line-height: 34px;
+		line-height: 3.4rem;
+	}
+}
+
+p {
+	margin: 0 0 30px 0;
+}
+
+p.call-out {
+	@extend .verlag-black;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 18px;
+	line-height: 1.8rem;
+	text-transform: uppercase;
+}
+
+/*------------------------------------------------------------------
+	LIST STYLES
+-------------------------------------------------------------------*/
+
+ul li {}
+ol li {}
+
+/*------------------------------------------------------------------
+	MISC
+-------------------------------------------------------------------*/
+
+small {}
+sup {}
+em {}
+strong {}

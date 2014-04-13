@@ -1,0 +1,255 @@
+/*------------------------------------------------------------------
+    FOOTER
+-------------------------------------------------------------------*/
+
+.footer-container {}
+
+/*------------------------------------------------------------------
+    FOOTER: Sign-up form
+-------------------------------------------------------------------*/
+
+.footer__sign-up {
+	background-color: $lightgrey1;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.footer__sign-up__form {
+	@extend .cf;
+	margin: 0 auto;
+	width: auto;
+}
+
+.footer__sign-up__input {
+	@include mnw(med) {
+		float: left;
+	}
+}
+
+.footer__sign-up__btn {
+	@include mnw(med) {
+		float: right;
+	}
+}
+
+/*------------------------------------------------------------------
+	FOOTER: Primary
+
+	Wrapper = 1573px wide
+
+	Column 1: 270px (270/1573 = 17.164653528%)
+	Column 2: 215px (215/1573 = 13.668150032%)
+	Column 3: 504px (504/1573 = 32.040686586%)
+	Column 4: 584px (584/1573 = 37.126509854%)
+
+-------------------------------------------------------------------*/
+
+.footer__primary {
+	background-color: #FFF;
+	height: auto;
+	min-height: 262px;
+	padding-bottom: 55px;
+	padding-top: 55px;
+
+	.col-1-2 {
+		@include respond($med) {
+			float: none;
+			width: 100%;
+		}
+		@include respond($lrg) {
+			float: left;
+			width: 50%;
+		}
+	}
+	.col-1-3 {
+		@include respond($med) {
+
+		}
+		@include respond($lrg) {
+
+		}
+	}
+
+}
+
+.footer__primary__logo {
+	max-width: 160px;
+	width: 100%;
+}
+
+.footer__primary__contact {
+
+	p {
+		@extend .archer-med;
+		color: $primary-copy-dark;
+		line-height: 3.2rem;
+	}
+	a:link, a:visited {
+		@extend .archer-med;
+		color: $primary-copy-dark;
+		text-decoration: none;
+	}
+
+	@include mnw(med) {
+		padding-top: 30px;
+	}
+
+}
+
+.footer__primary__nav {
+	border-left: 2px solid $lightgrey1;
+	padding-left: 45px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	ul li {
+		margin: 10px 0;
+	}
+
+	ul li a:link,
+	ul li a:visited {
+		@extend .verlag-black;
+		color: $primary-copy;
+		font-size: 18px;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		&:hover,
+		&:active {
+			color: $red;
+		}
+	}
+
+}
+
+.footer__primary__social {
+	float: right;
+	overflow: hidden;
+	max-width: 486px;
+	width: 100%;
+
+	li {
+		border: 1px solid $lightgrey1;
+		border-right: none;
+		max-width: 160px;
+
+		&:last-child {
+			border-right: 1px solid $lightgrey1;
+		}
+	}
+
+	li a:link,
+	li a:visited {
+		@include transition(all .25s);
+
+		background-color: #FFF;
+		color: $footer-social-grey;
+		display: block;
+		font-size: 4.2rem;
+		height: 160px;
+		text-align: center;
+		text-decoration: none;
+		vertical-align: middle;
+
+		span {
+			display: block;
+			padding: 60px 0 0 0;
+		}
+
+		&:hover,
+		&:active {
+			color: #FFF;
+		}
+	}
+
+	li.social-icon__pinterest {
+		a:hover, a:active { background-color: $pinterest-red; }
+	}
+
+	li.social-icon__facebook {
+		a:hover, a:active { background-color: $facebook-blue; }
+	}
+
+	li.social-icon__instagram {
+		a:hover, a:active { background-color: $instagram-blue; }
+	}
+
+
+	@include respond($med) {
+		li {
+			float: left;
+			width: 33.333333333%;
+		}
+	}
+
+}
+
+/*------------------------------------------------------------------
+    FOOTER: Secondary
+-------------------------------------------------------------------*/
+
+.footer__secondary {
+	background-color: $red;
+	min-height: 75px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.footer__secondary__copyright {
+	color: #FFF;
+	margin: 0 0 25px 0;
+	text-align: center;
+	width: auto;
+
+	@include mnw(med) {
+		float: left;
+		text-align: left;
+	}
+}
+
+.footer__secondary__nav {
+	width: auto;
+
+	ul {
+		overflow: hidden;
+		width: auto;
+	}
+
+		ul > li {
+			display: block;
+			float: left;
+			text-align: center;
+			width: 33.333333333%;
+		}
+
+			ul > li > a {
+
+				&:link, &:visited {
+					@extend .archer-book;
+					color: #FFF;
+					font-size: 20px;
+					font-size: 2.0rem;
+					line-height: 25px;
+					line-height: 2.5rem;
+					text-decoration: none;
+				}
+
+			}
+
+	@include mnw(med) {
+		float: right;
+
+		ul > li {
+			margin: 0 0 0 30px;
+			width: initial;
+		}
+
+	}
+
+}

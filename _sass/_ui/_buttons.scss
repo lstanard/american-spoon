@@ -1,0 +1,145 @@
+/*------------------------------------------------------------------
+    UI: Buttons
+-------------------------------------------------------------------*/
+
+a.btn:link, a.btn:visited {
+
+	$border-width: 3px;
+
+	@extend .verlag-black;
+
+	@include border-radius(3px);
+	@include transition(all .25s);
+
+	display: table;
+	height: 60px;
+	margin: 0 0 20px 0;
+	padding: 0 50px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	// Wrap label in a <span> for vertical alignment
+	span {
+		font-size: 17px;
+		font-size: 1.7rem;
+		display: table-cell;
+		letter-spacing: 0.3rem;
+		vertical-align: middle;
+
+		span {
+			display: inline;
+			width: auto;
+		}
+		// Arrow style
+		span + span {
+			display: inline-block;
+			margin-left: 5px;
+			margin-top: -2px;
+			vertical-align: none;
+		}
+	}
+
+	// Button sizes
+
+	&.lrg {
+		height: 85px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 33.5%;
+	}
+	&.full {
+		height: 60px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	// Solid buttons
+
+	&.red, &.blue, &.olive-green, &.peach, &.purple, &.pumpkin, &.yellow-green {
+		color: #FFF;
+	}
+
+	&.red { background-color: $red; }
+	&.blue { background-color: $blue; }
+	&.olive-green { background-color: $olive-green; }
+	&.peach { background-color: $peach; }
+	&.purple { background-color: $purple; }
+	&.pumpkin { background-color: $pumpkin; }
+	&.yellow-green { background-color: $yellow-green; }
+
+	// Ghost buttons
+
+	&.ghost {
+		background-color: transparent;
+		border: $border-width;
+		border-style: solid;
+		padding: 0 50px;
+	}
+
+	&.ghost.red {
+		border-color: $red;
+		color: $red;
+
+		&:hover, &:active {
+			background-color: $red;
+			color: #FFF;
+		}
+	}
+	&.ghost.blue {
+		border-color: $blue;
+		color: $blue;
+
+		&:hover, &:active {
+			background-color: $blue;
+			color: #FFF;
+		}
+	}
+	&.ghost.olive-green {
+		border-color: $olive-green;
+		color: $olive-green;
+
+		&:hover, &:active {
+			background-color: $olive-green;
+			color: #FFF;
+		}
+	}
+	&.ghost.peach {
+		border-color: $peach;
+		color: $peach;
+
+		&:hover, &:active {
+			background-color: $peach;
+			color: #FFF;
+		}
+	}
+	&.ghost.purple {
+		border-color: $purple;
+		color: $purple;
+
+		&:hover, &:active {
+			background-color: $purple;
+			color: #FFF;
+		}
+	}
+	&.ghost.pumpkin {
+		border-color: $pumpkin;
+		color: $pumpkin;
+
+		&:hover, &:active {
+			background-color: $pumpkin;
+			color: #FFF;
+		}
+	}
+	&.ghost.yellow-green {
+		border-color: $yellow-green;
+		color: $yellow-green;
+
+		&:hover, &:active {
+			background-color: $yellow-green;
+			color: #FFF;
+		}
+	}
+
+}

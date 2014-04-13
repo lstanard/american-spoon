@@ -1,0 +1,125 @@
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+
+.header-container {
+	background-color: rgba(210,35,42,.9);
+	height: auto;
+	min-height: 130px;
+	padding-bottom: 0;
+	padding-top: 0;
+	position: fixed;
+	width: 100%;
+	z-index: $header;
+
+	header.container--wide {
+		padding-top: 40px;
+		padding-bottom: 0;
+	}
+
+	&.header--expanded {
+
+	}
+
+	@include respond($lrg) {
+		max-height: 130px;
+	}
+}
+
+.header__primary__logo {
+
+	@include respond($med) {
+		float: left; // 190/1200
+		width: 15.833333333%;
+	}
+}
+
+/*------------------------------------------------------------------
+    PRIMARY NAVIGATION
+-------------------------------------------------------------------*/
+
+.header__primary-nav {
+
+	padding-top: 30px;
+
+	ul > li {
+		display: inline-block;
+	}
+
+	ul > li > a:link,
+	ul > li > a:visited {
+		color: #FFF;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	@include respond($med) {
+		float: left;
+		width: 84.166666667%; // 1010/1200
+	}
+}
+
+.primary-nav__shop {
+	float: left;
+
+	li.primary-nav__shop__lead > a:link,
+	li.primary-nav__shop__lead > a:visited {
+		@extend .verlag-black;
+
+		span {
+			margin: 0 0 0 10px;
+		}
+	}
+
+	li > a:link,
+	li > a:visited {
+		@extend .verlag-light-ital;
+		font-size: 15px;
+		font-size: 1.5rem;
+		letter-spacing: 0.10em;
+		margin: 0 0 0 15px;
+	}
+
+	@include respond($lrg) {
+		margin-left: 115px;
+	}
+}
+
+.primary-nav__explore {
+	$item-spacing: 15px;
+
+	border-left: 2px solid rgba(255,255,255,.8);
+	float: left;
+	padding-left: $item-spacing;
+	margin-left: $item-spacing * 2;
+
+	li {
+		margin: 0 $item-spacing;
+	}
+
+	li > a:link,
+	li > a:visited {
+		@extend .verlag-black;
+		font-size: 15px;
+		font-size: 1.5rem;
+		letter-spacing: 0.10em;
+	}
+}
+
+.primary-nav__utility {
+	float: right;
+
+	li {
+		margin: 0 0 0 10px;
+	}
+
+	li > a:link,
+	li > a:visited {
+		font-size: 20px;
+		font-size: 2.0rem;
+
+		&:hover, &:active  {
+			color: $peach;
+		}
+	}
+}

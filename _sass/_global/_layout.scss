@@ -1,0 +1,76 @@
+/*------------------------------------------------------------------
+    LAYOUT
+-------------------------------------------------------------------*/
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+ }
+
+body {
+	background: #FFF;
+	-webkit-text-size-adjust: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+body, html {
+	height: 100% !important;
+	width: 100%;
+}
+
+/*------------------------------------------------------------------
+    RESPONSIVE CONTAINERS
+-------------------------------------------------------------------*/
+
+.wrapper {
+	@extend .cf;
+	position: relative;
+	width: 100%;
+}
+
+.container {
+	height: auto;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 10% 3%;
+	position: relative;
+	width: 100%;
+
+	@include mnw(sml) {
+		padding-top: 8%;
+		padding-bottom: 8%;
+	}
+	@include mnw(med) {
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+	@include mnw(lrg) {
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+}
+
+.container--full {
+	@extend .container;
+	padding-left: 2.647058824%;
+	padding-right: 2.647058824%;
+	max-width: initial;
+	width: 100%;
+}
+
+.container--narrow {
+	@extend .container;
+	max-width: 1000px;
+}
+
+.container--wide {
+	@extend .container;
+	max-width: 1200px;
+
+	@include mnw(1250px) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

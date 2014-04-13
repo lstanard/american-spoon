@@ -1,0 +1,73 @@
+/*------------------------------------------------------------------
+    Z-INDEX
+-------------------------------------------------------------------*/
+
+$header: 1000;
+
+/*------------------------------------------------------------------
+    MEDIA QUERIES
+-------------------------------------------------------------------*/
+
+$sml: 30.0em; // 480px
+$med: 40.5em; // 648px
+$lrg: 64.0em; // 1024px
+
+@mixin mnw($break) {
+	@if $break == "sml" {
+		@media (min-width: $sml) {
+			@content;
+		}
+	}
+	@else if $break == "med" {
+		@media (min-width: $med) {
+			@content;
+		}
+	}
+	@else if $break == "lrg" {
+		@media (min-width: $lrg) {
+			@content;
+		}
+	}
+	@else {
+		@media (min-width: $break) {
+			@content;
+		}
+	}
+}
+
+/*------------------------------------------------------------------
+    MEDIA QUERIES: Min/max width "respond"
+-------------------------------------------------------------------*/
+
+$break-xs: 480px;
+$break-sm: 768px;
+$break-md: 992px;
+$break-lg: 1200px;
+
+@mixin respond($media, $type: "min") {
+	@if $media == "xs" {
+		@media ($type+"-width": $break-xs) {
+			@content;
+		}
+	}
+	@else if $media == "sm" {
+		@media ($type+"-width": $break-sm) {
+			@content;
+		}
+	}
+	@else if $media == "md" {
+		@media ($type+"-width": $break-md) {
+			@content;
+		}
+	}
+	@else if $media == "lg" {
+		@media ($type+"-width": $break-lg) {
+			@content;
+		}
+	}
+	@else {
+		@media ($type+"-width": $media) {
+			@content;
+		}
+	}
+}

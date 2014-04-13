@@ -1,0 +1,32 @@
+/*------------------------------------------------------------------
+    UTILITY
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+    UTILITY: Misc
+-------------------------------------------------------------------*/
+
+.cf {
+	zoom:1;
+
+	&:before, &:after {
+		content: "\0020";
+		display: block;
+		height: 0;
+		overflow: hidden;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	font-size: 0px;
+	overflow: hidden;
+	text-indent: -9999px;
+	text-indent: 100%;
+	white-space: nowrap;
+}

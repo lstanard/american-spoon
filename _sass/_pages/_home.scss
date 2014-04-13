@@ -1,0 +1,183 @@
+/*------------------------------------------------------------------
+    PAGE: Home / Mantle
+-------------------------------------------------------------------*/
+
+.home-mantle {
+	background-color: $lightgrey1;
+	height: auto;
+
+	img {
+		height: 100%;
+		width: 100%;
+	}
+
+	@include respond($lrg) {
+		height: 650px;
+	}
+}
+
+/*------------------------------------------------------------------
+    PAGE: Home / Featured Products
+-------------------------------------------------------------------*/
+
+.featured-products {
+	@include respond($med) {
+		padding: 8.333333333% 0;
+	}
+}
+
+.featured-products__header {
+	@extend .cf;
+	border-bottom: 2px solid $lightgrey1;
+	padding: 0 30px 25px 30px;
+
+	a.featured-products__shop-link:link,
+	a.featured-products__shop-link:visited {
+		@extend .verlag-black;
+		color: $primary-copy;
+		display: block;
+		font-size: 12px;
+		font-size: 1.2rem;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		&:hover, &:active {
+			color: $red;
+		}
+	}
+
+	@include respond($med) {
+
+		h1 {
+			float: left;
+		}
+		a:link, a:visited {
+			float: right;
+		}
+
+	}
+}
+
+.featured-products__grid {
+
+	ul {
+		overflow: hidden;
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+
+	ul > li {
+		@extend .col-1-4;
+		text-align: center;
+		padding: 0px 35px 70px 35px;
+	}
+
+	a.featured-product__link:link,
+	a.featured-product__link:visited {
+		color: $primary-copy;
+		display: block;
+		margin: 0 auto;
+		text-decoration: none;
+	}
+
+	a.featured-product__link:hover,
+	a.featured-product__link:active {
+
+	}
+
+	.featured-product__img,
+	.featured-product__name,
+	.featured-product__price {
+		display: block;
+		margin: 0 auto;
+	}
+	.featured-product__img {
+		margin-bottom: 25px;
+	}
+	.featured-product__name {
+		@extend .verlag-black;
+		color: $primary-subhead-dark;
+		font-size: 16px;
+		font-size: 1.6rem;
+		margin: 0 0 10px 0;
+		text-transform: uppercase;
+	}
+	.featured-product__price {
+		@extend .archer-med;
+		color: $primary-copy;
+		font-size: 24px;
+		font-size: 2.4rem;
+	}
+
+}
+
+/*------------------------------------------------------------------
+    PAGE: Home / Featured Recipes
+-------------------------------------------------------------------*/
+
+.featured-recipes {
+	background-color: $lightgrey2;
+}
+
+.featured-recipes__header {
+
+	.featured-recipes__rule {
+		background: url('../_img/as_icon_FPO_fork-knife.jpg') no-repeat 50% 50% transparent;
+		border: none;
+		height: 70px;
+		margin: 45px auto 45px auto;
+		position: relative;
+		width: 100%;
+
+		&:before, &:after {
+			border-bottom: 2px solid $footer-social-grey;
+			content: "";
+			display: block;
+			position: absolute;
+			top: 50%;
+			width: 45%;
+		}
+		&:before {
+			left: 0;
+		}
+		&:after {
+			right: 0;
+		}
+	}
+
+	a.btn:link, a.btn:visited {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5px;
+	}
+
+	h1 {
+		@extend .archer-med-ital;
+		color: $olive-green;
+		font-size: 30px;
+		font-size: 3.0rem;
+		line-height: 34px;
+		line-height: 3.4rem;
+		text-align: center;
+		margin: 0 0 60px 0;
+	}
+}
+
+.featured-recipes__grid {
+
+	margin: 60px 0 0 0;
+
+	ul {
+		overflow: hidden;
+	}
+
+	ul > li {
+		margin-bottom: 20px;
+	}
+
+	img {
+		width: 100%;
+	}
+
+}

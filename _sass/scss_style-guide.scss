@@ -1,0 +1,97 @@
+/*------------------------------------------------------------------
+    STYLE GUIDE (NOT IMPORTED)
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+	Main section/element class name a.k.a. a "module"
+-------------------------------------------------------------------*/
+
+.primary-element {
+	// SASS @extend
+	@extend .some-class;
+
+	// SASS @include (Non-media queries, see below)
+	@include box-shadow(rgba(0,0,0,.25) 1px 2px 3px);
+	@include transition(all .25s);
+
+	// Main element styles
+	position: relative
+	text-align: center;
+	width: 100%;
+
+	// Nested elements (HTML tags. Max. 4 deep)
+	p { 								// Depth: 2
+		color: #FFF;
+
+		span {							// Depth: 3
+			font-weight: bold;
+
+			strong {
+				color: #333;			// Depth: 4
+			}
+		}
+	}
+
+	ul {								// Depth: 2
+		list-style: none;
+	}
+
+		// Indent child selectors
+		ul > li {						// Depth: 2
+			margin: 0 0 5px 0;
+		}
+
+			ul > li > a {				// Depth: 3
+
+				&:link, &:visited {		// Depth: 4
+					color: #FFF;
+					text-decoration: none;
+				}
+
+			}
+
+	// Class name modifiers (Put element modifiers separately)
+	&.lead {
+		border: 1px solid #000;
+	}
+
+	&.last {
+		margin-left: 0;
+	}
+
+	// Nested layout elements (Class/ID selectors. Max. 4 deep)
+	.column01 {
+		background: blue;
+	}
+
+	.column02 {
+		background: red;
+	}
+
+	// Media queries (Listed smallest screen size to largest)
+	@include mnw($size) {				// Depth: 2
+		float: left;
+
+		ul {
+			margin: 0 0 15px 0;			// Depth: 3
+		}
+
+		.column01 {
+			float: left;
+			width: 30%;
+		}
+
+		.column02 {
+			float: left;
+			width: 70%;
+		}
+	}
+}
+
+.primary-element--modifier {
+
+}
+
+.primary-element__element {
+
+}
