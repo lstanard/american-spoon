@@ -70,10 +70,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     GLOBAL
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
-    COLORS
+    Z-INDEX
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
-    Z-INDEX
+    COLORS
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
     MEDIA QUERIES
@@ -104,18 +104,18 @@ a:hover, a:active {
     UTILITY: Misc
 -------------------------------------------------------------------*/
 /* line 9, ../_sass/_global/_utility.scss */
-.cf, .wrapper, .row, .footer__sign-up__form, .featured-products__header {
+.cf, .wrapper, .row, .footer__sign-up__form, .featured-products__header, .featured-products__grid ul {
   zoom: 1;
 }
 /* line 12, ../_sass/_global/_utility.scss */
-.cf:before, .wrapper:before, .row:before, .footer__sign-up__form:before, .featured-products__header:before, .cf:after, .wrapper:after, .row:after, .footer__sign-up__form:after, .featured-products__header:after {
+.cf:before, .wrapper:before, .row:before, .footer__sign-up__form:before, .featured-products__header:before, .featured-products__grid ul:before, .cf:after, .wrapper:after, .row:after, .footer__sign-up__form:after, .featured-products__header:after, .featured-products__grid ul:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
 /* line 19, ../_sass/_global/_utility.scss */
-.cf:after, .wrapper:after, .row:after, .footer__sign-up__form:after, .featured-products__header:after {
+.cf:after, .wrapper:after, .row:after, .footer__sign-up__form:after, .featured-products__header:after, .featured-products__grid ul:after {
   clear: both;
 }
 
@@ -262,9 +262,11 @@ a:hover, a:active {
 /* line 150, ../_sass/_global/_type.scss */
 .verlag-black, p.call-out, a.btn:link, a.btn:visited, .primary-nav__shop li.primary-nav__shop__lead > a:link,
 .primary-nav__shop li.primary-nav__shop__lead > a:visited, .primary-nav__explore li > a:link,
-.primary-nav__explore li > a:visited, .footer__primary__nav ul li a:link,
+.primary-nav__explore li > a:visited, .primary-nav__utility .utility--search:after,
+.primary-nav__utility .utility--account:after,
+.primary-nav__utility .utility--cart:after, .footer__primary__nav ul li a:link,
 .footer__primary__nav ul li a:visited, .featured-products__header a.featured-products__shop-link:link,
-.featured-products__header a.featured-products__shop-link:visited, .featured-products__grid .featured-product__name {
+.featured-products__header a.featured-products__shop-link:visited, .featured-products__grid .featured-product__add-to-cart, .featured-products__grid .featured-product__name {
   font-family: "VerlagBlack", Arial, sans-serif;
   font-weight: normal;
 }
@@ -835,7 +837,7 @@ hr {
 }
 /* line 112, ../_sass/_modules/_header.scss */
 .primary-nav__utility li {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 30px;
 }
 /* line 116, ../_sass/_modules/_header.scss */
 .primary-nav__utility li > a:link,
@@ -848,6 +850,34 @@ hr {
 .primary-nav__utility li > a:visited:hover,
 .primary-nav__utility li > a:visited:active {
   color: #fbae4b;
+}
+/* line 126, ../_sass/_modules/_header.scss */
+.primary-nav__utility .utility--search,
+.primary-nav__utility .utility--account,
+.primary-nav__utility .utility--cart {
+  text-align: center;
+}
+/* line 131, ../_sass/_modules/_header.scss */
+.primary-nav__utility .utility--search:after,
+.primary-nav__utility .utility--account:after,
+.primary-nav__utility .utility--cart:after {
+  display: block;
+  position: absolute;
+  font-size: 11px;
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+/* line 142, ../_sass/_modules/_header.scss */
+.primary-nav__utility .utility--search:after {
+  content: "Search";
+}
+/* line 147, ../_sass/_modules/_header.scss */
+.primary-nav__utility .utility--account:after {
+  content: "Account";
+}
+/* line 152, ../_sass/_modules/_header.scss */
+.primary-nav__utility .utility--cart:after {
+  content: "Cart";
 }
 
 /*------------------------------------------------------------------
@@ -1176,35 +1206,69 @@ hr {
 
 /* line 64, ../_sass/_pages/_home.scss */
 .featured-products__grid ul {
-  overflow: hidden;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 /* line 70, ../_sass/_pages/_home.scss */
 .featured-products__grid ul > li {
   text-align: center;
-  padding: 0px 35px 70px 35px;
+  padding: 0;
+  margin: 70px 0;
 }
-/* line 76, ../_sass/_pages/_home.scss */
+/* line 77, ../_sass/_pages/_home.scss */
 .featured-products__grid a.featured-product__link:link,
 .featured-products__grid a.featured-product__link:visited {
   color: #939598;
   display: block;
   margin: 0 auto;
+  padding: 15px 25px;
+  text-align: center;
   text-decoration: none;
+  width: 100%;
 }
-/* line 89, ../_sass/_pages/_home.scss */
+/* line 88, ../_sass/_pages/_home.scss */
 .featured-products__grid .featured-product__img,
 .featured-products__grid .featured-product__name,
 .featured-products__grid .featured-product__price {
   display: block;
   margin: 0 auto;
 }
-/* line 95, ../_sass/_pages/_home.scss */
+/* line 94, ../_sass/_pages/_home.scss */
+.featured-products__grid .featured-product__add-to-cart {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #d2232a;
+  color: #FFF;
+  display: inline-block;
+  letter-spacing: 0.05em;
+  margin: -23px auto 0 -76.5px;
+  padding: 12px 24px;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: auto;
+  z-index: 1;
+}
+/* line 113, ../_sass/_pages/_home.scss */
 .featured-products__grid .featured-product__img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
   margin-bottom: 25px;
 }
-/* line 98, ../_sass/_pages/_home.scss */
+/* line 118, ../_sass/_pages/_home.scss */
 .featured-products__grid .featured-product__name {
   color: #4c4c4c;
   font-size: 16px;
@@ -1212,22 +1276,47 @@ hr {
   margin: 0 0 10px 0;
   text-transform: uppercase;
 }
-/* line 106, ../_sass/_pages/_home.scss */
+/* line 126, ../_sass/_pages/_home.scss */
 .featured-products__grid .featured-product__price {
   color: #939598;
   font-size: 24px;
   font-size: 2.4rem;
 }
+/* line 133, ../_sass/_pages/_home.scss */
+.featured-products__grid a.featured-product__link:hover,
+.featured-products__grid a.featured-product__link:active {
+  border: 4px solid #d2232a;
+  margin-top: -4px;
+}
+/* line 138, ../_sass/_pages/_home.scss */
+.featured-products__grid a.featured-product__link:hover img,
+.featured-products__grid a.featured-product__link:active img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+}
+/* line 141, ../_sass/_pages/_home.scss */
+.featured-products__grid a.featured-product__link:hover span,
+.featured-products__grid a.featured-product__link:active span {
+  color: #d2232a;
+}
+/* line 144, ../_sass/_pages/_home.scss */
+.featured-products__grid a.featured-product__link:hover span.featured-product__add-to-cart,
+.featured-products__grid a.featured-product__link:active span.featured-product__add-to-cart {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  color: #FFF;
+  top: 50%;
+}
 
 /*------------------------------------------------------------------
     PAGE: Home / Featured Recipes
 -------------------------------------------------------------------*/
-/* line 119, ../_sass/_pages/_home.scss */
+/* line 157, ../_sass/_pages/_home.scss */
 .featured-recipes {
   background-color: #f4f8f6;
 }
 
-/* line 125, ../_sass/_pages/_home.scss */
+/* line 163, ../_sass/_pages/_home.scss */
 .featured-recipes__header .featured-recipes__rule {
   background: url("../_img/as_icon_FPO_fork-knife.jpg") no-repeat 50% 50% transparent;
   border: none;
@@ -1236,7 +1325,7 @@ hr {
   position: relative;
   width: 100%;
 }
-/* line 133, ../_sass/_pages/_home.scss */
+/* line 171, ../_sass/_pages/_home.scss */
 .featured-recipes__header .featured-recipes__rule:before, .featured-recipes__header .featured-recipes__rule:after {
   border-bottom: 2px solid #d0d4d7;
   content: "";
@@ -1245,21 +1334,21 @@ hr {
   top: 50%;
   width: 45%;
 }
-/* line 141, ../_sass/_pages/_home.scss */
+/* line 179, ../_sass/_pages/_home.scss */
 .featured-recipes__header .featured-recipes__rule:before {
   left: 0;
 }
-/* line 144, ../_sass/_pages/_home.scss */
+/* line 182, ../_sass/_pages/_home.scss */
 .featured-recipes__header .featured-recipes__rule:after {
   right: 0;
 }
-/* line 149, ../_sass/_pages/_home.scss */
+/* line 187, ../_sass/_pages/_home.scss */
 .featured-recipes__header a.btn:link, .featured-recipes__header a.btn:visited {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
 }
-/* line 155, ../_sass/_pages/_home.scss */
+/* line 193, ../_sass/_pages/_home.scss */
 .featured-recipes__header h1 {
   color: #5c8727;
   font-size: 30px;
@@ -1270,19 +1359,19 @@ hr {
   margin: 0 0 60px 0;
 }
 
-/* line 167, ../_sass/_pages/_home.scss */
+/* line 205, ../_sass/_pages/_home.scss */
 .featured-recipes__grid {
   margin: 60px 0 0 0;
 }
-/* line 171, ../_sass/_pages/_home.scss */
+/* line 209, ../_sass/_pages/_home.scss */
 .featured-recipes__grid ul {
   overflow: hidden;
 }
-/* line 175, ../_sass/_pages/_home.scss */
+/* line 213, ../_sass/_pages/_home.scss */
 .featured-recipes__grid ul > li {
   margin-bottom: 20px;
 }
-/* line 179, ../_sass/_pages/_home.scss */
+/* line 217, ../_sass/_pages/_home.scss */
 .featured-recipes__grid img {
   width: 100%;
 }
