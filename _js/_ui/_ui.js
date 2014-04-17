@@ -82,10 +82,24 @@
 
 					setHeights();
 
+				},
+
+				setHeaderWaypoint: function() {
+					$('.main-container').waypoint(function(direction){
+
+						if ( direction === 'down' ) {
+							$('.header-container').addClass('header--condensed');
+							$('.shipping-banner').addClass('hidden');
+						}
+						else if ( direction === 'up' ){
+							$('.header-container').removeClass('header--condensed');
+							$('.shipping-banner').removeClass('hidden');
+						}
+
+					}, { offset: -300 } );
 				}
+
 			}
-
-
 		}
 
 })();

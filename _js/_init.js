@@ -20,6 +20,7 @@ var functionCheck = jRespond([
 	functionCheck.addFunc({
 		breakpoint: 'med-lrg',
 		enter: function() {
+			uiFunctions.site.setHeaderWaypoint();
 			uiFunctions.site.setColumnHeight(['.featured-products__grid li', '.featured-recipes__grid ul li']);
 		},
 		exit: function() {

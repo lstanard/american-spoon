@@ -13,15 +13,18 @@
 		<script src="_js/_vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	</head>
 	<body>
-		<div class="header-container header--expanded">
-			<header class="container--wide">
-				<img src="_img/as_logo-primary.png" alt=" " class="header__primary__logo">
+				<div class="header-container">
+			<header class="container--full row">
+				<div class="header__primary__logo">
+					<img src="_img/as_logo-primary.png" alt="American Spoon - Established 1982" class="header__primary__logo-lrg">
+					<img src="_img/as_logo-text.jpg" alt="American Spoon" class="header__primary__logo-sm">
+				</div>
 				<nav class="header__primary-nav">
 					<ul class="primary-nav__shop">
-						<li class="primary-nav__shop__lead"><a href="#">Shop <span>&gt;</span></a></li>
-						<li><a href="#">Classics</a></li>
-						<li><a href="#">Savories</a></li>
-						<li><a href="#">Gifts</a></li>
+						<li class="primary-nav__shop__lead"><a href="#">Shop&nbsp;<span>:</span></a></li>
+						<li><a href="#">Classics&nbsp;<span>&gt;</span></a></li>
+						<li><a href="#">Savories&nbsp;<span>&gt;</span></a></li>
+						<li><a href="#">Gifts&nbsp;<span>&gt;</span></a></li>
 					</ul>
 					<ul class="primary-nav__explore">
 						<li><a href="#">Recipes</a></li>
@@ -36,7 +39,17 @@
 				</nav>
 			</header>
 		</div>
-		<div class="main-container">			<section class="home-mantle">
+		<div class="shipping-banner">
+			<div class="container--wide">
+				<span class="as-icon-shipping"></span><span class="mls"> as-icon-shipping</span>
+				<p class="shipping-banner__msg01">Spring is coming, stock up!</p>
+				<p><span class="divider">&gt;</span></p>
+				<p  class="shipping-banner__msg02">Everyday Flat-Rate Shipping</p>
+				<p><span class="divider">&gt;</span></p>
+				<p class="shipping-banner__msg03">12 jars ship for $10</p>
+				<span class="as-icon-shipping"></span><span class="mls"> as-icon-shipping</span>
+			</div>
+		</div>		<div class="main-container">			<section class="home-mantle">
 				<img src="_img/as_home_mantle_FPO_photo01.jpg" alt=" ">
 			</section>
 			<section class="featured-products">
@@ -212,6 +225,7 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="_js/_vendor/jquery-1.11.0.min.js"><\/script>')</script>
 		<script src="_js/_vendor/jRespond.min.js"></script>
+		<script src="_js/_vendor/waypoints.min.js"></script>
 		<script src="_js/_vendor/placeholders.min.js"></script>
 		<script src="_js/main.min.js"></script>
 

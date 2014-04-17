@@ -4,11 +4,11 @@
 
 @font-face {
 	font-family: 'as-ui';
-	src:url('../_fonts/as-ui.eot?-dc6wb0');
-	src:url('../_fonts/as-ui.eot?#iefix-dc6wb0') format('embedded-opentype'),
-		url('../_fonts/as-ui.woff?-dc6wb0') format('woff'),
-		url('../_fonts/as-ui.ttf?-dc6wb0') format('truetype'),
-		url('../_fonts/as-ui.svg?-dc6wb0#as-ui') format('svg');
+	src:url('../_fonts/as-ui.eot?2r85pi');
+	src:url('../_fonts/as-ui.eot?#iefix2r85pi') format('embedded-opentype'),
+		url('../_fonts/as-ui.woff?2r85pi') format('woff'),
+		url('../_fonts/as-ui.ttf?2r85pi') format('truetype'),
+		url('../_fonts/as-ui.svg?2r85pi#as-ui') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -27,10 +27,6 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.mls {
-	@extend .ir;
-}
-
 .as-icon-ui-search:before {
 	content: "\30";
 }
@@ -40,19 +36,53 @@
 .as-icon-ui-account:before {
 	content: "\32";
 }
-.as-icon-pinterest:before {
-	content: "\33";
-}
 .as-icon-instagram:before {
 	content: "\34";
 }
 .as-icon-facebook:before {
 	content: "\35";
 }
+.as-icon-pinterest:before {
+	content: "\33";
+}
+.as-icon-shipping:before {
+	content: "\36";
+}
+.as-icon-circle:before {
+	content: "\37";
+}
+.as-icon-schedule:before {
+	content: "\38";
+}
+.as-icon-location:before {
+	content: "\39";
+}
+.as-icon-call:before {
+	content: "\41";
+}
+.as-icon-write:before {
+	content: "\42";
+}
+.as-icon-web:before {
+	content: "\43";
+}
+
+.mls {
+	@extend .ir;
+}
 
 /*------------------------------------------------------------------
 	@FONT FACE DECLARATIONS
 -------------------------------------------------------------------*/
+
+@font-face {
+	font-family: 'VerlagBook';
+	src: url('../_fonts/verlag-book.eot');
+	src: url('../_fonts/verlag-book.eot') format('embedded-opentype'),
+		 url('../_fonts/verlag-book.woff') format('woff'),
+		 url('../_fonts/verlag-book.ttf') format('truetype'),
+		 url('../_fonts/verlag-book.svg#VerlagBook') format('svg');
+}
 
 @font-face {
 	font-family: 'VerlagLightItalic';
@@ -61,6 +91,15 @@
 		 url('../_fonts/verlag-lightitalic.woff') format('woff'),
 		 url('../_fonts/verlag-lightitalic.ttf') format('truetype'),
 		 url('../_fonts/verlag-lightitalic.svg#VerlagLightItalic') format('svg');
+}
+
+@font-face {
+	font-family: 'VerlagBold';
+	src: url('../_fonts/verlag-bold.eot');
+	src: url('../_fonts/verlag-bold.eot') format('embedded-opentype'),
+		 url('../_fonts/verlag-bold.woff') format('woff'),
+		 url('../_fonts/verlag-bold.ttf') format('truetype'),
+		 url('../_fonts/verlag-bold.svg#VerlagBold') format('svg');
 }
 
 @font-face {
@@ -109,6 +148,15 @@
 }
 
 @font-face {
+	font-family: 'ArcherBold';
+	src: url('../_fonts/archer-bold-pro.eot');
+	src: url('../_fonts/archer-bold-pro.eot') format('embedded-opentype'),
+		 url('../_fonts/archer-bold-pro.woff') format('woff'),
+		 url('../_fonts/archer-bold-pro.ttf') format('truetype'),
+		 url('../_fonts/archer-bold-pro.svg#ArcherBold') format('svg');
+}
+
+@font-face {
 	font-family: 'ArcherBoldItalic';
 	src: url('../_fonts/archer-boldital-pro.eot');
 	src: url('../_fonts/archer-boldital-pro.eot') format('embedded-opentype'),
@@ -137,13 +185,28 @@
 	font-weight: normal;
 }
 
+.archer-bold {
+	font-family: "ArcherBold", serif;
+	font-weight: normal;
+}
+
 .archer-book {
 	font-family: "ArcherBook", serif;
 	font-weight: normal;
 }
 
+.verlag-book {
+	font-family: "VerlagBook", sans-serif;
+	font-weight: normal;
+}
+
 .verlag-light-ital {
-	font-family: "VerlagLightItalic", serif;
+	font-family: "VerlagLightItalic", sans-serif;
+	font-weight: normal;
+}
+
+.verlag-bold {
+	font-family: "VerlagBold", sans-serif;
 	font-weight: normal;
 }
 
