@@ -4,6 +4,7 @@
 
 @import "compass/reset";
 @import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
 @import "compass/css3/transition";
 @import "compass/css3/opacity";
 @import "compass/css3/transform";
@@ -14,6 +15,7 @@
 
 @import "_global/_variables";
 @import "_mixins/_media-queries";
+@import "_mixins/_styles";
 
 @import "_global/_global";
 @import "_global/_utility";
@@ -30,6 +32,7 @@
 
 @import "_modules/_header";
 @import "_modules/_footer";
+@import "_modules/_product-grid";
 
 /*------------------------------------------------------------------
     PAGES
@@ -37,6 +40,7 @@
 
 @import "_pages/_main";
 @import "_pages/_home";
+@import "_pages/_product";
 
 /*------------------------------------------------------------------
     LEGACY BROWSER SUPPORT

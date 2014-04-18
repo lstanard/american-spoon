@@ -2,16 +2,10 @@
     HEADER
 -------------------------------------------------------------------*/
 
-$header-height-lrg: 170px;
-$header-height-sm: 55px;
-$container-context: 1200px;
-$header-transition-speed: .5s;
-
 .header-container {
 	@include transition(all $header-transition-speed);
 
 	background-color: #FFF;
-	border-bottom: 2px solid rgba(0,0,0,.08);
 	height: auto;
 	margin: 0;
 	min-height: $header-height-lrg;
@@ -27,17 +21,21 @@ $header-transition-speed: .5s;
 	}
 
 	&.header--condensed {
+		@include box-shadow(rgba(0,0,0,.1) 0px 2px 6px);
 		height: $header-height-sm;
 		min-height: 0px;
 
 		.header__primary__logo {
 			img.header__primary__logo-sm {
 				@include opacity(.4);
-				display: block;
-				margin: 14px 0 0 0;
+				// margin: 14px 0 0 0;
+				margin: 0;
+				width: 100%;
 			}
 			img.header__primary__logo-lrg {
-				display: none;
+				margin: 0;
+				width: 0;
+				visibility: hidden;
 			}
 		}
 
@@ -87,13 +85,17 @@ $header-transition-speed: .5s;
 .header__primary__logo {
 
 	img.header__primary__logo-sm {
-		display: none;
+		@include transition(all $header-transition-speed);
+		margin-left: (188px/2px);
 		max-width: 188px;
+		width: 0;
 	}
 	img.header__primary__logo-lrg {
-		display: block;
+		@include transition(all $header-transition-speed);
 		margin: 6px 0 0 0;
 		max-width: 155px;
+		width: 100%;
+		visibility: visible;
 	}
 
 	@include respond($med) {
@@ -110,7 +112,7 @@ $header-transition-speed: .5s;
 .header__primary-nav {
 	@include transition(all $header-transition-speed);
 
-	padding-top: 67px;
+	padding-top: 55px;
 
 	ul > li {
 		@include transition(all $header-transition-speed);
@@ -131,6 +133,8 @@ $header-transition-speed: .5s;
 
 .primary-nav__shop {
 	float: left;
+	height: 40px;
+	margin-top: 12px;
 
 	li {
 		padding: 10px 0 0 0;
@@ -185,6 +189,7 @@ $header-transition-speed: .5s;
 	float: left;
 	height: 40px;
 	margin-left: $item-spacing * 2;
+	margin-top: 12px;
 	padding-left: $item-spacing;
 
 	li {
@@ -281,8 +286,9 @@ $header-transition-speed: .5s;
 
 	background-color: #FFF;
 	border-bottom: 2px solid rgba(0,0,0,.08);
+	border-top: 2px solid rgba(0,0,0,.08);
 	height: auto;
-	min-height: 45px;
+	min-height: $shipping-banner-height;
 	position: fixed;
 	text-align: center;
 	top: $header-height-lrg;

@@ -4,11 +4,11 @@
 
 @font-face {
 	font-family: 'as-ui';
-	src:url('../_fonts/as-ui.eot?2r85pi');
-	src:url('../_fonts/as-ui.eot?#iefix2r85pi') format('embedded-opentype'),
-		url('../_fonts/as-ui.woff?2r85pi') format('woff'),
-		url('../_fonts/as-ui.ttf?2r85pi') format('truetype'),
-		url('../_fonts/as-ui.svg?2r85pi#as-ui') format('svg');
+	src:url('../_fonts/as-ui.eot?-undrr5');
+	src:url('../_fonts/as-ui.eot?#iefix-undrr5') format('embedded-opentype'),
+		url('../_fonts/as-ui.woff?-undrr5') format('woff'),
+		url('../_fonts/as-ui.ttf?-undrr5') format('truetype'),
+		url('../_fontsfonts/as-ui.svg?-undrr5#as-ui') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -65,6 +65,9 @@
 }
 .as-icon-web:before {
 	content: "\43";
+}
+.as-icon-twitter:before {
+	content: "\44";
 }
 
 .mls {
@@ -236,11 +239,15 @@ body {
 -------------------------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
+	@extend .archer-bold;
 	font-weight: normal;
 	font-style: normal;
 }
 
 h1 {
+
+	font-size: 42px;
+	font-size: 4.2rem;
 
 	&.section__headline {
 		@extend .archer-med-ital;
@@ -257,11 +264,36 @@ h1 {
 		font-size: 3.0rem;
 	}
 
+	&.related-products__headline {
+		@include border-light;
+		@extend .verlag-book;
+		color: $primary-copy;
+		font-size: 16px;
+		font-size: 1.6rem;
+		padding: 0 0 15px 0;
+		text-transform: uppercase;
+	}
+
+	&.prodcut-details__product-name {
+		color: $red;
+		font-size: 30px;
+		font-size: 3.0rem;
+		margin: 0 0 30px 0;
+	}
+
 }
 
-h2 {}
+h2 {
+
+	font-size: 36px;
+	font-size: 3.6rem;
+
+}
 
 h3 {
+
+	font-size: 28px;
+	font-size: 2.8rem;
 
 	&.footer__sign-up__head {
 		@extend .archer-med-ital;
@@ -273,9 +305,17 @@ h3 {
 
 }
 
-h4 {}
+h4 {
+
+	font-size: 24px;
+	font-size: 2.4rem;
+
+}
 
 h5 {
+
+	font-size: 18px;
+	font-size: 1.8rem;
 
 	&.footer__primary__contact__head {
 		@extend .archer-bold-ital;
@@ -288,7 +328,12 @@ h5 {
 
 }
 
-h6 {}
+h6 {
+
+	font-size: 16px;
+	font-size: 1.6rem;
+
+}
 
 /*------------------------------------------------------------------
 	PARAGRAPH STYLES

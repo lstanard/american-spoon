@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------
+    PAGE: Product
+-------------------------------------------------------------------*/
+
+.product-single {
+	.main-container {
+		padding-top: $header-height-lrg + $shipping-banner-height + 4px;
+	}
+}
+
+.product-wrapper {
+	padding: 45px 0 90px 0;
+}
+
+.product-details {}
+
+/*------------------------------------------------------------------
+    PAGE: Product / Related products
+-------------------------------------------------------------------*/
+
+.related-products {
+
+	@extend .product-grid;
+
+	ul > li {
+		margin: 30px 0;
+	}
+
+}

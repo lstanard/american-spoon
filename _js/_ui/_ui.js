@@ -96,7 +96,7 @@
 							$('.shipping-banner').removeClass('hidden');
 						}
 
-					}, { offset: -300 } );
+					}, { offset: -150 } );
 				}
 
 			}

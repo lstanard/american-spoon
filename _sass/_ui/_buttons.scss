@@ -58,16 +58,63 @@ a.btn:link, a.btn:visited {
 	// Solid buttons
 
 	&.red, &.blue, &.olive-green, &.peach, &.purple, &.pumpkin, &.yellow-green {
+		border: $border-width;
+		border-style: solid;
 		color: #FFF;
 	}
 
-	&.red { background-color: $red; }
-	&.blue { background-color: $blue; }
-	&.olive-green { background-color: $olive-green; }
-	&.peach { background-color: $peach; }
-	&.purple { background-color: $purple; }
-	&.pumpkin { background-color: $pumpkin; }
-	&.yellow-green { background-color: $yellow-green; }
+	&.red {
+		border-color: $red;
+		background-color: $red;
+
+		&:hover, &:active {
+			background-color: #FFF;
+			color: $red;
+		}
+	}
+	&.blue {
+		background-color: $blue;
+		border-color: $blue;
+
+		&:hover, &:active {
+
+		}
+	}
+	&.olive-green {
+		background-color: $olive-green;
+
+		&:hover, &:active {
+
+		}
+	}
+	&.peach {
+		background-color: $peach;
+
+		&:hover, &:active {
+
+		}
+	}
+	&.purple {
+		background-color: $purple;
+
+		&:hover, &:active {
+
+		}
+	}
+	&.pumpkin {
+		background-color: $pumpkin;
+
+		&:hover, &:active {
+
+		}
+	}
+	&.yellow-green {
+		background-color: $yellow-green;
+
+		&:hover, &:active {
+
+		}
+	}
 
 	// Ghost buttons
 
