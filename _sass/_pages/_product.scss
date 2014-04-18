@@ -9,10 +9,22 @@
 }
 
 .product-wrapper {
-	padding: 45px 0 90px 0;
+	padding: 60px 0 90px 0;
 }
 
 .product-details {}
+
+.product-photos {
+
+	figure {
+		text-align: center;
+	}
+
+	figure img {
+		margin: 0 auto;
+	}
+
+}
 
 /*------------------------------------------------------------------
     PAGE: Product / Related products

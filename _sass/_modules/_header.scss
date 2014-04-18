@@ -337,9 +337,20 @@
 	}
 
 	&.hidden {
-		// @include opacity(0);
 		visibility: hidden;
 		top: 0;
+	}
+
+}
+
+.shipping-banner--red {
+
+	background-color: $red;
+	border-top: none;
+	border-bottom: none;
+
+	.as-icon-shipping, p {
+		color: #FFF;
 	}
 
 }

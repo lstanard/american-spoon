@@ -1239,6 +1239,17 @@ hr {
   top: 0;
 }
 
+/* line 346, ../_sass/_modules/_header.scss */
+.shipping-banner--red {
+  background-color: #d2232a;
+  border-top: none;
+  border-bottom: none;
+}
+/* line 352, ../_sass/_modules/_header.scss */
+.shipping-banner--red .as-icon-shipping, .shipping-banner--red p {
+  color: #FFF;
+}
+
 /*------------------------------------------------------------------
     FOOTER
 -------------------------------------------------------------------*/
@@ -1769,13 +1780,22 @@ hr {
 
 /* line 11, ../_sass/_pages/_product.scss */
 .product-wrapper {
-  padding: 45px 0 90px 0;
+  padding: 60px 0 90px 0;
+}
+
+/* line 19, ../_sass/_pages/_product.scss */
+.product-photos figure {
+  text-align: center;
+}
+/* line 23, ../_sass/_pages/_product.scss */
+.product-photos figure img {
+  margin: 0 auto;
 }
 
 /*------------------------------------------------------------------
     PAGE: Product / Related products
 -------------------------------------------------------------------*/
-/* line 25, ../_sass/_pages/_product.scss */
+/* line 37, ../_sass/_pages/_product.scss */
 .related-products ul > li {
   margin: 30px 0;
 }
