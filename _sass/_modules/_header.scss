@@ -149,7 +149,7 @@
 		text-transform: uppercase;
 	}
 
-	@include respond($med) {
+	@include respond($med, "min") {
 		float: left;
 		width: 960px / $header-container-context * 100%;
 	}
@@ -198,11 +198,11 @@
 		}
 	}
 
-	@include respond($med) {
-		margin-left: 5%; // 60/1200
+	@include respond(1300px) {
+		margin-left: 30px / $header-container-context * 100%;
 	}
-	@include respond($lrg) {
-		margin-left: 6.25%; // 75/1200
+	@include respond(1500px) {
+		margin-left: 75px / $header-container-context * 100%;
 	}
 }
 
@@ -336,6 +336,18 @@ a.primary-nav__scroll-top:visited {
 /*------------------------------------------------------------------
     SHIPPING BANNER
 -------------------------------------------------------------------*/
+
+a.shipping-banner--link:link,
+a.shipping-banner--link:visited {
+	@include transition(all $header-transition-speed);
+	@include opacity(1);
+	border: 0;
+	text-decoration: none;
+
+	&:hover, &:active {
+		@include opacity(.8);
+	}
+}
 
 .shipping-banner {
 	@include transition(all $header-transition-speed);

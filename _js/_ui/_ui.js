@@ -104,7 +104,7 @@
 							$('.shipping-banner').removeClass('hidden');
 						}
 
-					}, { offset: -75 } );
+					}, { offset: -161 } );
 				},
 
 				bindScrollToTop: function() {

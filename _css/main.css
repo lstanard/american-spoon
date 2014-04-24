@@ -1098,13 +1098,13 @@ hr {
 .primary-nav__shop li > a:visited:active {
   color: #d2232a;
 }
-@media (min-width: 40.5em) {
+@media (min-width: 1300px) {
   /* line 158, ../_sass/_modules/_header.scss */
   .primary-nav__shop {
-    margin-left: 5%;
+    margin-left: 2.5%;
   }
 }
-@media (min-width: 64em) {
+@media (min-width: 1500px) {
   /* line 158, ../_sass/_modules/_header.scss */
   .primary-nav__shop {
     margin-left: 6.25%;
@@ -1253,6 +1253,26 @@ a.primary-nav__scroll-top:visited > span {
     SHIPPING BANNER
 -------------------------------------------------------------------*/
 /* line 340, ../_sass/_modules/_header.scss */
+a.shipping-banner--link:link,
+a.shipping-banner--link:visited {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  border: 0;
+  text-decoration: none;
+}
+/* line 347, ../_sass/_modules/_header.scss */
+a.shipping-banner--link:link:hover, a.shipping-banner--link:link:active,
+a.shipping-banner--link:visited:hover,
+a.shipping-banner--link:visited:active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+
+/* line 352, ../_sass/_modules/_header.scss */
 .shipping-banner {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -1273,12 +1293,12 @@ a.primary-nav__scroll-top:visited > span {
   width: 100%;
   z-index: 1000;
 }
-/* line 357, ../_sass/_modules/_header.scss */
+/* line 369, ../_sass/_modules/_header.scss */
 .shipping-banner .container--wide {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 362, ../_sass/_modules/_header.scss */
+/* line 374, ../_sass/_modules/_header.scss */
 .shipping-banner .as-icon-shipping {
   color: #d2232a;
   display: inline-block;
@@ -1287,11 +1307,11 @@ a.primary-nav__scroll-top:visited > span {
   margin: 0 30px;
   vertical-align: middle;
 }
-/* line 371, ../_sass/_modules/_header.scss */
+/* line 383, ../_sass/_modules/_header.scss */
 .shipping-banner .divider {
   margin: 0 15px;
 }
-/* line 376, ../_sass/_modules/_header.scss */
+/* line 388, ../_sass/_modules/_header.scss */
 .shipping-banner p {
   color: #d2232a;
   display: inline-block;
@@ -1301,24 +1321,24 @@ a.primary-nav__scroll-top:visited > span {
   margin: 0;
   vertical-align: middle;
 }
-/* line 389, ../_sass/_modules/_header.scss */
+/* line 401, ../_sass/_modules/_header.scss */
 .shipping-banner p.shipping-banner__msg02 {
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
-/* line 396, ../_sass/_modules/_header.scss */
+/* line 408, ../_sass/_modules/_header.scss */
 .shipping-banner.hidden {
   visibility: hidden;
   top: 0;
 }
 
-/* line 403, ../_sass/_modules/_header.scss */
+/* line 415, ../_sass/_modules/_header.scss */
 .shipping-banner--red {
   background-color: #d2232a;
   border-top: none;
   border-bottom: none;
 }
-/* line 409, ../_sass/_modules/_header.scss */
+/* line 421, ../_sass/_modules/_header.scss */
 .shipping-banner--red .as-icon-shipping, .shipping-banner--red p {
   color: #FFF;
 }
@@ -1331,6 +1351,7 @@ a.primary-nav__scroll-top:visited > span {
 -------------------------------------------------------------------*/
 /* line 11, ../_sass/_modules/_footer.scss */
 .footer__sign-up {
+  background-image: url("../_img/as_newsletter_background.png");
   background-color: #e7e7e7;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1338,21 +1359,21 @@ a.primary-nav__scroll-top:visited > span {
   text-align: center;
 }
 
-/* line 19, ../_sass/_modules/_footer.scss */
+/* line 20, ../_sass/_modules/_footer.scss */
 .footer__sign-up__form {
   margin: 0 auto;
   width: auto;
 }
 
 @media (min-width: 40.5em) {
-  /* line 25, ../_sass/_modules/_footer.scss */
+  /* line 26, ../_sass/_modules/_footer.scss */
   .footer__sign-up__input {
     float: left;
   }
 }
 
 @media (min-width: 40.5em) {
-  /* line 31, ../_sass/_modules/_footer.scss */
+  /* line 32, ../_sass/_modules/_footer.scss */
   .footer__sign-up__btn {
     float: right;
   }
@@ -1369,7 +1390,7 @@ a.primary-nav__scroll-top:visited > span {
 	Column 4: 584px (584/1573 = 37.126509854%)
 
 -------------------------------------------------------------------*/
-/* line 49, ../_sass/_modules/_footer.scss */
+/* line 50, ../_sass/_modules/_footer.scss */
 .footer__primary {
   background-color: #FFF;
   height: auto;
@@ -1378,58 +1399,58 @@ a.primary-nav__scroll-top:visited > span {
   padding-top: 55px;
 }
 @media (min-width: 40.5em) {
-  /* line 56, ../_sass/_modules/_footer.scss */
+  /* line 57, ../_sass/_modules/_footer.scss */
   .footer__primary .col-1-2 {
     float: none;
     width: 100%;
   }
 }
 @media (min-width: 64em) {
-  /* line 56, ../_sass/_modules/_footer.scss */
+  /* line 57, ../_sass/_modules/_footer.scss */
   .footer__primary .col-1-2 {
     float: left;
     width: 50%;
   }
 }
 
-/* line 77, ../_sass/_modules/_footer.scss */
+/* line 78, ../_sass/_modules/_footer.scss */
 .footer__primary__logo {
   max-width: 160px;
   width: 100%;
 }
 
-/* line 84, ../_sass/_modules/_footer.scss */
+/* line 85, ../_sass/_modules/_footer.scss */
 .footer__primary__contact p {
   color: #262626;
   line-height: 3.2rem;
 }
-/* line 89, ../_sass/_modules/_footer.scss */
+/* line 90, ../_sass/_modules/_footer.scss */
 .footer__primary__contact a:link, .footer__primary__contact a:visited {
   color: #262626;
   text-decoration: none;
 }
 @media (min-width: 40.5em) {
-  /* line 82, ../_sass/_modules/_footer.scss */
+  /* line 83, ../_sass/_modules/_footer.scss */
   .footer__primary__contact {
     padding-top: 30px;
   }
 }
 
-/* line 101, ../_sass/_modules/_footer.scss */
+/* line 102, ../_sass/_modules/_footer.scss */
 .footer__primary__nav {
   border-left: 2px solid #e7e7e7;
   padding-left: 45px;
 }
-/* line 105, ../_sass/_modules/_footer.scss */
+/* line 106, ../_sass/_modules/_footer.scss */
 .footer__primary__nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 110, ../_sass/_modules/_footer.scss */
+/* line 111, ../_sass/_modules/_footer.scss */
 .footer__primary__nav ul li {
   margin: 10px 0;
 }
-/* line 114, ../_sass/_modules/_footer.scss */
+/* line 115, ../_sass/_modules/_footer.scss */
 .footer__primary__nav ul li a:link,
 .footer__primary__nav ul li a:visited {
   color: #939598;
@@ -1438,31 +1459,31 @@ a.primary-nav__scroll-top:visited > span {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 123, ../_sass/_modules/_footer.scss */
+/* line 124, ../_sass/_modules/_footer.scss */
 .footer__primary__nav ul li a:link:hover, .footer__primary__nav ul li a:link:active,
 .footer__primary__nav ul li a:visited:hover,
 .footer__primary__nav ul li a:visited:active {
   color: #d2232a;
 }
 
-/* line 131, ../_sass/_modules/_footer.scss */
+/* line 132, ../_sass/_modules/_footer.scss */
 .footer__primary__social {
   float: right;
   overflow: hidden;
   max-width: 486px;
   width: 100%;
 }
-/* line 137, ../_sass/_modules/_footer.scss */
+/* line 138, ../_sass/_modules/_footer.scss */
 .footer__primary__social li {
   border: 1px solid #e7e7e7;
   border-right: none;
   max-width: 160px;
 }
-/* line 142, ../_sass/_modules/_footer.scss */
+/* line 143, ../_sass/_modules/_footer.scss */
 .footer__primary__social li:last-child {
   border-right: 1px solid #e7e7e7;
 }
-/* line 147, ../_sass/_modules/_footer.scss */
+/* line 148, ../_sass/_modules/_footer.scss */
 .footer__primary__social li a:link,
 .footer__primary__social li a:visited {
   -moz-transition: all 0.25s;
@@ -1478,32 +1499,32 @@ a.primary-nav__scroll-top:visited > span {
   text-decoration: none;
   vertical-align: middle;
 }
-/* line 160, ../_sass/_modules/_footer.scss */
+/* line 161, ../_sass/_modules/_footer.scss */
 .footer__primary__social li a:link span,
 .footer__primary__social li a:visited span {
   display: block;
   padding: 60px 0 0 0;
 }
-/* line 165, ../_sass/_modules/_footer.scss */
+/* line 166, ../_sass/_modules/_footer.scss */
 .footer__primary__social li a:link:hover, .footer__primary__social li a:link:active,
 .footer__primary__social li a:visited:hover,
 .footer__primary__social li a:visited:active {
   color: #FFF;
 }
-/* line 172, ../_sass/_modules/_footer.scss */
+/* line 173, ../_sass/_modules/_footer.scss */
 .footer__primary__social li.social-icon__pinterest a:hover, .footer__primary__social li.social-icon__pinterest a:active {
   background-color: #d2232a;
 }
-/* line 176, ../_sass/_modules/_footer.scss */
+/* line 177, ../_sass/_modules/_footer.scss */
 .footer__primary__social li.social-icon__facebook a:hover, .footer__primary__social li.social-icon__facebook a:active {
   background-color: #3b5999;
 }
-/* line 180, ../_sass/_modules/_footer.scss */
+/* line 181, ../_sass/_modules/_footer.scss */
 .footer__primary__social li.social-icon__instagram a:hover, .footer__primary__social li.social-icon__instagram a:active {
   background-color: #306299;
 }
 @media (min-width: 40.5em) {
-  /* line 185, ../_sass/_modules/_footer.scss */
+  /* line 186, ../_sass/_modules/_footer.scss */
   .footer__primary__social li {
     float: left;
     width: 33.333333333%;
@@ -1513,7 +1534,7 @@ a.primary-nav__scroll-top:visited > span {
 /*------------------------------------------------------------------
     FOOTER: Secondary
 -------------------------------------------------------------------*/
-/* line 197, ../_sass/_modules/_footer.scss */
+/* line 198, ../_sass/_modules/_footer.scss */
 .footer__secondary {
   background-color: #d2232a;
   min-height: 75px;
@@ -1521,7 +1542,7 @@ a.primary-nav__scroll-top:visited > span {
   padding-bottom: 25px;
 }
 
-/* line 204, ../_sass/_modules/_footer.scss */
+/* line 205, ../_sass/_modules/_footer.scss */
 .footer__secondary__copyright {
   color: #FFF;
   margin: 0 0 25px 0;
@@ -1529,30 +1550,30 @@ a.primary-nav__scroll-top:visited > span {
   width: auto;
 }
 @media (min-width: 40.5em) {
-  /* line 204, ../_sass/_modules/_footer.scss */
+  /* line 205, ../_sass/_modules/_footer.scss */
   .footer__secondary__copyright {
     float: left;
     text-align: left;
   }
 }
 
-/* line 216, ../_sass/_modules/_footer.scss */
+/* line 217, ../_sass/_modules/_footer.scss */
 .footer__secondary__nav {
   width: auto;
 }
-/* line 219, ../_sass/_modules/_footer.scss */
+/* line 220, ../_sass/_modules/_footer.scss */
 .footer__secondary__nav ul {
   overflow: hidden;
   width: auto;
 }
-/* line 224, ../_sass/_modules/_footer.scss */
+/* line 225, ../_sass/_modules/_footer.scss */
 .footer__secondary__nav ul > li {
   display: block;
   float: left;
   text-align: center;
   width: 33.333333333%;
 }
-/* line 233, ../_sass/_modules/_footer.scss */
+/* line 234, ../_sass/_modules/_footer.scss */
 .footer__secondary__nav ul > li > a:link, .footer__secondary__nav ul > li > a:visited {
   color: #FFF;
   font-size: 20px;
@@ -1562,11 +1583,11 @@ a.primary-nav__scroll-top:visited > span {
   text-decoration: none;
 }
 @media (min-width: 40.5em) {
-  /* line 216, ../_sass/_modules/_footer.scss */
+  /* line 217, ../_sass/_modules/_footer.scss */
   .footer__secondary__nav {
     float: right;
   }
-  /* line 248, ../_sass/_modules/_footer.scss */
+  /* line 249, ../_sass/_modules/_footer.scss */
   .footer__secondary__nav ul > li {
     margin: 0 0 0 30px;
     width: initial;
@@ -1708,37 +1729,30 @@ a.primary-nav__scroll-top:visited > span {
 -------------------------------------------------------------------*/
 /* line 5, ../_sass/_pages/_home.scss */
 .home-mantle {
-  background-color: #e7e7e7;
   height: auto;
+  padding-top: 215px;
 }
 /* line 9, ../_sass/_pages/_home.scss */
 .home-mantle img {
-  height: 100%;
   width: 100%;
-}
-@media (min-width: 64em) {
-  /* line 5, ../_sass/_pages/_home.scss */
-  .home-mantle {
-    height: 650px;
-  }
 }
 
 /*------------------------------------------------------------------
     PAGE: Home / Featured Products
 -------------------------------------------------------------------*/
 @media (min-width: 40.5em) {
-  /* line 23, ../_sass/_pages/_home.scss */
+  /* line 18, ../_sass/_pages/_home.scss */
   .featured-products {
-    padding: 8.333333333% 0;
+    padding: 4.333333333% 0 0 0;
   }
 }
 
-/* line 29, ../_sass/_pages/_home.scss */
+/* line 24, ../_sass/_pages/_home.scss */
 .featured-products__header {
   border-bottom: 2px solid #e7e7e7;
   padding: 0 30px 25px 30px;
 }
-/* line 34, ../_sass/_pages/_home.scss */
+/* line 29, ../_sass/_pages/_home.scss */
 .featured-products__header a.featured-products__shop-link:link,
 .featured-products__header a.featured-products__shop-link:visited {
   color: #939598;
@@ -1749,41 +1763,41 @@ a.primary-nav__scroll-top:visited > span {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 45, ../_sass/_pages/_home.scss */
+/* line 40, ../_sass/_pages/_home.scss */
 .featured-products__header a.featured-products__shop-link:link:hover, .featured-products__header a.featured-products__shop-link:link:active,
 .featured-products__header a.featured-products__shop-link:visited:hover,
 .featured-products__header a.featured-products__shop-link:visited:active {
   color: #d2232a;
 }
 @media (min-width: 40.5em) {
-  /* line 52, ../_sass/_pages/_home.scss */
+  /* line 47, ../_sass/_pages/_home.scss */
   .featured-products__header h1 {
     float: left;
   }
-  /* line 55, ../_sass/_pages/_home.scss */
+  /* line 50, ../_sass/_pages/_home.scss */
   .featured-products__header a:link, .featured-products__header a:visited {
     float: right;
   }
 }
 
-/* line 66, ../_sass/_pages/_home.scss */
+/* line 61, ../_sass/_pages/_home.scss */
 .featured-products__grid ul {
-  padding-top: 60px;
+  padding-top: 30px;
 }
-/* line 70, ../_sass/_pages/_home.scss */
+/* line 65, ../_sass/_pages/_home.scss */
 .featured-products__grid ul > li {
-  margin: 75px 0;
+  margin: 30px 0 15px 0;
 }
 
 /*------------------------------------------------------------------
     PAGE: Home / Featured Recipes
 -------------------------------------------------------------------*/
-/* line 80, ../_sass/_pages/_home.scss */
+/* line 75, ../_sass/_pages/_home.scss */
 .featured-recipes {
   background-color: #f4f8f6;
 }
 
-/* line 86, ../_sass/_pages/_home.scss */
+/* line 81, ../_sass/_pages/_home.scss */
 .featured-recipes__header .featured-recipes__rule {
   background: url("../_img/as_icon_FPO_fork-knife.jpg") no-repeat 50% 50% transparent;
   border: none;
@@ -1792,7 +1806,7 @@ a.primary-nav__scroll-top:visited > span {
   position: relative;
   width: 100%;
 }
-/* line 94, ../_sass/_pages/_home.scss */
+/* line 89, ../_sass/_pages/_home.scss */
 .featured-recipes__header .featured-recipes__rule:before, .featured-recipes__header .featured-recipes__rule:after {
   border-bottom: 2px solid #d0d4d7;
   content: "";
@@ -1801,21 +1815,21 @@ a.primary-nav__scroll-top:visited > span {
   top: 50%;
   width: 45%;
 }
-/* line 102, ../_sass/_pages/_home.scss */
+/* line 97, ../_sass/_pages/_home.scss */
 .featured-recipes__header .featured-recipes__rule:before {
   left: 0;
 }
-/* line 105, ../_sass/_pages/_home.scss */
+/* line 100, ../_sass/_pages/_home.scss */
 .featured-recipes__header .featured-recipes__rule:after {
   right: 0;
 }
-/* line 110, ../_sass/_pages/_home.scss */
+/* line 105, ../_sass/_pages/_home.scss */
 .featured-recipes__header a.btn:link, .featured-recipes__header a.btn:visited {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
 }
-/* line 116, ../_sass/_pages/_home.scss */
+/* line 111, ../_sass/_pages/_home.scss */
 .featured-recipes__header h1 {
   color: #5c8727;
   font-size: 30px;
@@ -1826,19 +1840,19 @@ a.primary-nav__scroll-top:visited > span {
   margin: 0 0 60px 0;
 }
 
-/* line 128, ../_sass/_pages/_home.scss */
+/* line 123, ../_sass/_pages/_home.scss */
 .featured-recipes__grid {
   margin: 60px 0 0 0;
 }
-/* line 132, ../_sass/_pages/_home.scss */
+/* line 127, ../_sass/_pages/_home.scss */
 .featured-recipes__grid ul {
   overflow: hidden;
 }
-/* line 136, ../_sass/_pages/_home.scss */
+/* line 131, ../_sass/_pages/_home.scss */
 .featured-recipes__grid ul > li {
   margin-bottom: 20px;
 }
-/* line 140, ../_sass/_pages/_home.scss */
+/* line 135, ../_sass/_pages/_home.scss */
 .featured-recipes__grid img {
   width: 100%;
 }

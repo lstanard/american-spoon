@@ -11,13 +11,13 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_img\/as_home_mantle_FPO_photo01.jpg": {
-		"fileType": 16384,
+	"\/_img\/as_home_mantle_FPO_photo01.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 640559,
-		"inputAbbreviatedPath": "\/_img\/as_home_mantle_FPO_photo01.jpg",
-		"outputAbbreviatedPath": "\/_img\/as_home_mantle_FPO_photo01.jpg",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_img\/as_home_mantle_FPO_photo01.png",
+		"outputAbbreviatedPath": "\/_img\/as_home_mantle_FPO_photo01.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -128,6 +128,17 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/_img\/as_product_290x300.png",
 		"outputAbbreviatedPath": "\/_img\/as_product_290x300.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/newsletter_background.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_img\/newsletter_background.png",
+		"outputAbbreviatedPath": "\/_img\/newsletter_background.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
