@@ -30,7 +30,7 @@
 
 	@include respond($med) {
 		float: left; // 190/1200
-		width: 15.833333333%;
+		width: 190 / 1200 * 100%;
 	}
 }
 

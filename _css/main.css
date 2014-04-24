@@ -621,14 +621,14 @@ body, html {
 @media (min-width: 40.5em) {
   /* line 32, ../_sass/_global/_columns.scss */
   .col-2-3 {
-    width: 66.66%;
+    width: 66.66667%;
   }
 }
 
 @media (min-width: 40.5em) {
   /* line 39, ../_sass/_global/_columns.scss */
   .col-1-3 {
-    width: 33.33%;
+    width: 33.33333%;
   }
 }
 
@@ -1262,9 +1262,13 @@ a.shipping-banner--link:visited {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
   border: 0;
+  display: block;
+  position: relative;
   text-decoration: none;
+  width: 100%;
+  z-index: 1000;
 }
-/* line 347, ../_sass/_modules/_header.scss */
+/* line 351, ../_sass/_modules/_header.scss */
 a.shipping-banner--link:link:hover, a.shipping-banner--link:link:active,
 a.shipping-banner--link:visited:hover,
 a.shipping-banner--link:visited:active {
@@ -1272,7 +1276,7 @@ a.shipping-banner--link:visited:active {
   opacity: 0.8;
 }
 
-/* line 352, ../_sass/_modules/_header.scss */
+/* line 356, ../_sass/_modules/_header.scss */
 .shipping-banner {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -1293,12 +1297,12 @@ a.shipping-banner--link:visited:active {
   width: 100%;
   z-index: 1000;
 }
-/* line 369, ../_sass/_modules/_header.scss */
+/* line 373, ../_sass/_modules/_header.scss */
 .shipping-banner .container--wide {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 374, ../_sass/_modules/_header.scss */
+/* line 378, ../_sass/_modules/_header.scss */
 .shipping-banner .as-icon-shipping {
   color: #d2232a;
   display: inline-block;
@@ -1307,11 +1311,11 @@ a.shipping-banner--link:visited:active {
   margin: 0 30px;
   vertical-align: middle;
 }
-/* line 383, ../_sass/_modules/_header.scss */
+/* line 387, ../_sass/_modules/_header.scss */
 .shipping-banner .divider {
   margin: 0 15px;
 }
-/* line 388, ../_sass/_modules/_header.scss */
+/* line 392, ../_sass/_modules/_header.scss */
 .shipping-banner p {
   color: #d2232a;
   display: inline-block;
@@ -1321,24 +1325,24 @@ a.shipping-banner--link:visited:active {
   margin: 0;
   vertical-align: middle;
 }
-/* line 401, ../_sass/_modules/_header.scss */
+/* line 405, ../_sass/_modules/_header.scss */
 .shipping-banner p.shipping-banner__msg02 {
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
-/* line 408, ../_sass/_modules/_header.scss */
+/* line 412, ../_sass/_modules/_header.scss */
 .shipping-banner.hidden {
   visibility: hidden;
   top: 0;
 }
 
-/* line 415, ../_sass/_modules/_header.scss */
+/* line 419, ../_sass/_modules/_header.scss */
 .shipping-banner--red {
   background-color: #d2232a;
   border-top: none;
   border-bottom: none;
 }
-/* line 421, ../_sass/_modules/_header.scss */
+/* line 425, ../_sass/_modules/_header.scss */
 .shipping-banner--red .as-icon-shipping, .shipping-banner--red p {
   color: #FFF;
 }
@@ -1527,7 +1531,7 @@ a.shipping-banner--link:visited:active {
   /* line 186, ../_sass/_modules/_footer.scss */
   .footer__primary__social li {
     float: left;
-    width: 33.333333333%;
+    width: 33.33333%;
   }
 }
 
@@ -1571,7 +1575,7 @@ a.shipping-banner--link:visited:active {
   display: block;
   float: left;
   text-align: center;
-  width: 33.333333333%;
+  width: 33.33333%;
 }
 /* line 234, ../_sass/_modules/_footer.scss */
 .footer__secondary__nav ul > li > a:link, .footer__secondary__nav ul > li > a:visited {
