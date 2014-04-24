@@ -27,15 +27,12 @@
 
 		.header__primary__logo {
 			img.header__primary__logo-sm {
-				@include opacity(.4);
-				// margin: 14px 0 0 0;
-				margin: 0;
-				width: 100%;
+				@include opacity(1);
+				visibility: visible;
 			}
 			img.header__primary__logo-lrg {
-				margin: 0;
-				width: 0;
-				visibility: hidden;
+				@include opacity(0);
+				top: -$header-height-lrg;
 			}
 		}
 
@@ -47,8 +44,23 @@
 			margin-left: 0px;
 		}
 
+		.primary-nav__shop {
+			margin-top: 5px;
+
+			li {
+				padding-top: 6px;
+			}
+		}
+
 		.primary-nav__explore {
 			height: 30px;
+			margin-top: 5px;
+			padding-left: 25px;
+
+			li {
+				padding-top: 6px;
+				margin: 0 25px;
+			}
 		}
 
 		.primary-nav__utility {
@@ -75,6 +87,15 @@
 				}
 			}
 		}
+
+		a.primary-nav__scroll-top:link,
+		a.primary-nav__scroll-top:visited {
+			@include opacity(1);
+			margin-top: 0;
+			top: 0;
+			visibility: visible;
+		}
+
 	}
 
 	@include respond($lrg) {
@@ -86,21 +107,24 @@
 
 	img.header__primary__logo-sm {
 		@include transition(all $header-transition-speed);
-		margin-left: (188px/2px);
+		@include opacity(0);
+		margin: 14px 0 0 0;
 		max-width: 188px;
-		width: 0;
+		visibility: hidden;
 	}
 	img.header__primary__logo-lrg {
 		@include transition(all $header-transition-speed);
+		@include opacity(1);
 		margin: 6px 0 0 0;
 		max-width: 155px;
+		position: absolute;
+		top: 0;
 		width: 100%;
-		visibility: visible;
 	}
 
 	@include respond($med) {
 		float: left;
-		width: 13.333333333%; // 160/1200
+		width: 160px / $header-container-context * 100%;
 	}
 
 }
@@ -127,7 +151,7 @@
 
 	@include respond($med) {
 		float: left;
-		width: 86.666666667%; // 1040/1200
+		width: 960px / $header-container-context * 100%;
 	}
 }
 
@@ -273,6 +297,39 @@
 		&:after {
 			content: "Cart";
 		}
+	}
+}
+
+/*------------------------------------------------------------------
+    SCROLL TO TOP LINK
+-------------------------------------------------------------------*/
+
+a.primary-nav__scroll-top:link,
+a.primary-nav__scroll-top:visited {
+	@include opacity(0);
+	@include transition(all $header-transition-speed / 2);
+
+	background-color: $red;
+	color: #FFF;
+	float: right;
+	font-size: 24px;
+	font-size: 2.4rem;
+	height: $header-height-sm;
+	max-width: 80px;
+	margin-top: -$header-height-sm / 2;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	top: 50%;
+	visibility: hidden;
+
+	& > span {
+		display: block;
+		margin-top: 14px;
+	}
+
+	@include respond($med) {
+		width: 80px / $header-container-context * 100%;
 	}
 }
 

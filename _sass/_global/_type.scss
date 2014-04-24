@@ -4,11 +4,11 @@
 
 @font-face {
 	font-family: 'as-ui';
-	src:url('../_fonts/as-ui.eot?-undrr5');
-	src:url('../_fonts/as-ui.eot?#iefix-undrr5') format('embedded-opentype'),
-		url('../_fonts/as-ui.woff?-undrr5') format('woff'),
-		url('../_fonts/as-ui.ttf?-undrr5') format('truetype'),
-		url('../_fontsfonts/as-ui.svg?-undrr5#as-ui') format('svg');
+	src:url('../_fonts/as-ui.eot?4w5hi7');
+	src:url('../_fonts/as-ui.eot?#iefix4w5hi7') format('embedded-opentype'),
+		url('../_fonts/as-ui.woff?4w5hi7') format('woff'),
+		url('../_fonts/as-ui.ttf?4w5hi7') format('truetype'),
+		url('../_fonts/as-ui.svg?4w5hi7#as-ui') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -68,6 +68,9 @@
 }
 .as-icon-twitter:before {
 	content: "\44";
+}
+.as-icon-up:before {
+	content: "\45";
 }
 
 .mls {

@@ -141,8 +141,8 @@ a:hover, a:active {
 -------------------------------------------------------------------*/
 @font-face {
   font-family: 'as-ui';
-  src: url("../_fonts/as-ui.eot?-undrr5");
-  src: url("../_fonts/as-ui.eot?#iefix-undrr5") format("embedded-opentype"), url("../_fonts/as-ui.woff?-undrr5") format("woff"), url("../_fonts/as-ui.ttf?-undrr5") format("truetype"), url("../_fontsfonts/as-ui.svg?-undrr5#as-ui") format("svg");
+  src: url("../_fonts/as-ui.eot?4w5hi7");
+  src: url("../_fonts/as-ui.eot?#iefix4w5hi7") format("embedded-opentype"), url("../_fonts/as-ui.woff?4w5hi7") format("woff"), url("../_fonts/as-ui.ttf?4w5hi7") format("truetype"), url("../_fonts/as-ui.svg?4w5hi7#as-ui") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -230,6 +230,11 @@ a:hover, a:active {
   content: "\44";
 }
 
+/* line 72, ../_sass/_global/_type.scss */
+.as-icon-up:before {
+  content: "\45";
+}
+
 /*------------------------------------------------------------------
 	@FONT FACE DECLARATIONS
 -------------------------------------------------------------------*/
@@ -283,56 +288,56 @@ a:hover, a:active {
   src: url("../_fonts/archer-boldital-pro.eot");
   src: url("../_fonts/archer-boldital-pro.eot") format("embedded-opentype"), url("../_fonts/archer-boldital-pro.woff") format("woff"), url("../_fonts/archer-boldital-pro.ttf") format("truetype"), url("../_fonts/archer-boldital-pro.svg#ArcherBoldItalic") format("svg");
 }
-/* line 171, ../_sass/_global/_type.scss */
+/* line 174, ../_sass/_global/_type.scss */
 .archer-light-ital {
   font-family: "ArcherLightItalic", serif;
   font-weight: normal;
 }
 
-/* line 176, ../_sass/_global/_type.scss */
+/* line 179, ../_sass/_global/_type.scss */
 .archer-med, .form__input__text, .footer__primary__contact p, .footer__primary__contact a:link, .footer__primary__contact a:visited, .product-grid .featured-product__price, .featured-products__grid .featured-product__price, .related-products .featured-product__price {
   font-family: "ArcherMedium", serif;
   font-weight: normal;
 }
 
-/* line 181, ../_sass/_global/_type.scss */
+/* line 184, ../_sass/_global/_type.scss */
 .archer-med-ital, h1.section__headline, h1.featured-products__headline, h3.footer__sign-up__head, .featured-recipes__header h1 {
   font-family: "ArcherMediumItalic", serif;
   font-weight: normal;
 }
 
-/* line 186, ../_sass/_global/_type.scss */
+/* line 189, ../_sass/_global/_type.scss */
 .archer-bold-ital, h5.footer__primary__contact__head, .shipping-banner p.shipping-banner__msg01, .shipping-banner p.shipping-banner__msg03 {
   font-family: "ArcherBoldItalic", serif;
   font-weight: normal;
 }
 
-/* line 191, ../_sass/_global/_type.scss */
+/* line 194, ../_sass/_global/_type.scss */
 .archer-bold, h1, h2, h3, h4, h5, h6, .shipping-banner .divider, .shipping-banner p.shipping-banner__msg02 {
   font-family: "ArcherBold", serif;
   font-weight: normal;
 }
 
-/* line 196, ../_sass/_global/_type.scss */
+/* line 199, ../_sass/_global/_type.scss */
 .archer-book, p, .footer__secondary__nav ul > li > a:link, .footer__secondary__nav ul > li > a:visited {
   font-family: "ArcherBook", serif;
   font-weight: normal;
 }
 
-/* line 201, ../_sass/_global/_type.scss */
+/* line 204, ../_sass/_global/_type.scss */
 .verlag-book, h1.related-products__headline, .primary-nav__shop li > a:link,
 .primary-nav__shop li > a:visited {
   font-family: "VerlagBook", sans-serif;
   font-weight: normal;
 }
 
-/* line 206, ../_sass/_global/_type.scss */
+/* line 209, ../_sass/_global/_type.scss */
 .verlag-light-ital {
   font-family: "VerlagLightItalic", sans-serif;
   font-weight: normal;
 }
 
-/* line 211, ../_sass/_global/_type.scss */
+/* line 214, ../_sass/_global/_type.scss */
 .verlag-bold, .primary-nav__shop li.primary-nav__shop__lead > a:link,
 .primary-nav__shop li.primary-nav__shop__lead > a:visited, .primary-nav__explore li > a:link,
 .primary-nav__explore li > a:visited, .primary-nav__utility .utility--search:after,
@@ -342,7 +347,7 @@ a:hover, a:active {
   font-weight: normal;
 }
 
-/* line 216, ../_sass/_global/_type.scss */
+/* line 219, ../_sass/_global/_type.scss */
 .verlag-black, p.call-out, a.btn:link, a.btn:visited, .footer__primary__nav ul li a:link,
 .footer__primary__nav ul li a:visited, .product-grid .featured-product__add-to-cart, .featured-products__grid .featured-product__add-to-cart, .related-products .featured-product__add-to-cart, .product-grid .featured-product__name, .featured-products__grid .featured-product__name, .related-products .featured-product__name, .featured-products__header a.featured-products__shop-link:link,
 .featured-products__header a.featured-products__shop-link:visited {
@@ -353,13 +358,13 @@ a:hover, a:active {
 /*------------------------------------------------------------------
 	TYPE
 -------------------------------------------------------------------*/
-/* line 225, ../_sass/_global/_type.scss */
+/* line 228, ../_sass/_global/_type.scss */
 html {
   font: normal 62.5% "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif;
   line-height: 100%;
 }
 
-/* line 230, ../_sass/_global/_type.scss */
+/* line 233, ../_sass/_global/_type.scss */
 body {
   font-size: 14px;
   line-height: 22px;
@@ -370,31 +375,31 @@ body {
 /*------------------------------------------------------------------
 	HEADLINES
 -------------------------------------------------------------------*/
-/* line 241, ../_sass/_global/_type.scss */
+/* line 244, ../_sass/_global/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 247, ../_sass/_global/_type.scss */
+/* line 250, ../_sass/_global/_type.scss */
 h1 {
   font-size: 42px;
   font-size: 4.2rem;
 }
-/* line 252, ../_sass/_global/_type.scss */
+/* line 255, ../_sass/_global/_type.scss */
 h1.section__headline {
   color: #939598;
   font-size: 28px;
   font-size: 2.8rem;
   margin: 0 0 60px 0;
 }
-/* line 260, ../_sass/_global/_type.scss */
+/* line 263, ../_sass/_global/_type.scss */
 h1.featured-products__headline {
   color: #939598;
   font-size: 30px;
   font-size: 3.0rem;
 }
-/* line 267, ../_sass/_global/_type.scss */
+/* line 270, ../_sass/_global/_type.scss */
 h1.related-products__headline {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   color: #939598;
@@ -403,7 +408,7 @@ h1.related-products__headline {
   padding: 0 0 15px 0;
   text-transform: uppercase;
 }
-/* line 277, ../_sass/_global/_type.scss */
+/* line 280, ../_sass/_global/_type.scss */
 h1.prodcut-details__product-name {
   color: #d2232a;
   font-size: 30px;
@@ -411,18 +416,18 @@ h1.prodcut-details__product-name {
   margin: 0 0 30px 0;
 }
 
-/* line 286, ../_sass/_global/_type.scss */
+/* line 289, ../_sass/_global/_type.scss */
 h2 {
   font-size: 36px;
   font-size: 3.6rem;
 }
 
-/* line 293, ../_sass/_global/_type.scss */
+/* line 296, ../_sass/_global/_type.scss */
 h3 {
   font-size: 28px;
   font-size: 2.8rem;
 }
-/* line 298, ../_sass/_global/_type.scss */
+/* line 301, ../_sass/_global/_type.scss */
 h3.footer__sign-up__head {
   color: #d2232a;
   font-size: 4.2rem;
@@ -430,18 +435,18 @@ h3.footer__sign-up__head {
   margin: 0 0 70px 0;
 }
 
-/* line 308, ../_sass/_global/_type.scss */
+/* line 311, ../_sass/_global/_type.scss */
 h4 {
   font-size: 24px;
   font-size: 2.4rem;
 }
 
-/* line 315, ../_sass/_global/_type.scss */
+/* line 318, ../_sass/_global/_type.scss */
 h5 {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 320, ../_sass/_global/_type.scss */
+/* line 323, ../_sass/_global/_type.scss */
 h5.footer__primary__contact__head {
   color: #d2232a;
   font-size: 24px;
@@ -450,7 +455,7 @@ h5.footer__primary__contact__head {
   line-height: 3.0rem;
 }
 
-/* line 331, ../_sass/_global/_type.scss */
+/* line 334, ../_sass/_global/_type.scss */
 h6 {
   font-size: 16px;
   font-size: 1.6rem;
@@ -459,7 +464,7 @@ h6 {
 /*------------------------------------------------------------------
 	PARAGRAPH STYLES
 -------------------------------------------------------------------*/
-/* line 342, ../_sass/_global/_type.scss */
+/* line 345, ../_sass/_global/_type.scss */
 p {
   color: #939598;
   font-size: 20px;
@@ -467,7 +472,7 @@ p {
   line-height: 25px;
   line-height: 2.5rem;
 }
-/* line 350, ../_sass/_global/_type.scss */
+/* line 353, ../_sass/_global/_type.scss */
 p.featured-recipes__lead-copy {
   font-size: 22px;
   font-size: 2.2rem;
@@ -475,12 +480,12 @@ p.featured-recipes__lead-copy {
   line-height: 3.4rem;
 }
 
-/* line 358, ../_sass/_global/_type.scss */
+/* line 361, ../_sass/_global/_type.scss */
 p {
   margin: 0 0 30px 0;
 }
 
-/* line 362, ../_sass/_global/_type.scss */
+/* line 365, ../_sass/_global/_type.scss */
 p.call-out {
   font-size: 12px;
   font-size: 1.2rem;
@@ -899,35 +904,49 @@ hr {
 }
 /* line 29, ../_sass/_modules/_header.scss */
 .header-container.header--condensed .header__primary__logo img.header__primary__logo-sm {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  opacity: 0.4;
-  margin: 0;
-  width: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  visibility: visible;
 }
-/* line 35, ../_sass/_modules/_header.scss */
+/* line 33, ../_sass/_modules/_header.scss */
 .header-container.header--condensed .header__primary__logo img.header__primary__logo-lrg {
-  margin: 0;
-  width: 0;
-  visibility: hidden;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  top: -170px;
 }
-/* line 42, ../_sass/_modules/_header.scss */
+/* line 39, ../_sass/_modules/_header.scss */
 .header-container.header--condensed .header__primary-nav {
   padding-top: 8px;
 }
-/* line 46, ../_sass/_modules/_header.scss */
+/* line 43, ../_sass/_modules/_header.scss */
 .header-container.header--condensed .header__primary-nav ul > li {
   margin-left: 0px;
 }
+/* line 47, ../_sass/_modules/_header.scss */
+.header-container.header--condensed .primary-nav__shop {
+  margin-top: 5px;
+}
 /* line 50, ../_sass/_modules/_header.scss */
+.header-container.header--condensed .primary-nav__shop li {
+  padding-top: 6px;
+}
+/* line 55, ../_sass/_modules/_header.scss */
 .header-container.header--condensed .primary-nav__explore {
   height: 30px;
+  margin-top: 5px;
+  padding-left: 25px;
 }
-/* line 56, ../_sass/_modules/_header.scss */
+/* line 60, ../_sass/_modules/_header.scss */
+.header-container.header--condensed .primary-nav__explore li {
+  padding-top: 6px;
+  margin: 0 25px;
+}
+/* line 68, ../_sass/_modules/_header.scss */
 .header-container.header--condensed .primary-nav__utility li > a:link,
 .header-container.header--condensed .primary-nav__utility li > a:visited {
   color: #939598;
 }
-/* line 65, ../_sass/_modules/_header.scss */
+/* line 77, ../_sass/_modules/_header.scss */
 .header-container.header--condensed .primary-nav__utility .utility--search:hover, .header-container.header--condensed .primary-nav__utility .utility--search:active,
 .header-container.header--condensed .primary-nav__utility .utility--account:hover,
 .header-container.header--condensed .primary-nav__utility .utility--account:active,
@@ -935,7 +954,7 @@ hr {
 .header-container.header--condensed .primary-nav__utility .utility--cart:active {
   color: #d2232a;
 }
-/* line 70, ../_sass/_modules/_header.scss */
+/* line 82, ../_sass/_modules/_header.scss */
 .header-container.header--condensed .primary-nav__utility .utility--search:after,
 .header-container.header--condensed .primary-nav__utility .utility--account:after,
 .header-container.header--condensed .primary-nav__utility .utility--cart:after {
@@ -945,6 +964,15 @@ hr {
   font-size: 0rem;
   height: 0px;
 }
+/* line 91, ../_sass/_modules/_header.scss */
+.header-container.header--condensed a.primary-nav__scroll-top:link,
+.header-container.header--condensed a.primary-nav__scroll-top:visited {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  margin-top: 0;
+  top: 0;
+  visibility: visible;
+}
 @media (min-width: 64em) {
   /* line 5, ../_sass/_modules/_header.scss */
   .header-container {
@@ -952,39 +980,44 @@ hr {
   }
 }
 
-/* line 87, ../_sass/_modules/_header.scss */
+/* line 108, ../_sass/_modules/_header.scss */
 .header__primary__logo img.header__primary__logo-sm {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  margin-left: 94;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  margin: 14px 0 0 0;
   max-width: 188px;
-  width: 0;
+  visibility: hidden;
 }
-/* line 93, ../_sass/_modules/_header.scss */
+/* line 115, ../_sass/_modules/_header.scss */
 .header__primary__logo img.header__primary__logo-lrg {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
   margin: 6px 0 0 0;
   max-width: 155px;
+  position: absolute;
+  top: 0;
   width: 100%;
-  visibility: visible;
 }
 @media (min-width: 40.5em) {
-  /* line 85, ../_sass/_modules/_header.scss */
+  /* line 106, ../_sass/_modules/_header.scss */
   .header__primary__logo {
     float: left;
-    width: 13.333333333%;
+    width: 13.33333%;
   }
 }
 
 /*------------------------------------------------------------------
     PRIMARY NAVIGATION
 -------------------------------------------------------------------*/
-/* line 112, ../_sass/_modules/_header.scss */
+/* line 136, ../_sass/_modules/_header.scss */
 .header__primary-nav {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -992,7 +1025,7 @@ hr {
   transition: all 0.5s;
   padding-top: 55px;
 }
-/* line 117, ../_sass/_modules/_header.scss */
+/* line 141, ../_sass/_modules/_header.scss */
 .header__primary-nav ul > li {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -1000,36 +1033,36 @@ hr {
   transition: all 0.5s;
   display: inline-block;
 }
-/* line 122, ../_sass/_modules/_header.scss */
+/* line 146, ../_sass/_modules/_header.scss */
 .header__primary-nav ul > li > a:link,
 .header__primary-nav ul > li > a:visited {
   text-decoration: none;
   text-transform: uppercase;
 }
 @media (min-width: 40.5em) {
-  /* line 112, ../_sass/_modules/_header.scss */
+  /* line 136, ../_sass/_modules/_header.scss */
   .header__primary-nav {
     float: left;
-    width: 86.666666667%;
+    width: 80%;
   }
 }
 
-/* line 134, ../_sass/_modules/_header.scss */
+/* line 158, ../_sass/_modules/_header.scss */
 .primary-nav__shop {
   float: left;
   height: 40px;
   margin-top: 12px;
 }
-/* line 139, ../_sass/_modules/_header.scss */
+/* line 163, ../_sass/_modules/_header.scss */
 .primary-nav__shop li {
   padding: 10px 0 0 0;
 }
-/* line 143, ../_sass/_modules/_header.scss */
+/* line 167, ../_sass/_modules/_header.scss */
 .primary-nav__shop li.primary-nav__shop__lead > a:link,
 .primary-nav__shop li.primary-nav__shop__lead > a:visited {
   color: #d2232a;
 }
-/* line 148, ../_sass/_modules/_header.scss */
+/* line 172, ../_sass/_modules/_header.scss */
 .primary-nav__shop li.primary-nav__shop__lead > a:link span,
 .primary-nav__shop li.primary-nav__shop__lead > a:visited span {
   -moz-transform: rotate(0deg);
@@ -1038,7 +1071,7 @@ hr {
   transform: rotate(0deg);
   margin: 0 0 0 10px;
 }
-/* line 154, ../_sass/_modules/_header.scss */
+/* line 178, ../_sass/_modules/_header.scss */
 .primary-nav__shop li > a:link,
 .primary-nav__shop li > a:visited {
   color: #939598;
@@ -1047,7 +1080,7 @@ hr {
   letter-spacing: 0.10em;
   margin: 0 0 0 15px;
 }
-/* line 163, ../_sass/_modules/_header.scss */
+/* line 187, ../_sass/_modules/_header.scss */
 .primary-nav__shop li > a:link span,
 .primary-nav__shop li > a:visited span {
   -moz-transform: rotate(90deg);
@@ -1059,26 +1092,26 @@ hr {
   position: relative;
   margin: 0 0 0 6px;
 }
-/* line 171, ../_sass/_modules/_header.scss */
+/* line 195, ../_sass/_modules/_header.scss */
 .primary-nav__shop li > a:link:hover, .primary-nav__shop li > a:link:active,
 .primary-nav__shop li > a:visited:hover,
 .primary-nav__shop li > a:visited:active {
   color: #d2232a;
 }
 @media (min-width: 40.5em) {
-  /* line 134, ../_sass/_modules/_header.scss */
+  /* line 158, ../_sass/_modules/_header.scss */
   .primary-nav__shop {
     margin-left: 5%;
   }
 }
 @media (min-width: 64em) {
-  /* line 134, ../_sass/_modules/_header.scss */
+  /* line 158, ../_sass/_modules/_header.scss */
   .primary-nav__shop {
     margin-left: 6.25%;
   }
 }
 
-/* line 185, ../_sass/_modules/_header.scss */
+/* line 209, ../_sass/_modules/_header.scss */
 .primary-nav__explore {
   border-left: 2px solid rgba(0, 0, 0, 0.08);
   float: left;
@@ -1087,12 +1120,12 @@ hr {
   margin-top: 12px;
   padding-left: 12px;
 }
-/* line 195, ../_sass/_modules/_header.scss */
+/* line 219, ../_sass/_modules/_header.scss */
 .primary-nav__explore li {
   margin: 0 12px;
   padding: 10px 0 0 0;
 }
-/* line 200, ../_sass/_modules/_header.scss */
+/* line 224, ../_sass/_modules/_header.scss */
 .primary-nav__explore li > a:link,
 .primary-nav__explore li > a:visited {
   color: #939598;
@@ -1100,23 +1133,23 @@ hr {
   font-size: 1.9rem;
   letter-spacing: 0.10em;
 }
-/* line 208, ../_sass/_modules/_header.scss */
+/* line 232, ../_sass/_modules/_header.scss */
 .primary-nav__explore li > a:link:hover, .primary-nav__explore li > a:link:active,
 .primary-nav__explore li > a:visited:hover,
 .primary-nav__explore li > a:visited:active {
   color: #d2232a;
 }
 
-/* line 215, ../_sass/_modules/_header.scss */
+/* line 239, ../_sass/_modules/_header.scss */
 .primary-nav__utility {
   float: right;
   margin: 10px 0 0 0;
 }
-/* line 219, ../_sass/_modules/_header.scss */
+/* line 243, ../_sass/_modules/_header.scss */
 .primary-nav__utility li {
   margin: 0 0 0 15px;
 }
-/* line 223, ../_sass/_modules/_header.scss */
+/* line 247, ../_sass/_modules/_header.scss */
 .primary-nav__utility li > a:link,
 .primary-nav__utility li > a:visited {
   color: #d2232a;
@@ -1126,19 +1159,19 @@ hr {
   min-width: 48px;
   text-align: center;
 }
-/* line 232, ../_sass/_modules/_header.scss */
+/* line 256, ../_sass/_modules/_header.scss */
 .primary-nav__utility li > a:link:hover, .primary-nav__utility li > a:link:active,
 .primary-nav__utility li > a:visited:hover,
 .primary-nav__utility li > a:visited:active {
   color: #fbae4b;
 }
-/* line 238, ../_sass/_modules/_header.scss */
+/* line 262, ../_sass/_modules/_header.scss */
 .primary-nav__utility .utility--search,
 .primary-nav__utility .utility--account,
 .primary-nav__utility .utility--cart {
   text-align: center;
 }
-/* line 243, ../_sass/_modules/_header.scss */
+/* line 267, ../_sass/_modules/_header.scss */
 .primary-nav__utility .utility--search:after,
 .primary-nav__utility .utility--account:after,
 .primary-nav__utility .utility--cart:after {
@@ -1156,30 +1189,70 @@ hr {
   margin: 0 auto;
 }
 @media (min-width: 40.5em) {
-  /* line 256, ../_sass/_modules/_header.scss */
+  /* line 280, ../_sass/_modules/_header.scss */
   .primary-nav__utility .utility--search:after,
   .primary-nav__utility .utility--account:after,
   .primary-nav__utility .utility--cart:after {
     display: block;
   }
 }
-/* line 263, ../_sass/_modules/_header.scss */
+/* line 287, ../_sass/_modules/_header.scss */
 .primary-nav__utility .utility--search:after {
   content: "Search";
 }
-/* line 268, ../_sass/_modules/_header.scss */
+/* line 292, ../_sass/_modules/_header.scss */
 .primary-nav__utility .utility--account:after {
   content: "Account";
 }
-/* line 273, ../_sass/_modules/_header.scss */
+/* line 297, ../_sass/_modules/_header.scss */
 .primary-nav__utility .utility--cart:after {
   content: "Cart";
 }
 
 /*------------------------------------------------------------------
+    SCROLL TO TOP LINK
+-------------------------------------------------------------------*/
+/* line 307, ../_sass/_modules/_header.scss */
+a.primary-nav__scroll-top:link,
+a.primary-nav__scroll-top:visited {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  background-color: #d2232a;
+  color: #FFF;
+  float: right;
+  font-size: 24px;
+  font-size: 2.4rem;
+  height: 55px;
+  max-width: 80px;
+  margin-top: -27.5px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  top: 50%;
+  visibility: hidden;
+}
+/* line 326, ../_sass/_modules/_header.scss */
+a.primary-nav__scroll-top:link > span,
+a.primary-nav__scroll-top:visited > span {
+  display: block;
+  margin-top: 14px;
+}
+@media (min-width: 40.5em) {
+  /* line 307, ../_sass/_modules/_header.scss */
+  a.primary-nav__scroll-top:link,
+  a.primary-nav__scroll-top:visited {
+    width: 6.66667%;
+  }
+}
+
+/*------------------------------------------------------------------
     SHIPPING BANNER
 -------------------------------------------------------------------*/
-/* line 283, ../_sass/_modules/_header.scss */
+/* line 340, ../_sass/_modules/_header.scss */
 .shipping-banner {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -1200,12 +1273,12 @@ hr {
   width: 100%;
   z-index: 1000;
 }
-/* line 300, ../_sass/_modules/_header.scss */
+/* line 357, ../_sass/_modules/_header.scss */
 .shipping-banner .container--wide {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 305, ../_sass/_modules/_header.scss */
+/* line 362, ../_sass/_modules/_header.scss */
 .shipping-banner .as-icon-shipping {
   color: #d2232a;
   display: inline-block;
@@ -1214,11 +1287,11 @@ hr {
   margin: 0 30px;
   vertical-align: middle;
 }
-/* line 314, ../_sass/_modules/_header.scss */
+/* line 371, ../_sass/_modules/_header.scss */
 .shipping-banner .divider {
   margin: 0 15px;
 }
-/* line 319, ../_sass/_modules/_header.scss */
+/* line 376, ../_sass/_modules/_header.scss */
 .shipping-banner p {
   color: #d2232a;
   display: inline-block;
@@ -1228,24 +1301,24 @@ hr {
   margin: 0;
   vertical-align: middle;
 }
-/* line 332, ../_sass/_modules/_header.scss */
+/* line 389, ../_sass/_modules/_header.scss */
 .shipping-banner p.shipping-banner__msg02 {
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
-/* line 339, ../_sass/_modules/_header.scss */
+/* line 396, ../_sass/_modules/_header.scss */
 .shipping-banner.hidden {
   visibility: hidden;
   top: 0;
 }
 
-/* line 346, ../_sass/_modules/_header.scss */
+/* line 403, ../_sass/_modules/_header.scss */
 .shipping-banner--red {
   background-color: #d2232a;
   border-top: none;
   border-bottom: none;
 }
-/* line 352, ../_sass/_modules/_header.scss */
+/* line 409, ../_sass/_modules/_header.scss */
 .shipping-banner--red .as-icon-shipping, .shipping-banner--red p {
   color: #FFF;
 }
