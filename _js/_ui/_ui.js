@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------
-    USER INTERFACE COMPONENTS
+	USER INTERFACE COMPONENTS
 -------------------------------------------------------------------*/
 
 (function() {
@@ -25,62 +25,70 @@
 
 				unsetColumnHeight: function(selectorArray) {
 
-					var selectors = new Array();
+					$(document).ready(function() {
 
-					$.each(selectorArray, function(index, value){
-						selectors.push($(value));
-					});
+						var selectors = new Array();
 
-					$.each(selectors, function() {
-						$(this).css('height', '');
+						$.each(selectorArray, function(index, value){
+							selectors.push($(value));
+						});
+
+						$.each(selectors, function() {
+							$(this).css('height', '');
+						});
+
 					});
 
 				},
 
 				setColumnHeight: function(selectorArray) {
 
-					var selectors = new Array(),
-						currentTallest = 0,
-						currentRowStart = 0,
-						rowDivs = new Array(),
-						$el,
-						topPosition = 0;
+					$(document).ready(function() {
 
-					$.each(selectorArray, function(index, value){
-						selectors.push($(value));
-					});
+						var selectors = new Array(),
+							currentTallest = 0,
+							currentRowStart = 0,
+							rowDivs = new Array(),
+							$el,
+							topPosition = 0;
 
-					function setHeights() {
+						$.each(selectorArray, function(index, value){
+							selectors.push($(value));
+						});
 
-						$.each(selectors, function() {
+						function setHeights() {
 
-							$el = $(this);
-							topPostion = $el.position().top;
+							$.each(selectors, function() {
 
-							if (currentRowStart != topPostion) {
+								$el = $(this);
+								topPostion = $el.position().top;
+
+								if (currentRowStart != topPostion) {
+
+									for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+										rowDivs[currentDiv].height(currentTallest);
+									}
+
+									rowDivs.length = 0;
+									currentRowStart = topPostion;
+									currentTallest = $el.height();
+									rowDivs.push($el);
+
+								} else {
+									rowDivs.push($el);
+									currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+								}
 
 								for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
 									rowDivs[currentDiv].height(currentTallest);
 								}
 
-								rowDivs.length = 0;
-								currentRowStart = topPostion;
-								currentTallest = $el.height();
-								rowDivs.push($el);
+							});
+						}
 
-							} else {
-								rowDivs.push($el);
-								currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-							}
+						setHeights();
 
-							for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-								rowDivs[currentDiv].height(currentTallest);
-							}
-
-						});
-					}
-
-					setHeights();
+					});
 
 				},
 
@@ -97,6 +105,19 @@
 						}
 
 					}, { offset: -75 } );
+				},
+
+				bindScrollToTop: function() {
+
+					$(document).ready(function() {
+						$('.primary-nav__scroll-top').on('click', function(e){
+							$('html, body').animate({
+								scrollTop: 0
+							}, 1250);
+							e.preventDefault();
+						});
+					});
+
 				}
 
 			}

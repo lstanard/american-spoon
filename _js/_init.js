@@ -14,6 +14,7 @@ var functionCheck = jRespond([
 		breakpoint: '*',
 		enter: function() {
 			uiFunctions.site.setFooterYear();
+			uiFunctions.site.bindScrollToTop();
 		}
 	});
 
@@ -22,27 +23,23 @@ var functionCheck = jRespond([
 		enter: function() {
 			uiFunctions.site.setHeaderWaypoint();
 
-			$(document).ready(function() {
-				if ( $('body').hasClass('index') ) {
-					uiFunctions.site.setColumnHeight(['.featured-products__grid li', '.featured-recipes__grid ul li']);
-				}
-				if ( $('body').hasClass('product-single') ) {
-					uiFunctions.site.setColumnHeight(['.related-products__grid ul li']);
-				}
-			});
+			if ( $('body').hasClass('index') ) {
+				uiFunctions.site.setColumnHeight(['.featured-products__grid li', '.featured-recipes__grid ul li']);
+			}
+			if ( $('body').hasClass('product-single') ) {
+				uiFunctions.site.setColumnHeight(['.related-products__grid ul li']);
+			}
 
 		},
 
 		exit: function() {
 
-			$(document).ready(function() {
-				if ( $('body').hasClass('index') ) {
-					uiFunctions.site.unsetColumnHeight(['.featured-products__grid li', '.featured-recipes__grid ul li']);
-				}
-				if ( $('body').hasClass('product-single') ) {
-					uiFunctions.site.unsetColumnHeight(['.related-products__grid ul li']);
-				}
-			});
+			if ( $('body').hasClass('index') ) {
+				uiFunctions.site.unsetColumnHeight(['.featured-products__grid li', '.featured-recipes__grid ul li']);
+			}
+			if ( $('body').hasClass('product-single') ) {
+				uiFunctions.site.unsetColumnHeight(['.related-products__grid ul li']);
+			}
 
 		}
 	});
