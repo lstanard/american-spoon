@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "16895",
+"creatorBuild": "16903",
 "files": {
 	"\/_css\/main.css": {
 		"fileType": 16,
@@ -51,6 +51,17 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/_img\/as_logo-text.jpg",
 		"outputAbbreviatedPath": "\/_img\/as_logo-text.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_newsletter_background.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.14573e+06,
+		"inputAbbreviatedPath": "\/_img\/as_newsletter_background.png",
+		"outputAbbreviatedPath": "\/_img\/as_newsletter_background.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -121,6 +132,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/as_product_237x347.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37278,
+		"inputAbbreviatedPath": "\/_img\/as_product_237x347.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_product_237x347.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/as_product_290x300.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -128,17 +150,6 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/_img\/as_product_290x300.png",
 		"outputAbbreviatedPath": "\/_img\/as_product_290x300.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_img\/newsletter_background.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/_img\/newsletter_background.png",
-		"outputAbbreviatedPath": "\/_img\/newsletter_background.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -743,7 +754,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Louis Stanard",
+"lastSavedByUser": "Charlie Stanard",
 "manualImportLinks": {
 	},
 "projectAttributes": {

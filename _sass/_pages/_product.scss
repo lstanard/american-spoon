@@ -2,6 +2,8 @@
     PAGE: Product
 -------------------------------------------------------------------*/
 
+$product-details-context: 620px;
+
 .product-single {
 	.main-container {
 		padding-top: $header-height-lrg + $shipping-banner-height + 4px;
@@ -10,18 +12,173 @@
 
 .product-wrapper {
 	padding: 60px 0 90px 0;
+
+	.col-3-5 {
+		padding-left: 100px;
+	}
 }
 
-.product-details {}
+.product-details__meta {
+	float: left;
+	width: 500px / $product-details-context * 100%;
+}
 
-.product-photos {
+.product-details__meta__size {
+	@extend .archer-med-ital;
+	color: $primary-copy-light;
+	font-size: 22px;
+	font-size: 2.2rem;
+}
 
-	figure {
-		text-align: center;
+.product-details__meta__price {
+	@extend .archer-med;
+	color: $primary-copy-light;
+	font-size: 60px;
+	font-size: 6.0rem;
+}
+
+.product-details__share {
+	float: left;
+	height: 30px;
+	width: 120px / $product-details-context * 100%;
+
+	p {
+		@extend .verlag-book;
+		font-size: 14px;
+		font-size: 1.4rem;
+		line-height: 30px;
+		text-transform: uppercase;
 	}
 
-	figure img {
+	a:link,
+	a:visited {
+		color: $lightgrey3;
+		display: inline-block;
+		font-size: 24px;
+		font-size: 2.4rem;
+		margin: 6px 0 0 10px;
+		text-decoration: none;
+		vertical-align: middle;
+
+		&:hover,
+		&:active {
+			color: $red;
+		}
+	}
+}
+
+.product-details__quantity {
+	float: left;
+	padding-right: 50px / $product-details-context * 100%;
+	width: 310px / $product-details-context * 100%;
+
+	fieldset {
+		border-top: 1px solid $lightgrey3;
+		border-bottom: 1px solid $lightgrey3;
+		height: 60px
+	}
+
+	legend {
+		@extend .verlag-book;
+		border-right: 1px solid $lightgrey3;
+		color: $product-quantity;
+		float: left;
+		font-size: 18px;
+		font-size: 1.8rem;
+		height: 58px;
+		line-height: 60px;
+		padding: 0 75px 0 15px;
+		text-transform: uppercase;
+	}
+	input {
+		@extend .archer-med-ital;
+		border: none;
+		background: transparent;
+		color: $red;
+		float: right;
+		font-size: 32px;
+		font-size: 3.2rem;
+		height: 58px;
+		line-height: 58px;
+		text-align: center;
+		width: 75px;
+	}
+}
+
+.product-details__add-to-cart {
+	float: left;
+	width: 310px / $product-details-context * 100%;
+
+	a.btn:link,
+	a.btn:visited {
+		float: right;
+	}
+}
+
+.product-details__description {
+	margin: 30px 0 45px 0;
+
+	p {
+		@extend .archer-med;
+	}
+}
+
+/*------------------------------------------------------------------
+    PAGE: Product / Related recipes
+-------------------------------------------------------------------*/
+
+.related-recipes__list {
+	border-top: 1px solid $lightgrey3;
+	border-bottom: 1px solid $lightgrey3;
+	padding: 12px 0;
+
+	li {
+
+		&:before {
+			@extend .verlag-black;
+			content: ">";
+			color: $red;
+			margin: 0 6px 0 0;
+		}
+
+		a:link,
+		a:visited {
+			@extend .verlag-black;
+			color: $primary-copy-light;
+			font-size: 12px;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			text-decoration: none;
+
+			&:hover,
+			&:active {
+				color: $red;
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------------------
+    PAGE: Product / Product photos
+-------------------------------------------------------------------*/
+
+.product-photos {}
+
+.product-photos__feature {
+	text-align: center;
+	margin: 0 0 110px 0;
+
+	img {
 		margin: 0 auto;
+	}
+}
+
+.product-photos__thumbnails {
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin: 0 10px 0 0;
 	}
 
 }

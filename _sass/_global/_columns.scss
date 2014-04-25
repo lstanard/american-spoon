@@ -29,6 +29,20 @@
 
 }
 
+.col-2-5 {
+	@extend .col;
+
+	@include respond($med) {
+		width: 2 / 5 * 100%;
+	}
+}
+.col-3-5 {
+	@extend .col;
+
+	@include respond($med) {
+		width: 3 / 5 * 100%;
+	}
+}
 .col-2-3 {
 	@extend .col;
 
