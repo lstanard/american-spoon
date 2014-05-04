@@ -1,8 +1,8 @@
 NOTES:
 ------
 
-1) Do not use z-index directly in a SCSS file, see _sass/_global/_variables for z-index values
-2) Use uiFunctions.site object for UI related JavaScript/jQuery functions
+1. Do not use z-index directly in a SCSS file, see _sass/_global/_variables for z-index values
+2. Use uiFunctions.site object for UI related JavaScript/jQuery functions
 
 
 TO DO:
