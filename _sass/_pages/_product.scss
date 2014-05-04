@@ -4,12 +4,6 @@
 
 $product-details-context: 620px;
 
-.product-single {
-	.main-container {
-		padding-top: $header-height-lrg + $shipping-banner-height + 4px;
-	}
-}
-
 .product-wrapper {
 	padding: 60px 0 90px 0;
 
@@ -52,18 +46,7 @@ $product-details-context: 620px;
 
 	a:link,
 	a:visited {
-		color: $lightgrey3;
-		display: inline-block;
-		font-size: 24px;
-		font-size: 2.4rem;
-		margin: 6px 0 0 10px;
-		text-decoration: none;
-		vertical-align: middle;
-
-		&:hover,
-		&:active {
-			color: $red;
-		}
+		@extend .social-link;
 	}
 }
 

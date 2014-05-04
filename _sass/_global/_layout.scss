@@ -30,6 +30,10 @@ body, html {
 	width: 100%;
 }
 
+.main-container {
+	padding-top: $header-height-lrg + $shipping-banner-height + 4px;
+}
+
 .container {
 	height: auto;
 	margin: 0 auto;

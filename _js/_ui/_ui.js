@@ -118,6 +118,14 @@
 						});
 					});
 
+				},
+
+				setCatalogRequestControls: function() {
+
+					$(document).ready(function() {
+
+					});
+
 				}
 
 			}

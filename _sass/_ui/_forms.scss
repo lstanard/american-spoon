@@ -2,6 +2,32 @@
     FORMS
 -------------------------------------------------------------------*/
 
+.form__group {
+	@extend .cf;
+	margin: 0 0 30px 0;
+
+	div:not(.col-1-2) {
+		margin: 15px 0 0 0;
+	}
+}
+
+.form__submit {
+	a.btn:link,
+	a.btn:visited {
+		float: left;
+	}
+}
+
+label {
+	@extend .archer-med;
+	color: $primary-copy;
+	display: block;
+	font-size: 20px;
+	font-size: 2.0rem;
+	margin: 0 0 10px 0;
+}
+
+input[type="text"],
 .form__input__text {
 	@extend .archer-med;
 	@include border-radius(6px);
@@ -11,11 +37,41 @@
 	display: block;
 	font-size: 24px;
 	font-size: 2.4rem;
-	height: 85px;
+	height: 55px;
 	padding: 0 0 0 30px;
 	width: 100%;
+}
 
-	@include respond($med) {
-		width: 62.5%;
-	}
+input[type=text], textarea {
+	@include transition(all 0.30s ease-in-out);
+	outline: none;
+}
+
+input[type=text]:focus, textarea:focus {
+	box-shadow: 0 0 5px rgba(210,35,42,1);
+	border: 1px solid rgba(210,35,42,1);
+}
+
+input[type="checkbox"],
+input[type="checkbox"] + label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+input[type="checkbox"] {}
+
+input[type="checkbox"] + label {
+	margin: 0;
+}
+
+select {
+	@extend .archer-med;
+	border: 1px solid transparent;
+	color: $primary-copy;
+	display: block;
+	font-size: 24px;
+	font-size: 2.4rem;
+	height: 55px;
+	padding: 0 0 0 30px;
+	width: 100%;
 }

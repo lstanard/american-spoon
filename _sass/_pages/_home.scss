@@ -2,6 +2,12 @@
     PAGE: Home / Mantle
 -------------------------------------------------------------------*/
 
+.page-home {
+	.main-container {
+		padding-top: 0;
+	}
+}
+
 .home-mantle {
 	height: auto;
 	padding-top: $header-height-lrg + $shipping-banner-height;

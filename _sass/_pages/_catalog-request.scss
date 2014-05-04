@@ -1,0 +1,40 @@
+/*------------------------------------------------------------------
+    PAGE: Catalog Request
+-------------------------------------------------------------------*/
+
+.catalog-request {}
+
+.catalog-request__cover {
+	margin: 0 0 15px 0;
+
+	img {
+		max-width: 387px;
+		width: 100%;
+	}
+
+}
+
+.catalog-request__share {
+	text-align: center;
+
+	p {
+		@extend .verlag-bold;
+		font-size: 16px;
+		font-size: 1.6rem;
+		line-height: 30px;
+		text-transform: uppercase;
+	}
+
+	a:link,
+	a:visited {
+		@extend .social-link;
+	}
+}
+
+/*------------------------------------------------------------------
+    PAGE: Catalog Request / Form
+-------------------------------------------------------------------*/
+
+.catalog-request__form {
+	padding-left: 60px;
+}

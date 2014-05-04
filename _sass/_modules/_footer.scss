@@ -26,6 +26,14 @@
 	border-bottom: 2px solid rgba(0,0,0,.1);
 	text-align: center;
 
+	.footer__sign-up__input {
+		height: 85px;
+
+		@include respond($med) {
+			width: 62.5%;
+		}
+	}
+
 	.container--narrow {
 		padding-top: 0;
 		padding-bottom: 0;
