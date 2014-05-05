@@ -15,6 +15,7 @@ var functionCheck = jRespond([
 		enter: function() {
 			uiFunctions.site.setFooterYear();
 			uiFunctions.site.bindScrollToTop();
+			uiFunctions.site.bindLoginPageControls();
 		}
 	});
 

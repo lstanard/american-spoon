@@ -3,5 +3,9 @@
 -------------------------------------------------------------------*/
 
 .main-container {
+	padding-top: $header-height-lrg + $shipping-banner-height + 4px;
+}
+
+.main-container {
 	width: 100%;
 }

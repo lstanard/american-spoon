@@ -1,0 +1,430 @@
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+
+.header-container {
+	@include transition(all $header-transition-speed);
+
+	background-color: #FFF;
+	height: auto;
+	margin: 0;
+	min-height: $header-height-lrg;
+	padding-bottom: 0;
+	padding-top: 0;
+	position: relative;
+	width: 100%;
+	z-index: $header;
+
+	header.container--full {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	&.header--condensed {
+		@include box-shadow(rgba(0,0,0,.1) 0px 2px 6px);
+		height: $header-height-sm;
+		min-height: 0px;
+		position: fixed;
+
+		.header__primary__logo {
+			img.header__primary__logo-sm {
+				@include opacity(1);
+				visibility: visible;
+			}
+			img.header__primary__logo-lrg {
+				@include opacity(0);
+				top: -$header-height-lrg;
+			}
+		}
+
+		.header__primary-nav {
+			padding-top: 8px;
+		}
+
+		.header__primary-nav ul > li {
+			margin-left: 0px;
+		}
+
+		.primary-nav__shop {
+			margin-top: 5px;
+
+			li {
+				padding-top: 6px;
+			}
+		}
+
+		.primary-nav__explore {
+			height: 30px;
+			margin-top: 5px;
+			padding-left: 25px;
+
+			li {
+				padding-top: 6px;
+				margin: 0 25px;
+			}
+		}
+
+		.primary-nav__utility {
+
+			li > a:link,
+			li > a:visited  {
+				color: $primary-copy;
+			}
+
+			.utility--search,
+			.utility--account,
+			.utility--cart {
+
+				&:hover,
+				&:active {
+					color: $red;
+				}
+
+				&:after {
+					@include opacity(0);
+					font-size: 0px;
+					font-size: 0rem;
+					height: 0px;
+				}
+			}
+		}
+
+		a.primary-nav__scroll-top:link,
+		a.primary-nav__scroll-top:visited {
+			@include opacity(1);
+			margin-top: 0;
+			top: 0;
+			visibility: visible;
+		}
+
+	}
+
+	@include respond($lrg) {
+		max-height: 130px;
+	}
+}
+
+.header__primary__logo {
+
+	img.header__primary__logo-sm {
+		@include transition(all $header-transition-speed);
+		@include opacity(0);
+		margin: 14px 0 0 0;
+		max-width: 188px;
+		visibility: hidden;
+	}
+	img.header__primary__logo-lrg {
+		@include transition(all $header-transition-speed);
+		@include opacity(1);
+		margin: 6px 0 0 0;
+		max-width: 155px;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	@include respond($med) {
+		float: left;
+		width: 160px / $header-container-context * 100%;
+	}
+
+}
+
+/*------------------------------------------------------------------
+    PRIMARY NAVIGATION
+-------------------------------------------------------------------*/
+
+.header__primary-nav {
+	@include transition(all $header-transition-speed);
+
+	padding-top: 55px;
+
+	ul > li {
+		@include transition(all $header-transition-speed);
+		display: inline-block;
+	}
+
+	ul > li > a:link,
+	ul > li > a:visited {
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	@include respond($med, "min") {
+		float: left;
+		width: 960px / $header-container-context * 100%;
+	}
+}
+
+.primary-nav__shop {
+	float: left;
+	height: 40px;
+	margin-top: 12px;
+
+	li {
+		padding: 10px 0 0 0;
+	}
+
+	li.primary-nav__shop__lead > a:link,
+	li.primary-nav__shop__lead > a:visited {
+		@extend .verlag-bold;
+		color: $red;
+
+		span {
+			@include rotate(0deg);
+			margin: 0 0 0 10px;
+		}
+	}
+
+	li > a:link,
+	li > a:visited {
+		@extend .verlag-book;
+		color: $primary-copy;
+		font-size: 19px;
+		font-size: 1.9rem;
+		letter-spacing: 0.10em;
+		margin: 0 0 0 15px;
+
+		span {
+			@include rotate(90deg);
+			color: rgba(0,0,0,.3);
+			display: inline-block;
+			position: relative;
+			margin: 0 0 0 6px;
+		}
+
+		&:hover,
+		&:active {
+			color: $red;
+		}
+	}
+
+	@include respond(1300px) {
+		margin-left: 30px / $header-container-context * 100%;
+	}
+	@include respond(1500px) {
+		margin-left: 75px / $header-container-context * 100%;
+	}
+}
+
+.primary-nav__explore {
+	$item-spacing: 12px;
+
+	border-left: 2px solid rgba(0,0,0,.08);
+	float: left;
+	height: 40px;
+	margin-left: $item-spacing * 2;
+	margin-top: 12px;
+	padding-left: $item-spacing;
+
+	li {
+		margin: 0 $item-spacing;
+		padding: 10px 0 0 0;
+	}
+
+	li > a:link,
+	li > a:visited {
+		@extend .verlag-bold;
+		color: $primary-copy;
+		font-size: 19px;
+		font-size: 1.9rem;
+		letter-spacing: 0.10em;
+
+		&:hover,
+		&:active {
+			color: $red;
+		}
+	}
+}
+
+.primary-nav__utility {
+	float: right;
+	margin: 10px 0 0 0;
+
+	li {
+		margin: 0 0 0 15px;
+	}
+
+	li > a:link,
+	li > a:visited {
+		color: $red;
+		display: block;
+		font-size: 20px;
+		font-size: 2.0rem;
+		min-width: 48px;
+		text-align: center;
+
+		&:hover,
+		&:active  {
+			color: $peach;
+		}
+	}
+
+	.utility--search,
+	.utility--account,
+	.utility--cart {
+		text-align: center;
+
+		&:after {
+			@include transition(opacity $header-transition-speed);
+			@include opacity(1);
+			@extend .verlag-bold;
+			font-size: 8px;
+			font-size: 0.8rem;
+			height: 10px;
+			line-height: 10px;
+			line-height: 1.0rem;
+			margin: 0 auto;
+		}
+
+		@include mnw($med) {
+			&:after {
+				display: block;
+			}
+		}
+	}
+
+	.utility--search {
+		&:after {
+			content: "Search";
+		}
+	}
+	.utility--account {
+		&:after {
+			content: "Account";
+		}
+	}
+	.utility--cart {
+		&:after {
+			content: "Cart";
+		}
+	}
+}
+
+/*------------------------------------------------------------------
+    SCROLL TO TOP LINK
+-------------------------------------------------------------------*/
+
+a.primary-nav__scroll-top:link,
+a.primary-nav__scroll-top:visited {
+	@include opacity(0);
+	@include transition(all $header-transition-speed / 2);
+
+	background-color: $red;
+	color: #FFF;
+	float: right;
+	font-size: 24px;
+	font-size: 2.4rem;
+	height: $header-height-sm;
+	max-width: 80px;
+	margin-top: -$header-height-sm / 2;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	top: 50%;
+	visibility: hidden;
+
+	& > span {
+		display: block;
+		margin-top: 14px;
+	}
+
+	@include respond($med) {
+		width: 80px / $header-container-context * 100%;
+	}
+}
+
+/*------------------------------------------------------------------
+    SHIPPING BANNER
+-------------------------------------------------------------------*/
+
+a.shipping-banner--link:link,
+a.shipping-banner--link:visited {
+	@include transition(all $header-transition-speed);
+	@include opacity(1);
+	border: 0;
+	display: block;
+	position: relative;
+	text-decoration: none;
+	width: 100%;
+	z-index: $shipping-banner;
+
+	&:hover, &:active {
+		@include opacity(.8);
+	}
+}
+
+.shipping-banner {
+	@include transition(all $header-transition-speed);
+	@include opacity(1);
+
+	background-color: #FFF;
+	border-bottom: 2px solid rgba(0,0,0,.08);
+	border-top: 2px solid rgba(0,0,0,.08);
+	height: auto;
+	min-height: $shipping-banner-height;
+	//position: fixed;
+	text-align: center;
+	top: $header-height-lrg;
+	vertical-align: middle;
+	visibility: visible;
+	width: 100%;
+	z-index: $shipping-banner;
+
+	.container--wide {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.as-icon-shipping {
+		color: $red;
+		display: inline-block;
+		font-size: 36px;
+		font-size: 3.6rem;
+		margin: 0 30px;
+		vertical-align: middle;
+	}
+
+	.divider {
+		@extend .archer-bold;
+		margin: 0 15px;
+	}
+
+	p {
+		color: $red;
+		display: inline-block;
+		font-size: 16px;
+		font-size: 1.6rem;
+		line-height: 45px;
+		margin: 0;
+		vertical-align: middle;
+
+		&.shipping-banner__msg01,
+		&.shipping-banner__msg03 {
+			@extend .archer-bold-ital;
+		}
+		&.shipping-banner__msg02 {
+			@extend .archer-bold;
+			text-transform: uppercase;
+			letter-spacing: 0.09em;
+		}
+	}
+
+	&.hidden {
+		visibility: hidden;
+		top: 0;
+	}
+
+}
+
+.shipping-banner--red {
+
+	background-color: $red;
+	border-top: none;
+	border-bottom: none;
+
+	.as-icon-shipping, p {
+		color: #FFF;
+	}
+
+}

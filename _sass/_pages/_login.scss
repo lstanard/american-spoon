@@ -1,0 +1,47 @@
+/*------------------------------------------------------------------
+    PAGE: Login
+-------------------------------------------------------------------*/
+
+.page__login {
+
+	.main-container {
+		.container--narrow {
+			padding-bottom: 8%;
+			padding-top: 5%;
+		}
+	}
+
+}
+
+.login__current-user,
+.login__create-acct {
+	border: 1px solid $primary-copy-light;
+	padding: 45px;
+
+	form {
+		display: none;
+	}
+}
+
+.login__current-user {
+
+	a.login__forgot-password:link,
+	a.login__forgot-password:visited {
+		@extend .verlag-book;
+		color: $red;
+		display: block;
+		font-size: 14px;
+		font-size: 1.4rem;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:hover,
+		&:active {
+			color: $primary-copy;
+		}
+	}
+
+}
+
+.login__create-acct {}

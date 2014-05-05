@@ -27,13 +27,15 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 
 	color: $primary-copy;
-	font-size: 42px;
-	font-size: 4.2rem;
+	font-size: 48px;
+	font-size: 4.8rem;
 
 	&.page-title {
-		line-height: 46px;
-		line-height: 4.6rem;
-		margin: 0 0 60px 0;
+		@extend .archer-book;
+		line-height: 52px;
+		line-height: 5.2rem;
+		margin: 15px 0 75px 0;
+		text-align: center;
 	}
 
 	&.section__headline {
@@ -67,6 +69,18 @@ h1 {
 		margin: 0 0 45px 0;
 	}
 
+	&.login__header {
+		@extend .verlag-bold;
+		border-bottom: 1px solid rgba(0,0,0,.2);
+		color: $red;
+		font-size: 22px;
+		font-size: 2.2rem;
+		margin: 15px 0 30px 0;
+		padding: 0 0 30px 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
 }
 
 h2 {
@@ -84,9 +98,9 @@ h3 {
 	&.footer__sign-up__head {
 		@extend .archer-med-ital;
 		color: $red;
-		font-size: 4.2rem;
-		line-height: 4.4rem;
-		margin: 0 0 70px 0;
+		font-size: 3.6rem;
+		line-height: 4.0rem;
+		margin: 0 0 45px 0;
 	}
 
 }

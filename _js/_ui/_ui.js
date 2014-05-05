@@ -93,6 +93,7 @@
 				},
 
 				setHeaderWaypoint: function() {
+
 					$('.main-container').waypoint(function(direction){
 
 						if ( direction === 'down' ) {
@@ -105,6 +106,7 @@
 						}
 
 					}, { offset: -161 } );
+
 				},
 
 				bindScrollToTop: function() {
@@ -124,6 +126,15 @@
 
 					$(document).ready(function() {
 
+					});
+
+				},
+
+				bindLoginPageControls: function() {
+
+					$('#login__current-user__btn, #login__create-acct__btn').on('click', function(e) {
+						$(this).hide().next('form').fadeIn();
+						e.preventDefault();
 					});
 
 				}
