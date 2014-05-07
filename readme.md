@@ -1,11 +1,11 @@
 PAGE LINKS:
 -----------
 
-Home: http://www.spoon.com/designtmp/index.html
-Product page: http://www.spoon.com/designtmp/product-page.html
-Login: http://www.spoon.com/designtmp/login.html
-Catalog request: http://www.spoon.com/designtmp/catalog-request.html
-Shopping cart: http://www.spoon.com/designtmp/cart.html
+ - Home: http://www.spoon.com/designtmp/index.html
+ - Product page: http://www.spoon.com/designtmp/product-page.html
+ - Login: http://www.spoon.com/designtmp/login.html
+ - Catalog request: http://www.spoon.com/designtmp/catalog-request.html
+ - Shopping cart: http://www.spoon.com/designtmp/cart.html
 
 
 DEV NOTES:
