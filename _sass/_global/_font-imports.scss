@@ -4,11 +4,11 @@
 
 @font-face {
 	font-family: 'as-ui';
-	src:url('../_fonts/as-ui.eot?4w5hi7');
-	src:url('../_fonts/as-ui.eot?#iefix4w5hi7') format('embedded-opentype'),
-		url('../_fonts/as-ui.woff?4w5hi7') format('woff'),
-		url('../_fonts/as-ui.ttf?4w5hi7') format('truetype'),
-		url('../_fonts/as-ui.svg?4w5hi7#as-ui') format('svg');
+	src:url('../_fonts/as-ui.eot?7eow72');
+	src:url('../_fonts/as-ui.eot?#iefix7eow72') format('embedded-opentype'),
+		url('../_fonts/as-ui.woff?7eow72') format('woff'),
+		url('../_fonts/as-ui.ttf?7eow72') format('truetype'),
+		url('../_fonts/as-ui.svg?7eow72#as-ui') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -71,6 +71,12 @@
 }
 .as-icon-up:before {
 	content: "\45";
+}
+.as-icon-update:before {
+	content: "\46";
+}
+.as-icon-remove:before {
+	content: "\47";
 }
 
 .mls {

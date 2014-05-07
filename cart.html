@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="_css/main.css">
 		<script src="_js/_vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	</head>
-	<body class="page__login">
+	<body class="page__cart">
 				<div class="header-container">
 			<header class="container--full row">
 				<div class="header__primary__logo">
@@ -54,77 +54,88 @@
 					<span class="as-icon-shipping"></span><span class="mls"> as-icon-shipping</span>
 				</div>
 			</div>
-		</a>		<main role="main" class="main-container">	<section>
-		<div class="container--wide">
-			<header>
-				<h1 class="page-title">Log Into Your Account</h1>
-			</header>
+		</a>		<main role="main" class="main-container">	<div class="container--wide">
+		<header>
+			<h1 class="page-title">Your Shopping Cart</h1>
+		</header>
+		<section class="cart__items">
+			<table class="cart__items__table">
+				<thead>
+					<tr>
+						<th class="items__table-th__product-name">Product</th>
+						<th class="items__table-th__price">Unit Price</th>
+						<th class="items__table-th__quantity">Quantity</th>
+						<th class="items__table-th__subtotal">Subtotal</th>
+						<th class="items__table-th__remove">Remove</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="items__table-td__product-name"><a href="#"><figure><img src="_img/as_photo_FPO_featured-product_img01.jpg" alt=" "></figure><figcaption class="product-name">Early Glow Strawberry Preserves</figcaption></a></td>
+						<td class="items__table-td__price">$8.95</td>
+						<td class="items__table-td__quantity">2</td>
+						<td class="items__table-td__subtotal">$17.90</td>
+						<td class="items__table-td__remove"><a href="#"><span class="as-icon-remove"></span><span class="mls">Remove from cart</span></a></td>
+					</tr>
+					<tr>
+						<td class="items__table-td__product-name"><a href="#"><figure><img src="_img/as_photo_FPO_featured-product_img02.jpg" alt=" "></figure><figcaption class="product-name">Fruit Perfect Sour Cherries</figcaption></a></td>
+						<td class="items__table-td__price">$8.95</td>
+						<td class="items__table-td__quantity">2</td>
+						<td class="items__table-td__subtotal">$17.90</td>
+						<td class="items__table-td__remove"><a href="#"><span class="as-icon-remove"></span><span class="mls">Remove from cart</span></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="row">
+				<a href="#" class="ui-link--left">Continue shopping</a>
+				<a href="#" class="cart__utility__update ui-link"><span class="as-icon-Update"></span><span class="mls"></span> Update cart</a>
+			</div>
+		</section>
+		<section class="cart__codes">
 			<div class="row">
 				<div class="col-1-2">
-					<div class="login__current-user">
-						<a href="#" class="btn--box ghost" id="login__current-user__btn">I have an account</a>
-						<form action="#" id="login__curent-user__form">
-							<header>
-								<h2 class="login__header">Log in</h2>
-							</header>
+					<div class="cart__promo-code">
+						<h4 class="cart__promo__headline">Promotion code</h4>
+						<p>Enter your promotion code if you have one.</p>
+						<form action="#">
 							<fieldset>
-								<div class="form__group">
-									<label for="login__username">Email Address</label>
-									<input type="text" id="login__username">
-								</div>
-								<div class="form__group">
-									<label for="login__username">Password</label>
-									<input type="text" id="login__password">
-								</div>
-								<p><a href="#" class="login__forgot-password">Forgot password?</a></p>
-								<a href="#" class="btn red full"><span><span>Log in</span> <span>&gt;</span></span></a>
+								<input type="text" class="inline-input" placeholder="XXXX-XXXX-XXXX">
+								<a href="#" class="ui-link--right">Apply promotion</a>
 							</fieldset>
 						</form>
 					</div>
 				</div>
 				<div class="col-1-2">
-					<div class="login__create-acct">
-						<a href="#" class="btn--box ghost" id="login__create-acct__btn">Create an account</a>
+					<div class="cart__promo-gc">
+						<h4 class="cart__promo__headline">Gift certificate code</h4>
+						<p>Enter your gift certiﬁcate code and value.</p>
 						<form action="#">
-							<header>
-								<h2 class="login__header">Create new account</h2>
-								<p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
-							</header>
 							<fieldset>
-								<div class="form__group">
-									<label for="create-acct__first-name">First Name</label>
-									<input type="text" id="create-acct__first-name">
-								</div>
-								<div class="form__group">
-									<label for="create-acct__last-name">Last Name</label>
-									<input type="text" id="create-acct__last-name">
-								</div>
-								<div class="form__group">
-									<label for="login__email">Email Address</label>
-									<input type="text" id="login__email">
-									<div>
-										<input type="checkbox" id="email__updates">
-										<label for="email__updates">Signup for Newsletter</label>
-									</div>
-								</div>
-								<div class="form__group">
-									<label for="create-acct__password">Password</label>
-									<input type="text" id="create-acct__password">
-								</div>
-								<div class="form__group">
-									<label for="create-acct__password-confirm">Confirm Password</label>
-									<input type="text" id="create-acct__password-confirm">
-								</div>
-								<div class="form__submit">
-									<a href="#" class="btn red full"><span><span>Create my account</span> <span>&gt;</span></span></a>
-								</div>
+								<input type="text" class="cart__promo-gc__code inline-input" placeholder="XXXX-XXXX">
+								<span class="cart__promo-gc__dollar">$</span>&nbsp;<input type="text" class="cart__promo-gc__amt inline-input" placeholder="0">
+								<a href="#" class="ui-link--right">Apply gift</a>
 							</fieldset>
 						</form>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>		</main> <!-- end of .main-container -->
+		</section>
+		<section class="cart__total">
+			<div class="row">
+				<div class="col-1-2">
+					<div class="cart__total-amt">
+						<p>Grand Total: $53.70</p>
+					</div>
+				</div>
+				<div class="col-1-2">
+					<div class="cart__total-proceed">
+						<a href="#" class="btn red full"><span><span>Proceed to checkout</span> <span>&gt;</span></span></a>
+						<a href="#" class="btn red full"><span><span>Checkout with multiple addresses</span> <span>&gt;</span></span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>		</main> <!-- end of .main-container -->
 		<div class="footer-container">
 			<footer role="footer">
 				<section class="footer__sign-up">

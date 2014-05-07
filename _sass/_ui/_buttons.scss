@@ -2,6 +2,45 @@
     UI: Buttons
 -------------------------------------------------------------------*/
 
+.ui-link, a.ui-link:link, a.ui-link:visited, {
+	@extend .verlag-black;
+	color: $red;
+	display: inline-block;
+	font-size: 13px;
+	font-size: 1.3rem;
+	letter-spacing: 0.08em;
+	text-decoration: none;
+	text-transform: uppercase;
+
+
+	&:hover,
+	&:active {
+		color: $pumpkin;
+	}
+}
+
+a.ui-link--right:link, a.ui-link--right:visited {
+	@extend .ui-link;
+
+	&:after {
+		content: ">";
+		display: inline-block;
+		margin: 0 0 0 8px;
+		vertical-align: middle;
+	}
+}
+
+a.ui-link--left:link, a.ui-link--left:visited {
+	@extend .ui-link;
+
+	&:before {
+		content: "<";
+		display: inline-block;
+		margin: 0 8px 0 0;
+		vertical-align: middle;
+	}
+}
+
 a.btn--box:link, a.btn--box:visited {
 
 	@extend .verlag-book;

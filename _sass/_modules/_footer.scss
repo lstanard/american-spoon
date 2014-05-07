@@ -43,7 +43,7 @@
 	text-align: center;
 
 	.footer__sign-up__input {
-		height: 60px;
+		height: 65px;
 		width: 100%;
 	}
 
@@ -67,6 +67,8 @@
 
 a.footer__sign-up__btn:link,
 a.footer__sign-up__btn:visited {
+	height: 57px;
+	line-height: 57px;
 	width: 100%;
 
 	@include mnw(med) {

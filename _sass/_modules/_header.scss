@@ -328,6 +328,11 @@ a.primary-nav__scroll-top:visited {
 		margin-top: 14px;
 	}
 
+	&:hover,
+	&:active {
+		background-color: $pumpkin;
+	}
+
 	@include respond($med) {
 		width: 80px / $header-container-context * 100%;
 	}

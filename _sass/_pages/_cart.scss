@@ -1,0 +1,274 @@
+/*------------------------------------------------------------------
+    PAGE: Shopping Cart / Cart items
+-------------------------------------------------------------------*/
+
+.cart__items {
+	padding: 0 0 60px 0;
+}
+
+.cart__items__table {
+	border-spacing: 0;
+	border: 1px solid $cart-table-exterior;
+	margin: 0 0 30px 0;
+	width: 100%;
+
+	th, td {
+		vertical-align: middle;
+	}
+
+	// Table headers
+
+	th {
+		@extend .verlag-book;
+		background-color: $cart-table-interior;
+		color: $primary-copy-light;
+		height: 55px;
+		font-size: 17px;
+		font-size: 1.7rem;
+		letter-spacing: 0.06em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	th.items__table-th__product-name {
+		width: 616px / 1200px * 100%;
+	}
+	th.items__table-th__price {
+		width: 146px / 1200px * 100%;
+	}
+	th.items__table-th__quantity {
+		width: 146px / 1200px * 100%;
+	}
+	th.items__table-th__subtotal {
+		width: 146px / 1200px * 100%;
+	}
+	th.items__table-th__remove {
+		width: 146px / 1200px * 100%;
+	}
+
+	// Table products
+
+	tbody {
+		tr:first-child {
+			td {
+				border-top: none;
+			}
+		}
+		tr {
+			td:last-child {
+				border-right: 1px solid $cart-table-exterior;
+			}
+			&:hover {
+				// background-color: $cart-table-interior;
+			}
+		}
+		tr:last-child {
+			td {
+				border-bottom: 1px solid $cart-table-exterior;
+			}
+		}
+	}
+
+	td {
+		border-right: 1px solid $cart-table-interior;
+		border-bottom: 1px solid $cart-table-interior;
+		height: 150px;
+		text-align: center;
+
+		&:hover {
+			// background-color: $cart-table-exterior;
+		}
+	}
+	.items__table__meta {
+		@extend .archer-med;
+		color: $primary-copy-light;
+		font-size: 28px;
+		font-size: 2.8rem;
+	}
+
+	.items__table-td__product-name {
+		padding-left: 45px;
+		text-align: left;
+
+		a:link,
+		a:visited {
+			@extend .archer-med;
+			color: $red;
+			display: table;
+			font-size: 20px;
+			font-size: 2.0rem;
+			text-decoration: none;
+			vertical-align: middle;
+		}
+		a:hover,
+		a:active {
+			color: $pumpkin;
+		}
+
+		figure {
+			display: table-cell;
+			vertical-align: middle;
+
+			img {
+				max-width: 90px;
+				margin: 15px 30px 15px 0;
+				width: 100%;
+			}
+		}
+		figcaption {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+	}
+	.items__table-td__price {
+		@extend .items__table__meta;
+	}
+	.items__table-td__quantity {
+		@extend .items__table__meta;
+	}
+	.items__table-td__subtotal {
+		@extend .items__table__meta;
+	}
+	.items__table-td__remove {
+		@extend .items__table__meta;
+
+		a:link,
+		a:visited {
+			color: rgba(0,0,0,.3);
+			font-size: 40px;
+			font-size: 4.0rem;
+			text-decoration: none;
+
+			&:hover,
+			&:active {
+				color: $red;
+			}
+		}
+	}
+}
+
+a.cart__utility__continue:link,
+a.cart__utility__continue:visited,
+a.cart__utility__update:link,
+a.cart__utility__update:visited {
+	float: left;
+	line-height: 34px;
+	line-height: 3.4rem;
+
+	span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+a.cart__utility__update:link,
+a.cart__utility__update:visited {
+	float: right;
+
+	span:first-child {
+		font-size: 24px;
+		font-size: 2.4rem;
+		margin-top: -3px;
+	}
+}
+
+/*------------------------------------------------------------------
+    PAGE: Shopping Cart / Promo & GC inputs
+-------------------------------------------------------------------*/
+
+.cart__codes {
+	padding: 0 0 60px 0;
+}
+
+.cart__promo-code,
+.cart__promo-gc {
+	border: 1px solid $cart-table-exterior;
+	padding: 45px;
+
+	input[type="text"] {
+		display: inline-block;
+	}
+}
+
+.cart__promo-code {
+
+	input[type="text"] {
+		width: 305px / 488px * 100%;
+	}
+
+	a {
+		margin: 0 0 0 15px;
+	}
+
+}
+
+.cart__promo-gc {
+
+	.cart__promo-gc__code {
+		width: 180px / 488px * 100%;
+	}
+
+	.cart__promo-gc__amt {
+		width: 135px / 488px * 100%;
+	}
+
+	a {
+		margin: 0 0 0 15px;
+	}
+
+	.cart__promo-gc__dollar {
+		@extend .archer-med;
+		color: $primary-copy-light;
+		display: inline-block;
+		font-size: 42px;
+		font-size: 4.2rem;
+		margin: 0 0 6px 20px;
+		vertical-align: middle;
+	}
+
+}
+
+
+/*------------------------------------------------------------------
+    PAGE: Shopping Cart / Grand total and proceed
+-------------------------------------------------------------------*/
+
+.cart__total {
+	border: 1px solid $cart-table-exterior;
+}
+
+.cart__total-amt,
+.cart__total-proceed {
+	padding: 45px;
+}
+
+.cart__total-amt {
+	display: table;
+	height: 100%;
+	min-height: 230px;
+	text-align: center;
+	width: 100%;
+
+	p {
+		color: $red;
+		display: table-cell;
+		font-size: 48px;
+		font-size: 4.8rem;
+		vertical-align: middle;
+	}
+}
+
+.cart__total-proceed {
+
+	a.btn:link span,
+	a.btn:visited span {
+		font-size: 13px;
+		font-size: 1.3rem;
+	}
+	a:last-child.btn:link,
+	a:last-child.btn:visited {
+		margin-bottom: 0;
+	}
+
+}
