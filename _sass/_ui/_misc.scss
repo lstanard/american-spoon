@@ -2,6 +2,30 @@
     UI: Misc
 -------------------------------------------------------------------*/
 
+.featured-recipes__rule {
+	background: url('../_img/as_icon_FPO_fork-knife.jpg') no-repeat 50% 50% transparent;
+	border: none;
+	height: 70px;
+	margin: 45px auto 45px auto;
+	position: relative;
+	width: 100%;
+
+	&:before, &:after {
+		border-bottom: 2px solid $footer-social-grey;
+		content: "";
+		display: block;
+		position: absolute;
+		top: 50%;
+		width: 45%;
+	}
+	&:before {
+		left: 0;
+	}
+	&:after {
+		right: 0;
+	}
+}
+
 hr {
 	background: transparent;
 	border: none;

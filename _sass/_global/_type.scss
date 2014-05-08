@@ -19,7 +19,6 @@ body {
 -------------------------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
-	@extend .archer-bold;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -94,8 +93,24 @@ h2 {
 
 h3 {
 
-	font-size: 28px;
-	font-size: 2.8rem;
+	@extend .archer-med-ital;
+	font-size: 30px;
+	font-size: 3.0rem;
+	line-height: 34px;
+	line-height: 3.4rem;
+	margin: 0 0 60px 0;
+	text-align: center;
+
+	&.featured-recipes__headline {
+		color: $olive-green;
+	}
+
+	&.recipes-jump__headline {
+		color: $blue;
+		font-size: 32px;
+		font-size: 3.2rem;
+		margin: 0 0 15px 0;
+	}
 
 	&.footer__sign-up__head {
 		@extend .archer-med-ital;
@@ -170,7 +185,7 @@ p {
 	line-height: 25px;
 	line-height: 2.5rem;
 
-	&.featured-recipes__lead-copy {
+	&.lead-copy {
 		font-size: 22px;
 		font-size: 2.2rem;
 		line-height: 34px;

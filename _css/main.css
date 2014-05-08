@@ -131,18 +131,18 @@ a:hover, a:active {
     UTILITY: Misc
 -------------------------------------------------------------------*/
 /* line 9, ../_sass/_global/_utility.scss */
-.cf, .wrapper, .row, .form__group, .footer__sign-up__form, .product-grid ul, .featured-products__grid ul, .related-products ul, .featured-products__header {
+.cf, .wrapper, .row, .form__group, .footer__sign-up__form, .product-grid ul, .featured-products__grid ul, .related-products ul, .featured-products__header, .recipes__category__list {
   zoom: 1;
 }
 /* line 12, ../_sass/_global/_utility.scss */
-.cf:before, .wrapper:before, .row:before, .form__group:before, .footer__sign-up__form:before, .product-grid ul:before, .featured-products__grid ul:before, .related-products ul:before, .featured-products__header:before, .cf:after, .wrapper:after, .row:after, .form__group:after, .footer__sign-up__form:after, .product-grid ul:after, .featured-products__grid ul:after, .related-products ul:after, .featured-products__header:after {
+.cf:before, .wrapper:before, .row:before, .form__group:before, .footer__sign-up__form:before, .product-grid ul:before, .featured-products__grid ul:before, .related-products ul:before, .featured-products__header:before, .recipes__category__list:before, .cf:after, .wrapper:after, .row:after, .form__group:after, .footer__sign-up__form:after, .product-grid ul:after, .featured-products__grid ul:after, .related-products ul:after, .featured-products__header:after, .recipes__category__list:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
 /* line 19, ../_sass/_global/_utility.scss */
-.cf:after, .wrapper:after, .row:after, .form__group:after, .footer__sign-up__form:after, .product-grid ul:after, .featured-products__grid ul:after, .related-products ul:after, .featured-products__header:after {
+.cf:after, .wrapper:after, .row:after, .form__group:after, .footer__sign-up__form:after, .product-grid ul:after, .featured-products__grid ul:after, .related-products ul:after, .featured-products__header:after, .recipes__category__list:after {
   clear: both;
 }
 
@@ -333,7 +333,7 @@ a:hover, a:active {
 }
 
 /* line 190, ../_sass/_global/_font-imports.scss */
-.archer-med-ital, h1.section__headline, h1.featured-products__headline, h3.footer__sign-up__head, .featured-recipes__header h1, .product-details__meta__size, .product-details__quantity input {
+.archer-med-ital, h1.section__headline, h1.featured-products__headline, h3, h3.footer__sign-up__head, .product-details__meta__size, .product-details__quantity input {
   font-family: "ArcherMediumItalic", serif;
   font-weight: normal;
 }
@@ -345,7 +345,7 @@ a:hover, a:active {
 }
 
 /* line 200, ../_sass/_global/_font-imports.scss */
-.archer-bold, h1, h2, h3, h4, h5, h6, .shipping-banner .divider, .shipping-banner p.shipping-banner__msg02 {
+.archer-bold, .shipping-banner .divider, .shipping-banner p.shipping-banner__msg02 {
   font-family: "ArcherBold", serif;
   font-weight: normal;
 }
@@ -386,7 +386,7 @@ a:hover, a:active {
 .verlag-black, p.call-out, .ui-link, a.ui-link--right:link, a.ui-link--right:visited, a.ui-link--left:link, a.ui-link--left:visited, a.ui-link:link, a.ui-link:visited, a.btn:link, a.btn:visited, .footer__primary__nav ul li a:link,
 .footer__primary__nav ul li a:visited, .product-grid .featured-product__add-to-cart, .featured-products__grid .featured-product__add-to-cart, .related-products .featured-product__add-to-cart, .product-grid .featured-product__name, .featured-products__grid .featured-product__name, .related-products .featured-product__name, .featured-products__header a.featured-products__shop-link:link,
 .featured-products__header a.featured-products__shop-link:visited, .related-recipes__list li:before, .related-recipes__list li a:link,
-.related-recipes__list li a:visited {
+.related-recipes__list li a:visited, .recipes-jump__grid figure a:link figcaption h4, .recipes-jump__grid figure a:visited figcaption h4 {
   font-family: "VerlagBlack", Arial, sans-serif;
   font-weight: normal;
 }
@@ -417,13 +417,13 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
-/* line 27, ../_sass/_global/_type.scss */
+/* line 26, ../_sass/_global/_type.scss */
 h1 {
   color: #77787b;
   font-size: 52px;
   font-size: 5.2rem;
 }
-/* line 33, ../_sass/_global/_type.scss */
+/* line 32, ../_sass/_global/_type.scss */
 h1.page-title {
   color: #939598;
   line-height: 56px;
@@ -431,18 +431,18 @@ h1.page-title {
   margin: 15px 0 75px 0;
   text-align: center;
 }
-/* line 42, ../_sass/_global/_type.scss */
+/* line 41, ../_sass/_global/_type.scss */
 h1.section__headline {
   font-size: 28px;
   font-size: 2.8rem;
   margin: 0 0 60px 0;
 }
-/* line 49, ../_sass/_global/_type.scss */
+/* line 48, ../_sass/_global/_type.scss */
 h1.featured-products__headline {
   font-size: 30px;
   font-size: 3.0rem;
 }
-/* line 55, ../_sass/_global/_type.scss */
+/* line 54, ../_sass/_global/_type.scss */
 h1.related-products__headline {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   font-size: 16px;
@@ -450,7 +450,7 @@ h1.related-products__headline {
   padding: 0 0 15px 0;
   text-transform: uppercase;
 }
-/* line 64, ../_sass/_global/_type.scss */
+/* line 63, ../_sass/_global/_type.scss */
 h1.prodcut-details__product-name {
   color: #d1232a;
   font-size: 30px;
@@ -460,12 +460,12 @@ h1.prodcut-details__product-name {
   margin: 0 0 45px 0;
 }
 
-/* line 76, ../_sass/_global/_type.scss */
+/* line 75, ../_sass/_global/_type.scss */
 h2 {
   font-size: 36px;
   font-size: 3.6rem;
 }
-/* line 81, ../_sass/_global/_type.scss */
+/* line 80, ../_sass/_global/_type.scss */
 h2.login__header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: #d1232a;
@@ -477,12 +477,27 @@ h2.login__header {
   text-transform: uppercase;
 }
 
-/* line 95, ../_sass/_global/_type.scss */
+/* line 94, ../_sass/_global/_type.scss */
 h3 {
-  font-size: 28px;
-  font-size: 2.8rem;
+  font-size: 30px;
+  font-size: 3.0rem;
+  line-height: 34px;
+  line-height: 3.4rem;
+  margin: 0 0 60px 0;
+  text-align: center;
 }
-/* line 100, ../_sass/_global/_type.scss */
+/* line 104, ../_sass/_global/_type.scss */
+h3.featured-recipes__headline {
+  color: #5c8727;
+}
+/* line 108, ../_sass/_global/_type.scss */
+h3.recipes-jump__headline {
+  color: #344976;
+  font-size: 32px;
+  font-size: 3.2rem;
+  margin: 0 0 15px 0;
+}
+/* line 115, ../_sass/_global/_type.scss */
 h3.footer__sign-up__head {
   color: #d1232a;
   font-size: 3.6rem;
@@ -490,19 +505,19 @@ h3.footer__sign-up__head {
   margin: 0 0 45px 0;
 }
 
-/* line 110, ../_sass/_global/_type.scss */
+/* line 125, ../_sass/_global/_type.scss */
 h4 {
   font-size: 24px;
   font-size: 2.4rem;
 }
-/* line 115, ../_sass/_global/_type.scss */
+/* line 130, ../_sass/_global/_type.scss */
 h4.related-recipes__headline {
   color: #77787b;
   font-size: 18px;
   font-size: 1.8rem;
   margin: 0 0 10px 0;
 }
-/* line 123, ../_sass/_global/_type.scss */
+/* line 138, ../_sass/_global/_type.scss */
 h4.cart__promo__headline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: #a7a9ac;
@@ -515,12 +530,12 @@ h4.cart__promo__headline {
   text-transform: uppercase;
 }
 
-/* line 138, ../_sass/_global/_type.scss */
+/* line 153, ../_sass/_global/_type.scss */
 h5 {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 143, ../_sass/_global/_type.scss */
+/* line 158, ../_sass/_global/_type.scss */
 h5.footer__primary__contact__head {
   color: #d1232a;
   font-size: 24px;
@@ -529,7 +544,7 @@ h5.footer__primary__contact__head {
   line-height: 3.0rem;
 }
 
-/* line 154, ../_sass/_global/_type.scss */
+/* line 169, ../_sass/_global/_type.scss */
 h6 {
   font-size: 16px;
   font-size: 1.6rem;
@@ -538,7 +553,7 @@ h6 {
 /*------------------------------------------------------------------
 	PARAGRAPH STYLES
 -------------------------------------------------------------------*/
-/* line 165, ../_sass/_global/_type.scss */
+/* line 180, ../_sass/_global/_type.scss */
 p {
   color: #77787b;
   font-size: 20px;
@@ -546,20 +561,20 @@ p {
   line-height: 25px;
   line-height: 2.5rem;
 }
-/* line 173, ../_sass/_global/_type.scss */
-p.featured-recipes__lead-copy {
+/* line 188, ../_sass/_global/_type.scss */
+p.lead-copy {
   font-size: 22px;
   font-size: 2.2rem;
   line-height: 34px;
   line-height: 3.4rem;
 }
 
-/* line 181, ../_sass/_global/_type.scss */
+/* line 196, ../_sass/_global/_type.scss */
 p {
   margin: 0 0 30px 0;
 }
 
-/* line 185, ../_sass/_global/_type.scss */
+/* line 200, ../_sass/_global/_type.scss */
 p.call-out {
   font-size: 12px;
   font-size: 1.2rem;
@@ -672,7 +687,7 @@ body, html {
 }
 
 /* line 11, ../_sass/_global/_columns.scss */
-.col, .col-2-5, .col-3-5, .col-2-3, .col-1-3, .col-1-2, .col-1-4, .product-grid ul > li, .featured-products__grid ul > li, .related-products ul > li, .col-1-8 {
+.col, .col-2-5, .col-3-5, .col-2-3, .col-1-3, .recipes__category__list li, .col-1-2, .col-1-4, .product-grid ul > li, .featured-products__grid ul > li, .related-products ul > li, .col-1-8 {
   height: auto;
   margin: 0;
   min-height: 1px;
@@ -680,12 +695,12 @@ body, html {
   width: 100%;
 }
 /* line 21, ../_sass/_global/_columns.scss */
-.col:last-of-type, .col-2-5:last-of-type, .col-3-5:last-of-type, .col-2-3:last-of-type, .col-1-3:last-of-type, .col-1-2:last-of-type, .col-1-4:last-of-type, .product-grid ul > li:last-of-type, .featured-products__grid ul > li:last-of-type, .related-products ul > li:last-of-type, .col-1-8:last-of-type {
+.col:last-of-type, .col-2-5:last-of-type, .col-3-5:last-of-type, .col-2-3:last-of-type, .col-1-3:last-of-type, .recipes__category__list li:last-of-type, .col-1-2:last-of-type, .col-1-4:last-of-type, .product-grid ul > li:last-of-type, .featured-products__grid ul > li:last-of-type, .related-products ul > li:last-of-type, .col-1-8:last-of-type {
   padding-right: 0;
 }
 @media (min-width: 40.5em) {
   /* line 11, ../_sass/_global/_columns.scss */
-  .col, .col-2-5, .col-3-5, .col-2-3, .col-1-3, .col-1-2, .col-1-4, .product-grid ul > li, .featured-products__grid ul > li, .related-products ul > li, .col-1-8 {
+  .col, .col-2-5, .col-3-5, .col-2-3, .col-1-3, .recipes__category__list li, .col-1-2, .col-1-4, .product-grid ul > li, .featured-products__grid ul > li, .related-products ul > li, .col-1-8 {
     padding-right: 20px;
     float: left;
   }
@@ -714,7 +729,7 @@ body, html {
 
 @media (min-width: 40.5em) {
   /* line 53, ../_sass/_global/_columns.scss */
-  .col-1-3 {
+  .col-1-3, .recipes__category__list li {
     width: 33.33333%;
   }
 }
@@ -1064,6 +1079,33 @@ a.btn:link.ghost.yellow-green:hover, a.btn:link.ghost.yellow-green:active, a.btn
     UI: Misc
 -------------------------------------------------------------------*/
 /* line 5, ../_sass/_ui/_misc.scss */
+.featured-recipes__rule {
+  background: url("../_img/as_icon_FPO_fork-knife.jpg") no-repeat 50% 50% transparent;
+  border: none;
+  height: 70px;
+  margin: 45px auto 45px auto;
+  position: relative;
+  width: 100%;
+}
+/* line 13, ../_sass/_ui/_misc.scss */
+.featured-recipes__rule:before, .featured-recipes__rule:after {
+  border-bottom: 2px solid #d0d4d7;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 45%;
+}
+/* line 21, ../_sass/_ui/_misc.scss */
+.featured-recipes__rule:before {
+  left: 0;
+}
+/* line 24, ../_sass/_ui/_misc.scss */
+.featured-recipes__rule:after {
+  right: 0;
+}
+
+/* line 29, ../_sass/_ui/_misc.scss */
 hr {
   background: transparent;
   border: none;
@@ -2062,64 +2104,28 @@ a.footer__sign-up__btn:visited {
   background-color: #f4f8f6;
 }
 
-/* line 87, ../_sass/_pages/_home.scss */
-.featured-recipes__header .featured-recipes__rule {
-  background: url("../_img/as_icon_FPO_fork-knife.jpg") no-repeat 50% 50% transparent;
-  border: none;
-  height: 70px;
-  margin: 45px auto 45px auto;
-  position: relative;
-  width: 100%;
-}
-/* line 95, ../_sass/_pages/_home.scss */
-.featured-recipes__header .featured-recipes__rule:before, .featured-recipes__header .featured-recipes__rule:after {
-  border-bottom: 2px solid #d0d4d7;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  width: 45%;
-}
-/* line 103, ../_sass/_pages/_home.scss */
-.featured-recipes__header .featured-recipes__rule:before {
-  left: 0;
-}
-/* line 106, ../_sass/_pages/_home.scss */
-.featured-recipes__header .featured-recipes__rule:after {
-  right: 0;
-}
-/* line 111, ../_sass/_pages/_home.scss */
+/* line 86, ../_sass/_pages/_home.scss */
 .featured-recipes__header a.btn:link, .featured-recipes__header a.btn:visited {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
 }
-/* line 117, ../_sass/_pages/_home.scss */
-.featured-recipes__header h1 {
-  color: #5c8727;
-  font-size: 30px;
-  font-size: 3.0rem;
-  line-height: 34px;
-  line-height: 3.4rem;
-  text-align: center;
-  margin: 0 0 60px 0;
-}
 
-/* line 129, ../_sass/_pages/_home.scss */
+/* line 93, ../_sass/_pages/_home.scss */
 .featured-recipes__grid {
   margin: 60px 0 0 0;
 }
-/* line 133, ../_sass/_pages/_home.scss */
+/* line 97, ../_sass/_pages/_home.scss */
 .featured-recipes__grid ul {
   overflow: hidden;
 }
-/* line 137, ../_sass/_pages/_home.scss */
+/* line 101, ../_sass/_pages/_home.scss */
 .featured-recipes__grid ul > li {
   float: left;
   margin-bottom: 20px;
   min-height: 496px;
 }
-/* line 156, ../_sass/_pages/_home.scss */
+/* line 120, ../_sass/_pages/_home.scss */
 .featured-recipes__grid img {
   width: 100%;
 }
@@ -2607,6 +2613,121 @@ a.cart__utility__update:visited span:first-child {
 .cart__total-proceed a:last-child.btn:link,
 .cart__total-proceed a:last-child.btn:visited {
   margin-bottom: 0;
+}
+
+/*------------------------------------------------------------------
+    PAGE: Recipes / Landing page
+-------------------------------------------------------------------*/
+/* line 8, ../_sass/_pages/_recipes.scss */
+.recipes-jump header .lead-copy {
+  margin: 0 auto;
+  max-width: 775px;
+  text-align: center;
+}
+
+/* line 17, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid {
+  margin: 60px 0 0 0;
+}
+/* line 27, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid ul {
+  overflow: hidden;
+}
+/* line 31, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid ul > li {
+  float: left;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 38, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid ul > li:nth-child(1),
+.recipes-jump__grid ul > li:nth-child(4),
+.recipes-jump__grid ul > li:nth-child(6) {
+  height: 499px;
+  margin-right: 20px;
+  width: 64.58333%;
+}
+/* line 45, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid ul > li:nth-child(2),
+.recipes-jump__grid ul > li:nth-child(3),
+.recipes-jump__grid ul > li:nth-child(7),
+.recipes-jump__grid ul > li:nth-child(8) {
+  height: 499px;
+  width: 33.75%;
+}
+/* line 52, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid ul > li:nth-child(3),
+.recipes-jump__grid ul > li:nth-child(8) {
+  margin-right: 20px;
+}
+/* line 56, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid ul > li:nth-child(4) {
+  margin-right: 0;
+}
+/* line 59, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid ul > li:nth-child(5) {
+  height: 434px;
+  width: 100%;
+}
+/* line 69, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid figure a:link figcaption, .recipes-jump__grid figure a:visited figcaption {
+  height: 100%;
+  padding: 45px;
+  position: absolute;
+  width: 100%;
+}
+/* line 75, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid figure a:link figcaption h4, .recipes-jump__grid figure a:visited figcaption h4 {
+  -moz-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #dd691d;
+  display: table;
+  font-size: 19px;
+  font-size: 1.9rem;
+  height: 100%;
+  line-height: 24px;
+  line-height: 2.4rem;
+  padding: 0 45px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+/* line 93, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid figure a:link figcaption h4 span, .recipes-jump__grid figure a:visited figcaption h4 span {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 101, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid figure img {
+  width: 100%;
+}
+/* line 109, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid figure:hover a:link figcaption h4, .recipes-jump__grid figure:hover a:visited figcaption h4 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+/*------------------------------------------------------------------
+    PAGE: Recipes / Category page
+-------------------------------------------------------------------*/
+/* line 127, ../_sass/_pages/_recipes.scss */
+.recipes__category__list li {
+  padding-bottom: 45px;
+}
+/* line 131, ../_sass/_pages/_recipes.scss */
+.recipes__category__list li:nth-child(3) {
+  padding-right: 0;
+}
+/* line 137, ../_sass/_pages/_recipes.scss */
+.recipes__category__list figure img {
+  width: 100%;
 }
 
 /*------------------------------------------------------------------
