@@ -9,9 +9,6 @@
 }
 
 .col {
-
-	$padding: 20px;
-
 	height: auto;
 	margin: 0;
 	min-height: 1px;
@@ -19,62 +16,152 @@
 	width: 100%;
 
 	&:last-of-type {
-		padding-right: 0;
+		margin-right: 0;
 	}
 
 	@include respond($med) {
-		padding-right: $padding;
+		margin-right: $gutter;
 		float: left;
 	}
 
 }
 
-.col-2-5 {
+.col-1-5, .col-2-5, .col-3-5, .col-4-5, .col-1-3, .col-2-3, .col-1-2, .col-1-4, .col-1-8 {
 	@extend .col;
-
-	@include respond($med) {
-		width: 2 / 5 * 100%;
-	}
 }
-.col-3-5 {
-	@extend .col;
 
-	@include respond($med) {
-		width: 3 / 5 * 100%;
-	}
-}
-.col-2-3 {
-	@extend .col;
+/*------------------------------------------------------------------
+	COLUMNS / Narrow container columns
+-------------------------------------------------------------------*/
 
-	@include respond($med) {
-		width: 2 / 3 * 100%;
-	}
-}
-.col-1-3 {
-	@extend .col;
+.container--narrow {
 
-	@include respond($med) {
-		width: 1 / 3 * 100%;
+	.col-1-5 {
+		@include respond($med) {
+			width: (($container-narrow - $gutter) / 5) / $container-narrow * 100%;
+		}
 	}
-}
-.col-1-2 {
-	@extend .col;
+	.col-2-5 {
+		@include respond($med) {
+			width: ((($container-narrow - $gutter) / 5) * 2) / $container-narrow * 100%;
+		}
+	}
+	.col-3-5 {
+		@include respond($med) {
+			width: ((($container-narrow - $gutter) / 5) * 3) / $container-narrow * 100%;
+		}
+	}
+	.col-3-5 {
+		@include respond($med) {
+			width: ((($container-narrow - $gutter) / 5) * 4) / $container-narrow * 100%;
+		}
+	}
 
-	@include respond($med) {
-		width: 1 / 2 * 100%;
-	}
-}
-.col-1-4 {
-	@extend .col;
+	.col-1-3 {
+		@include respond($med) {
+			width: (($container-narrow - $gutter * 2) / 3) / $container-narrow * 100%;
 
-	@include respond($med) {
-		width: 1 / 2 * 100%;
+			&:nth-child(3) {
+				margin-right: 0;
+			}
+		}
 	}
-	@include respond($lrg) {
-		width: 1 / 4 * 100%;
+	.col-2-3 {
+		@include respond($med) {
+			width: ((($container-narrow - $gutter * 2) / 3) * 2) / $container-narrow * 100%;
+		}
 	}
+
+	.col-1-2 {
+		@include respond($med) {
+			width: (($container-narrow - $gutter) / 2) / $container-narrow * 100%;
+
+			&:nth-child(2) {
+				margin-right: 0;
+			}
+		}
+	}
+	.col-1-4 {
+		@include respond($med) {
+			width: (($container-narrow - $gutter * 3) / 4) / $container-narrow * 100%;
+
+			&:nth-child(4) {
+				margin-right: 0;
+			}
+		}
+	}
+	.col-1-8 {
+		@include respond($med) {
+			width: (($container-narrow - $gutter * 7) / 8) / $container-narrow * 100%;
+		}
+	}
+
 }
-.col-1-8 {
-	@extend .col;
-	width: 1 / 8 * 100%;
+
+/*------------------------------------------------------------------
+	COLUMNS / Wide container columns
+-------------------------------------------------------------------*/
+
+.container--wide {
+
+	.col-1-5 {
+		@include respond($med) {
+			width: (($container-wide - $gutter) / 5) / $container-wide * 100%;
+		}
+	}
+	.col-2-5 {
+		@include respond($med) {
+			width: ((($container-wide - $gutter) / 5) * 2) / $container-wide * 100%;
+		}
+	}
+	.col-3-5 {
+		@include respond($med) {
+			width: ((($container-wide - $gutter) / 5) * 3) / $container-wide * 100%;
+		}
+	}
+	.col-3-5 {
+		@include respond($med) {
+			width: ((($container-wide - $gutter) / 5) * 4) / $container-wide * 100%;
+		}
+	}
+
+	.col-1-3 {
+		@include respond($med) {
+			width: (($container-wide - $gutter * 2) / 3) / $container-wide * 100%;
+
+			&:nth-child(3) {
+				margin-right: 0;
+			}
+		}
+	}
+	.col-2-3 {
+		@include respond($med) {
+			width: ((($container-wide - $gutter * 2) / 3) * 2) / $container-wide * 100%;
+		}
+	}
+
+	.col-1-2 {
+		@include respond($med) {
+			width: (($container-wide - $gutter) / 2) / $container-wide * 100%;
+
+			&:nth-child(2) {
+				margin-right: 0;
+			}
+		}
+	}
+	.col-1-4 {
+		@include respond($med) {
+			width: (($container-wide - $gutter * 3) / 4) / $container-wide * 100%;
+
+			&:nth-child(4) {
+				margin-right: 0;
+			}
+		}
+	}
+	.col-1-8 {
+		@include respond($med) {
+			width: (($container-wide - $gutter * 7) / 8) / $container-wide * 100%;
+		}
+	}
+
 }

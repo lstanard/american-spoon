@@ -33,7 +33,7 @@ body, html {
 .container {
 	height: auto;
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: $container-wide;
 	padding: 10% 3%;
 	position: relative;
 	width: 100%;
@@ -61,12 +61,12 @@ body, html {
 
 .container--narrow {
 	@extend .container;
-	max-width: 1000px;
+	max-width: $container-narrow;
 }
 
 .container--wide {
 	@extend .container;
-	max-width: 1200px;
+	max-width: $container-wide;
 
 	@include mnw(1250px) {
 		padding-left: 0;
