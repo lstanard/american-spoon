@@ -6,6 +6,7 @@ PAGE LINKS:
  - Login: http://www.spoon.com/designtmp/login.html
  - Catalog request: http://www.spoon.com/designtmp/catalog-request.html
  - Shopping cart: http://www.spoon.com/designtmp/cart.html
+ - Recipes: http://www.spoon.com/designtmp/recipes.html
 
 
 DEV NOTES:
