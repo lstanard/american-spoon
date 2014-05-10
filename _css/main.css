@@ -327,13 +327,15 @@ a:hover, a:active {
 
 /* line 185, ../_sass/_global/_font-imports.scss */
 .archer-med, label, select, .footer__primary__contact p, .footer__primary__contact a:link, .footer__primary__contact a:visited, .product-grid .featured-product__price, .featured-products__grid .featured-product__price, .related-products .featured-product__price, .product-details__meta__price, .product-details__description p, .cart__items__table .items__table__meta, .cart__items__table .items__table-td__price, .cart__items__table .items__table-td__quantity, .cart__items__table .items__table-td__subtotal, .cart__items__table .items__table-td__remove, .cart__items__table .items__table-td__product-name a:link,
-.cart__items__table .items__table-td__product-name a:visited, .cart__promo-gc .cart__promo-gc__dollar {
+.cart__items__table .items__table-td__product-name a:visited, .cart__promo-gc .cart__promo-gc__dollar, .store-location .store-location__info, .store-location__address,
+.store-location__phone,
+.store-location__hours {
   font-family: "ArcherMedium", serif;
   font-weight: normal;
 }
 
 /* line 190, ../_sass/_global/_font-imports.scss */
-.archer-med-ital, h1.section__headline, h1.featured-products__headline, h3, h3.footer__sign-up__head, .product-details__meta__size, .product-details__quantity input {
+.archer-med-ital, h1.section__headline, h1.featured-products__headline, h2.store-location__title, h3, h3.footer__sign-up__head, .product-details__meta__size, .product-details__quantity input {
   font-family: "ArcherMediumItalic", serif;
   font-weight: normal;
 }
@@ -383,7 +385,7 @@ a:hover, a:active {
 }
 
 /* line 225, ../_sass/_global/_font-imports.scss */
-.verlag-black, p.call-out, .ui-link, a.ui-link--right:link, a.ui-link--right:visited, a.ui-link--left:link, a.ui-link--left:visited, a.ui-link:link, a.ui-link:visited, a.btn:link, a.btn:visited, .footer__primary__nav ul li a:link,
+.verlag-black, h5.store-location__hours-title, p.call-out, .ui-link, a.ui-link--right:link, a.ui-link--right:visited, a.ui-link--left:link, a.ui-link--left:visited, a.ui-link:link, a.ui-link:visited, a.btn:link, a.btn:visited, .footer__primary__nav ul li a:link,
 .footer__primary__nav ul li a:visited, .product-grid .featured-product__add-to-cart, .featured-products__grid .featured-product__add-to-cart, .related-products .featured-product__add-to-cart, .product-grid .featured-product__name, .featured-products__grid .featured-product__name, .related-products .featured-product__name, .featured-products__header a.featured-products__shop-link:link,
 .featured-products__header a.featured-products__shop-link:visited, .related-recipes__list li:before, .related-recipes__list li a:link,
 .related-recipes__list li a:visited, .recipes-jump__grid figure a:link figcaption h4, .recipes-jump__grid figure a:visited figcaption h4 {
@@ -462,13 +464,13 @@ h1.prodcut-details__product-name {
 
 /* line 75, ../_sass/_global/_type.scss */
 h2 {
+  color: #d1232a;
   font-size: 36px;
   font-size: 3.6rem;
 }
-/* line 80, ../_sass/_global/_type.scss */
+/* line 81, ../_sass/_global/_type.scss */
 h2.login__header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #d1232a;
   font-size: 22px;
   font-size: 2.2rem;
   margin: 15px 0 30px 0;
@@ -476,8 +478,16 @@ h2.login__header {
   text-align: center;
   text-transform: uppercase;
 }
+/* line 92, ../_sass/_global/_type.scss */
+h2.store-location__title {
+  font-size: 66px;
+  font-size: 6.6rem;
+  line-height: 74px;
+  line-height: 7.4rem;
+  margin: 0 0 30px 0;
+}
 
-/* line 94, ../_sass/_global/_type.scss */
+/* line 103, ../_sass/_global/_type.scss */
 h3 {
   font-size: 30px;
   font-size: 3.0rem;
@@ -486,18 +496,18 @@ h3 {
   margin: 0 0 60px 0;
   text-align: center;
 }
-/* line 104, ../_sass/_global/_type.scss */
+/* line 113, ../_sass/_global/_type.scss */
 h3.featured-recipes__headline {
   color: #5c8727;
 }
-/* line 108, ../_sass/_global/_type.scss */
+/* line 117, ../_sass/_global/_type.scss */
 h3.recipes-jump__headline {
   color: #344976;
   font-size: 32px;
   font-size: 3.2rem;
   margin: 0 0 15px 0;
 }
-/* line 115, ../_sass/_global/_type.scss */
+/* line 124, ../_sass/_global/_type.scss */
 h3.footer__sign-up__head {
   color: #d1232a;
   font-size: 3.6rem;
@@ -505,19 +515,19 @@ h3.footer__sign-up__head {
   margin: 0 0 45px 0;
 }
 
-/* line 125, ../_sass/_global/_type.scss */
+/* line 134, ../_sass/_global/_type.scss */
 h4 {
   font-size: 24px;
   font-size: 2.4rem;
 }
-/* line 130, ../_sass/_global/_type.scss */
+/* line 139, ../_sass/_global/_type.scss */
 h4.related-recipes__headline {
   color: #77787b;
   font-size: 18px;
   font-size: 1.8rem;
   margin: 0 0 10px 0;
 }
-/* line 138, ../_sass/_global/_type.scss */
+/* line 147, ../_sass/_global/_type.scss */
 h4.cart__promo__headline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: #a7a9ac;
@@ -530,12 +540,12 @@ h4.cart__promo__headline {
   text-transform: uppercase;
 }
 
-/* line 153, ../_sass/_global/_type.scss */
+/* line 162, ../_sass/_global/_type.scss */
 h5 {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 158, ../_sass/_global/_type.scss */
+/* line 167, ../_sass/_global/_type.scss */
 h5.footer__primary__contact__head {
   color: #d1232a;
   font-size: 24px;
@@ -543,8 +553,12 @@ h5.footer__primary__contact__head {
   line-height: 30px;
   line-height: 3.0rem;
 }
+/* line 176, ../_sass/_global/_type.scss */
+h5.store-location__hours-title {
+  text-transform: uppercase;
+}
 
-/* line 169, ../_sass/_global/_type.scss */
+/* line 183, ../_sass/_global/_type.scss */
 h6 {
   font-size: 16px;
   font-size: 1.6rem;
@@ -553,7 +567,7 @@ h6 {
 /*------------------------------------------------------------------
 	PARAGRAPH STYLES
 -------------------------------------------------------------------*/
-/* line 180, ../_sass/_global/_type.scss */
+/* line 194, ../_sass/_global/_type.scss */
 p {
   color: #77787b;
   font-size: 20px;
@@ -561,7 +575,7 @@ p {
   line-height: 25px;
   line-height: 2.5rem;
 }
-/* line 188, ../_sass/_global/_type.scss */
+/* line 202, ../_sass/_global/_type.scss */
 p.lead-copy {
   font-size: 22px;
   font-size: 2.2rem;
@@ -569,12 +583,12 @@ p.lead-copy {
   line-height: 3.4rem;
 }
 
-/* line 196, ../_sass/_global/_type.scss */
+/* line 210, ../_sass/_global/_type.scss */
 p {
   margin: 0 0 30px 0;
 }
 
-/* line 200, ../_sass/_global/_type.scss */
+/* line 214, ../_sass/_global/_type.scss */
 p.call-out {
   font-size: 12px;
   font-size: 1.2rem;
@@ -2743,6 +2757,119 @@ a.cart__utility__update:visited span:first-child {
 /* line 144, ../_sass/_pages/_recipes.scss */
 .recipes__category__list figure img {
   width: 100%;
+}
+
+/*------------------------------------------------------------------
+    PAGE: Stores
+-------------------------------------------------------------------*/
+/* line 7, ../_sass/_pages/_stores.scss */
+.page__stores .store-location:last-child {
+  border-bottom: none;
+}
+
+/* line 13, ../_sass/_pages/_stores.scss */
+.store-location {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+/* line 17, ../_sass/_pages/_stores.scss */
+.store-location .container--wide {
+  padding-bottom: 90px;
+  padding-top: 90px;
+}
+/* line 23, ../_sass/_pages/_stores.scss */
+.store-location#petoskey .container--wide {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+/* line 34, ../_sass/_pages/_stores.scss */
+.store-location__meta {
+  margin: 0 auto;
+  max-width: 780px;
+}
+
+/* line 39, ../_sass/_pages/_stores.scss */
+.store-location__address,
+.store-location__phone,
+.store-location__hours {
+  font-size: 22px;
+  font-size: 2.2rem;
+  text-align: left;
+}
+
+/* line 48, ../_sass/_pages/_stores.scss */
+.store-location__address {
+  margin-bottom: 15px;
+}
+
+/* line 52, ../_sass/_pages/_stores.scss */
+.store-location__hours-title {
+  text-align: left;
+}
+
+/* line 56, ../_sass/_pages/_stores.scss */
+.store-location__photo {
+  max-height: 386px;
+}
+/* line 59, ../_sass/_pages/_stores.scss */
+.store-location__photo img {
+  max-width: 838px;
+  width: 100%;
+}
+
+/* line 67, ../_sass/_pages/_stores.scss */
+#petoskey h2,
+#petoskey .store-location__hours-title,
+#petoskey .store-location__address span,
+#petoskey .store-location__phone span,
+#petoskey .store-location__hours-title span {
+  color: #d1232a;
+}
+
+/* line 74, ../_sass/_pages/_stores.scss */
+#harbor-springs h2,
+#harbor-springs .store-location__hours-title,
+#harbor-springs .store-location__address span,
+#harbor-springs .store-location__phone span,
+#harbor-springs .store-location__hours-title span {
+  color: #fbae4b;
+}
+
+/* line 81, ../_sass/_pages/_stores.scss */
+#charlevoix h2,
+#charlevoix .store-location__hours-title,
+#charlevoix .store-location__address span,
+#charlevoix .store-location__phone span,
+#charlevoix .store-location__hours-title span {
+  color: #5c8727;
+}
+
+/* line 88, ../_sass/_pages/_stores.scss */
+#williamsburg h2,
+#williamsburg .store-location__hours-title,
+#williamsburg .store-location__address span,
+#williamsburg .store-location__phone span,
+#williamsburg .store-location__hours-title span {
+  color: #662d63;
+}
+
+/* line 95, ../_sass/_pages/_stores.scss */
+#traverse-city h2,
+#traverse-city .store-location__hours-title,
+#traverse-city .store-location__address span,
+#traverse-city .store-location__phone span,
+#traverse-city .store-location__hours-title span {
+  color: #dd691d;
+}
+
+/* line 102, ../_sass/_pages/_stores.scss */
+#saugatuck h2,
+#saugatuck .store-location__hours-title,
+#saugatuck .store-location__address span,
+#saugatuck .store-location__phone span,
+#saugatuck .store-location__hours-title span {
+  color: #b9bc17;
 }
 
 /*------------------------------------------------------------------

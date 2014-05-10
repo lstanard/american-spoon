@@ -1,0 +1,107 @@
+/*------------------------------------------------------------------
+    PAGE: Stores
+-------------------------------------------------------------------*/
+
+.page__stores {
+
+	.store-location:last-child {
+		border-bottom: none;
+	}
+
+}
+
+.store-location {
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	text-align: center;
+
+	.container--wide {
+		padding-bottom: 90px;
+		padding-top: 90px;
+	}
+
+	&#petoskey {
+		.container--wide {
+			padding-bottom: 0;
+			padding-top: 0;
+		}
+	}
+
+	.store-location__info {
+		@extend .archer-med;
+	}
+}
+
+.store-location__meta {
+	margin: 0 auto;
+	max-width: 780px;
+}
+
+.store-location__address,
+.store-location__phone,
+.store-location__hours {
+	@extend .archer-med;
+	font-size: 22px;
+	font-size: 2.2rem;
+	text-align: left;
+}
+
+.store-location__address {
+	margin-bottom: 15px;
+}
+
+.store-location__hours-title {
+	text-align: left;
+}
+
+.store-location__photo {
+	max-height: 386px;
+
+	img {
+		max-width: 838px;
+		width: 100%;
+	}
+
+}
+
+#petoskey {
+	h2,
+	.store-location__hours-title,
+	.store-location__address span,
+	.store-location__phone span,
+	.store-location__hours-title span { color: $red; }
+}
+#harbor-springs {
+	h2,
+	.store-location__hours-title,
+	.store-location__address span,
+	.store-location__phone span,
+	.store-location__hours-title span { color: $peach; }
+}
+#charlevoix {
+	h2,
+	.store-location__hours-title,
+	.store-location__address span,
+	.store-location__phone span,
+	.store-location__hours-title span { color: $olive-green; }
+}
+#williamsburg {
+	h2,
+	.store-location__hours-title,
+	.store-location__address span,
+	.store-location__phone span,
+	.store-location__hours-title span { color: $purple; }
+}
+#traverse-city {
+	h2,
+	.store-location__hours-title,
+	.store-location__address span,
+	.store-location__phone span,
+	.store-location__hours-title span { color: $pumpkin; }
+}
+#saugatuck {
+	h2,
+	.store-location__hours-title,
+	.store-location__address span,
+	.store-location__phone span,
+	.store-location__hours-title span { color: $yellow-green; }
+}

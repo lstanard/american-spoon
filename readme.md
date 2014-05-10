@@ -7,7 +7,7 @@ PAGE LINKS:
  - Catalog request: http://www.spoon.com/designtmp/catalog-request.html
  - Shopping cart: http://www.spoon.com/designtmp/cart.html
  - Recipes: http://www.spoon.com/designtmp/recipes.html
-
+ - Stores: http://www.spoon.com/designtmp/stores.html
 
 DEV NOTES:
 ----------
@@ -26,6 +26,8 @@ TO DO:
 ~~Build account pages (finish by Monday 5/5)~~
 
 ~~Shopping cart page (finish by Thursday 5/8)~~
+
+Update raster fork/knife icon with Icomoon font icon
 
 Recipe landing page - same grid from the homepage w/hover treatment. (finish by Friday 5/9)
 
