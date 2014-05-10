@@ -2670,19 +2670,30 @@ a.cart__utility__update:visited span:first-child {
   height: 434px;
   width: 100%;
 }
-/* line 69, ../_sass/_pages/_recipes.scss */
-.recipes-jump__grid figure a:link figcaption, .recipes-jump__grid figure a:visited figcaption {
-  height: 100%;
-  padding: 45px;
-  position: absolute;
-  width: 100%;
+/* line 67, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid figure a:link, .recipes-jump__grid figure a:visited {
+  display: block;
+  position: relative;
 }
-/* line 75, ../_sass/_pages/_recipes.scss */
-.recipes-jump__grid figure a:link figcaption h4, .recipes-jump__grid figure a:visited figcaption h4 {
+/* line 71, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid figure a:link figcaption, .recipes-jump__grid figure a:visited figcaption {
   -moz-transition: all 0.35s;
   -o-transition: all 0.35s;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
+  display: block;
+  height: 100%;
+  padding: 45px;
+  position: absolute;
+  top: -500px;
+  width: 100%;
+}
+/* line 80, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid figure a:link figcaption h4, .recipes-jump__grid figure a:visited figcaption h4 {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   background-color: rgba(255, 255, 255, 0.9);
@@ -2699,16 +2710,20 @@ a.cart__utility__update:visited span:first-child {
   text-transform: uppercase;
   width: 100%;
 }
-/* line 93, ../_sass/_pages/_recipes.scss */
+/* line 98, ../_sass/_pages/_recipes.scss */
 .recipes-jump__grid figure a:link figcaption h4 span, .recipes-jump__grid figure a:visited figcaption h4 span {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 101, ../_sass/_pages/_recipes.scss */
+/* line 106, ../_sass/_pages/_recipes.scss */
 .recipes-jump__grid figure img {
   width: 100%;
 }
-/* line 109, ../_sass/_pages/_recipes.scss */
+/* line 113, ../_sass/_pages/_recipes.scss */
+.recipes-jump__grid figure:hover a:link figcaption, .recipes-jump__grid figure:hover a:visited figcaption {
+  top: 0;
+}
+/* line 116, ../_sass/_pages/_recipes.scss */
 .recipes-jump__grid figure:hover a:link figcaption h4, .recipes-jump__grid figure:hover a:visited figcaption h4 {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -2717,15 +2732,15 @@ a.cart__utility__update:visited span:first-child {
 /*------------------------------------------------------------------
     PAGE: Recipes / Category page
 -------------------------------------------------------------------*/
-/* line 127, ../_sass/_pages/_recipes.scss */
+/* line 134, ../_sass/_pages/_recipes.scss */
 .recipes__category__list li {
   padding-bottom: 45px;
 }
-/* line 131, ../_sass/_pages/_recipes.scss */
+/* line 138, ../_sass/_pages/_recipes.scss */
 .recipes__category__list li:nth-child(3) {
   padding-right: 0;
 }
-/* line 137, ../_sass/_pages/_recipes.scss */
+/* line 144, ../_sass/_pages/_recipes.scss */
 .recipes__category__list figure img {
   width: 100%;
 }

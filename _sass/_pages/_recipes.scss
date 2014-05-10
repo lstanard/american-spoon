@@ -65,16 +65,21 @@
 	figure {
 
 		a:link, a:visited {
+			display: block;
+			position: relative;
 
 			figcaption {
+				@include transition(all .35s);
+				display: block;
 				height: 100%;
 				padding: 45px;
 				position: absolute;
+				top: -500px;
 				width: 100%;
 
 				h4 {
 					@extend .verlag-black;
-					@include transition(all .35s);
+					@include transition(all .5s);
 					@include opacity(0);
 					background-color: rgba(255,255,255,.9);
 					color: $pumpkin;
@@ -106,6 +111,8 @@
 
 			a:link, a:visited {
 				figcaption {
+					top: 0;
+
 					h4 {
 						@include opacity(1);
 					}

@@ -284,6 +284,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/as_recipe-photo_05_full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 365934,
+		"inputAbbreviatedPath": "\/_img\/as_recipe-photo_05_full.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_recipe-photo_05_full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_js\/_init.js": {
 		"fileType": 64,
 		"ignore": 1,
