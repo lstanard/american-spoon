@@ -388,7 +388,7 @@ a:hover, a:active {
 }
 
 /* line 225, ../_sass/_global/_font-imports.scss */
-.verlag-black, h5.store-location__hours-title, p.call-out, .ui-link, a.ui-link--right:link, a.ui-link--right:visited, a.ui-link--left:link, a.ui-link--left:visited, a.ui-link:link, a.ui-link:visited, a.btn:link, a.btn:visited, .footer__primary__nav ul li a:link,
+.verlag-black, h4.category__list__recipe-name, h5.store-location__hours-title, p.call-out, .ui-link, a.ui-link--right:link, a.ui-link--right:visited, a.ui-link--left:link, a.ui-link--left:visited, a.ui-link:link, a.ui-link:visited, a.btn:link, a.btn:visited, .footer__primary__nav ul li a:link,
 .footer__primary__nav ul li a:visited, .product-grid .featured-product__add-to-cart, .featured-products__grid .featured-product__add-to-cart, .related-products .featured-product__add-to-cart, .product-grid .featured-product__name, .featured-products__grid .featured-product__name, .related-products .featured-product__name, .featured-products__header a.featured-products__shop-link:link,
 .featured-products__header a.featured-products__shop-link:visited, .related-recipes__list li:before, .related-recipes__list li a:link,
 .related-recipes__list li a:visited, .recipes-jump__grid figure a:link figcaption h4, .recipes-jump__grid figure a:visited figcaption h4 {
@@ -542,13 +542,22 @@ h4.cart__promo__headline {
   text-align: left;
   text-transform: uppercase;
 }
+/* line 160, ../_sass/_global/_type.scss */
+h4.category__list__recipe-name {
+  color: #77787b;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin: 30px 60px;
+  text-align: center;
+}
 
-/* line 162, ../_sass/_global/_type.scss */
+/* line 172, ../_sass/_global/_type.scss */
 h5 {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 167, ../_sass/_global/_type.scss */
+/* line 177, ../_sass/_global/_type.scss */
 h5.footer__primary__contact__head {
   color: #d1232a;
   font-size: 24px;
@@ -556,12 +565,14 @@ h5.footer__primary__contact__head {
   line-height: 30px;
   line-height: 3.0rem;
 }
-/* line 176, ../_sass/_global/_type.scss */
+/* line 186, ../_sass/_global/_type.scss */
 h5.store-location__hours-title {
   text-transform: uppercase;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 
-/* line 183, ../_sass/_global/_type.scss */
+/* line 195, ../_sass/_global/_type.scss */
 h6 {
   font-size: 16px;
   font-size: 1.6rem;
@@ -570,7 +581,7 @@ h6 {
 /*------------------------------------------------------------------
 	PARAGRAPH STYLES
 -------------------------------------------------------------------*/
-/* line 194, ../_sass/_global/_type.scss */
+/* line 206, ../_sass/_global/_type.scss */
 p {
   color: #77787b;
   font-size: 20px;
@@ -578,7 +589,7 @@ p {
   line-height: 25px;
   line-height: 2.5rem;
 }
-/* line 202, ../_sass/_global/_type.scss */
+/* line 214, ../_sass/_global/_type.scss */
 p.lead-copy {
   font-size: 22px;
   font-size: 2.2rem;
@@ -586,12 +597,12 @@ p.lead-copy {
   line-height: 3.4rem;
 }
 
-/* line 210, ../_sass/_global/_type.scss */
+/* line 222, ../_sass/_global/_type.scss */
 p {
   margin: 0 0 30px 0;
 }
 
-/* line 214, ../_sass/_global/_type.scss */
+/* line 226, ../_sass/_global/_type.scss */
 p.call-out {
   font-size: 12px;
   font-size: 1.2rem;
@@ -2779,8 +2790,9 @@ a.cart__utility__update:visited span:first-child {
 .recipes-jump__grid figure a:link, .recipes-jump__grid figure a:visited {
   display: block;
   position: relative;
+  text-decoration: none;
 }
-/* line 71, ../_sass/_pages/_recipes.scss */
+/* line 72, ../_sass/_pages/_recipes.scss */
 .recipes-jump__grid figure a:link figcaption, .recipes-jump__grid figure a:visited figcaption {
   -moz-transition: all 0.35s;
   -o-transition: all 0.35s;
@@ -2793,7 +2805,7 @@ a.cart__utility__update:visited span:first-child {
   top: -500px;
   width: 100%;
 }
-/* line 80, ../_sass/_pages/_recipes.scss */
+/* line 81, ../_sass/_pages/_recipes.scss */
 .recipes-jump__grid figure a:link figcaption h4, .recipes-jump__grid figure a:visited figcaption h4 {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -2815,20 +2827,20 @@ a.cart__utility__update:visited span:first-child {
   text-transform: uppercase;
   width: 100%;
 }
-/* line 98, ../_sass/_pages/_recipes.scss */
+/* line 99, ../_sass/_pages/_recipes.scss */
 .recipes-jump__grid figure a:link figcaption h4 span, .recipes-jump__grid figure a:visited figcaption h4 span {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 106, ../_sass/_pages/_recipes.scss */
+/* line 107, ../_sass/_pages/_recipes.scss */
 .recipes-jump__grid figure img {
   width: 100%;
 }
-/* line 113, ../_sass/_pages/_recipes.scss */
+/* line 114, ../_sass/_pages/_recipes.scss */
 .recipes-jump__grid figure:hover a:link figcaption, .recipes-jump__grid figure:hover a:visited figcaption {
   top: 0;
 }
-/* line 116, ../_sass/_pages/_recipes.scss */
+/* line 117, ../_sass/_pages/_recipes.scss */
 .recipes-jump__grid figure:hover a:link figcaption h4, .recipes-jump__grid figure:hover a:visited figcaption h4 {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -2837,15 +2849,41 @@ a.cart__utility__update:visited span:first-child {
 /*------------------------------------------------------------------
     PAGE: Recipes / Category page
 -------------------------------------------------------------------*/
-/* line 134, ../_sass/_pages/_recipes.scss */
+/* line 135, ../_sass/_pages/_recipes.scss */
 .recipes__category__list li {
   padding-bottom: 45px;
 }
-/* line 144, ../_sass/_pages/_recipes.scss */
+/* line 142, ../_sass/_pages/_recipes.scss */
+.recipes__category__list figure a:link,
+.recipes__category__list figure a:visited {
+  text-decoration: none;
+}
+/* line 146, ../_sass/_pages/_recipes.scss */
+.recipes__category__list figure a:link h4,
+.recipes__category__list figure a:visited h4 {
+  -moz-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+/* line 152, ../_sass/_pages/_recipes.scss */
+.recipes__category__list figure a:link:hover h4, .recipes__category__list figure a:link:active h4,
+.recipes__category__list figure a:visited:hover h4,
+.recipes__category__list figure a:visited:active h4 {
+  color: #d1232a;
+}
+/* line 158, ../_sass/_pages/_recipes.scss */
 .recipes__category__list figure img {
   width: 100%;
 }
+/* line 162, ../_sass/_pages/_recipes.scss */
+.recipes__category__list figure figcaption {
+  display: block;
+}
 
+/*------------------------------------------------------------------
+    PAGE: Recipes / Individual recipe page
+-------------------------------------------------------------------*/
 /*------------------------------------------------------------------
     PAGE: Stores
 -------------------------------------------------------------------*/

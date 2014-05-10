@@ -67,6 +67,7 @@
 		a:link, a:visited {
 			display: block;
 			position: relative;
+			text-decoration: none;
 
 			figcaption {
 				@include transition(all .35s);
@@ -134,16 +135,39 @@
 	li {
 		@extend .col-1-3;
 		padding-bottom: 45px;
-
-		// &:nth-child(3) {
-		// 	margin-right: 0;
-		// }
 	}
 
 	figure {
+
+		a:link,
+		a:visited {
+			text-decoration: none;
+
+			h4 {
+				@include transition(color .25s);
+			}
+
+			&:hover,
+			&:active {
+				h4 {
+					color: $red;
+				}
+			}
+		}
+
 		img {
 			width: 100%;
 		}
+
+		figcaption {
+			display: block;
+		}
+
 	}
 
 }
+
+/*------------------------------------------------------------------
+    PAGE: Recipes / Individual recipe page
+-------------------------------------------------------------------*/
+
