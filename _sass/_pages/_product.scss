@@ -13,8 +13,7 @@ $product-details-context: 620px;
 }
 
 .product-details__meta {
-	float: left;
-	width: 500px / $product-details-context * 100%;
+	@extend .col-2-3;
 }
 
 .product-details__meta__size {
@@ -32,9 +31,9 @@ $product-details-context: 620px;
 }
 
 .product-details__share {
-	float: left;
+	@extend .col-1-3;
 	height: 30px;
-	width: 120px / $product-details-context * 100%;
+	text-align: right;
 
 	p {
 		@extend .verlag-book;
@@ -51,6 +50,8 @@ $product-details-context: 620px;
 }
 
 .product-details__quantity {
+	$form-context: 255px;
+
 	float: left;
 	padding-right: 50px / $product-details-context * 100%;
 	width: 310px / $product-details-context * 100%;
@@ -72,9 +73,11 @@ $product-details-context: 620px;
 		line-height: 60px;
 		padding: 0 75px 0 15px;
 		text-transform: uppercase;
+		width: 180px / $form-context * 100%;
 	}
 	input {
 		@extend .archer-med-ital;
+		@include border-radius(0);
 		border: none;
 		background: transparent;
 		color: $red;
@@ -83,8 +86,9 @@ $product-details-context: 620px;
 		font-size: 3.2rem;
 		height: 58px;
 		line-height: 58px;
+		padding: 0;
 		text-align: center;
-		width: 75px;
+		width: 75px / $form-context * 100%;
 	}
 }
 

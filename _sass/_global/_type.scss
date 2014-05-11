@@ -61,6 +61,7 @@ h1 {
 	}
 
 	&.prodcut-details__product-name {
+		@extend .archer-bold;
 		color: $red;
 		font-size: 30px;
 		font-size: 3.0rem;
@@ -203,7 +204,7 @@ h6 {
 	PARAGRAPH STYLES
 -------------------------------------------------------------------*/
 
-p {
+p, ol li, ul li {
 	@extend .archer-book;
 	color: $primary-copy;
 	font-size: 20px;

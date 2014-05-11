@@ -171,3 +171,152 @@
     PAGE: Recipes / Individual recipe page
 -------------------------------------------------------------------*/
 
+.page__recipes__single {
+
+	h1.page-title {
+		margin: 0 auto;
+		max-width: 680px;
+	}
+
+}
+
+.recipe {
+
+	header {
+		padding-top: 30px;
+	}
+
+}
+
+.recipe__product-preview {
+
+	border-top: 1px solid $cart-table-exterior;
+	border-bottom: 1px solid $cart-table-exterior;
+	background-color: $cart-table-interior;
+
+	.container--wide {
+		padding-bottom: 3%;
+	}
+
+	.product-preview__details {
+		background-color: #FFF;
+		border: 1px solid $cart-table-exterior;
+		min-height: 470px;
+		padding: 45px;
+
+		.col-1-2 {
+			margin: 0;
+		}
+		.col-1-2 + .col-1-2 {
+			padding: 15px 15px 0 15px;
+		}
+
+		figure {
+			text-align: center;
+
+			img {
+				margin: 0 auto;
+			}
+		}
+
+		h3 {
+			@extend .archer-bold;
+			color: $red;
+			font-size: 24px;
+			font-size: 2.4rem;
+			line-height: 32px;
+			line-height: 3.2rem;
+			margin: 0 0 30px 0;
+			text-align: left;
+		}
+
+		.product-details__meta__price {
+			font-size: 50px;
+			font-size: 5.0rem;
+		}
+
+		.product-details__meta,
+		.product-details__quantity,
+		.product-details__add-to-cart {
+			padding: 0;
+			width: 100%;
+		}
+
+		.product-details__quantity {
+			margin-bottom: 30px;
+		}
+
+		.product-details__add-to-cart {
+			a.btn:link,
+			a.btn:visited {
+				width: 100%;
+			}
+		}
+
+	}
+
+}
+
+.recipe__card {
+
+	.recipe__meta {
+		@extend .cf;
+		margin: 60px 0;
+		width: 100%;
+
+		li {
+			@extend .verlag-book;
+			border: 1px solid rgba(0, 0, 0, 0.2);
+			color: $primary-headline;
+			font-size: 30px;
+			font-size: 3.0rem;
+			margin: 0;
+			padding: 30px 0;
+			text-align: center;
+			text-transform: uppercase;
+
+			&:first-child,
+			&:last-child {
+				border-left: none;
+				border-right: none;
+			}
+
+			@include respond($med) {
+				float: left;
+				width: 1 / 3 * 100%;
+			}
+		}
+
+	}
+
+	.recipe__ingredients {
+
+		li {
+			// float: left;
+			// padding: 0 5% 0 0;
+			// width: 50%;
+			margin: 0 0 15px 0;
+
+			a:link,
+			a:visited {
+				@extend .archer-med;
+				color: $red;
+				text-decoration: none;
+			}
+		}
+
+	}
+
+	.recipe__instructions {
+		list-style-type: decimal;
+		padding: 0 0 0 20px;
+
+		li {
+			font-size: 16px;
+			font-size: 1.6rem;
+			margin: 0 0 30px 0;
+		}
+
+	}
+
+}

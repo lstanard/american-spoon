@@ -295,6 +295,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/as_store-location_petoskey.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 312064,
+		"inputAbbreviatedPath": "\/_img\/as_store-location_petoskey.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_store-location_petoskey.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_js\/_init.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -521,6 +532,15 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_pages\/_recipes_category.kit",
 		"outputAbbreviatedPath": "\/_kit\/_pages\/_recipes_category.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_kit\/_pages\/_recipes_single.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_kit\/_pages\/_recipes_single.kit",
+		"outputAbbreviatedPath": "\/_kit\/_pages\/_recipes_single.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1118,6 +1138,24 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/recipes_category.kit",
 		"outputAbbreviatedPath": "\/recipes_category.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/recipes_single.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/recipes_single.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/recipes_single.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/recipes_single.kit",
+		"outputAbbreviatedPath": "\/recipes_single.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},

@@ -134,18 +134,18 @@ a:hover, a:active {
     UTILITY: Misc
 -------------------------------------------------------------------*/
 /* line 9, ../_sass/_global/_utility.scss */
-.cf, .wrapper, .row, .form__group, .footer__sign-up__form, .product-grid ul, .featured-products__grid ul, .related-products ul, .featured-products__header, .recipes__category__list {
+.cf, .wrapper, .row, .form__group, .footer__sign-up__form, .product-grid ul, .featured-products__grid ul, .related-products ul, .featured-products__header, .recipes__category__list, .recipe__card .recipe__meta {
   zoom: 1;
 }
 /* line 12, ../_sass/_global/_utility.scss */
-.cf:before, .wrapper:before, .row:before, .form__group:before, .footer__sign-up__form:before, .product-grid ul:before, .featured-products__grid ul:before, .related-products ul:before, .featured-products__header:before, .recipes__category__list:before, .cf:after, .wrapper:after, .row:after, .form__group:after, .footer__sign-up__form:after, .product-grid ul:after, .featured-products__grid ul:after, .related-products ul:after, .featured-products__header:after, .recipes__category__list:after {
+.cf:before, .wrapper:before, .row:before, .form__group:before, .footer__sign-up__form:before, .product-grid ul:before, .featured-products__grid ul:before, .related-products ul:before, .featured-products__header:before, .recipes__category__list:before, .recipe__card .recipe__meta:before, .cf:after, .wrapper:after, .row:after, .form__group:after, .footer__sign-up__form:after, .product-grid ul:after, .featured-products__grid ul:after, .related-products ul:after, .featured-products__header:after, .recipes__category__list:after, .recipe__card .recipe__meta:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
 /* line 19, ../_sass/_global/_utility.scss */
-.cf:after, .wrapper:after, .row:after, .form__group:after, .footer__sign-up__form:after, .product-grid ul:after, .featured-products__grid ul:after, .related-products ul:after, .featured-products__header:after, .recipes__category__list:after {
+.cf:after, .wrapper:after, .row:after, .form__group:after, .footer__sign-up__form:after, .product-grid ul:after, .featured-products__grid ul:after, .related-products ul:after, .featured-products__header:after, .recipes__category__list:after, .recipe__card .recipe__meta:after {
   clear: both;
 }
 
@@ -330,7 +330,8 @@ a:hover, a:active {
 
 /* line 185, ../_sass/_global/_font-imports.scss */
 .archer-med, label, select, .footer__primary__contact p, .footer__primary__contact a:link, .footer__primary__contact a:visited, .product-grid .featured-product__price, .featured-products__grid .featured-product__price, .related-products .featured-product__price, .product-details__meta__price, .product-details__description p, .cart__items__table .items__table__meta, .cart__items__table .items__table-td__price, .cart__items__table .items__table-td__quantity, .cart__items__table .items__table-td__subtotal, .cart__items__table .items__table-td__remove, .cart__items__table .items__table-td__product-name a:link,
-.cart__items__table .items__table-td__product-name a:visited, .cart__promo-gc .cart__promo-gc__dollar, .store-location .store-location__info, .store-location__address,
+.cart__items__table .items__table-td__product-name a:visited, .cart__promo-gc .cart__promo-gc__dollar, .recipe__card .recipe__ingredients li a:link,
+.recipe__card .recipe__ingredients li a:visited, .store-location .store-location__info, .store-location__address,
 .store-location__phone,
 .store-location__hours {
   font-family: "ArcherMedium", serif;
@@ -350,13 +351,13 @@ a:hover, a:active {
 }
 
 /* line 200, ../_sass/_global/_font-imports.scss */
-.archer-bold, .shipping-banner .divider, .shipping-banner p.shipping-banner__msg02 {
+.archer-bold, h1.prodcut-details__product-name, .shipping-banner .divider, .shipping-banner p.shipping-banner__msg02, .recipe__product-preview .product-preview__details h3 {
   font-family: "ArcherBold", serif;
   font-weight: normal;
 }
 
 /* line 205, ../_sass/_global/_font-imports.scss */
-.archer-book, h1.page-title, h4.related-recipes__headline, p, input[type="text"],
+.archer-book, h1.page-title, h4.related-recipes__headline, p, ol li, ul li, input[type="text"],
 .form__input__text, .footer__secondary__nav ul > li > a:link, .footer__secondary__nav ul > li > a:visited {
   font-family: "ArcherBook", serif;
   font-weight: normal;
@@ -366,7 +367,7 @@ a:hover, a:active {
 .verlag-book, h1.related-products__headline, h4.cart__promo__headline, input[type="text"].inline-input,
 .form__input__text.inline-input, a.btn--box:link, a.btn--box:visited, .primary-nav__shop li > a:link,
 .primary-nav__shop li > a:visited, .product-details__share p, .product-details__quantity legend, .login__current-user a.login__forgot-password:link,
-.login__current-user a.login__forgot-password:visited, .cart__items__table th {
+.login__current-user a.login__forgot-password:visited, .cart__items__table th, .recipe__card .recipe__meta li {
   font-family: "VerlagBook", sans-serif;
   font-weight: normal;
 }
@@ -465,13 +466,13 @@ h1.prodcut-details__product-name {
   margin: 0 0 45px 0;
 }
 
-/* line 75, ../_sass/_global/_type.scss */
+/* line 76, ../_sass/_global/_type.scss */
 h2 {
   color: #d1232a;
   font-size: 36px;
   font-size: 3.6rem;
 }
-/* line 81, ../_sass/_global/_type.scss */
+/* line 82, ../_sass/_global/_type.scss */
 h2.login__header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-size: 22px;
@@ -481,7 +482,7 @@ h2.login__header {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 92, ../_sass/_global/_type.scss */
+/* line 93, ../_sass/_global/_type.scss */
 h2.store-location__title {
   font-size: 66px;
   font-size: 6.6rem;
@@ -490,7 +491,7 @@ h2.store-location__title {
   margin: 0 0 30px 0;
 }
 
-/* line 103, ../_sass/_global/_type.scss */
+/* line 104, ../_sass/_global/_type.scss */
 h3 {
   font-size: 30px;
   font-size: 3.0rem;
@@ -499,18 +500,18 @@ h3 {
   margin: 0 0 60px 0;
   text-align: center;
 }
-/* line 113, ../_sass/_global/_type.scss */
+/* line 114, ../_sass/_global/_type.scss */
 h3.featured-recipes__headline {
   color: #5c8727;
 }
-/* line 117, ../_sass/_global/_type.scss */
+/* line 118, ../_sass/_global/_type.scss */
 h3.recipes-jump__headline {
   color: #344976;
   font-size: 32px;
   font-size: 3.2rem;
   margin: 0 0 15px 0;
 }
-/* line 124, ../_sass/_global/_type.scss */
+/* line 125, ../_sass/_global/_type.scss */
 h3.footer__sign-up__head {
   color: #d1232a;
   font-size: 3.6rem;
@@ -518,19 +519,19 @@ h3.footer__sign-up__head {
   margin: 0 0 45px 0;
 }
 
-/* line 134, ../_sass/_global/_type.scss */
+/* line 135, ../_sass/_global/_type.scss */
 h4 {
   font-size: 24px;
   font-size: 2.4rem;
 }
-/* line 139, ../_sass/_global/_type.scss */
+/* line 140, ../_sass/_global/_type.scss */
 h4.related-recipes__headline {
   color: #77787b;
   font-size: 18px;
   font-size: 1.8rem;
   margin: 0 0 10px 0;
 }
-/* line 147, ../_sass/_global/_type.scss */
+/* line 148, ../_sass/_global/_type.scss */
 h4.cart__promo__headline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: #a7a9ac;
@@ -542,7 +543,7 @@ h4.cart__promo__headline {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 160, ../_sass/_global/_type.scss */
+/* line 161, ../_sass/_global/_type.scss */
 h4.category__list__recipe-name {
   color: #77787b;
   text-transform: uppercase;
@@ -552,12 +553,12 @@ h4.category__list__recipe-name {
   text-align: center;
 }
 
-/* line 172, ../_sass/_global/_type.scss */
+/* line 173, ../_sass/_global/_type.scss */
 h5 {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 177, ../_sass/_global/_type.scss */
+/* line 178, ../_sass/_global/_type.scss */
 h5.footer__primary__contact__head {
   color: #d1232a;
   font-size: 24px;
@@ -565,14 +566,14 @@ h5.footer__primary__contact__head {
   line-height: 30px;
   line-height: 3.0rem;
 }
-/* line 186, ../_sass/_global/_type.scss */
+/* line 187, ../_sass/_global/_type.scss */
 h5.store-location__hours-title {
   text-transform: uppercase;
   font-size: 14px;
   font-size: 1.4rem;
 }
 
-/* line 195, ../_sass/_global/_type.scss */
+/* line 196, ../_sass/_global/_type.scss */
 h6 {
   font-size: 16px;
   font-size: 1.6rem;
@@ -581,28 +582,28 @@ h6 {
 /*------------------------------------------------------------------
 	PARAGRAPH STYLES
 -------------------------------------------------------------------*/
-/* line 206, ../_sass/_global/_type.scss */
-p {
+/* line 207, ../_sass/_global/_type.scss */
+p, ol li, ul li {
   color: #77787b;
   font-size: 20px;
   font-size: 2.0rem;
   line-height: 25px;
   line-height: 2.5rem;
 }
-/* line 214, ../_sass/_global/_type.scss */
-p.lead-copy {
+/* line 215, ../_sass/_global/_type.scss */
+p.lead-copy, ol li.lead-copy, ul li.lead-copy {
   font-size: 22px;
   font-size: 2.2rem;
   line-height: 34px;
   line-height: 3.4rem;
 }
 
-/* line 222, ../_sass/_global/_type.scss */
+/* line 223, ../_sass/_global/_type.scss */
 p {
   margin: 0 0 30px 0;
 }
 
-/* line 226, ../_sass/_global/_type.scss */
+/* line 227, ../_sass/_global/_type.scss */
 p.call-out {
   font-size: 12px;
   font-size: 1.2rem;
@@ -715,7 +716,7 @@ body, html {
 }
 
 /* line 11, ../_sass/_global/_columns.scss */
-.col, .col-1-5, .col-2-5, .col-3-5, .col-4-5, .col-1-3, .recipes__category__list li, .col-2-3, .col-1-2, .col-1-4, .product-grid ul > li, .featured-products__grid ul > li, .related-products ul > li, .col-1-8 {
+.col, .col-1-5, .col-2-5, .col-3-5, .col-4-5, .col-1-3, .product-details__share, .recipes__category__list li, .col-2-3, .product-details__meta, .col-1-2, .col-1-4, .product-grid ul > li, .featured-products__grid ul > li, .related-products ul > li, .col-1-8 {
   height: auto;
   margin: 0;
   min-height: 1px;
@@ -723,14 +724,31 @@ body, html {
   width: 100%;
 }
 /* line 18, ../_sass/_global/_columns.scss */
-.col:last-of-type, .col-1-5:last-of-type, .col-2-5:last-of-type, .col-3-5:last-of-type, .col-4-5:last-of-type, .col-1-3:last-of-type, .recipes__category__list li:last-of-type, .col-2-3:last-of-type, .col-1-2:last-of-type, .col-1-4:last-of-type, .product-grid ul > li:last-of-type, .featured-products__grid ul > li:last-of-type, .related-products ul > li:last-of-type, .col-1-8:last-of-type {
+.col:last-of-type, .col-1-5:last-of-type, .col-2-5:last-of-type, .col-3-5:last-of-type, .col-4-5:last-of-type, .col-1-3:last-of-type, .product-details__share:last-of-type, .recipes__category__list li:last-of-type, .col-2-3:last-of-type, .product-details__meta:last-of-type, .col-1-2:last-of-type, .col-1-4:last-of-type, .product-grid ul > li:last-of-type, .featured-products__grid ul > li:last-of-type, .related-products ul > li:last-of-type, .col-1-8:last-of-type {
   margin-right: 0;
 }
 @media (min-width: 40.5em) {
   /* line 11, ../_sass/_global/_columns.scss */
-  .col, .col-1-5, .col-2-5, .col-3-5, .col-4-5, .col-1-3, .recipes__category__list li, .col-2-3, .col-1-2, .col-1-4, .product-grid ul > li, .featured-products__grid ul > li, .related-products ul > li, .col-1-8 {
+  .col, .col-1-5, .col-2-5, .col-3-5, .col-4-5, .col-1-3, .product-details__share, .recipes__category__list li, .col-2-3, .product-details__meta, .col-1-2, .col-1-4, .product-grid ul > li, .featured-products__grid ul > li, .related-products ul > li, .col-1-8 {
     margin-right: 20px;
     float: left;
+  }
+}
+
+/*------------------------------------------------------------------
+	COLUMNS / Full container columns
+-------------------------------------------------------------------*/
+@media (min-width: 40.5em) {
+  /* line 37, ../_sass/_global/_columns.scss */
+  .col-1-2 {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 40.5em) {
+  /* line 43, ../_sass/_global/_columns.scss */
+  .col-1-3, .product-details__share, .recipes__category__list li {
+    width: calc(((1/3) * 100%) - 20px);
   }
 }
 
@@ -738,67 +756,67 @@ body, html {
 	COLUMNS / Narrow container columns
 -------------------------------------------------------------------*/
 @media (min-width: 40.5em) {
-  /* line 39, ../_sass/_global/_columns.scss */
+  /* line 55, ../_sass/_global/_columns.scss */
   .container--narrow .col-1-5 {
     width: 19.6%;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 44, ../_sass/_global/_columns.scss */
+  /* line 60, ../_sass/_global/_columns.scss */
   .container--narrow .col-2-5 {
     width: 39.2%;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 49, ../_sass/_global/_columns.scss */
+  /* line 65, ../_sass/_global/_columns.scss */
   .container--narrow .col-3-5 {
     width: 58.8%;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 54, ../_sass/_global/_columns.scss */
+  /* line 70, ../_sass/_global/_columns.scss */
   .container--narrow .col-3-5 {
     width: 78.4%;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 60, ../_sass/_global/_columns.scss */
-  .container--narrow .col-1-3, .container--narrow .recipes__category__list li, .recipes__category__list .container--narrow li {
+  /* line 76, ../_sass/_global/_columns.scss */
+  .container--narrow .col-1-3, .container--narrow .product-details__share, .container--narrow .recipes__category__list li, .recipes__category__list .container--narrow li {
     width: 32%;
   }
-  /* line 64, ../_sass/_global/_columns.scss */
-  .container--narrow .col-1-3:nth-child(3), .container--narrow .recipes__category__list li:nth-child(3), .recipes__category__list .container--narrow li:nth-child(3) {
+  /* line 80, ../_sass/_global/_columns.scss */
+  .container--narrow .col-1-3:nth-child(3), .container--narrow .product-details__share:nth-child(3), .container--narrow .recipes__category__list li:nth-child(3), .recipes__category__list .container--narrow li:nth-child(3) {
     margin-right: 0;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 69, ../_sass/_global/_columns.scss */
-  .container--narrow .col-2-3 {
+  /* line 85, ../_sass/_global/_columns.scss */
+  .container--narrow .col-2-3, .container--narrow .product-details__meta {
     width: 64%;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 75, ../_sass/_global/_columns.scss */
+  /* line 91, ../_sass/_global/_columns.scss */
   .container--narrow .col-1-2 {
     width: 49%;
   }
-  /* line 79, ../_sass/_global/_columns.scss */
+  /* line 95, ../_sass/_global/_columns.scss */
   .container--narrow .col-1-2:nth-child(2) {
     margin-right: 0;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 84, ../_sass/_global/_columns.scss */
+  /* line 100, ../_sass/_global/_columns.scss */
   .container--narrow .col-1-4, .container--narrow .product-grid ul > li, .product-grid .container--narrow ul > li, .container--narrow .featured-products__grid ul > li, .featured-products__grid .container--narrow ul > li, .container--narrow .related-products ul > li, .related-products .container--narrow ul > li {
     width: 23.5%;
   }
-  /* line 88, ../_sass/_global/_columns.scss */
+  /* line 104, ../_sass/_global/_columns.scss */
   .container--narrow .col-1-4:nth-child(4), .container--narrow .product-grid ul > li:nth-child(4), .product-grid .container--narrow ul > li:nth-child(4), .container--narrow .featured-products__grid ul > li:nth-child(4), .featured-products__grid .container--narrow ul > li:nth-child(4), .container--narrow .related-products ul > li:nth-child(4), .related-products .container--narrow ul > li:nth-child(4) {
     margin-right: 0;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 93, ../_sass/_global/_columns.scss */
+  /* line 109, ../_sass/_global/_columns.scss */
   .container--narrow .col-1-8 {
     width: 10.75%;
   }
@@ -808,67 +826,61 @@ body, html {
 	COLUMNS / Wide container columns
 -------------------------------------------------------------------*/
 @media (min-width: 40.5em) {
-  /* line 107, ../_sass/_global/_columns.scss */
+  /* line 123, ../_sass/_global/_columns.scss */
   .container--wide .col-1-5 {
     width: 19.66667%;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 112, ../_sass/_global/_columns.scss */
+  /* line 128, ../_sass/_global/_columns.scss */
   .container--wide .col-2-5 {
     width: 39.33333%;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 117, ../_sass/_global/_columns.scss */
+  /* line 133, ../_sass/_global/_columns.scss */
   .container--wide .col-3-5 {
     width: 59%;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 122, ../_sass/_global/_columns.scss */
-  .container--wide .col-3-5 {
-    width: 78.66667%;
-  }
-}
-@media (min-width: 40.5em) {
-  /* line 128, ../_sass/_global/_columns.scss */
-  .container--wide .col-1-3, .container--wide .recipes__category__list li, .recipes__category__list .container--wide li {
+  /* line 139, ../_sass/_global/_columns.scss */
+  .container--wide .col-1-3, .container--wide .product-details__share, .container--wide .recipes__category__list li, .recipes__category__list .container--wide li {
     width: 32.22222%;
   }
-  /* line 132, ../_sass/_global/_columns.scss */
-  .container--wide .col-1-3:nth-child(3), .container--wide .recipes__category__list li:nth-child(3), .recipes__category__list .container--wide li:nth-child(3) {
+  /* line 143, ../_sass/_global/_columns.scss */
+  .container--wide .col-1-3:nth-child(3), .container--wide .product-details__share:nth-child(3), .container--wide .recipes__category__list li:nth-child(3), .recipes__category__list .container--wide li:nth-child(3) {
     margin-right: 0;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 137, ../_sass/_global/_columns.scss */
-  .container--wide .col-2-3 {
+  /* line 148, ../_sass/_global/_columns.scss */
+  .container--wide .col-2-3, .container--wide .product-details__meta {
     width: 64.44444%;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 143, ../_sass/_global/_columns.scss */
+  /* line 154, ../_sass/_global/_columns.scss */
   .container--wide .col-1-2 {
     width: 49.16667%;
   }
-  /* line 147, ../_sass/_global/_columns.scss */
+  /* line 158, ../_sass/_global/_columns.scss */
   .container--wide .col-1-2:nth-child(2) {
     margin-right: 0;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 152, ../_sass/_global/_columns.scss */
+  /* line 163, ../_sass/_global/_columns.scss */
   .container--wide .col-1-4, .container--wide .product-grid ul > li, .product-grid .container--wide ul > li, .container--wide .featured-products__grid ul > li, .featured-products__grid .container--wide ul > li, .container--wide .related-products ul > li, .related-products .container--wide ul > li {
     width: 23.75%;
   }
-  /* line 156, ../_sass/_global/_columns.scss */
+  /* line 167, ../_sass/_global/_columns.scss */
   .container--wide .col-1-4:nth-child(4), .container--wide .product-grid ul > li:nth-child(4), .product-grid .container--wide ul > li:nth-child(4), .container--wide .featured-products__grid ul > li:nth-child(4), .featured-products__grid .container--wide ul > li:nth-child(4), .container--wide .related-products ul > li:nth-child(4), .related-products .container--wide ul > li:nth-child(4) {
     margin-right: 0;
   }
 }
 @media (min-width: 40.5em) {
-  /* line 161, ../_sass/_global/_columns.scss */
+  /* line 172, ../_sass/_global/_columns.scss */
   .container--wide .col-1-8 {
     width: 11.04167%;
   }
@@ -1810,59 +1822,45 @@ a.footer__sign-up__btn:visited {
   padding-bottom: 55px;
   padding-top: 55px;
 }
-@media (min-width: 40.5em) {
-  /* line 98, ../_sass/_modules/_footer.scss */
-  .footer__primary .col-1-2 {
-    float: none;
-    width: 100%;
-  }
-}
-@media (min-width: 64em) {
-  /* line 98, ../_sass/_modules/_footer.scss */
-  .footer__primary .col-1-2 {
-    float: left;
-    width: 50%;
-  }
-}
 
-/* line 111, ../_sass/_modules/_footer.scss */
+/* line 99, ../_sass/_modules/_footer.scss */
 .footer__primary__logo {
   max-width: 160px;
   width: 100%;
 }
 
-/* line 118, ../_sass/_modules/_footer.scss */
+/* line 106, ../_sass/_modules/_footer.scss */
 .footer__primary__contact p {
   color: #262626;
   line-height: 3.2rem;
 }
-/* line 123, ../_sass/_modules/_footer.scss */
+/* line 111, ../_sass/_modules/_footer.scss */
 .footer__primary__contact a:link, .footer__primary__contact a:visited {
   color: #262626;
   text-decoration: none;
 }
 @media (min-width: 40.5em) {
-  /* line 116, ../_sass/_modules/_footer.scss */
+  /* line 104, ../_sass/_modules/_footer.scss */
   .footer__primary__contact {
     padding-top: 30px;
   }
 }
 
-/* line 135, ../_sass/_modules/_footer.scss */
+/* line 123, ../_sass/_modules/_footer.scss */
 .footer__primary__nav {
   border-left: 2px solid #e7e7e7;
   padding-left: 45px;
 }
-/* line 139, ../_sass/_modules/_footer.scss */
+/* line 127, ../_sass/_modules/_footer.scss */
 .footer__primary__nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 144, ../_sass/_modules/_footer.scss */
+/* line 132, ../_sass/_modules/_footer.scss */
 .footer__primary__nav ul li {
   margin: 10px 0;
 }
-/* line 148, ../_sass/_modules/_footer.scss */
+/* line 136, ../_sass/_modules/_footer.scss */
 .footer__primary__nav ul li a:link,
 .footer__primary__nav ul li a:visited {
   color: #77787b;
@@ -1871,31 +1869,31 @@ a.footer__sign-up__btn:visited {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 157, ../_sass/_modules/_footer.scss */
+/* line 145, ../_sass/_modules/_footer.scss */
 .footer__primary__nav ul li a:link:hover, .footer__primary__nav ul li a:link:active,
 .footer__primary__nav ul li a:visited:hover,
 .footer__primary__nav ul li a:visited:active {
   color: #d1232a;
 }
 
-/* line 165, ../_sass/_modules/_footer.scss */
+/* line 153, ../_sass/_modules/_footer.scss */
 .footer__primary__social {
   float: right;
   overflow: hidden;
   max-width: 486px;
   width: 100%;
 }
-/* line 171, ../_sass/_modules/_footer.scss */
+/* line 159, ../_sass/_modules/_footer.scss */
 .footer__primary__social li {
   border: 1px solid #e7e7e7;
   border-right: none;
   max-width: 160px;
 }
-/* line 176, ../_sass/_modules/_footer.scss */
+/* line 164, ../_sass/_modules/_footer.scss */
 .footer__primary__social li:last-child {
   border-right: 1px solid #e7e7e7;
 }
-/* line 181, ../_sass/_modules/_footer.scss */
+/* line 169, ../_sass/_modules/_footer.scss */
 .footer__primary__social li a:link,
 .footer__primary__social li a:visited {
   -moz-transition: all 0.25s;
@@ -1911,32 +1909,32 @@ a.footer__sign-up__btn:visited {
   text-decoration: none;
   vertical-align: middle;
 }
-/* line 194, ../_sass/_modules/_footer.scss */
+/* line 182, ../_sass/_modules/_footer.scss */
 .footer__primary__social li a:link span,
 .footer__primary__social li a:visited span {
   display: block;
   padding: 60px 0 0 0;
 }
-/* line 199, ../_sass/_modules/_footer.scss */
+/* line 187, ../_sass/_modules/_footer.scss */
 .footer__primary__social li a:link:hover, .footer__primary__social li a:link:active,
 .footer__primary__social li a:visited:hover,
 .footer__primary__social li a:visited:active {
   color: #FFF;
 }
-/* line 206, ../_sass/_modules/_footer.scss */
+/* line 194, ../_sass/_modules/_footer.scss */
 .footer__primary__social li.social-icon__pinterest a:hover, .footer__primary__social li.social-icon__pinterest a:active {
   background-color: #d2232a;
 }
-/* line 210, ../_sass/_modules/_footer.scss */
+/* line 198, ../_sass/_modules/_footer.scss */
 .footer__primary__social li.social-icon__facebook a:hover, .footer__primary__social li.social-icon__facebook a:active {
   background-color: #3b5999;
 }
-/* line 214, ../_sass/_modules/_footer.scss */
+/* line 202, ../_sass/_modules/_footer.scss */
 .footer__primary__social li.social-icon__instagram a:hover, .footer__primary__social li.social-icon__instagram a:active {
   background-color: #306299;
 }
 @media (min-width: 40.5em) {
-  /* line 219, ../_sass/_modules/_footer.scss */
+  /* line 207, ../_sass/_modules/_footer.scss */
   .footer__primary__social li {
     float: left;
     width: 33.33333%;
@@ -1946,7 +1944,7 @@ a.footer__sign-up__btn:visited {
 /*------------------------------------------------------------------
     FOOTER: Secondary
 -------------------------------------------------------------------*/
-/* line 231, ../_sass/_modules/_footer.scss */
+/* line 219, ../_sass/_modules/_footer.scss */
 .footer__secondary {
   background-color: #d1232a;
   min-height: 75px;
@@ -1954,7 +1952,7 @@ a.footer__sign-up__btn:visited {
   padding-bottom: 25px;
 }
 
-/* line 238, ../_sass/_modules/_footer.scss */
+/* line 226, ../_sass/_modules/_footer.scss */
 .footer__secondary__copyright {
   color: #FFF;
   margin: 0 0 25px 0;
@@ -1962,30 +1960,30 @@ a.footer__sign-up__btn:visited {
   width: auto;
 }
 @media (min-width: 40.5em) {
-  /* line 238, ../_sass/_modules/_footer.scss */
+  /* line 226, ../_sass/_modules/_footer.scss */
   .footer__secondary__copyright {
     float: left;
     text-align: left;
   }
 }
 
-/* line 250, ../_sass/_modules/_footer.scss */
+/* line 238, ../_sass/_modules/_footer.scss */
 .footer__secondary__nav {
   width: auto;
 }
-/* line 253, ../_sass/_modules/_footer.scss */
+/* line 241, ../_sass/_modules/_footer.scss */
 .footer__secondary__nav ul {
   overflow: hidden;
   width: auto;
 }
-/* line 258, ../_sass/_modules/_footer.scss */
+/* line 246, ../_sass/_modules/_footer.scss */
 .footer__secondary__nav ul > li {
   display: block;
   float: left;
   text-align: center;
   width: 33.33333%;
 }
-/* line 267, ../_sass/_modules/_footer.scss */
+/* line 255, ../_sass/_modules/_footer.scss */
 .footer__secondary__nav ul > li > a:link, .footer__secondary__nav ul > li > a:visited {
   color: #FFF;
   font-size: 20px;
@@ -1995,11 +1993,11 @@ a.footer__sign-up__btn:visited {
   text-decoration: none;
 }
 @media (min-width: 40.5em) {
-  /* line 250, ../_sass/_modules/_footer.scss */
+  /* line 238, ../_sass/_modules/_footer.scss */
   .footer__secondary__nav {
     float: right;
   }
-  /* line 282, ../_sass/_modules/_footer.scss */
+  /* line 270, ../_sass/_modules/_footer.scss */
   .footer__secondary__nav ul > li {
     margin: 0 0 0 30px;
     width: initial;
@@ -2056,6 +2054,8 @@ a.footer__sign-up__btn:visited {
   background-color: #d1232a;
   color: #FFF;
   display: inline-block;
+  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: 0.05em;
   margin: -23px auto 0 -76.5px;
   padding: 12px 24px;
@@ -2067,7 +2067,7 @@ a.footer__sign-up__btn:visited {
   width: auto;
   z-index: 1;
 }
-/* line 54, ../_sass/_modules/_product-grid.scss */
+/* line 56, ../_sass/_modules/_product-grid.scss */
 .product-grid .featured-product__img, .featured-products__grid .featured-product__img, .related-products .featured-product__img {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -2077,21 +2077,23 @@ a.footer__sign-up__btn:visited {
   transition: all 0.25s;
   margin-bottom: 25px;
 }
-/* line 59, ../_sass/_modules/_product-grid.scss */
+/* line 61, ../_sass/_modules/_product-grid.scss */
 .product-grid .featured-product__name, .featured-products__grid .featured-product__name, .related-products .featured-product__name {
   color: #4c4c4c;
   font-size: 16px;
   font-size: 1.6rem;
+  line-height: 22px;
+  line-height: 2.2rem;
   margin: 0 0 10px 0;
   text-transform: uppercase;
 }
-/* line 67, ../_sass/_modules/_product-grid.scss */
+/* line 71, ../_sass/_modules/_product-grid.scss */
 .product-grid .featured-product__price, .featured-products__grid .featured-product__price, .related-products .featured-product__price {
   color: #77787b;
   font-size: 24px;
   font-size: 2.4rem;
 }
-/* line 74, ../_sass/_modules/_product-grid.scss */
+/* line 78, ../_sass/_modules/_product-grid.scss */
 .product-grid a.featured-product__link:hover, .featured-products__grid a.featured-product__link:hover, .related-products a.featured-product__link:hover,
 .product-grid a.featured-product__link:active,
 .featured-products__grid a.featured-product__link:active,
@@ -2099,7 +2101,7 @@ a.footer__sign-up__btn:visited {
   border: 4px solid #d1232a;
   margin-top: -4px;
 }
-/* line 79, ../_sass/_modules/_product-grid.scss */
+/* line 83, ../_sass/_modules/_product-grid.scss */
 .product-grid a.featured-product__link:hover img, .featured-products__grid a.featured-product__link:hover img, .related-products a.featured-product__link:hover img,
 .product-grid a.featured-product__link:active img,
 .featured-products__grid a.featured-product__link:active img,
@@ -2107,14 +2109,14 @@ a.footer__sign-up__btn:visited {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
 }
-/* line 82, ../_sass/_modules/_product-grid.scss */
+/* line 86, ../_sass/_modules/_product-grid.scss */
 .product-grid a.featured-product__link:hover span, .featured-products__grid a.featured-product__link:hover span, .related-products a.featured-product__link:hover span,
 .product-grid a.featured-product__link:active span,
 .featured-products__grid a.featured-product__link:active span,
 .related-products a.featured-product__link:active span {
   color: #d1232a;
 }
-/* line 85, ../_sass/_modules/_product-grid.scss */
+/* line 89, ../_sass/_modules/_product-grid.scss */
 .product-grid a.featured-product__link:hover span.featured-product__add-to-cart, .featured-products__grid a.featured-product__link:hover span.featured-product__add-to-cart, .related-products a.featured-product__link:hover span.featured-product__add-to-cart,
 .product-grid a.featured-product__link:active span.featured-product__add-to-cart,
 .featured-products__grid a.featured-product__link:active span.featured-product__add-to-cart,
@@ -2258,33 +2260,26 @@ a.footer__sign-up__btn:visited {
   padding-left: 100px;
 }
 
-/* line 15, ../_sass/_pages/_product.scss */
-.product-details__meta {
-  float: left;
-  width: 80.64516%;
-}
-
-/* line 20, ../_sass/_pages/_product.scss */
+/* line 19, ../_sass/_pages/_product.scss */
 .product-details__meta__size {
   color: #a7a9ac;
   font-size: 22px;
   font-size: 2.2rem;
 }
 
-/* line 27, ../_sass/_pages/_product.scss */
+/* line 26, ../_sass/_pages/_product.scss */
 .product-details__meta__price {
   color: #a7a9ac;
   font-size: 60px;
   font-size: 6.0rem;
 }
 
-/* line 34, ../_sass/_pages/_product.scss */
+/* line 33, ../_sass/_pages/_product.scss */
 .product-details__share {
-  float: left;
   height: 30px;
-  width: 19.35484%;
+  text-align: right;
 }
-/* line 39, ../_sass/_pages/_product.scss */
+/* line 38, ../_sass/_pages/_product.scss */
 .product-details__share p {
   font-size: 14px;
   font-size: 1.4rem;
@@ -2292,19 +2287,19 @@ a.footer__sign-up__btn:visited {
   text-transform: uppercase;
 }
 
-/* line 53, ../_sass/_pages/_product.scss */
+/* line 52, ../_sass/_pages/_product.scss */
 .product-details__quantity {
   float: left;
   padding-right: 8.06452%;
   width: 50%;
 }
-/* line 58, ../_sass/_pages/_product.scss */
+/* line 59, ../_sass/_pages/_product.scss */
 .product-details__quantity fieldset {
   border-top: 1px solid #d1d3d4;
   border-bottom: 1px solid #d1d3d4;
   height: 60px;
 }
-/* line 64, ../_sass/_pages/_product.scss */
+/* line 65, ../_sass/_pages/_product.scss */
 .product-details__quantity legend {
   border-right: 1px solid #d1d3d4;
   color: #77787b;
@@ -2315,9 +2310,13 @@ a.footer__sign-up__btn:visited {
   line-height: 60px;
   padding: 0 75px 0 15px;
   text-transform: uppercase;
+  width: 70.58824%;
 }
-/* line 76, ../_sass/_pages/_product.scss */
+/* line 78, ../_sass/_pages/_product.scss */
 .product-details__quantity input {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
   border: none;
   background: transparent;
   color: #d1232a;
@@ -2326,22 +2325,23 @@ a.footer__sign-up__btn:visited {
   font-size: 3.2rem;
   height: 58px;
   line-height: 58px;
+  padding: 0;
   text-align: center;
-  width: 75px;
+  width: 29.41176%;
 }
 
-/* line 91, ../_sass/_pages/_product.scss */
+/* line 95, ../_sass/_pages/_product.scss */
 .product-details__add-to-cart {
   float: left;
   width: 50%;
 }
-/* line 95, ../_sass/_pages/_product.scss */
+/* line 99, ../_sass/_pages/_product.scss */
 .product-details__add-to-cart a.btn:link,
 .product-details__add-to-cart a.btn:visited {
   float: right;
 }
 
-/* line 101, ../_sass/_pages/_product.scss */
+/* line 105, ../_sass/_pages/_product.scss */
 .product-details__description {
   margin: 30px 0 45px 0;
 }
@@ -2349,19 +2349,19 @@ a.footer__sign-up__btn:visited {
 /*------------------------------------------------------------------
     PAGE: Product / Related recipes
 -------------------------------------------------------------------*/
-/* line 113, ../_sass/_pages/_product.scss */
+/* line 117, ../_sass/_pages/_product.scss */
 .related-recipes__list {
   border-top: 1px solid #d1d3d4;
   border-bottom: 1px solid #d1d3d4;
   padding: 12px 0;
 }
-/* line 120, ../_sass/_pages/_product.scss */
+/* line 124, ../_sass/_pages/_product.scss */
 .related-recipes__list li:before {
   content: ">";
   color: #d1232a;
   margin: 0 6px 0 0;
 }
-/* line 127, ../_sass/_pages/_product.scss */
+/* line 131, ../_sass/_pages/_product.scss */
 .related-recipes__list li a:link,
 .related-recipes__list li a:visited {
   color: #a7a9ac;
@@ -2370,7 +2370,7 @@ a.footer__sign-up__btn:visited {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 136, ../_sass/_pages/_product.scss */
+/* line 140, ../_sass/_pages/_product.scss */
 .related-recipes__list li a:link:hover, .related-recipes__list li a:link:active,
 .related-recipes__list li a:visited:hover,
 .related-recipes__list li a:visited:active {
@@ -2380,21 +2380,21 @@ a.footer__sign-up__btn:visited {
 /*------------------------------------------------------------------
     PAGE: Product / Product photos
 -------------------------------------------------------------------*/
-/* line 150, ../_sass/_pages/_product.scss */
+/* line 154, ../_sass/_pages/_product.scss */
 .product-photos__feature {
   text-align: center;
   margin: 0 0 110px 0;
 }
-/* line 154, ../_sass/_pages/_product.scss */
+/* line 158, ../_sass/_pages/_product.scss */
 .product-photos__feature img {
   margin: 0 auto;
 }
 
-/* line 159, ../_sass/_pages/_product.scss */
+/* line 163, ../_sass/_pages/_product.scss */
 .product-photos__thumbnails {
   text-align: center;
 }
-/* line 162, ../_sass/_pages/_product.scss */
+/* line 166, ../_sass/_pages/_product.scss */
 .product-photos__thumbnails li {
   display: inline-block;
   margin: 0 10px 0 0;
@@ -2403,7 +2403,7 @@ a.footer__sign-up__btn:visited {
 /*------------------------------------------------------------------
     PAGE: Product / Related products
 -------------------------------------------------------------------*/
-/* line 177, ../_sass/_pages/_product.scss */
+/* line 181, ../_sass/_pages/_product.scss */
 .related-products ul > li {
   margin: 30px 0;
 }
@@ -2884,6 +2884,132 @@ a.cart__utility__update:visited span:first-child {
 /*------------------------------------------------------------------
     PAGE: Recipes / Individual recipe page
 -------------------------------------------------------------------*/
+/* line 176, ../_sass/_pages/_recipes.scss */
+.page__recipes__single h1.page-title {
+  margin: 0 auto;
+  max-width: 680px;
+}
+
+/* line 185, ../_sass/_pages/_recipes.scss */
+.recipe header {
+  padding-top: 30px;
+}
+
+/* line 191, ../_sass/_pages/_recipes.scss */
+.recipe__product-preview {
+  border-top: 1px solid #d1d3d4;
+  border-bottom: 1px solid #d1d3d4;
+  background-color: #f2f2f3;
+}
+/* line 197, ../_sass/_pages/_recipes.scss */
+.recipe__product-preview .container--wide {
+  padding-bottom: 3%;
+}
+/* line 201, ../_sass/_pages/_recipes.scss */
+.recipe__product-preview .product-preview__details {
+  background-color: #FFF;
+  border: 1px solid #d1d3d4;
+  min-height: 470px;
+  padding: 45px;
+}
+/* line 207, ../_sass/_pages/_recipes.scss */
+.recipe__product-preview .product-preview__details .col-1-2 {
+  margin: 0;
+}
+/* line 210, ../_sass/_pages/_recipes.scss */
+.recipe__product-preview .product-preview__details .col-1-2 + .col-1-2 {
+  padding: 15px 15px 0 15px;
+}
+/* line 214, ../_sass/_pages/_recipes.scss */
+.recipe__product-preview .product-preview__details figure {
+  text-align: center;
+}
+/* line 217, ../_sass/_pages/_recipes.scss */
+.recipe__product-preview .product-preview__details figure img {
+  margin: 0 auto;
+}
+/* line 222, ../_sass/_pages/_recipes.scss */
+.recipe__product-preview .product-preview__details h3 {
+  color: #d1232a;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 32px;
+  line-height: 3.2rem;
+  margin: 0 0 30px 0;
+  text-align: left;
+}
+/* line 233, ../_sass/_pages/_recipes.scss */
+.recipe__product-preview .product-preview__details .product-details__meta__price {
+  font-size: 50px;
+  font-size: 5.0rem;
+}
+/* line 238, ../_sass/_pages/_recipes.scss */
+.recipe__product-preview .product-preview__details .product-details__meta,
+.recipe__product-preview .product-preview__details .product-details__quantity,
+.recipe__product-preview .product-preview__details .product-details__add-to-cart {
+  padding: 0;
+  width: 100%;
+}
+/* line 245, ../_sass/_pages/_recipes.scss */
+.recipe__product-preview .product-preview__details .product-details__quantity {
+  margin-bottom: 30px;
+}
+/* line 250, ../_sass/_pages/_recipes.scss */
+.recipe__product-preview .product-preview__details .product-details__add-to-cart a.btn:link,
+.recipe__product-preview .product-preview__details .product-details__add-to-cart a.btn:visited {
+  width: 100%;
+}
+
+/* line 262, ../_sass/_pages/_recipes.scss */
+.recipe__card .recipe__meta {
+  margin: 60px 0;
+  width: 100%;
+}
+/* line 267, ../_sass/_pages/_recipes.scss */
+.recipe__card .recipe__meta li {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #939598;
+  font-size: 30px;
+  font-size: 3.0rem;
+  margin: 0;
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 278, ../_sass/_pages/_recipes.scss */
+.recipe__card .recipe__meta li:first-child, .recipe__card .recipe__meta li:last-child {
+  border-left: none;
+  border-right: none;
+}
+@media (min-width: 40.5em) {
+  /* line 267, ../_sass/_pages/_recipes.scss */
+  .recipe__card .recipe__meta li {
+    float: left;
+    width: 33.33333%;
+  }
+}
+/* line 294, ../_sass/_pages/_recipes.scss */
+.recipe__card .recipe__ingredients li {
+  margin: 0 0 15px 0;
+}
+/* line 300, ../_sass/_pages/_recipes.scss */
+.recipe__card .recipe__ingredients li a:link,
+.recipe__card .recipe__ingredients li a:visited {
+  color: #d1232a;
+  text-decoration: none;
+}
+/* line 310, ../_sass/_pages/_recipes.scss */
+.recipe__card .recipe__instructions {
+  list-style-type: decimal;
+  padding: 0 0 0 20px;
+}
+/* line 314, ../_sass/_pages/_recipes.scss */
+.recipe__card .recipe__instructions li {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin: 0 0 30px 0;
+}
+
 /*------------------------------------------------------------------
     PAGE: Stores
 -------------------------------------------------------------------*/

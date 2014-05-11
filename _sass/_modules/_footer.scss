@@ -94,18 +94,6 @@ a.footer__sign-up__btn:visited {
 	min-height: 262px;
 	padding-bottom: 55px;
 	padding-top: 55px;
-
-	.col-1-2 {
-		@include respond($med) {
-			float: none;
-			width: 100%;
-		}
-		@include respond($lrg) {
-			float: left;
-			width: 50%;
-		}
-	}
-
 }
 
 .footer__primary__logo {

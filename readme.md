@@ -1,4 +1,4 @@
-PAGE LINKS:
+Page links:
 -----------
 
  - Home: http://www.spoon.com/designtmp/index.html
@@ -8,11 +8,16 @@ PAGE LINKS:
  - Shopping cart: http://www.spoon.com/designtmp/cart.html
  - Recipes: http://www.spoon.com/designtmp/recipes.html
  - Recipes category: http://www.spoon.com/designtmp/recipes_category.html
+ - Recipes single: http://www.spoon.com/designtmp/recipes_single.html
  - Stores: http://www.spoon.com/designtmp/stores.html
 
 
-MISC NOTES:
+Misc notes:
 -----------
+
+Move recipes grid from the recipe category page over to the home page
+
+Recipe page -> hover over or click ingredient w/add to cart tooltip?
 
 Remove < and > from markup and move to CSS :before and :after content types
 
@@ -30,21 +35,21 @@ Style form inputs (select menu, checkbox)
  - http://webdesign.tutsplus.com/tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons--webdesign-8953
 
 
-TO DO:
+To do:
 ------
 
 ~~Build account pages (finish by Monday 5/5)~~
 
 ~~Shopping cart page (finish by Thursday 5/8)~~
 
-Recipe landing page - same grid from the homepage w/hover treatment. (finish by Friday 5/9)
+~~Recipe landing page - same grid from the homepage w/hover treatment. (finish by Friday 5/9)~~
 
 Stores page - Jake to update dev folder with PDF (finish by Monday 5/12)
 
 Build a 404 error page
 
 
-DEV NOTES:
+Dev notes:
 ----------
 
 1. Do not use z-index directly in a SCSS file, see _sass/_global/_variables for z-index values
