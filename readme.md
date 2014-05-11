@@ -19,8 +19,6 @@ Misc notes:
 
 Search field functionality (on click, expand to include input field)
 
-Move recipes grid from the recipe category page over to the home page
-
 Recipe page -> hover over or click ingredient w/add to cart tooltip?
 
 Remove < and > from markup and move to CSS :before and :after content types

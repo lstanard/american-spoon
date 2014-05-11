@@ -92,34 +92,6 @@
 }
 
 .featured-recipes__grid {
-
+	@extend .recipes-jump__grid;
 	margin: 60px 0 0 0;
-
-	ul {
-		overflow: hidden;
-	}
-
-	ul > li {
-		float: left;
-		margin-bottom: 20px;
-		min-height: 496px;
-	}
-
-	ul > li:nth-child(1) {
-
-	}
-	ul > li:nth-child(2) {
-
-	}
-	ul > li:nth-child(3) {
-
-	}
-	ul > li:nth-child(4) {
-
-	}
-
-	img {
-		width: 100%;
-	}
-
 }
