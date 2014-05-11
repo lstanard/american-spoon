@@ -196,6 +196,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/as_product-photo_274x364.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39592,
+		"inputAbbreviatedPath": "\/_img\/as_product-photo_274x364.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_product-photo_274x364.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/as_product_237x347.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -432,7 +443,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_global\/_footer.kit",
-		"outputAbbreviatedPath": "\/_kit\/_global\/_footer.html",
+		"outputAbbreviatedPath": "\/_kit\/_footer.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -441,7 +452,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_global\/_head.kit",
-		"outputAbbreviatedPath": "\/_kit\/_global\/_head.html",
+		"outputAbbreviatedPath": "\/_kit\/_head.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -450,7 +461,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_global\/_header.kit",
-		"outputAbbreviatedPath": "\/_kit\/_global\/_header.html",
+		"outputAbbreviatedPath": "\/_kit\/_header.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -459,7 +470,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_global\/_header_option02.kit",
-		"outputAbbreviatedPath": "\/_kit\/_global\/_header_option02.html",
+		"outputAbbreviatedPath": "\/_kit\/_header_option02.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -468,7 +479,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_global\/_shipping-banner.kit",
-		"outputAbbreviatedPath": "\/_kit\/_global\/_shipping-banner.html",
+		"outputAbbreviatedPath": "\/_kit\/_shipping-banner.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -477,7 +488,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_pages\/_cart.kit",
-		"outputAbbreviatedPath": "\/_kit\/_pages\/_cart.html",
+		"outputAbbreviatedPath": "\/_kit\/_cart.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -486,7 +497,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_pages\/_catalog-request.kit",
-		"outputAbbreviatedPath": "\/_kit\/_pages\/_catalog-request.html",
+		"outputAbbreviatedPath": "\/_kit\/_catalog-request.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -495,7 +506,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_pages\/_index.kit",
-		"outputAbbreviatedPath": "\/_kit\/_pages\/_index.html",
+		"outputAbbreviatedPath": "\/_kit\/_index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -504,7 +515,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_pages\/_login.kit",
-		"outputAbbreviatedPath": "\/_kit\/_pages\/_login.html",
+		"outputAbbreviatedPath": "\/_kit\/_login.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -513,7 +524,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_pages\/_product-single.kit",
-		"outputAbbreviatedPath": "\/_kit\/_pages\/_product-single.html",
+		"outputAbbreviatedPath": "\/_kit\/_product-single.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -522,7 +533,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_pages\/_recipes.kit",
-		"outputAbbreviatedPath": "\/_kit\/_pages\/_recipes.html",
+		"outputAbbreviatedPath": "\/_kit\/_recipes.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -531,7 +542,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_pages\/_recipes_category.kit",
-		"outputAbbreviatedPath": "\/_kit\/_pages\/_recipes_category.html",
+		"outputAbbreviatedPath": "\/_kit\/_recipes_category.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -540,7 +551,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_pages\/_recipes_single.kit",
-		"outputAbbreviatedPath": "\/_kit\/_pages\/_recipes_single.html",
+		"outputAbbreviatedPath": "\/_kit\/_recipes_single.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -549,7 +560,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_pages\/_stores.kit",
-		"outputAbbreviatedPath": "\/_kit\/_pages\/_stores.html",
+		"outputAbbreviatedPath": "\/_kit\/_stores.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -558,7 +569,97 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_pages\/_style-guide.kit",
-		"outputAbbreviatedPath": "\/_kit\/_pages\/_style-guide.html",
+		"outputAbbreviatedPath": "\/_kit\/_style-guide.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_kit\/cart.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_kit\/cart.kit",
+		"outputAbbreviatedPath": "\/cart.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_kit\/catalog-request.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_kit\/catalog-request.kit",
+		"outputAbbreviatedPath": "\/catalog-request.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_kit\/index.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_kit\/index.kit",
+		"outputAbbreviatedPath": "\/index.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_kit\/login.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_kit\/login.kit",
+		"outputAbbreviatedPath": "\/login.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_kit\/product-page.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_kit\/product-page.kit",
+		"outputAbbreviatedPath": "\/product-page.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_kit\/recipes.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_kit\/recipes.kit",
+		"outputAbbreviatedPath": "\/recipes.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_kit\/recipes_category.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_kit\/recipes_category.kit",
+		"outputAbbreviatedPath": "\/recipes_category.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_kit\/recipes_single.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_kit\/recipes_single.kit",
+		"outputAbbreviatedPath": "\/recipes_single.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_kit\/stores.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_kit\/stores.kit",
+		"outputAbbreviatedPath": "\/stores.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_kit\/style.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_kit\/style.kit",
+		"outputAbbreviatedPath": "\/style.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -994,102 +1095,12 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/cart.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/cart.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/cart.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/cart.kit",
-		"outputAbbreviatedPath": "\/cart.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/catalog-request.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/catalog-request.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/catalog-request.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/catalog-request.kit",
-		"outputAbbreviatedPath": "\/catalog-request.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/config.rb": {
 		"fileType": 131072,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/config.rb",
 		"outputAbbreviatedPath": "\/config.rb",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/index.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.kit",
-		"outputAbbreviatedPath": "\/index.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/login.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/login.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/login.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/login.kit",
-		"outputAbbreviatedPath": "\/login.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/product-page.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/product-page.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/product-page.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/product-page.kit",
-		"outputAbbreviatedPath": "\/product-page.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1102,96 +1113,6 @@
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/readme.md",
 		"outputAbbreviatedPath": "\/readme.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/recipes.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/recipes.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/recipes.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/recipes.kit",
-		"outputAbbreviatedPath": "\/recipes.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/recipes_category.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/recipes_category.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/recipes_category.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/recipes_category.kit",
-		"outputAbbreviatedPath": "\/recipes_category.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/recipes_single.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/recipes_single.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/recipes_single.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/recipes_single.kit",
-		"outputAbbreviatedPath": "\/recipes_single.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/stores.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/stores.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/stores.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/stores.kit",
-		"outputAbbreviatedPath": "\/stores.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/style.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/style.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/style.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/style.kit",
-		"outputAbbreviatedPath": "\/style.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		}
@@ -1741,10 +1662,10 @@
 			"flagValue": -1
 			}
 		},
-	"kitAutoOutputPathRelativePath": "",
+	"kitAutoOutputPathRelativePath": "..\/",
 	"kitAutoOutputPathReplace1": "",
 	"kitAutoOutputPathReplace2": "",
-	"kitAutoOutputPathStyle": 0,
+	"kitAutoOutputPathStyle": 2,
 	"lessAllowInsecureImports": 0,
 	"lessAutoOutputPathRelativePath": "..\/css",
 	"lessAutoOutputPathReplace1": "less",

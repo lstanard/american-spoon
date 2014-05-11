@@ -15,6 +15,8 @@ Page links:
 Misc notes:
 -----------
 
+!! Drop-down menu with functionality for touch devices and small screens
+
 Move recipes grid from the recipe category page over to the home page
 
 Recipe page -> hover over or click ingredient w/add to cart tooltip?
