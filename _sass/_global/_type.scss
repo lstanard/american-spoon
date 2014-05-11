@@ -187,8 +187,11 @@ h5 {
 	&.store-location__hours-title {
 		@extend .verlag-black;
 		text-transform: uppercase;
-		font-size: 14px;
-		font-size: 1.4rem;
+		font-size: 18px;
+		font-size: 1.8rem;
+		line-height: 35px;
+		line-height: 3.5rem;
+		letter-spacing: 0.06em;
 	}
 
 }
