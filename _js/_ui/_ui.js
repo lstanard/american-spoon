@@ -94,18 +94,16 @@
 
 				setHeaderWaypoint: function() {
 
-					$('.main-container').waypoint(function(direction){
+					$('body').waypoint(function(direction){
 
 						if ( direction === 'down' ) {
-							$('.header-container').addClass('header--condensed');
-							$('.shipping-banner').addClass('hidden');
+							$('body').addClass('header-collapse');
 						}
 						else if ( direction === 'up' ){
-							$('.header-container').removeClass('header--condensed');
-							$('.shipping-banner').removeClass('hidden');
+							$('body').removeClass('header-collapse');
 						}
 
-					}, { offset: -161 } );
+					}, { offset: -215 } );
 
 				},
 
@@ -126,6 +124,17 @@
 
 					$(document).ready(function() {
 
+					});
+
+				},
+
+				cloneDesktopHeader: function() {
+
+					$(document).ready(function() {
+						$('.header-container').clone().insertAfter('.header-container').addClass('header--clone');
+							$(window).on('scroll', function() {
+								console.log( $(window).scrollTop() );
+							});
 					});
 
 				},

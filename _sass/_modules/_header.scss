@@ -2,16 +2,27 @@
     HEADER
 -------------------------------------------------------------------*/
 
-.header-container {
-	@include transition(all $header-transition-speed);
+body.header-collapse {
 
+	.header-container {
+		// display: none;
+
+		&.header--clone {
+			// display: block;
+			top: 0;
+		}
+	}
+}
+
+.header-container {
 	background-color: #FFF;
 	height: auto;
 	margin: 0;
 	min-height: $header-height-lrg;
 	padding-bottom: 0;
 	padding-top: 0;
-	position: fixed;
+	// position: fixed;
+	position: relative;
 	width: 100%;
 	z-index: $header;
 
@@ -20,10 +31,14 @@
 		padding-bottom: 0;
 	}
 
-	&.header--condensed {
+	&.header--clone {
+		@include transition(all $header-transition-speed);
 		@include box-shadow(rgba(0,0,0,.1) 0px 2px 6px);
+		// display: none;
 		height: $header-height-sm;
 		min-height: 0px;
+		position: fixed;
+		top: -$header-height-sm;
 
 		.header__primary__logo {
 			img.header__primary__logo-sm {
@@ -34,6 +49,11 @@
 				@include opacity(0);
 				top: -$header-height-lrg;
 			}
+		}
+
+		& + a.shipping-banner--link + .main-container {
+			// position: relative;
+			// top: $header-height-lrg + $shipping-banner-height - 45px;
 		}
 
 		.header__primary-nav {
@@ -106,14 +126,14 @@
 .header__primary__logo {
 
 	img.header__primary__logo-sm {
-		@include transition(all $header-transition-speed);
+		// @include transition(all $header-transition-speed);
 		@include opacity(0);
 		margin: 14px 0 0 0;
 		max-width: 188px;
 		visibility: hidden;
 	}
 	img.header__primary__logo-lrg {
-		@include transition(all $header-transition-speed);
+		// @include transition(all $header-transition-speed);
 		@include opacity(1);
 		margin: 6px 0 0 0;
 		max-width: 155px;
@@ -134,7 +154,7 @@
 -------------------------------------------------------------------*/
 
 .header__primary-nav {
-	@include transition(all $header-transition-speed);
+	// @include transition(all $header-transition-speed);
 
 	padding-top: 55px;
 
@@ -307,7 +327,7 @@
 a.primary-nav__scroll-top:link,
 a.primary-nav__scroll-top:visited {
 	@include opacity(0);
-	@include transition(all $header-transition-speed / 2);
+	// @include transition(all $header-transition-speed / 2);
 
 	background-color: $red;
 	color: #FFF;
@@ -344,7 +364,7 @@ a.primary-nav__scroll-top:visited {
 
 a.shipping-banner--link:link,
 a.shipping-banner--link:visited {
-	@include transition(all $header-transition-speed);
+	// @include transition(all $header-transition-speed);
 	@include opacity(1);
 	border: 0;
 	display: block;
@@ -367,9 +387,10 @@ a.shipping-banner--link:visited {
 	border-top: 2px solid rgba(0,0,0,.08);
 	height: auto;
 	min-height: $shipping-banner-height;
-	position: fixed;
+	// position: fixed;
+	position: relative;
 	text-align: center;
-	top: $header-height-lrg;
+	// top: $header-height-lrg;
 	vertical-align: middle;
 	visibility: visible;
 	width: 100%;

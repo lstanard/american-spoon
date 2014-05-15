@@ -23,6 +23,7 @@ var functionCheck = jRespond([
 		breakpoint: 'med-lrg',
 		enter: function() {
 			uiFunctions.site.setHeaderWaypoint();
+			uiFunctions.site.cloneDesktopHeader();
 
 			if ( $('body').hasClass('index') ) {
 				uiFunctions.site.setColumnHeight(['.featured-products__grid li', '.featured-recipes__grid ul li']);
