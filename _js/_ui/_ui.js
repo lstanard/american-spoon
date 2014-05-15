@@ -132,9 +132,7 @@
 
 					$(document).ready(function() {
 						$('.header-container').clone().insertAfter('.header-container').addClass('header--clone');
-							$(window).on('scroll', function() {
-								console.log( $(window).scrollTop() );
-							});
+						uiFunctions.site.bindScrollToTop();
 					});
 
 				},

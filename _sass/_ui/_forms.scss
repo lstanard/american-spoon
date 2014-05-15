@@ -44,7 +44,8 @@ input[type="text"],
 	font-size: 30px;
 	font-size: 3.0rem;
 	height: 55px;
-	padding: 0 0 0 24px;
+	line-height: 55px;
+	padding: 2px 0 0 12px;
 	width: 100%;
 
 	&.inline-input {
