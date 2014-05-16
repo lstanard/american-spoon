@@ -25,7 +25,7 @@
 
 				unsetColumnHeight: function(selectorArray) {
 
-					$(window).load(function(){
+					$(document).ready(function() {
 
 						var selectors = new Array();
 
@@ -43,7 +43,7 @@
 
 				setColumnHeight: function(selectorArray) {
 
-					$(window).load(function(){
+					$(document).ready(function() {
 
 						var selectors = new Array(),
 							currentTallest = 0,

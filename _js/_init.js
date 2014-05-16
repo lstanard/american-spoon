@@ -2,6 +2,8 @@
     INITIALIZERS: UI components
 -------------------------------------------------------------------*/
 
+uiFunctions.site.cloneDesktopHeader();
+
 var functionCheck = jRespond([
 		{
 			label: 'med-lrg',
@@ -15,14 +17,13 @@ var functionCheck = jRespond([
 		enter: function() {
 			uiFunctions.site.setFooterYear();
 			uiFunctions.site.bindLoginPageControls();
+			uiFunctions.site.setHeaderWaypoint();
 		}
 	});
 
 	functionCheck.addFunc({
 		breakpoint: 'med-lrg',
 		enter: function() {
-			uiFunctions.site.setHeaderWaypoint();
-			uiFunctions.site.cloneDesktopHeader();
 
 			if ( $('body').hasClass('index') ) {
 				uiFunctions.site.setColumnHeight(['.featured-products__grid li', '.featured-recipes__grid ul li']);

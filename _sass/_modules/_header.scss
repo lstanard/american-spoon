@@ -46,28 +46,41 @@ body.header-collapse {
 		}
 
 		.header__primary-nav {
-			padding-top: 8px;
+			height: 55px;
+			padding-top: 0;
+
+			ul li ul {
+				top: 55px;
+			}
 		}
 
 		.header__primary-nav ul > li {
 			margin-left: 0px;
 		}
 
-		.primary-nav__shop {
-			margin-top: 5px;
+		.primary-nav__shop,
+		.primary-nav__explore,
+		.primary-nav__utility {
+			height: 55px;
+			margin-top: 0;
 
 			& > li {
-				padding-top: 6px;
+				height: 55px;
+				padding-top: 0;
+
+				& > a:link,
+				& > a:visited {
+					display: inline-block;
+					height: 55px;
+					line-height: 55px;
+				}
 			}
 		}
 
 		.primary-nav__explore {
-			height: 30px;
-			margin-top: 5px;
 			padding-left: 25px;
 
 			li {
-				padding-top: 6px;
 				margin: 0 25px;
 			}
 		}
@@ -77,6 +90,7 @@ body.header-collapse {
 			li > a:link,
 			li > a:visited  {
 				color: $primary-copy;
+				line-height: 60px;
 			}
 
 			.utility--search,
@@ -100,11 +114,15 @@ body.header-collapse {
 		a.primary-nav__scroll-top:link,
 		a.primary-nav__scroll-top:visited {
 			@include opacity(1);
+			display: none;
 			margin-top: 0;
 			top: 0;
 			visibility: visible;
-		}
 
+			@include mnw($med) {
+				display: block;
+			}
+		}
 	}
 
 	@include respond($lrg) {
@@ -140,12 +158,36 @@ body.header-collapse {
     PRIMARY NAVIGATION
 -------------------------------------------------------------------*/
 
+#nav-toggle {
+	@extend .verlag-bold;
+	background-color: $red;
+	border: none;
+	color: #FFF;
+	display: block;
+	height: 45px;
+	margin: 5px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-transform: uppercase;
+	top: 0;
+	width: 60px;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	@include mnw($med) {
+		display: none;
+	}
+}
+
 .header__primary-nav {
+	background-color: #FFF;
 	padding-top: 55px;
 
 	ul > li {
 		@include transition(all $header-transition-speed);
-		// border: 1px dotted black;
 		display: inline-block;
 		position: relative;
 		padding-bottom: 10px;
@@ -157,30 +199,16 @@ body.header-collapse {
 		text-transform: uppercase;
 	}
 
-	ul li:hover {
-		ul {
-			// display: block;
-			@include opacity(1);
-			visibility: visible;
-		}
-	}
-
+	// begin mobile drop-down menu
 	ul li ul {
-		@include transition(opacity .35s);
-		@include box-shadow(rgba(0,0,0,.12) 1px 2px 6px);
-		@include opacity(0);
-		background-color: #FFF;
-		// display: none;
-		left: -15px;
-		position: absolute;
-		top: 41px;
-		width: 325px;
-		visibility: hidden;
+		border: 1px dotted black;
+		width: 100%;
 
 		& > li {
 			display: block;
 			margin: 0;
 			padding: 0;
+			width: 100%;
 		}
 
 		& > li > a:link,
@@ -188,10 +216,9 @@ body.header-collapse {
 			display: block;
 			font-size: 14px;
 			font-size: 1.4rem;
-			margin: 0;
 			line-height: 20px;
 			line-height: 2.0rem;
-			padding: 15px 0 15px 30px;
+			width: 100%;
 
 			&:hover,
 			&:active {
@@ -200,6 +227,7 @@ body.header-collapse {
 				a:link,
 				a:visited {
 					color: $red;
+					display: block;
 				}
 			}
 		}
@@ -208,16 +236,60 @@ body.header-collapse {
 	@include respond($med, "min") {
 		float: left;
 		width: 960px / $header-container-context * 100%;
+
+		// begin desktop drop-down menu
+		ul li:hover {
+			ul {
+				@include opacity(1);
+				visibility: visible;
+			}
+		}
+
+		ul li ul {
+			@include transition(opacity .35s);
+			@include box-shadow(rgba(0,0,0,.12) 0px 2px 6px);
+			@include opacity(0);
+			background-color: #FFF;
+			left: -15px;
+			position: absolute;
+			top: 45px;
+			width: 340px;
+			visibility: hidden;
+
+			& > li {
+				width: auto;
+			}
+
+			& > li > a:link,
+			& > li > a:visited {
+				margin: 0;
+				padding: 15px 0 15px 30px;
+			}
+		}
+		// end desktop drop-down menu
+
 	}
 }
 
 .primary-nav__shop {
 	float: left;
-	height: 40px;
+	height: 55px;
 	margin-top: 12px;
 
 	li {
 		padding: 10px 0 0 0;
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+	li.primary-nav__shop__lead {
+		display: none;
+
+		@include respond($med, "min") {
+			display: inline-block;
+		}
 	}
 
 	li.primary-nav__shop__lead > a:link,
@@ -251,6 +323,10 @@ body.header-collapse {
 		&:hover,
 		&:active {
 			color: $red;
+
+			span {
+				color: $red;
+			}
 		}
 	}
 
@@ -265,12 +341,23 @@ body.header-collapse {
 .primary-nav__explore {
 	$item-spacing: 12px;
 
-	border-left: 2px solid rgba(0,0,0,.08);
 	float: left;
 	height: 40px;
 	margin-left: $item-spacing * 2;
 	margin-top: 12px;
 	padding-left: $item-spacing;
+	position: relative;
+
+	&:before {
+		background-color: rgba(0,0,0,.08);
+		content: "";
+		display: block;
+		height: 23px;
+		left: 0;
+		position: absolute;
+		top: 15px;
+		width: 2px;
+	}
 
 	li {
 		margin: 0 $item-spacing;
