@@ -1,0 +1,49 @@
+/*------------------------------------------------------------------
+    PAGE: Shop
+-------------------------------------------------------------------*/
+
+.page__shop {
+
+	header {
+		h1.page-title {
+			margin-bottom: 15px;
+		}
+		.lead-copy {
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+
+}
+
+.shop__secondary-nav {
+	@extend .secondary-nav;
+}
+
+/*------------------------------------------------------------------
+    PAGE: Shop / Category page
+-------------------------------------------------------------------*/
+
+.shop-products__grid {
+
+	@extend .product-grid;
+	margin-top: 60px;
+
+	ul {
+		border-top: 1px solid rgba(0,0,0,.15);
+		padding-top: 15px;
+	}
+
+	ul > li {
+		margin-top: 30px;
+		margin-bottom: 15px;
+	}
+}
+
+/*------------------------------------------------------------------
+    PAGE: Shop / Pagination
+-------------------------------------------------------------------*/
+
+.shop__pagination {
+	@extend .pagination;
+}

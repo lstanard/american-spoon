@@ -1,4 +1,75 @@
 <!-- $pageClass = page__login -->
 <!-- @include _global/_head.kit -->
-<!-- @include _pages/_login.kit -->
+
+			<section>
+				<div class="container--wide">
+					<header>
+						<h1 class="page-title">Log Into Your Account</h1>
+					</header>
+					<div class="row">
+						<div class="col-1-2">
+							<div class="login__current-user">
+								<a href="#" class="btn--box ghost" id="login__current-user__btn">I have an account</a>
+								<form action="#" id="login__curent-user__form">
+									<header>
+										<h2 class="login__header">Log in</h2>
+									</header>
+									<fieldset>
+										<div class="form__group">
+											<label for="login__username">Email Address</label>
+											<input type="text" id="login__username">
+										</div>
+										<div class="form__group">
+											<label for="login__username">Password</label>
+											<input type="text" id="login__password">
+										</div>
+										<p><a href="#" class="login__forgot-password">Forgot password?</a></p>
+										<a href="#" class="btn red full"><span><span>Log in</span> <span>&gt;</span></span></a>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+						<div class="col-1-2">
+							<div class="login__create-acct">
+								<a href="#" class="btn--box ghost" id="login__create-acct__btn">Create an account</a>
+								<form action="#">
+									<header>
+										<h2 class="login__header">Create new account</h2>
+										<p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+									</header>
+									<fieldset>
+										<div class="form__group">
+											<label for="create-acct__first-name">First Name</label>
+											<input type="text" id="create-acct__first-name">
+										</div>
+										<div class="form__group">
+											<label for="create-acct__last-name">Last Name</label>
+											<input type="text" id="create-acct__last-name">
+										</div>
+										<div class="form__group">
+											<label for="login__email">Email Address</label>
+											<input type="text" id="login__email">
+											<div>
+												<input type="checkbox" id="email__updates">
+												<label for="email__updates">Signup for Newsletter</label>
+											</div>
+										</div>
+										<div class="form__group">
+											<label for="create-acct__password">Password</label>
+											<input type="text" id="create-acct__password">
+										</div>
+										<div class="form__group">
+											<label for="create-acct__password-confirm">Confirm Password</label>
+											<input type="text" id="create-acct__password-confirm">
+										</div>
+										<div class="form__submit">
+											<a href="#" class="btn red full"><span><span>Create my account</span> <span>&gt;</span></span></a>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 <!-- @include _global/_footer.kit -->

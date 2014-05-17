@@ -34,6 +34,9 @@ var functionCheck = jRespond([
 			if ( $('body').hasClass('page__recipes__category') ) {
 				uiFunctions.site.setColumnHeight(['.recipes__category__list li']);
 			}
+			if ( $('body').hasClass('page__shop') ) {
+				uiFunctions.site.setColumnHeight(['.shop-products__grid li']);
+			}
 
 		},
 
@@ -44,6 +47,9 @@ var functionCheck = jRespond([
 			}
 			if ( $('body').hasClass('product-single') ) {
 				uiFunctions.site.unsetColumnHeight(['.related-products__grid ul li']);
+			}
+			if ( $('body').hasClass('page__shop') ) {
+				uiFunctions.site.unsetColumnHeight(['.shop-products__grid li']);
 			}
 
 		}

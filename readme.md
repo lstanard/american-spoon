@@ -2,24 +2,38 @@ Page links:
 -----------
 
  - Home: http://www.spoon.com/designtmp/index.html
+ - Shop: http://www.spoon.com/designtmp/shop-classics.html
  - Product page: http://www.spoon.com/designtmp/product-page.html
  - Login: http://www.spoon.com/designtmp/login.html
  - Catalog request: http://www.spoon.com/designtmp/catalog-request.html
  - Shopping cart: http://www.spoon.com/designtmp/cart.html
  - Recipes: http://www.spoon.com/designtmp/recipes.html
- - Recipes category: http://www.spoon.com/designtmp/recipes_category.html
- - Recipes single: http://www.spoon.com/designtmp/recipes_single.html
+ - Recipes category: http://www.spoon.com/designtmp/recipes-category.html
+ - Recipes single: http://www.spoon.com/designtmp/recipes-single.html
  - Stores: http://www.spoon.com/designtmp/stores.html
+ - About: http://www.spoon.com/designtmp/about.html
 
 
 Misc notes:
 -----------
 
+Shop section:
+ - Every couple tiles, maybe once per category, include a recipe
+ - Use pagination at the bottom of both options w/rollover
+ - The header treatment will change between the 2
+ 	1) Option 2 has no large header
+ 	2) Option 3 has large header w/photo, and secondary nav above the title
+
+Recipe page:
+ - Click ingredient name, tooltip pop-up with view product and add to cart
+ - Add secondary nav to the page, w/top level recipes section
+ - Add pagination
+
 !! Drop-down menu with functionality for touch devices and small screens
 
-Search field functionality (on click, expand to include input field)
+Check for consistency in border colors (kind of all over the place)
 
-Recipe page -> hover over or click ingredient w/add to cart tooltip?
+Search field functionality (on click, expand to include input field)
 
 Remove < and > from markup and move to CSS :before and :after content types
 

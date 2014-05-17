@@ -80,6 +80,10 @@ body.header-collapse {
 		.primary-nav__explore {
 			padding-left: 25px;
 
+			&:before {
+				top: 15px;
+			}
+
 			li {
 				margin: 0 25px;
 			}
@@ -201,7 +205,7 @@ body.header-collapse {
 
 	// begin mobile drop-down menu
 	ul li ul {
-		border: 1px dotted black;
+		// border: 1px dotted black;
 		width: 100%;
 
 		& > li {
@@ -355,7 +359,7 @@ body.header-collapse {
 		height: 23px;
 		left: 0;
 		position: absolute;
-		top: 15px;
+		top: 10px;
 		width: 2px;
 	}
 
