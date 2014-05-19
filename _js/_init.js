@@ -2,7 +2,7 @@
     INITIALIZERS: UI components
 -------------------------------------------------------------------*/
 
-uiFunctions.site.cloneDesktopHeader();
+document.addEventListener("touchstart", function(){}, true);
 
 var functionCheck = jRespond([
 		{
@@ -15,6 +15,7 @@ var functionCheck = jRespond([
 	functionCheck.addFunc({
 		breakpoint: '*',
 		enter: function() {
+			uiFunctions.site.setupHeader();
 			uiFunctions.site.setFooterYear();
 			uiFunctions.site.bindLoginPageControls();
 			uiFunctions.site.setHeaderWaypoint();

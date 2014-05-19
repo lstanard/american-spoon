@@ -4,6 +4,7 @@
 
 $header: 1001;
 $shipping-banner: 1000;
+$mobile-drop-nav: -1;
 $recipe-figcaption: 900;
 
 /*------------------------------------------------------------------
@@ -21,10 +22,12 @@ $store-location-meta: 800px;
     HEADER
 -------------------------------------------------------------------*/
 
+$header-nav-break: 640px;
+
 $header-height-lrg: 170px;
 $header-height-sm: 55px;
 $header-container-context: 1200px;
-$header-transition-speed: .5s;
+$header-transition-speed: .75s;
 $shipping-banner-height: 45px;
 
 /*------------------------------------------------------------------

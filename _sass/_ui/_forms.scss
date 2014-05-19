@@ -61,7 +61,8 @@ input[type=text], textarea {
 }
 
 input[type=text]:focus, textarea:focus {
-	box-shadow: 0 0 5px rgba(210,35,42,1);
+	@include box-shadow(rgba(210,35,42,1) 0 0 5px);
+	// box-shadow: 0 0 5px rgba(210,35,42,1);
 	border: 2px solid rgba(210,35,42,1);
 }
 

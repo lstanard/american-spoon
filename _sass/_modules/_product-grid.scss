@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------
-    PAGE: Product
+    MODULE: Products grid
 -------------------------------------------------------------------*/
 
 .product-grid {
@@ -54,23 +54,24 @@
 		@include opacity(1);
 		@include transition(all .25s);
 		margin-bottom: 25px;
+		// max-width: 150px;
 	}
 	.featured-product__name {
 		@extend .verlag-black;
 		color: $primary-subhead-dark;
-		font-size: 16px;
-		font-size: 1.6rem;
-		line-height: 22px;
-		line-height: 2.2rem;
+		font-size: 18px;
+		font-size: 1.8rem;
+		line-height: 24px;
+		line-height: 2.4rem;
 		margin: 0 0 10px 0;
 		text-transform: uppercase;
 	}
 	.featured-product__price {
 		@extend .archer-med;
 		color: $primary-copy;
-		font-size: 24px;
-		font-size: 2.4rem;
-		margin-bottom: 15px;
+		font-size: 32px;
+		font-size: 3.2rem;
+		margin-bottom: 30px;
 	}
 
 	@include respond($med) {
@@ -84,7 +85,15 @@
 			z-index: 1;
 		}
 
+		.featured-product__name {
+			font-size: 16px;
+			font-size: 1.6rem;
+			line-height: 22px;
+			line-height: 2.2rem;
+		}
 		.featured-product__price {
+			font-size: 24px;
+			font-size: 2.4rem;
 			margin-bottom: 0;
 		}
 

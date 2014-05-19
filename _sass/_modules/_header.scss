@@ -26,13 +26,15 @@ body.header-collapse {
 		padding-bottom: 0;
 	}
 
+	#nav-toggle {
+		display: none;
+	}
+
 	&.header--clone {
-		@include transition(all $header-transition-speed);
 		@include box-shadow(rgba(0,0,0,.1) 0px 2px 6px);
 		height: $header-height-sm;
 		min-height: 0px;
 		position: fixed;
-		top: -$header-height-sm - 10px;
 
 		.header__primary__logo {
 			img.header__primary__logo-sm {
@@ -45,88 +47,94 @@ body.header-collapse {
 			}
 		}
 
-		.header__primary-nav {
-			height: 55px;
-			padding-top: 0;
+		@include respond($header-nav-break, "min") {
+			@include transition(all $header-transition-speed);
+			top: -$header-height-sm - 10px;
 
-			ul li ul {
-				top: 55px;
-			}
-		}
-
-		.header__primary-nav ul > li {
-			margin-left: 0px;
-		}
-
-		.primary-nav__shop,
-		.primary-nav__explore,
-		.primary-nav__utility {
-			height: 55px;
-			margin-top: 0;
-
-			& > li {
+			.header__primary-nav {
 				height: 55px;
 				padding-top: 0;
 
-				& > a:link,
-				& > a:visited {
-					display: inline-block;
+				ul li ul {
+					top: 55px;
+				}
+			}
+
+			.header__primary-nav ul > li {
+				margin-left: 0px;
+			}
+
+			.primary-nav__shop,
+			.primary-nav__explore,
+			.primary-nav__utility {
+				height: 55px;
+				margin-top: 0;
+
+				& > li {
 					height: 55px;
-					line-height: 55px;
+					padding-top: 0;
+
+					& > a:link,
+					& > a:visited {
+						display: inline-block;
+						height: 55px;
+						line-height: 55px;
+					}
+				}
+			}
+
+			.primary-nav__explore {
+				padding-left: 25px;
+
+				&:before {
+					top: 15px;
+				}
+
+				li {
+					margin: 0 25px;
+				}
+			}
+
+			.primary-nav__utility {
+
+				li > a:link,
+				li > a:visited  {
+					color: $primary-copy;
+					line-height: 60px;
+				}
+
+				.utility--search,
+				.utility--account,
+				.utility--cart {
+
+					&:hover,
+					&:active {
+						color: $red;
+					}
+
+					&:after {
+						@include opacity(0);
+						font-size: 0px;
+						font-size: 0rem;
+						height: 0px;
+					}
+				}
+			}
+
+			a.primary-nav__scroll-top:link,
+			a.primary-nav__scroll-top:visited {
+				@include opacity(1);
+				display: none;
+				margin-top: 0;
+				top: 0;
+				visibility: visible;
+
+				@include mnw($med) {
+					display: block;
 				}
 			}
 		}
 
-		.primary-nav__explore {
-			padding-left: 25px;
-
-			&:before {
-				top: 15px;
-			}
-
-			li {
-				margin: 0 25px;
-			}
-		}
-
-		.primary-nav__utility {
-
-			li > a:link,
-			li > a:visited  {
-				color: $primary-copy;
-				line-height: 60px;
-			}
-
-			.utility--search,
-			.utility--account,
-			.utility--cart {
-
-				&:hover,
-				&:active {
-					color: $red;
-				}
-
-				&:after {
-					@include opacity(0);
-					font-size: 0px;
-					font-size: 0rem;
-					height: 0px;
-				}
-			}
-		}
-
-		a.primary-nav__scroll-top:link,
-		a.primary-nav__scroll-top:visited {
-			@include opacity(1);
-			display: none;
-			margin-top: 0;
-			top: 0;
-			visibility: visible;
-
-			@include mnw($med) {
-				display: block;
-			}
-		}
 	}
 
 	@include respond($lrg) {
@@ -159,46 +167,143 @@ body.header-collapse {
 }
 
 /*------------------------------------------------------------------
+    MOBILE NAVIGATION
+-------------------------------------------------------------------*/
+
+.header-container.mobile-menu {
+
+	top: 0 !important;
+
+	.container--full {
+		background-color: #FFF;
+		height: $header-height-sm;
+	}
+
+	nav#nav {
+		@include transition(all .5s);
+		@include box-shadow(rgba(0,0,0,.1) 0px 3px 6px);
+		border-top: 1px solid rgba(0,0,0,.12);
+		left: 0;
+		position: absolute;
+		top: -365px;
+		visibility: visible;
+		width: 100%;
+		z-index: $mobile-drop-nav;
+
+		.primary-nav__shop {
+			li > a:link,
+			li > a:visited {
+				span {
+					@include rotate(0deg);
+				}
+			}
+		}
+
+		.primary-nav__explore,
+		.primary-nav__utility {
+			display: none;
+		}
+
+		ul li {
+			position: relative;
+		}
+
+		ul > li > a:link,
+		ul > li > a:visited {
+			border-bottom: 1px solid rgba(0,0,0,.08);
+		}
+
+		ul li ul.submenu {
+			@include transition(all .5s);
+			background: #FFF;
+			position: absolute;
+			top: 0;
+			visibility: hidden;
+			width: 100%;
+
+			&.submenu--open {
+				background: #FFF;
+				right: 0 !important;
+				visibility: visible;
+				z-index: $mobile-drop-nav + 2;
+			}
+
+			.submenu__back {
+				a:link,
+				a:visited {
+					text-align: right;
+				}
+			}
+		}
+	}
+
+	#nav-toggle {
+		@include transition(all .35s);
+		@extend .verlag-bold;
+		background-color: $red;
+		border: none;
+		color: #FFF;
+		display: block;
+		height: 45px;
+		margin: 5px;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		text-transform: uppercase;
+		top: 0;
+		width: 60px;
+
+		&:focus {
+			// box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+			// @include box-shadow(rgba(210,35,42,1) 0 0 5px);
+			// outline: none;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		@include mnw($med) {
+			display: none;
+		}
+	}
+
+	a.primary-nav__scroll-top:link,
+	a.primary-nav__scroll-top:visited {
+		display: none;
+	}
+
+	&.mobile-menu--open {
+
+		nav#nav {
+			top: $header-height-sm;
+		}
+
+		#nav-toggle {
+			background-color: $blue;
+		}
+
+	}
+
+}
+
+/*------------------------------------------------------------------
     PRIMARY NAVIGATION
 -------------------------------------------------------------------*/
 
-#nav-toggle {
-	@extend .verlag-bold;
-	background-color: $red;
-	border: none;
-	color: #FFF;
-	display: block;
-	height: 45px;
-	margin: 5px;
-	position: absolute;
-	right: 0;
-	text-align: center;
-	text-transform: uppercase;
-	top: 0;
-	width: 60px;
-
-	&:hover {
-		cursor: pointer;
-	}
-
-	@include mnw($med) {
-		display: none;
-	}
-}
-
 .header__primary-nav {
 	background-color: #FFF;
-	padding-top: 55px;
 
 	ul > li {
 		@include transition(all $header-transition-speed);
-		display: inline-block;
 		position: relative;
-		padding-bottom: 10px;
 	}
 
 	ul > li > a:link,
 	ul > li > a:visited {
+		// border: 1px dotted black;
+		display: block;
+		padding: 8px 3%;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
@@ -237,9 +342,15 @@ body.header-collapse {
 		}
 	}
 
-	@include respond($med, "min") {
+	@include respond($header-nav-break, "min") {
 		float: left;
+		padding-top: $header-height-sm;
 		width: 960px / $header-container-context * 100%;
+
+		ul > li {
+			display: inline-block;
+			padding-bottom: 10px;
+		}
 
 		// begin desktop drop-down menu
 		ul li:hover {
@@ -276,13 +387,8 @@ body.header-collapse {
 }
 
 .primary-nav__shop {
-	float: left;
-	height: 55px;
-	margin-top: 12px;
 
 	li {
-		padding: 10px 0 0 0;
-
 		&:hover {
 			color: $red;
 		}
@@ -314,7 +420,6 @@ body.header-collapse {
 		font-size: 19px;
 		font-size: 1.9rem;
 		letter-spacing: 0.10em;
-		margin: 0 0 0 15px;
 
 		span {
 			@include rotate(90deg);
@@ -334,6 +439,22 @@ body.header-collapse {
 		}
 	}
 
+	// Desktop navigation styles
+	@include respond($header-nav-break) {
+		float: left;
+		height: 55px;
+		margin-top: 12px;
+
+		li {
+			padding: 10px 0 0 0;
+		}
+
+		li > a:link,
+		li > a:visited {
+			margin: 0 0 0 15px;
+		}
+	}
+
 	@include respond(1300px) {
 		margin-left: 30px / $header-container-context * 100%;
 	}
@@ -344,61 +465,59 @@ body.header-collapse {
 
 .primary-nav__explore {
 	$item-spacing: 12px;
-
-	float: left;
-	height: 40px;
-	margin-left: $item-spacing * 2;
-	margin-top: 12px;
-	padding-left: $item-spacing;
 	position: relative;
-
-	&:before {
-		background-color: rgba(0,0,0,.08);
-		content: "";
-		display: block;
-		height: 23px;
-		left: 0;
-		position: absolute;
-		top: 10px;
-		width: 2px;
-	}
-
-	li {
-		margin: 0 $item-spacing;
-		padding: 10px 0 0 0;
-	}
 
 	li > a:link,
 	li > a:visited {
 		@extend .verlag-bold;
 		color: $primary-copy;
-		font-size: 19px;
-		font-size: 1.9rem;
-		letter-spacing: 0.10em;
-
-		&:hover,
-		&:active {
-			color: $red;
-		}
 	}
+
+	@include respond($header-nav-break, "min") {
+		float: left;
+		height: 40px;
+		margin-left: $item-spacing * 2;
+		margin-top: 12px;
+		padding-left: $item-spacing;
+
+		&:before {
+			background-color: rgba(0,0,0,.08);
+			content: "";
+			display: block;
+			height: 23px;
+			left: 0;
+			position: absolute;
+			top: 10px;
+			width: 2px;
+		}
+
+		li {
+			margin: 0 $item-spacing;
+			padding: 10px 0 0 0;
+		}
+
+		li > a:link,
+		li > a:visited {
+			font-size: 19px;
+			font-size: 1.9rem;
+			letter-spacing: 0.10em;
+
+			&:hover,
+			&:active {
+				color: $red;
+			}
+		}
+
+	}
+
 }
 
 .primary-nav__utility {
-	float: right;
-	margin: 10px 0 0 0;
-
-	li {
-		margin: 0 0 0 15px;
-	}
 
 	li > a:link,
 	li > a:visited {
 		color: $red;
 		display: block;
-		font-size: 20px;
-		font-size: 2.0rem;
-		min-width: 48px;
-		text-align: center;
 
 		&:hover,
 		&:active  {
@@ -409,7 +528,6 @@ body.header-collapse {
 	.utility--search,
 	.utility--account,
 	.utility--cart {
-		text-align: center;
 
 		&:after {
 			@include transition(opacity $header-transition-speed);
@@ -445,6 +563,31 @@ body.header-collapse {
 			content: "Cart";
 		}
 	}
+
+	@include respond($header-nav-break, "min") {
+		float: right;
+		margin: 10px 0 0 0;
+
+		li {
+			margin: 0 0 0 15px;
+		}
+
+		li > a:link,
+		li > a:visited {
+			font-size: 20px;
+			font-size: 2.0rem;
+			min-width: 48px;
+			text-align: center;
+		}
+
+		.utility--search,
+		.utility--account,
+		.utility--cart {
+			text-align: center;
+		}
+
+	}
+
 }
 
 /*------------------------------------------------------------------
@@ -454,8 +597,6 @@ body.header-collapse {
 a.primary-nav__scroll-top:link,
 a.primary-nav__scroll-top:visited {
 	@include opacity(0);
-	// @include transition(all $header-transition-speed / 2);
-
 	background-color: $red;
 	color: #FFF;
 	float: right;
@@ -491,10 +632,9 @@ a.primary-nav__scroll-top:visited {
 
 a.shipping-banner--link:link,
 a.shipping-banner--link:visited {
-	// @include transition(all $header-transition-speed);
 	@include opacity(1);
 	border: 0;
-	display: block;
+	display: none;
 	position: relative;
 	text-decoration: none;
 	width: 100%;
@@ -502,6 +642,10 @@ a.shipping-banner--link:visited {
 
 	&:hover, &:active {
 		@include opacity(.8);
+	}
+
+	@include respond($med) {
+		display: block;
 	}
 }
 
@@ -514,10 +658,8 @@ a.shipping-banner--link:visited {
 	border-top: 2px solid rgba(0,0,0,.08);
 	height: auto;
 	min-height: $shipping-banner-height;
-	// position: fixed;
 	position: relative;
 	text-align: center;
-	// top: $header-height-lrg;
 	vertical-align: middle;
 	visibility: visible;
 	width: 100%;

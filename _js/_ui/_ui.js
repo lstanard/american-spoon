@@ -6,7 +6,8 @@
 
 	var $w = $(window),
 		sw = document.documentElement.clientWidth,
-		sh = document.documentElement.clientHeight;
+		sh = document.documentElement.clientHeight,
+		navBreak = 640;
 
 		$w.smartresize(function(){
 			sw = document.documentElement.clientWidth;
@@ -120,19 +121,92 @@
 
 				},
 
-				setCatalogRequestControls: function() {
+				setupMobileMenu: function() {
 
-					$(document).ready(function() {
+					var menuStatus = 'closed',
+						$nav = $('.mobile-menu #nav'),
+						navWidth = $nav.innerWidth();
+
+					// Menu toggle
+
+					$('.mobile-menu #nav-toggle').on('click', function(e) {
+						if ( menuStatus == 'closed' ) {
+							$(this).parents('.mobile-menu').addClass('mobile-menu--open');
+							menuStatus = 'open';
+						}
+						else if ( menuStatus == 'open' ) {
+							$(this).parents('.mobile-menu').removeClass('mobile-menu--open');
+							menuStatus = 'closed';
+						}
+						e.preventDefault();
+					});
+
+					// Append all links to the same list
+
+					$('.mobile-menu .primary-nav__explore li').each(function() {
+						$(this).appendTo('.mobile-menu .primary-nav__shop');
+					});
+					$('.mobile-menu .primary-nav__utility li').each(function() {
+						var navItem = $(this),
+							navText = $(this).find('.mls').text(),
+							navLink = $(this).find('a').attr('href');
+
+						$('.mobile-menu .primary-nav__shop').append('<li><a href="' + navLink + '">' + navText + '</a></li>');
+
+						// $(this).appendTo('.mobile-menu .primary-nav__shop');
+					});
+
+					// Submenus
+
+					$('.mobile-menu .parentmenu li a').on('click', function(e) {
+						$(this).next('.submenu').addClass('submenu--open');
+						e.preventDefault();
+					});
+
+					$('.mobile-menu .submenu').each(function() {
+
+						var width = $(this).innerWidth(),
+							subMenu = $(this);
+
+						subMenu.prepend('<li class="submenu__back"><a href="#">&lt; Back</a></li>');
+						subMenu.css({
+							'right': -width
+						});
+
+						$(this).find('.submenu__back').on('click', function(e) {
+							subMenu.removeClass('submenu--open');
+							e.preventDefault();
+						});
 
 					});
 
 				},
 
-				cloneDesktopHeader: function() {
+				setupHeader: function() {
 
 					$(document).ready(function() {
-						$('.header-container').clone().insertAfter('.header-container').addClass('header--clone');
-						uiFunctions.site.bindScrollToTop();
+
+						if ( $('body').find('.header--clone').length == 0 ) {
+
+							// Create a clone of the header (for desktop fixed + mobile menu)
+							$('.header-container').clone().insertAfter('.header-container').addClass('header--clone');
+
+							// Bind "scroll to top" event listener
+							uiFunctions.site.bindScrollToTop();
+
+						}
+
+						// Setup header + nav for small screens
+						if ( sw < navBreak ) {
+							$('.header-container').not( $('.header--clone') ).hide();
+							$('.header--clone').addClass('mobile-menu');
+							uiFunctions.site.setupMobileMenu();
+						}
+						else if ( sw >= navBreak ) {
+							$('.header-container').not( $('.header--clone') ).show();
+							$('.header--clone').removeClass('mobile-menu');
+						}
+
 					});
 
 				},

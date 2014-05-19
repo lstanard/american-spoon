@@ -34,6 +34,7 @@
 @import "_modules/_header";
 @import "_modules/_footer";
 @import "_modules/_product-grid";
+@import "_modules/_recipes-grid";
 @import "_modules/_secondary-nav";
 
 /*------------------------------------------------------------------
@@ -64,4 +65,4 @@
     VENDOR PLUGINS
 -------------------------------------------------------------------*/
 
-// @import "_plugins/_nav.scss";
+// @import "_plugins/_multilevel-nav-component";

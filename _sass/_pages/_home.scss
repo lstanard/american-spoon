@@ -29,7 +29,7 @@
 .featured-products__header {
 	@extend .cf;
 	border-bottom: 2px solid $lightgrey1;
-	padding: 0 30px 25px 30px;
+	padding: 0 0 25px 0;
 
 	a.featured-products__shop-link:link,
 	a.featured-products__shop-link:visited {
@@ -39,6 +39,7 @@
 		font-size: 12px;
 		font-size: 1.2rem;
 		letter-spacing: 0.05em;
+		margin: 15px 0 0 0;
 		text-transform: uppercase;
 		text-decoration: none;
 
@@ -48,12 +49,18 @@
 	}
 
 	@include respond($med) {
+		padding: 0 30px 25px 30px;
 
 		h1 {
 			float: left;
 		}
 		a:link, a:visited {
 			float: right;
+		}
+
+		a.featured-products__shop-link:link,
+		a.featured-products__shop-link:visited {
+			margin: 0;
 		}
 
 	}
@@ -68,8 +75,15 @@
 	}
 
 	ul > li {
-		margin-top: 30px;
-		margin-bottom: 15px;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+
+	@include respond($med) {
+		ul > li {
+			margin-top: 30px;
+			margin-bottom: 15px;
+		}
 	}
 
 }

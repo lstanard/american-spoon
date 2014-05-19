@@ -31,11 +31,17 @@ Recipe page:
 
 !! Drop-down menu with functionality for touch devices and small screens
 
+Product grid
+ - Make current desktop functionality the default, but switch to non-hover states based on "html.touch" instead of a screen size (or should it be touch and anything below a certain screen size?)
+
+Home page/shop pages
+ - Lazy load in products, maybe start with 3-5 then a "see more" button?
+
 Check for consistency in border colors (kind of all over the place)
 
 Search field functionality (on click, expand to include input field)
 
-Remove < and > from markup and move to CSS :before and :after content types
+Remove < and > from markup and move to CSS :before and :after content types#
 
 Recipes jump page grid -> move to an @extend column type
 
@@ -59,3 +65,7 @@ Dev notes:
 
 1. Do not use z-index directly in a SCSS file, see _sass/_global/_variables for z-index values
 2. Use uiFunctions.site object for UI related JavaScript/jQuery functions
+3. Navigation plan:
+ - Full size header disappears below 640px
+ - Fixed header w/mobile nav toggle appears below 640px
+ - Mobile navigation is created from .header--clone and receives class .mobile-menu below 640

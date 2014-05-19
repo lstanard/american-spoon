@@ -26,16 +26,24 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 
 	color: $primary-copy;
-	font-size: 52px;
-	font-size: 5.2rem;
+	font-size: 36px;
+	font-size: 3.6rem;
 
 	&.page-title {
 		@extend .archer-book;
 		color: $primary-headline;
-		line-height: 56px;
-		line-height: 5.6rem;
-		margin: 15px 0 75px 0;
+		line-height: 46px;
+		line-height: 4.6rem;
+		margin-top: 60px;
+		margin-bottom: 30px;
 		text-align: center;
+
+		@include respond($med) {
+			line-height: 56px;
+			line-height: 5.6rem;
+			margin-bottom: 75px;
+			margin-top: 15px;
+		}
 	}
 
 	&.section__headline {
@@ -70,6 +78,10 @@ h1 {
 		margin: 0 0 45px 0;
 	}
 
+	@include respond($med) {
+		font-size: 52px;
+		font-size: 5.2rem;
+	}
 
 }
 
@@ -117,9 +129,20 @@ h3 {
 
 	&.recipes-jump__headline {
 		color: $blue;
-		font-size: 32px;
-		font-size: 3.2rem;
+		font-size: 24px;
+		font-size: 2.4rem;
+		line-height: 28px;
+		line-height: 2.8rem;
 		margin: 0 0 15px 0;
+
+		@include respond($med) {
+			font-size: 32px;
+			font-size: 3.2rem;
+			line-height: 34px;
+			line-height: 3.4rem;
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 
 	&.footer__sign-up__head {
@@ -216,10 +239,17 @@ p, ol li, ul li {
 	line-height: 2.5rem;
 
 	&.lead-copy {
-		font-size: 22px;
-		font-size: 2.2rem;
-		line-height: 34px;
-		line-height: 3.4rem;
+		font-size: 18px;
+		font-size: 1.8rem;
+		line-height: 26px;
+		line-height: 2.6rem;
+
+		@include respond($med) {
+			font-size: 22px;
+			font-size: 2.2rem;
+			line-height: 34px;
+			line-height: 3.4rem;
+		}
 	}
 }
 
