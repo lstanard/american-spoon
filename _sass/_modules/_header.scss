@@ -2,10 +2,19 @@
     HEADER
 -------------------------------------------------------------------*/
 
+body {
+	.header-container {
+		&.header--clone {
+			visibility: hidden;
+		}
+	}
+}
+
 body.header-collapse {
 	.header-container {
 		&.header--clone {
 			top: 0;
+			visibility: visible;
 		}
 	}
 }
@@ -352,6 +361,11 @@ body.header-collapse {
 			padding-bottom: 10px;
 		}
 
+		ul > li > a:link,
+		ul > li > a:visited {
+			padding: 0;
+		}
+
 		// begin desktop drop-down menu
 		ul li:hover {
 			ul {
@@ -431,10 +445,10 @@ body.header-collapse {
 
 		&:hover,
 		&:active {
-			color: $red;
+			color: $blue;
 
 			span {
-				color: $red;
+				color: $blue;
 			}
 		}
 	}
@@ -447,6 +461,23 @@ body.header-collapse {
 
 		li {
 			padding: 10px 0 0 0;
+		}
+
+		li.primary-nav__shop__lead {
+			a:link,
+			a:visited {
+				position: relative;
+				width: 81px;
+
+				&:after {
+					color: rgba(0,0,0,.3);
+					content: ":";
+					display: inline-block;
+					position: absolute;
+					right: -1px;
+					top: -3px;
+				}
+			}
 		}
 
 		li > a:link,
@@ -596,6 +627,7 @@ body.header-collapse {
 
 a.primary-nav__scroll-top:link,
 a.primary-nav__scroll-top:visited {
+	@include transition(all .25s);
 	@include opacity(0);
 	background-color: $red;
 	color: #FFF;
@@ -618,7 +650,7 @@ a.primary-nav__scroll-top:visited {
 
 	&:hover,
 	&:active {
-		background-color: $pumpkin;
+		background-color: $blue;
 	}
 
 	@include respond($med) {
