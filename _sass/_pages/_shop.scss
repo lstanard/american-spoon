@@ -38,6 +38,43 @@
 		margin-top: 30px;
 		margin-bottom: 15px;
 	}
+
+	ul > li {
+		a.shop-product__recipe-promo:link,
+		a.shop-product__recipe-promo:visited {
+			display: block;
+			text-decoration: none;
+			padding: 20px 0;
+
+			p {
+				@include transition(background-color .25s);
+				@extend .archer-bold;
+				background-color: $red;
+				color: #FFF;
+				display: block;
+				font-size: 16px;
+				font-size: 1.6rem;
+				margin: 0;
+				padding: 6px 0;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+			img {
+				border: none;
+				display: block;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+			}
+
+			&:hover,
+			&:active {
+				p {
+					background-color: $blue;
+				}
+			}
+		}
+	}
 }
 
 /*------------------------------------------------------------------
@@ -46,4 +83,47 @@
 
 .shop__pagination {
 	@extend .pagination;
+}
+
+/*------------------------------------------------------------------
+    PAGE: Shop Option 2
+-------------------------------------------------------------------*/
+
+.page__shop-option02 {
+
+	main header {
+		background-color: #f8f8f8;
+		border-bottom: 1px solid #e5e6e7;
+
+		.shop__secondary-nav {
+			ul {
+				background-color: #FFF;
+			}
+		}
+
+		h1.page-title {
+			font-size: 60px;
+			font-size: 6.0rem;
+			margin-bottom: 24px;
+			text-align: left;
+		}
+
+		.lead-copy {
+			padding: 0 60px 0 0;
+		}
+
+		.product-details__share {
+			text-align: left;
+		}
+	}
+
+	.shop-products__grid {
+		margin-top: 0;
+	}
+
+	.shop-products__grid ul {
+		border-top: 0;
+		padding-top: 0;
+	}
+
 }

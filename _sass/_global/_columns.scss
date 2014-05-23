@@ -140,7 +140,7 @@
 		@include respond($med) {
 			width: (($container-wide - ($gutter * 2)) / 3) / $container-wide * 100%;
 
-			&:nth-child(3) {
+			&:nth-child(3n) {
 				margin-right: 0;
 			}
 		}
@@ -155,7 +155,7 @@
 		@include respond($med) {
 			width: (($container-wide - $gutter) / 2) / $container-wide * 100%;
 
-			&:nth-child(2) {
+			&:nth-child(2n) {
 				margin-right: 0;
 			}
 		}
@@ -164,7 +164,10 @@
 		@include respond($med) {
 			width: (($container-wide - ($gutter * 3)) / 4) / $container-wide * 100%;
 
-			&:nth-child(4) {
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+			&:last-child {
 				margin-right: 0;
 			}
 		}
