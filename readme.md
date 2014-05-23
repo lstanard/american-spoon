@@ -3,6 +3,8 @@ Page links:
 
  - Home: http://www.spoon.com/designtmp/index.html
  - Shop: http://www.spoon.com/designtmp/shop-classics.html
+ - Shop (option 2): http://www.spoon.com/designtmp/shop-savories.html
+ - Shop (long scrolling): http://www.spoon.com/designtmp/shop-classics02.html
  - Product page: http://www.spoon.com/designtmp/product-page.html
  - Login: http://www.spoon.com/designtmp/login.html
  - Catalog request: http://www.spoon.com/designtmp/catalog-request.html
