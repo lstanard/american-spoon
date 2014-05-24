@@ -9,8 +9,28 @@
 }
 
 .home-mantle {
-	background-color: $lightgrey1;
 	height: auto;
+
+	ul {
+		@extend .cf;
+
+		li {
+			position: relative;
+
+			p {
+				@extend .archer-med-ital;
+				@include text-shadow(rgba(0,0,0,.5) 0px 0px 12px 6px);
+				position: absolute;
+				color: #FFF;
+				font-size: 74px;
+				font-size: 7.4rem;
+				line-height: 80px;
+				line-height: 8.0rem;
+				margin: 0 220px;
+				text-align: center;
+			}
+		}
+	}
 
 	img {
 		width: 100%;
