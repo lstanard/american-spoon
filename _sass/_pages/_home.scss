@@ -9,10 +9,15 @@
 }
 
 .home-mantle {
+	background-color: $lightgrey1;
 	height: auto;
 
 	img {
 		width: 100%;
+	}
+
+	@include respond($med) {
+		min-height: 500px;
 	}
 }
 

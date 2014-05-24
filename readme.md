@@ -19,19 +19,10 @@ Page links:
 Misc notes:
 -----------
 
-Shop section:
- - Every couple tiles, maybe once per category, include a recipe
- - Use pagination at the bottom of both options w/rollover
- - The header treatment will change between the 2
- 	1) Option 2 has no large header
- 	2) Option 3 has large header w/photo, and secondary nav above the title
-
 Recipe page:
  - Click ingredient name, tooltip pop-up with view product and add to cart
  - Add secondary nav to the page, w/top level recipes section
  - Add pagination
-
-!! Drop-down menu with functionality for touch devices and small screens
 
 Product grid
  - Make current desktop functionality the default, but switch to non-hover states based on "html.touch" instead of a screen size (or should it be touch and anything below a certain screen size?)

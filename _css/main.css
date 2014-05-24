@@ -134,18 +134,18 @@ a:hover, a:active {
     UTILITY: Misc
 -------------------------------------------------------------------*/
 /* line 9, ../_sass/_global/_utility.scss */
-.cf, .wrapper, .row, .form__group, .footer__sign-up__form, .product-grid ul, .featured-products__grid ul, .related-products ul, .shop-products__grid ul, .secondary-nav ul, .shop__secondary-nav ul, .pagination ul, .shop__pagination ul, .featured-products__header, .recipes__category__list, .recipe__card .recipe__meta {
+.cf, .wrapper, .row, .form__group, .footer__sign-up__form, .product-grid ul, .featured-products__grid ul, .related-products ul, .shop-products__grid ul, .secondary-nav ul, .shop__secondary-nav ul, .pagination ul, .shop__pagination ul, .page__about .container--full.photo-grid, .featured-products__header, .recipes__category__list, .recipe__card .recipe__meta {
   zoom: 1;
 }
 /* line 12, ../_sass/_global/_utility.scss */
-.cf:before, .wrapper:before, .row:before, .form__group:before, .footer__sign-up__form:before, .product-grid ul:before, .featured-products__grid ul:before, .related-products ul:before, .shop-products__grid ul:before, .secondary-nav ul:before, .shop__secondary-nav ul:before, .pagination ul:before, .shop__pagination ul:before, .featured-products__header:before, .recipes__category__list:before, .recipe__card .recipe__meta:before, .cf:after, .wrapper:after, .row:after, .form__group:after, .footer__sign-up__form:after, .product-grid ul:after, .featured-products__grid ul:after, .related-products ul:after, .shop-products__grid ul:after, .secondary-nav ul:after, .shop__secondary-nav ul:after, .pagination ul:after, .shop__pagination ul:after, .featured-products__header:after, .recipes__category__list:after, .recipe__card .recipe__meta:after {
+.cf:before, .wrapper:before, .row:before, .form__group:before, .footer__sign-up__form:before, .product-grid ul:before, .featured-products__grid ul:before, .related-products ul:before, .shop-products__grid ul:before, .secondary-nav ul:before, .shop__secondary-nav ul:before, .pagination ul:before, .shop__pagination ul:before, .page__about .container--full.photo-grid:before, .featured-products__header:before, .recipes__category__list:before, .recipe__card .recipe__meta:before, .cf:after, .wrapper:after, .row:after, .form__group:after, .footer__sign-up__form:after, .product-grid ul:after, .featured-products__grid ul:after, .related-products ul:after, .shop-products__grid ul:after, .secondary-nav ul:after, .shop__secondary-nav ul:after, .pagination ul:after, .shop__pagination ul:after, .page__about .container--full.photo-grid:after, .featured-products__header:after, .recipes__category__list:after, .recipe__card .recipe__meta:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
 /* line 19, ../_sass/_global/_utility.scss */
-.cf:after, .wrapper:after, .row:after, .form__group:after, .footer__sign-up__form:after, .product-grid ul:after, .featured-products__grid ul:after, .related-products ul:after, .shop-products__grid ul:after, .secondary-nav ul:after, .shop__secondary-nav ul:after, .pagination ul:after, .shop__pagination ul:after, .featured-products__header:after, .recipes__category__list:after, .recipe__card .recipe__meta:after {
+.cf:after, .wrapper:after, .row:after, .form__group:after, .footer__sign-up__form:after, .product-grid ul:after, .featured-products__grid ul:after, .related-products ul:after, .shop-products__grid ul:after, .secondary-nav ul:after, .shop__secondary-nav ul:after, .pagination ul:after, .shop__pagination ul:after, .page__about .container--full.photo-grid:after, .featured-products__header:after, .recipes__category__list:after, .recipe__card .recipe__meta:after {
   clear: both;
 }
 
@@ -323,7 +323,7 @@ a:hover, a:active {
   src: url("../_fonts/archer-boldital-pro.eot") format("embedded-opentype"), url("../_fonts/archer-boldital-pro.woff") format("woff"), url("../_fonts/archer-boldital-pro.ttf") format("truetype"), url("../_fonts/archer-boldital-pro.svg#ArcherBoldItalic") format("svg");
 }
 /* line 180, ../_sass/_global/_font-imports.scss */
-.archer-light-ital {
+.archer-light-ital, .about__subhead, .about__intro header h1.page-title, .about__our-kitchen h2, .about__fruits-and-farmers h2, .about__press h2, .about__careers h2 {
   font-family: "ArcherLightItalic", serif;
   font-weight: normal;
 }
@@ -361,7 +361,7 @@ a:hover, a:active {
 .archer-book, h1.page-title, h4.related-recipes__headline, p, ol li, ul li, input[type="text"],
 .form__input__text, .footer__secondary__nav ul > li > a:link, .footer__secondary__nav ul > li > a:visited, .secondary-nav ul li a:link, .shop__secondary-nav ul li a:link,
 .secondary-nav ul li a:visited,
-.shop__secondary-nav ul li a:visited {
+.shop__secondary-nav ul li a:visited, .page__about blockquote p {
   font-family: "ArcherBook", serif;
   font-weight: normal;
 }
@@ -617,18 +617,29 @@ h6 {
   font-size: 1.6rem;
 }
 
+/* line 229, ../_sass/_global/_type.scss */
+.about__subhead, .about__intro header h1.page-title, .about__our-kitchen h2, .about__fruits-and-farmers h2, .about__press h2, .about__careers h2 {
+  font-size: 74px;
+  font-size: 7.4rem;
+  line-height: 80px;
+  line-height: 8.0rem;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
 /*------------------------------------------------------------------
 	PARAGRAPH STYLES
 -------------------------------------------------------------------*/
-/* line 233, ../_sass/_global/_type.scss */
+/* line 244, ../_sass/_global/_type.scss */
 p, ol li, ul li {
   color: #77787b;
   font-size: 20px;
   font-size: 2.0rem;
-  line-height: 25px;
-  line-height: 2.5rem;
+  line-height: 28px;
+  line-height: 2.8rem;
 }
-/* line 241, ../_sass/_global/_type.scss */
+/* line 252, ../_sass/_global/_type.scss */
 p.lead-copy, ol li.lead-copy, ul li.lead-copy {
   font-size: 18px;
   font-size: 1.8rem;
@@ -636,7 +647,7 @@ p.lead-copy, ol li.lead-copy, ul li.lead-copy {
   line-height: 2.6rem;
 }
 @media (min-width: 40.5em) {
-  /* line 241, ../_sass/_global/_type.scss */
+  /* line 252, ../_sass/_global/_type.scss */
   p.lead-copy, ol li.lead-copy, ul li.lead-copy {
     font-size: 22px;
     font-size: 2.2rem;
@@ -645,12 +656,12 @@ p.lead-copy, ol li.lead-copy, ul li.lead-copy {
   }
 }
 
-/* line 256, ../_sass/_global/_type.scss */
+/* line 267, ../_sass/_global/_type.scss */
 p {
   margin: 0 0 30px 0;
 }
 
-/* line 260, ../_sass/_global/_type.scss */
+/* line 271, ../_sass/_global/_type.scss */
 p.call-out {
   font-size: 12px;
   font-size: 1.2rem;
@@ -734,17 +745,17 @@ body, html {
   width: 100%;
 }
 
-/* line 62, ../_sass/_global/_layout.scss */
+/* line 60, ../_sass/_global/_layout.scss */
 .container--narrow {
   max-width: 1000px;
 }
 
-/* line 67, ../_sass/_global/_layout.scss */
+/* line 65, ../_sass/_global/_layout.scss */
 .container--wide {
   max-width: 1200px;
 }
 @media (min-width: 1250px) {
-  /* line 67, ../_sass/_global/_layout.scss */
+  /* line 65, ../_sass/_global/_layout.scss */
   .container--wide {
     padding-left: 0;
     padding-right: 0;
@@ -2841,6 +2852,132 @@ a.footer__sign-up__btn:visited {
 }
 
 /*------------------------------------------------------------------
+    PAGE: About
+-------------------------------------------------------------------*/
+/* line 7, ../_sass/_pages/_about.scss */
+.page__about .container--full.photo-grid {
+  padding: 0;
+}
+/* line 12, ../_sass/_pages/_about.scss */
+.page__about .container--full.photo-grid figure img {
+  width: 100%;
+}
+@media (min-width: 40.5em) {
+  /* line 19, ../_sass/_pages/_about.scss */
+  .page__about .container--full.photo-grid figure {
+    float: left;
+    width: 33.33333%;
+  }
+}
+/* line 28, ../_sass/_pages/_about.scss */
+.page__about article .container--wide {
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+/* line 35, ../_sass/_pages/_about.scss */
+.page__about blockquote p {
+  display: table-cell;
+  font-size: 42px;
+  font-size: 4.2rem;
+  line-height: 50px;
+  line-height: 5.0rem;
+  vertical-align: middle;
+}
+
+/* line 49, ../_sass/_pages/_about.scss */
+.about__intro header {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+/* line 52, ../_sass/_pages/_about.scss */
+.about__intro header .container--wide {
+  padding-top: 3%;
+}
+/* line 56, ../_sass/_pages/_about.scss */
+.about__intro header h1.page-title {
+  color: #d1232a;
+}
+/* line 60, ../_sass/_pages/_about.scss */
+.about__intro header .lead-copy {
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 40px;
+  line-height: 4.0rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+/* line 72, ../_sass/_pages/_about.scss */
+.about__intro .row figure img {
+  margin: 120px 0 0 0;
+  width: 100%;
+}
+
+/* line 82, ../_sass/_pages/_about.scss */
+.about__our-kitchen h2 {
+  color: #344976;
+}
+/* line 87, ../_sass/_pages/_about.scss */
+.about__our-kitchen blockquote {
+  display: table;
+  border: 5px solid #344976;
+  margin-top: 90px;
+  padding: 30px 120px;
+  text-align: center;
+  width: 100%;
+}
+/* line 95, ../_sass/_pages/_about.scss */
+.about__our-kitchen blockquote p {
+  color: #344976;
+}
+@media (min-width: 40.5em) {
+  /* line 101, ../_sass/_pages/_about.scss */
+  .about__our-kitchen section .row {
+    -moz-columns: auto 2;
+    -webkit-columns: auto 2;
+    columns: auto 2;
+  }
+  /* line 104, ../_sass/_pages/_about.scss */
+  .about__our-kitchen section .row p {
+    padding-right: 2em;
+  }
+}
+
+/* line 114, ../_sass/_pages/_about.scss */
+.about__fruits-and-farmers h2 {
+  color: #fbae4b;
+}
+/* line 119, ../_sass/_pages/_about.scss */
+.about__fruits-and-farmers blockquote {
+  border-top: 5px solid #fbae4b;
+  border-bottom: 5px solid #fbae4b;
+  padding: 90px 0;
+}
+/* line 124, ../_sass/_pages/_about.scss */
+.about__fruits-and-farmers blockquote p {
+  color: #fbae4b;
+}
+@media (min-width: 40.5em) {
+  /* line 131, ../_sass/_pages/_about.scss */
+  .about__fruits-and-farmers .row .col-1-2 {
+    padding-right: 30px;
+  }
+  /* line 134, ../_sass/_pages/_about.scss */
+  .about__fruits-and-farmers .row .col-1-2 + .col-1-2 {
+    padding-right: 0;
+    padding-left: 60px;
+  }
+}
+
+/* line 146, ../_sass/_pages/_about.scss */
+.about__press h2 {
+  color: #5c8727;
+}
+
+/* line 155, ../_sass/_pages/_about.scss */
+.about__careers h2 {
+  color: #dd691d;
+}
+
+/*------------------------------------------------------------------
     PAGE: Home / Mantle
 -------------------------------------------------------------------*/
 /* line 6, ../_sass/_pages/_home.scss */
@@ -2850,29 +2987,36 @@ a.footer__sign-up__btn:visited {
 
 /* line 11, ../_sass/_pages/_home.scss */
 .home-mantle {
+  background-color: #e7e7e7;
   height: auto;
 }
-/* line 14, ../_sass/_pages/_home.scss */
+/* line 15, ../_sass/_pages/_home.scss */
 .home-mantle img {
   width: 100%;
+}
+@media (min-width: 40.5em) {
+  /* line 11, ../_sass/_pages/_home.scss */
+  .home-mantle {
+    min-height: 500px;
+  }
 }
 
 /*------------------------------------------------------------------
     PAGE: Home / Featured Products
 -------------------------------------------------------------------*/
 @media (min-width: 40.5em) {
-  /* line 23, ../_sass/_pages/_home.scss */
+  /* line 28, ../_sass/_pages/_home.scss */
   .featured-products {
     padding: 4.333333333% 0 0 0;
   }
 }
 
-/* line 29, ../_sass/_pages/_home.scss */
+/* line 34, ../_sass/_pages/_home.scss */
 .featured-products__header {
   border-bottom: 2px solid #e7e7e7;
   padding: 0 0 25px 0;
 }
-/* line 34, ../_sass/_pages/_home.scss */
+/* line 39, ../_sass/_pages/_home.scss */
 .featured-products__header a.featured-products__shop-link:link,
 .featured-products__header a.featured-products__shop-link:visited {
   color: #77787b;
@@ -2884,43 +3028,43 @@ a.footer__sign-up__btn:visited {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 46, ../_sass/_pages/_home.scss */
+/* line 51, ../_sass/_pages/_home.scss */
 .featured-products__header a.featured-products__shop-link:link:hover, .featured-products__header a.featured-products__shop-link:link:active,
 .featured-products__header a.featured-products__shop-link:visited:hover,
 .featured-products__header a.featured-products__shop-link:visited:active {
   color: #d1232a;
 }
 @media (min-width: 40.5em) {
-  /* line 29, ../_sass/_pages/_home.scss */
+  /* line 34, ../_sass/_pages/_home.scss */
   .featured-products__header {
     padding: 0 30px 25px 30px;
   }
-  /* line 54, ../_sass/_pages/_home.scss */
+  /* line 59, ../_sass/_pages/_home.scss */
   .featured-products__header h1 {
     float: left;
   }
-  /* line 57, ../_sass/_pages/_home.scss */
+  /* line 62, ../_sass/_pages/_home.scss */
   .featured-products__header a:link, .featured-products__header a:visited {
     float: right;
   }
-  /* line 61, ../_sass/_pages/_home.scss */
+  /* line 66, ../_sass/_pages/_home.scss */
   .featured-products__header a.featured-products__shop-link:link,
   .featured-products__header a.featured-products__shop-link:visited {
     margin: 0;
   }
 }
 
-/* line 73, ../_sass/_pages/_home.scss */
+/* line 78, ../_sass/_pages/_home.scss */
 .featured-products__grid ul {
   padding-top: 30px;
 }
-/* line 77, ../_sass/_pages/_home.scss */
+/* line 82, ../_sass/_pages/_home.scss */
 .featured-products__grid ul > li {
   margin-top: 0;
   margin-bottom: 30px;
 }
 @media (min-width: 40.5em) {
-  /* line 83, ../_sass/_pages/_home.scss */
+  /* line 88, ../_sass/_pages/_home.scss */
   .featured-products__grid ul > li {
     margin-top: 30px;
     margin-bottom: 15px;
@@ -2930,19 +3074,19 @@ a.footer__sign-up__btn:visited {
 /*------------------------------------------------------------------
     PAGE: Home / Featured Recipes
 -------------------------------------------------------------------*/
-/* line 95, ../_sass/_pages/_home.scss */
+/* line 100, ../_sass/_pages/_home.scss */
 .featured-recipes {
   background-color: #f4f8f6;
 }
 
-/* line 100, ../_sass/_pages/_home.scss */
+/* line 105, ../_sass/_pages/_home.scss */
 .featured-recipes__header a.btn:link, .featured-recipes__header a.btn:visited {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
 }
 
-/* line 107, ../_sass/_pages/_home.scss */
+/* line 112, ../_sass/_pages/_home.scss */
 .featured-recipes__grid {
   margin: 60px 0 0 0;
 }

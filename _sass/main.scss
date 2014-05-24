@@ -8,6 +8,7 @@
 @import "compass/css3/transition";
 @import "compass/css3/opacity";
 @import "compass/css3/transform";
+@import "compass/css3/columns";
 
 /*------------------------------------------------------------------
     GLOBAL
@@ -42,6 +43,7 @@
 -------------------------------------------------------------------*/
 
 @import "_pages/_main";
+@import "_pages/_about";
 @import "_pages/_home";
 @import "_pages/_product";
 @import "_pages/_catalog-request";
