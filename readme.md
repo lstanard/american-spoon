@@ -21,6 +21,7 @@ Questions for Jake:
 
 1. Did we get the fonts figured out? Still need to purchase the web license
 2. How should we handle the search functionality? How about a search box at the top of every page for mobile?
+3. Ask about secondary navigation changes and placement
 
 
 Tasks for Neal:
