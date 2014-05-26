@@ -6,7 +6,7 @@
 
 	ul {
 		@extend .cf;
-		padding-bottom: 60px;
+		padding-bottom: 30px;
 	}
 
 	ul > li {
@@ -79,6 +79,10 @@
 	}
 
 	@include respond($med) {
+
+		ul {
+			padding-bottom: 60px;
+		}
 
 		.featured-product__add-to-cart {
 			@include opacity(0);
