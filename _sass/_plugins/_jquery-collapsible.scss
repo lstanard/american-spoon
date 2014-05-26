@@ -1,0 +1,19 @@
+.collapsible-header {
+	cursor: pointer;
+	color: blue;
+}
+.collapsible-header::after {
+	@include rotate(270deg);
+	content: ">";
+	display: inline-block;
+	font-size: 24px;
+	font-size: 2.4rem;
+	margin: 0 0 0 12px;
+	padding: 0;
+}
+.collapsible-collapsed .collapsible-header::after {
+	@include rotate(90deg);
+}
+.collapsible-collapsed .collapsible-content {
+	display: none;
+}

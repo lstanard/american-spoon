@@ -205,7 +205,7 @@ body.header-collapse {
 	}
 
 	nav#nav {
-		@include transition(all .5s);
+		@include transition(all .4s);
 		@include box-shadow(rgba(0,0,0,.1) 0px 3px 6px);
 		border-top: 1px solid rgba(0,0,0,.12);
 		left: 0;
@@ -236,10 +236,12 @@ body.header-collapse {
 		ul > li > a:link,
 		ul > li > a:visited {
 			border-bottom: 1px solid rgba(0,0,0,.08);
+			line-height: 28px;
+			line-height: 2.8rem;
 		}
 
 		ul li ul.submenu {
-			@include transition(all .5s);
+			@include transition(all .4s);
 			background: #FFF;
 			position: absolute;
 			top: 0;
@@ -254,12 +256,10 @@ body.header-collapse {
 			}
 
 			.submenu__back {
-
 				span {
 					display: inline-block;
 					float: left;
 				}
-
 				a:link,
 				a:visited {
 					text-align: right;

@@ -108,12 +108,14 @@
 			text-align: left;
 		}
 
-		.lead-copy {
-			padding: 0 60px 0 0;
-		}
-
 		.product-details__share {
 			text-align: left;
+		}
+
+		.shop__header__graphic {
+			img {
+				width: 100%;
+			}
 		}
 	}
 
@@ -124,6 +126,14 @@
 	.shop-products__grid ul {
 		border-top: 0;
 		padding-top: 0;
+	}
+
+	@include respond($med, "min") {
+		main header {
+			.lead-copy {
+				padding: 0 60px 0 0;
+			}
+		}
 	}
 
 }

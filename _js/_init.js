@@ -9,6 +9,11 @@ var functionCheck = jRespond([
 			label: 'med-lrg',
 			enter: 648,
 			exit: 10000
+		},
+		{
+			label: 'handheld',
+			enter: 0,
+			exit: 648
 		}
 	]);
 
@@ -20,6 +25,8 @@ var functionCheck = jRespond([
 			uiFunctions.site.bindLoginPageControls();
 			uiFunctions.site.setHeaderWaypoint();
 			uiFunctions.site.setupScrollToLinks();
+
+			$('#cart-table').stacktable();
 
 			var mantleSlider = $('.bxslider').bxSlider({
 				adaptiveHeight: true,
@@ -35,6 +42,13 @@ var functionCheck = jRespond([
 				}
 			});
 
+		}
+	});
+
+	functionCheck.addFunc({
+		breakpoint: 'handheld',
+		enter: function() {
+			uiFunctions.site.setupSecondaryNav();
 		}
 	});
 

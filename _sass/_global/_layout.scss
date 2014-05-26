@@ -43,15 +43,11 @@ body, html {
 	position: relative;
 	width: 100%;
 
-	@include mnw(sml) {
-		padding-top: 8%;
-		padding-bottom: 8%;
-	}
-	@include mnw(med) {
+	@include respond($med, "min") {
 		padding-top: 5%;
 		padding-bottom: 5%;
 	}
-	@include mnw(lrg) {
+	@include respond($lrg, "min") {
 		padding-top: 3%;
 	}
 }

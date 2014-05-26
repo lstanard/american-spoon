@@ -1,32 +1,36 @@
-
 .secondary-nav {
 	text-align: center;
 	width: 100%;
 
-	ul {
-		@extend .cf;
-		border: 1px solid rgba(0,0,0,.15);
-		margin: 0 auto 60px auto;
-		padding: 12px 20px;
+	h4 {
+		@extend .verlag-bold;
+		@include border-radius(3px);
+		background-color: $blue;
+		color: #FFF;
+		display: block;
+		font-size: 16px;
+		padding: 12px 0;
 		text-align: center;
-
-		display: inline-block;
-		min-width: 1px;
-		width: auto;
+		text-transform: uppercase;
 	}
 
-	ul li {
-		display: inline-block;
+	ul {
+		@extend .cf;
+		background-color: rgba(0,0,0,.1);
+		padding: 6px 0;
+		text-align: left;
 	}
 
 	ul li a:link,
 	ul li a:visited {
 		@extend .archer-book;
-		color: $secondary-nav;
-		display: inline-block;
+		@include border-radius(2px);
+		color: $primary-copy;
+		display: block;
 		font-size: 16px;
 		font-size: 1.6rem;
-		margin: 0 20px;
+		margin: 4px;
+		padding: 6px 12px;
 		text-decoration: none;
 
 		&:hover,
@@ -35,6 +39,38 @@
 			color: $blue;
 		}
 	}
+
+	@include respond($med, "min") {
+
+		h4 {
+			display: none;
+		}
+
+		ul {
+			background-color: transparent;
+			border: 1px solid rgba(0,0,0,.15);
+			display: inline-block;
+			margin: 0 auto 60px auto;
+			min-width: 1px;
+			padding: 12px 20px;
+			text-align: center;
+			width: auto;
+		}
+
+		ul li {
+			display: inline-block;
+		}
+
+		ul li a:link,
+		ul li a:visited {
+			background: transparent;
+			color: $secondary-nav;
+			margin: 0 20px;
+			padding: 0;
+		}
+
+	}
+
 }
 
 .pagination {

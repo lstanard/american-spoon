@@ -12,6 +12,113 @@
 	padding: 0 0 60px 0;
 }
 
+// Mobile stacked table
+.st-head-row.st-head-row-main {
+	display: none;
+}
+
+.stacktable {
+
+	a.cart__remove-btn:link,
+	a.cart__remove-btn:visited {
+		color: rgba(0,0,0,.3);
+		display: inline-block;
+		font-size: 40px;
+		font-size: 4.0rem;
+		text-decoration: none;
+		vertical-align: middle;
+
+		&:hover,
+		&:active {
+			color: $red;
+		}
+	}
+
+}
+
+.stacktable.small-only {
+	margin: 0 0 45px 0;
+
+	th, td {
+		vertical-align: middle;
+	}
+
+	td {
+		border: 1px solid $cart-table-interior;
+		color: $primary-copy-light;
+		padding: 6px 12px;
+	}
+
+	figure {
+		display: block;
+		text-align: center;
+		width: 100%;
+
+		img {
+			margin: 15px auto 15px auto;
+			max-width: 190px;
+			width: 100%;
+		}
+	}
+
+	figcaption.product-name {
+		@extend .archer-med;
+		color: $red;
+		font-size: 28px;
+		font-size: 2.8rem;
+		line-height: 32px;
+		line-height: 3.2rem;
+		margin: 15px 0;
+		text-align: center;
+		text-decoration: none;
+		vertical-align: middle;
+	}
+
+	.st-head-row {
+		padding: 15px;
+		text-align: center;
+
+		a:link,
+		a:visited {
+			display: block;
+			text-decoration: none;
+		}
+	}
+
+	.st-key {
+		@extend .verlag-book;
+		background-color: $cart-table-interior;
+		color: $primary-copy-light;
+		height: 35px;
+		font-size: 15px;
+		font-size: 1.5rem;
+		letter-spacing: 0.06em;
+		text-align: right;
+		text-transform: uppercase;
+		width: 40%;
+	}
+
+	.st-val {
+		@extend .archer-med;
+		color: $primary-copy-light;
+		font-size: 22px;
+		font-size: 2.2rem;
+		line-height: 35px;
+		line-height: 3.5rem;
+		width: 60%;
+	}
+
+	a.cart__remove-btn:link,
+	a.cart__remove-btn:visited {
+		height: 30px;
+		font-size: 28px;
+		font-size: 2.8rem;
+		margin: 0;
+	}
+
+}
+
+// Desktop table
 .cart__items__table {
 	border-spacing: 0;
 	border: 1px solid $cart-table-exterior;
@@ -64,9 +171,6 @@
 			td:last-child {
 				border-right: 1px solid $cart-table-exterior;
 			}
-			&:hover {
-				// background-color: $cart-table-interior;
-			}
 		}
 		tr:last-child {
 			td {
@@ -80,10 +184,6 @@
 		border-bottom: 1px solid $cart-table-interior;
 		height: 150px;
 		text-align: center;
-
-		&:hover {
-			// background-color: $cart-table-exterior;
-		}
 	}
 	.items__table__meta {
 		@extend .archer-med;
@@ -138,27 +238,15 @@
 	}
 	.items__table-td__remove {
 		@extend .items__table__meta;
-
-		a:link,
-		a:visited {
-			color: rgba(0,0,0,.3);
-			font-size: 40px;
-			font-size: 4.0rem;
-			text-decoration: none;
-
-			&:hover,
-			&:active {
-				color: $red;
-			}
-		}
 	}
+
 }
 
 a.cart__utility__continue:link,
 a.cart__utility__continue:visited,
 a.cart__utility__update:link,
 a.cart__utility__update:visited {
-	float: left;
+	display: block;
 	line-height: 34px;
 	line-height: 3.4rem;
 
@@ -166,16 +254,23 @@ a.cart__utility__update:visited {
 		display: inline-block;
 		vertical-align: middle;
 	}
+
+	@include respond($med, "min") {
+		float: left;
+	}
 }
 
 a.cart__utility__update:link,
 a.cart__utility__update:visited {
-	float: right;
 
 	span:first-child {
 		font-size: 24px;
 		font-size: 2.4rem;
 		margin-top: -3px;
+	}
+
+	@include respond($med, "min") {
+		float: right;
 	}
 }
 
@@ -190,21 +285,35 @@ a.cart__utility__update:visited {
 .cart__promo-code,
 .cart__promo-gc {
 	border: 1px solid $cart-table-exterior;
-	padding: 45px;
+	margin: 0 0 30px 0;
+	padding: 30px;
 
 	input[type="text"] {
 		display: inline-block;
+	}
+
+	@include respond($med, "min") {
+		margin: 0;
+		padding: 45px;
 	}
 }
 
 .cart__promo-code {
 
 	input[type="text"] {
-		width: 305px / 488px * 100%;
+		width: 100%;
 	}
 
 	a {
 		margin: 0 0 0 15px;
+	}
+
+	@include respond($med, "min") {
+
+		input[type="text"] {
+			width: 305px / 488px * 100%;
+		}
+
 	}
 
 }
@@ -212,11 +321,13 @@ a.cart__utility__update:visited {
 .cart__promo-gc {
 
 	.cart__promo-gc__code {
-		width: 180px / 488px * 100%;
+		// width: 180px / 488px * 100%;
+		width: 100%;
 	}
 
 	.cart__promo-gc__amt {
-		width: 135px / 488px * 100%;
+		// width: 135px / 488px * 100%;
+		width: 100%;
 	}
 
 	a {
@@ -233,6 +344,16 @@ a.cart__utility__update:visited {
 		vertical-align: middle;
 	}
 
+	@include respond($med, "min") {
+		.cart__promo-gc__code {
+			width: 180px / 488px * 100%;
+		}
+
+		.cart__promo-gc__amt {
+			width: 135px / 488px * 100%;
+		}
+	}
+
 }
 
 
@@ -246,7 +367,12 @@ a.cart__utility__update:visited {
 
 .cart__total-amt,
 .cart__total-proceed {
-	padding: 45px;
+
+	padding: 15px;
+
+	@include respond($med, "min") {
+		padding: 45px;
+	}
 }
 
 .cart__total-amt {

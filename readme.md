@@ -19,23 +19,14 @@ Page links:
 Misc notes:
 -----------
 
+1) Update raster fork/knife icon with Icomoon font icon OR SVG graphic
+2) Remove < and > from markup and move to CSS :before and :after content types
+3) Use https://github.com/filamentgroup/AppendAround to move images on the About page
+
 Recipe page:
  - Click ingredient name, tooltip pop-up with view product and add to cart
 
-Home page/shop pages
- - Lazy load in products, maybe start with 3-5 then a "see more" button?
-
-Check for consistency in border colors (kind of all over the place)
-
-Search field functionality (on click, expand to include input field)
-
-Remove < and > from markup and move to CSS :before and :after content types#
-
 Recipes jump page grid -> move to an @extend column type
-
-Update raster fork/knife icon with Icomoon font icon
-
-Build a 404 error page
 
 Auto-fill city, state and country via zip code:
  - http://www.zippopotam.us/
@@ -46,6 +37,22 @@ Style form inputs (select menu, checkbox)
  - http://css-tricks.com/dropdown-default-styling/
  - http://webdesign.tutsplus.com/tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons--webdesign-8953
 
+
+Questions for Jake:
+-------------------
+
+1) Did we get the fonts figured out? Still need to purchase the web license
+2) How should we handle the search functionality? How about a search box at the top of every page for mobile?
+
+
+Tasks for Neal:
+---------------
+
+1) Home/Shop page lazy load in products (mobile most importantly)
+2) Check for consistency with border colors, move to a variable
+3) Header/navigation styling clean-up (responsive updates as needed)
+4) Home page Instagram feed (use a plugin?)
+5) Footer formatting for all layout sizes
 
 
 Dev notes:
