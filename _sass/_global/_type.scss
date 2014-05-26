@@ -70,13 +70,17 @@ h1 {
 	&.page-title {
 		@extend .archer-book;
 		color: $primary-headline;
-		line-height: 46px;
-		line-height: 4.6rem;
+		font-size: 44px;
+		font-size: 4.4rem;
+		line-height: 48px;
+		line-height: 4.8rem;
 		margin-top: 15px;
 		margin-bottom: 30px;
 		text-align: center;
 
 		@include respond($med) {
+			font-size: 52px;
+			font-size: 5.2rem;
 			line-height: 56px;
 			line-height: 5.6rem;
 			margin-bottom: 75px;
@@ -142,11 +146,19 @@ h2 {
 
 	&.store-location__title {
 		@extend .archer-med-ital;
-		font-size: 66px;
-		font-size: 6.6rem;
-		line-height: 74px;
-		line-height: 7.4rem;
+		font-size: 36px;
+		font-size: 3.6rem;
+		line-height: 42px;
+		line-height: 4.2rem;
 		margin: 0 0 30px 0;
+		text-align: center;
+
+		@include respond($med) {
+			font-size: 66px;
+			font-size: 6.6rem;
+			line-height: 74px;
+			line-height: 7.4rem;
+		}
 	}
 
 }
@@ -230,10 +242,17 @@ h5 {
 	&.footer__primary__contact__head {
 		@extend .archer-bold-ital;
 		color: $red;
-		font-size: 24px;
-		font-size: 2.4rem;
-		line-height: 30px;
-		line-height: 3.0rem;
+		font-size: 32px;
+		font-size: 3.2rem;
+		line-height: 38px;
+		line-height: 3.8rem;
+
+		@include respond($med, "min") {
+			font-size: 24px;
+			font-size: 2.4rem;
+			line-height: 30px;
+			line-height: 3.0rem;
+		}
 	}
 
 	&.store-location__hours-title {

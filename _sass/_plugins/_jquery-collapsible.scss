@@ -3,6 +3,7 @@
 	color: blue;
 }
 .collapsible-header::after {
+	@include transition(all .35s);
 	@include rotate(270deg);
 	content: ">";
 	display: inline-block;

@@ -44,6 +44,7 @@
 
 	.footer__sign-up__input {
 		height: 65px;
+		margin: 0 0 15px 0;
 		width: 100%;
 	}
 
@@ -86,20 +87,35 @@ a.footer__sign-up__btn:visited {
 	padding: 0;
 
 	.footer__primary__section01 {
-		padding: 45px;
+		padding: 15px;
+		text-align: center;
 	}
 	.footer__primary__section02 {
 		background-color: #f8f8f8;
-		border-left: 2px solid #e5e6e7;
-		padding: 45px;
-		padding-top: 60px;
-		padding-left: 75px;
+		padding: 30px;
+	}
+
+	@include respond($med, "min") {
+		.footer__primary__section01 {
+			padding: 45px;
+			text-align: left;
+		}
+		.footer__primary__section02 {
+			border-left: 2px solid #e5e6e7;
+			padding: 45px;
+			padding-top: 60px;
+			padding-left: 75px;
+		}
 	}
 }
 
 .footer__primary__logo {
-	max-width: 190px;
+	max-width: 145px;
 	width: 100%;
+
+	@include respond($med, "min") {
+		max-width: 190px;
+	}
 }
 
 .footer__primary__contact {
@@ -107,7 +123,10 @@ a.footer__sign-up__btn:visited {
 	p {
 		@extend .archer-med;
 		color: $primary-copy-dark;
-		line-height: 3.2rem;
+		font-size: 28px;
+		font-size: 2.8rem;
+		line-height: 36px;
+		line-height: 3.6rem;
 	}
 	a:link, a:visited {
 		@extend .archer-med;
@@ -115,10 +134,25 @@ a.footer__sign-up__btn:visited {
 		text-decoration: none;
 	}
 
-	@include mnw(med) {
+	@include respond($med, "min") {
 		padding-top: 45px;
 	}
 
+}
+
+.footer__primary__nav__wrapper {
+	margin: 0 0 60px 0;
+}
+
+.footer__primary__nav,
+.footer__primary__nav--02 {
+	float: left;
+	margin: 0;
+	width: 50%;
+
+	&:nth-child(2n) {
+		margin-right: 0;
+	}
 }
 
 .footer__primary__nav {
@@ -130,6 +164,8 @@ a.footer__sign-up__btn:visited {
 
 	ul li {
 		margin: 10px 0;
+		line-height: 24px;
+		line-height: 2.4rem;
 
 		&:first-child {
 			a:link,
@@ -152,6 +188,15 @@ a.footer__sign-up__btn:visited {
 		&:active {
 			color: $blue;
 		}
+	}
+
+	@include respond($med, "min") {
+
+		ul li {
+			line-height: 28px;
+			line-height: 2.8rem;
+		}
+
 	}
 
 }
@@ -188,16 +233,25 @@ a.footer__sign-up__btn:visited {
 }
 
 .footer__primary__social__wrapper {
-	border-left: 1px solid #e5e6e7;
-	padding: 15px 15px 15px 45px;
+	@include respond($med, "min") {
+		border-left: 1px solid #e5e6e7;
+		padding: 15px 15px 15px 45px;
+	}
 }
 
 .footer__primary__social {
 	@extend .cf;
+	margin: 0 0 45px 0;
 	width: 100%;
 
 	li {
+		float: left;
+		margin-right: 17px;
 		width: 75px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
 	}
 
 	li a:link,
@@ -233,11 +287,9 @@ a.footer__sign-up__btn:visited {
 	}
 
 	@include respond($med) {
-		li {
-			float: left;
-			margin-right: 20px;
-			width: 75px;
+		margin: 0;
 
+		li {
 			& + li {
 				& + li {
 					margin-right: 0;
@@ -249,7 +301,15 @@ a.footer__sign-up__btn:visited {
 }
 
 .footer__primary__utility {
-	padding: 0 0 0 90px;
+
+	ul {
+		text-align: center;
+	}
+
+	ul > li {
+		display: inline-block;
+		margin: 0 9px;
+	}
 
 	ul > li > a:link,
 	ul > li > a:visited {
@@ -259,9 +319,31 @@ a.footer__sign-up__btn:visited {
 		text-transform: uppercase;
 
 		& > span.mls {
+			display: inline-block;
 			font-size: 14px;
 			font-size: 1.4rem;
+			margin: 0 0 0 9px;
 			text-indent: 0;
+		}
+	}
+
+	@include respond($med) {
+		padding: 0 0 0 90px;
+
+		ul {
+			text-align: left;
+		}
+
+		ul > li {
+			display: block;
+			margin: 0;
+		}
+
+		ul > li > a:link,
+		ul > li > a:visited {
+			& > span.mls {
+				margin: 0;
+			}
 		}
 	}
 

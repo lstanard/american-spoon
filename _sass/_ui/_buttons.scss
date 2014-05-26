@@ -84,9 +84,11 @@ a.btn:link, a.btn:visited {
 
 	// Wrap label in a <span> for vertical alignment
 	span {
+		display: table-cell;
 		font-size: 17px;
 		font-size: 1.7rem;
-		display: table-cell;
+		line-height: 16px;
+		line-height: 1.6rem;
 		letter-spacing: 0.3rem;
 		vertical-align: middle;
 
