@@ -2,7 +2,7 @@
     Z-INDEX
 -------------------------------------------------------------------*/
 
-$header: 1001;
+$header: 10000;
 $shipping-banner: 1000;
 $mobile-drop-nav: -1;
 $recipe-figcaption: 900;
@@ -22,7 +22,8 @@ $store-location-meta: 800px;
     HEADER
 -------------------------------------------------------------------*/
 
-$header-nav-break: 640px;
+// $header-nav-break: 640px;
+$header-nav-break: 1024px;
 
 $header-height-lrg: 170px;
 $header-height-sm: 55px;

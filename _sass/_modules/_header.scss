@@ -7,6 +7,9 @@ body {
 		&.header--clone {
 			visibility: hidden;
 		}
+		&.header--clone.mobile-menu {
+			visibility: visible;
+		}
 	}
 }
 
@@ -39,6 +42,11 @@ body.header-collapse {
 		display: none;
 	}
 
+	a.primary-nav__scroll-top:link,
+	a.primary-nav__scroll-top:visited {
+		display: none;
+	}
+
 	&.header--clone {
 		@include box-shadow(rgba(0,0,0,.1) 0px 2px 6px);
 		height: $header-height-sm;
@@ -47,12 +55,10 @@ body.header-collapse {
 
 		.header__primary__logo {
 			img.header__primary__logo-sm {
-				@include opacity(1);
-				visibility: visible;
+				display: block;
 			}
 			img.header__primary__logo-lrg {
-				@include opacity(0);
-				top: -$header-height-lrg;
+				display: none;
 			}
 		}
 
@@ -63,6 +69,7 @@ body.header-collapse {
 			.header__primary-nav {
 				height: 55px;
 				padding-top: 0;
+				width: 80%;
 
 				ul li ul {
 					top: 55px;
@@ -105,6 +112,7 @@ body.header-collapse {
 			}
 
 			.primary-nav__utility {
+				margin-right: 15px;
 
 				li > a:link,
 				li > a:visited  {
@@ -137,13 +145,13 @@ body.header-collapse {
 				margin-top: 0;
 				top: 0;
 				visibility: visible;
+				width: 6%;
 
 				@include mnw($med) {
 					display: block;
 				}
 			}
 		}
-
 	}
 
 	@include respond($lrg) {
@@ -153,24 +161,32 @@ body.header-collapse {
 
 .header__primary__logo {
 
+	a:link,
+	a:visited {
+		display: inline-block;
+	}
+
 	img.header__primary__logo-sm {
-		@include opacity(0);
+		display: none;
 		margin: 14px 0 0 0;
 		max-width: 188px;
-		visibility: hidden;
 	}
 	img.header__primary__logo-lrg {
-		@include opacity(1);
-		margin: 6px 0 0 0;
-		max-width: 155px;
-		position: absolute;
-		top: 0;
+		margin: 16px 0 0 0;
+		max-width: 135px;
 		width: 100%;
 	}
 
 	@include respond($med) {
 		float: left;
-		width: 160px / $header-container-context * 100%;
+		width: 14%;
+	}
+
+	@include respond(1300px, "min") {
+		img.header__primary__logo-lrg {
+			margin: 6px 0 0 0;
+			max-width: 155px;
+		}
 	}
 
 }
@@ -214,7 +230,7 @@ body.header-collapse {
 		}
 
 		ul li {
-			position: relative;
+			// position: relative;
 		}
 
 		ul > li > a:link,
@@ -262,17 +278,11 @@ body.header-collapse {
 		top: 0;
 		width: 60px;
 
-		&:focus {
-			// box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-			// @include box-shadow(rgba(210,35,42,1) 0 0 5px);
-			// outline: none;
-		}
-
 		&:hover {
 			cursor: pointer;
 		}
 
-		@include mnw($med) {
+		@include respond($header-nav-break, "min") {
 			display: none;
 		}
 	}
@@ -305,21 +315,19 @@ body.header-collapse {
 
 	ul > li {
 		@include transition(all $header-transition-speed);
-		position: relative;
+		// position: relative;
 	}
 
 	ul > li > a:link,
 	ul > li > a:visited {
-		// border: 1px dotted black;
 		display: block;
 		padding: 8px 3%;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
 
-	// begin mobile drop-down menu
+	// Begin mobile drop-down menu
 	ul li ul {
-		// border: 1px dotted black;
 		width: 100%;
 
 		& > li {
@@ -332,10 +340,10 @@ body.header-collapse {
 		& > li > a:link,
 		& > li > a:visited {
 			display: block;
-			font-size: 14px;
+			/* font-size: 14px;
 			font-size: 1.4rem;
 			line-height: 20px;
-			line-height: 2.0rem;
+			line-height: 2.0rem; */
 			width: 100%;
 
 			&:hover,
@@ -354,11 +362,12 @@ body.header-collapse {
 	@include respond($header-nav-break, "min") {
 		float: left;
 		padding-top: $header-height-sm;
-		width: 960px / $header-container-context * 100%;
+		width: 86%;
 
 		ul > li {
 			display: inline-block;
 			padding-bottom: 10px;
+			position: relative;
 		}
 
 		ul > li > a:link,
@@ -366,7 +375,7 @@ body.header-collapse {
 			padding: 0;
 		}
 
-		// begin desktop drop-down menu
+		// Begin desktop drop-down menu
 		ul li:hover {
 			ul {
 				@include opacity(1);
@@ -391,6 +400,10 @@ body.header-collapse {
 
 			& > li > a:link,
 			& > li > a:visited {
+				font-size: 14px;
+				font-size: 1.4rem;
+				line-height: 20px;
+				line-height: 2.0rem;
 				margin: 0;
 				padding: 15px 0 15px 30px;
 			}
@@ -410,10 +423,6 @@ body.header-collapse {
 
 	li.primary-nav__shop__lead {
 		display: none;
-
-		@include respond($med, "min") {
-			display: inline-block;
-		}
 	}
 
 	li.primary-nav__shop__lead > a:link,
@@ -427,12 +436,21 @@ body.header-collapse {
 		}
 	}
 
+	li.parentmenu__item > a:link,
+	li.parentmenu__item > a:visited {
+		&:after {
+			content: ">";
+			display: inline-block;
+			float: right;
+		}
+	}
+
 	li > a:link,
 	li > a:visited {
 		@extend .verlag-book;
 		color: $primary-copy;
-		font-size: 19px;
-		font-size: 1.9rem;
+		font-size: 16px;
+		font-size: 1.6rem;
 		letter-spacing: 0.10em;
 
 		span {
@@ -463,7 +481,17 @@ body.header-collapse {
 			padding: 10px 0 0 0;
 		}
 
+		li > a:link,
+		li > a:visited {
+			margin: 0 0 0 15px;
+		}
+	}
+
+	@include respond(1200px, "min") {
+
 		li.primary-nav__shop__lead {
+			display: inline-block;
+
 			a:link,
 			a:visited {
 				position: relative;
@@ -480,16 +508,23 @@ body.header-collapse {
 			}
 		}
 
-		li > a:link,
-		li > a:visited {
-			margin: 0 0 0 15px;
-		}
 	}
 
-	@include respond(1300px) {
+	// 1300px and up, full desktop header
+	@include respond(1300px, "min") {
+
+		li > a:link,
+		li > a:visited {
+			font-size: 19px;
+			font-size: 1.9rem;
+		}
+
+	}
+
+	@include respond(1350px, "min") {
 		margin-left: 30px / $header-container-context * 100%;
 	}
-	@include respond(1500px) {
+	@include respond(1500px, "min") {
 		margin-left: 75px / $header-container-context * 100%;
 	}
 }
@@ -529,14 +564,24 @@ body.header-collapse {
 
 		li > a:link,
 		li > a:visited {
-			font-size: 19px;
-			font-size: 1.9rem;
+			font-size: 16px;
+			font-size: 1.6rem;
 			letter-spacing: 0.10em;
 
 			&:hover,
 			&:active {
 				color: $red;
 			}
+		}
+
+	}
+
+	@include respond(1300px, "min") {
+
+		li > a:link,
+		li > a:visited {
+			font-size: 19px;
+			font-size: 1.9rem;
 		}
 
 	}
@@ -676,7 +721,7 @@ a.shipping-banner--link:visited {
 		@include opacity(.8);
 	}
 
-	@include respond($med) {
+	@include respond($header-nav-break, "min") {
 		display: block;
 	}
 }

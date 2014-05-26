@@ -7,12 +7,11 @@
 	var $w = $(window),
 		sw = document.documentElement.clientWidth,
 		sh = document.documentElement.clientHeight,
-		navBreak = 640;
+		navBreak = 1024;
 
 		$w.smartresize(function(){
 			sw = document.documentElement.clientWidth;
 			sh = document.documentElement.clientHeight;
-			console.log(sw, sh);
 		});
 
 		return uiFunctions = {
@@ -93,6 +92,20 @@
 
 				},
 
+				setupScrollToLinks: function() {
+					$('.scrollto').on('click', function(e) {
+						var targetElement = $('#' + $(this).attr('href').substring(1));
+						if (targetElement.length >= 1) {
+							var target = targetElement.offset().top,
+								scrollSpeed = function() { return Math.ceil( Math.abs( target - $w.scrollTop() ) / 1.5 ); };
+							$('html, body').animate({
+								scrollTop: target
+							}, scrollSpeed() );
+						}
+						e.preventDefault();
+					});
+				},
+
 				setHeaderWaypoint: function() {
 
 					$('body').waypoint(function(direction){
@@ -125,7 +138,9 @@
 
 					var menuStatus = 'closed',
 						$nav = $('.mobile-menu #nav'),
-						navWidth = $nav.innerWidth();
+						$subMenus = $nav.find('.submenu'),
+						navWidth = $nav.innerWidth(),
+						navHeight = $nav.innerHeight();
 
 					// Menu toggle
 
@@ -133,6 +148,12 @@
 						if ( menuStatus == 'closed' ) {
 							$(this).parents('.mobile-menu').addClass('mobile-menu--open');
 							menuStatus = 'open';
+							navHeight = $nav.innerHeight();
+							$subMenus.each(function() {
+								$(this).css({
+									'height': navHeight
+								});
+							});
 						}
 						else if ( menuStatus == 'open' ) {
 							$(this).parents('.mobile-menu').removeClass('mobile-menu--open');
@@ -159,8 +180,10 @@
 					// Submenus
 
 					$('.mobile-menu .parentmenu li a').on('click', function(e) {
-						$(this).next('.submenu').addClass('submenu--open');
-						e.preventDefault();
+						if ( $(this).next('ul.submenu').length > 0 ) {
+							$(this).next('.submenu').addClass('submenu--open');
+							e.preventDefault();
+						}
 					});
 
 					$('.mobile-menu .submenu').each(function() {
