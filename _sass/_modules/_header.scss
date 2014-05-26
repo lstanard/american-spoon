@@ -254,6 +254,12 @@ body.header-collapse {
 			}
 
 			.submenu__back {
+
+				span {
+					display: inline-block;
+					float: left;
+				}
+
 				a:link,
 				a:visited {
 					text-align: right;
@@ -453,21 +459,9 @@ body.header-collapse {
 		font-size: 1.6rem;
 		letter-spacing: 0.10em;
 
-		span {
-			@include rotate(90deg);
-			color: rgba(0,0,0,.3);
-			display: inline-block;
-			position: relative;
-			margin: 0 0 0 6px;
-		}
-
 		&:hover,
 		&:active {
 			color: $blue;
-
-			span {
-				color: $blue;
-			}
 		}
 	}
 
@@ -484,6 +478,25 @@ body.header-collapse {
 		li > a:link,
 		li > a:visited {
 			margin: 0 0 0 15px;
+		}
+
+		li.parentmenu__item > a:link,
+		li.parentmenu__item > a:visited {
+
+			&:after {
+				@include rotate(90deg);
+				color: rgba(0,0,0,.3);
+				float: none;
+				margin: 0 0 0 6px;
+				position: relative;
+			}
+
+			&:hover,
+			&:active {
+				&:after {
+					color: $blue;
+				}
+			}
 		}
 	}
 
@@ -662,6 +675,10 @@ body.header-collapse {
 			text-align: center;
 		}
 
+	}
+
+	@include respond(1450px, "min") {
+		margin-right: 60px;
 	}
 
 }

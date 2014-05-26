@@ -3,8 +3,12 @@
 -------------------------------------------------------------------*/
 
 html {
-	font: normal 62.5% "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif;
+	font: normal 58% "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif;
 	line-height: 100%;
+
+	@include respond($med, "min") {
+		font-size: 62.5%;
+	}
 }
 
 body {
@@ -33,10 +37,10 @@ body {
 
 .about__subhead {
 	@extend .archer-light-ital;
-	font-size: 56px;
-	font-size: 5.6rem;
-	line-height: 62px;
-	line-height: 6.2rem;
+	font-size: 52px;
+	font-size: 5.2rem;
+	line-height: 44px;
+	line-height: 4.4rem;
 	margin-bottom: 30px;
 	text-align: center;
 	text-transform: lowercase;

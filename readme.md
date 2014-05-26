@@ -21,11 +21,6 @@ Misc notes:
 
 Recipe page:
  - Click ingredient name, tooltip pop-up with view product and add to cart
- - Add secondary nav to the page, w/top level recipes section
- - Add pagination
-
-Product grid
- - Make current desktop functionality the default, but switch to non-hover states based on "html.touch" instead of a screen size (or should it be touch and anything below a certain screen size?)
 
 Home page/shop pages
  - Lazy load in products, maybe start with 3-5 then a "see more" button?
