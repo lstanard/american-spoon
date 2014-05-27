@@ -495,6 +495,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/inline-flatware_197x500.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_img\/inline-flatware_197x500.png",
+		"outputAbbreviatedPath": "\/_img\/inline-flatware_197x500.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_js\/_init.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -1296,22 +1307,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_sass\/_plugins\/_jquery-stacktable.scss",
 		"outputAbbreviatedPath": "\/_css\/_jquery-stacktable.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/_sass\/_plugins\/_multilevel-nav-component.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 5,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_sass\/_plugins\/_multilevel-nav-component.scss",
-		"outputAbbreviatedPath": "\/_css\/_multilevel-nav-component.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

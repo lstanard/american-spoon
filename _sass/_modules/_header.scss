@@ -216,6 +216,9 @@ body.header-collapse {
 		z-index: $mobile-drop-nav;
 
 		.primary-nav__shop {
+			li.mobile-menu__item {
+				display: block;
+			}
 			li > a:link,
 			li > a:visited {
 				span {
@@ -321,7 +324,10 @@ body.header-collapse {
 
 	ul > li {
 		@include transition(all $header-transition-speed);
-		// position: relative;
+	}
+
+	ul > li.mobile-menu__item {
+		display: none;
 	}
 
 	ul > li > a:link,
@@ -658,7 +664,7 @@ body.header-collapse {
 		margin: 10px 0 0 0;
 
 		li {
-			margin: 0 0 0 15px;
+			margin: 0 0 0 5px;
 		}
 
 		li > a:link,
@@ -675,6 +681,12 @@ body.header-collapse {
 			text-align: center;
 		}
 
+	}
+
+	@include respond(1070px, "min") {
+		li {
+			margin: 0 0 0 15px;
+		}
 	}
 
 	@include respond(1450px, "min") {

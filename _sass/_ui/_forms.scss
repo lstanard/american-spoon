@@ -4,16 +4,23 @@
 
 .form__group {
 	@extend .cf;
-	margin: 0 0 30px 0;
 
 	.col-1-2 {
-		$margin: (15px / 713px * 100%);
-		margin: 0 $margin 0 0;
-		width: (100% - $margin) / 2;
+		// margin: 0 0 30px 0;
+
+		@include respond($med) {
+			$margin: (15px / 713px * 100%);
+			margin: 0 $margin 0 0;
+			width: (100% - $margin) / 2;
+		}
 	}
 
 	div:not(.col-1-2) {
 		margin: 15px 0 0 0;
+	}
+
+	@include respond($med) {
+		margin: 0 0 30px 0;
 	}
 }
 
@@ -45,6 +52,7 @@ input[type="text"],
 	font-size: 3.0rem;
 	height: 55px;
 	line-height: 55px;
+	margin: 0 0 15px 0;
 	padding: 2px 0 0 12px;
 	width: 100%;
 
@@ -52,6 +60,10 @@ input[type="text"],
 		@extend .verlag-book;
 		font-size: 18px;
 		font-size: 1.8rem;
+	}
+
+	@include respond($med) {
+		margin: 0;
 	}
 }
 
@@ -86,6 +98,11 @@ select {
 	font-size: 24px;
 	font-size: 2.4rem;
 	height: 55px;
+	margin: 0 0 15px 0;
 	padding: 0 0 0 30px;
 	width: 100%;
+
+	@include respond($med) {
+		margin: 0;
+	}
 }

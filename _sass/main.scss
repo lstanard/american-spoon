@@ -22,12 +22,17 @@
 @import "_global/_global";
 @import "_global/_utility";
 @import "_global/_font-imports";
-@import "_global/_type";
 @import "_global/_layout";
 @import "_global/_columns";
 @import "_ui/_forms";
 @import "_ui/_buttons";
 @import "_ui/_misc";
+
+/*------------------------------------------------------------------
+    TYPE
+-------------------------------------------------------------------*/
+
+@import "_global/_type";
 
 /*------------------------------------------------------------------
     MODULES

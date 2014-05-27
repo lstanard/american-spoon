@@ -36,5 +36,7 @@
 -------------------------------------------------------------------*/
 
 .catalog-request__form {
-	padding-left: 60px;
+	@include respond($med) {
+		padding-left: 60px;
+	}
 }

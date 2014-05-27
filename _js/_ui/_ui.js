@@ -7,14 +7,22 @@
 	var $w = $(window),
 		sw = document.documentElement.clientWidth,
 		sh = document.documentElement.clientHeight,
-		navBreak = 1024;
-
-		$w.smartresize(function(){
-			sw = document.documentElement.clientWidth;
-			sh = document.documentElement.clientHeight;
-		});
+		navBreak = 1024,
+		setupHeaderCount = 0;
 
 		return uiFunctions = {
+
+			init: function() {
+
+				uiFunctions.site.setupHeader();
+
+				$w.resize(function() {
+					sw = document.documentElement.clientWidth;
+					sh = document.documentElement.clientHeight;
+					uiFunctions.site.setupHeader();
+				});
+
+			},
 
 			site: {
 
@@ -142,6 +150,44 @@
 						navWidth = $nav.innerWidth(),
 						navHeight = $nav.innerHeight();
 
+					// Run once
+
+					function runOnce() {
+
+						if (setupHeaderCount < 1) {
+
+							// Append all links to the same list
+							$('.mobile-menu .primary-nav__explore li').each(function() {
+								$(this).clone().addClass('mobile-menu__item').appendTo('.mobile-menu .primary-nav__shop');
+							});
+							$('.mobile-menu .primary-nav__utility li').each(function() {
+								var navItem = $(this),
+									navText = $(this).find('.mls').text(),
+									navLink = $(this).find('a').attr('href');
+								$('<li><a href="' + navLink + '">' + navText + '</a></li>').addClass('mobile-menu__item').appendTo('.mobile-menu .primary-nav__shop');
+							});
+
+							$('.mobile-menu .submenu').each(function() {
+
+								var subMenu = $(this);
+
+								subMenu.prepend('<li class="submenu__back"><a href="#"><span>&lt;</span> Back</a></li>');
+
+								$(this).find('.submenu__back').on('click tap', function(e) {
+									subMenu.removeClass('submenu--open');
+									e.preventDefault();
+								});
+
+							});
+
+						}
+
+						setupHeaderCount++;
+
+					}
+
+					runOnce();
+
 					// Menu toggle
 
 					$('.mobile-menu #nav-toggle').on('click tap', function(e) {
@@ -162,18 +208,6 @@
 						e.preventDefault();
 					});
 
-					// Append all links to the same list
-
-					$('.mobile-menu .primary-nav__explore li').each(function() {
-						$(this).appendTo('.mobile-menu .primary-nav__shop');
-					});
-					$('.mobile-menu .primary-nav__utility li').each(function() {
-						var navItem = $(this),
-							navText = $(this).find('.mls').text(),
-							navLink = $(this).find('a').attr('href');
-						$('.mobile-menu .primary-nav__shop').append('<li><a href="' + navLink + '">' + navText + '</a></li>');
-					});
-
 					// Submenus
 
 					$('.mobile-menu .parentmenu li a').on('click', function(e) {
@@ -188,19 +222,11 @@
 						var width = $(this).innerWidth(),
 							subMenu = $(this);
 
-						subMenu.prepend('<li class="submenu__back"><a href="#"><span>&lt;</span> Back</a></li>');
 						subMenu.css({
 							'right': -width
 						});
 
-						$(this).find('.submenu__back').on('click tap', function(e) {
-							subMenu.removeClass('submenu--open');
-							e.preventDefault();
-						});
-
 					});
-
-					console.log( navHeight );
 
 				},
 
@@ -209,22 +235,19 @@
 					$(document).ready(function() {
 
 						if ( $('body').find('.header--clone').length == 0 ) {
-
 							// Create a clone of the header (for desktop fixed + mobile menu)
 							$('.header-container').clone().insertAfter('.header-container').addClass('header--clone');
-
 							// Bind "scroll to top" event listener
 							uiFunctions.site.bindScrollToTop();
-
 						}
 
 						// Setup header + nav for small screens
-						if ( sw < navBreak ) {
+						if ( sw <= navBreak ) {
 							$('.header-container').not( $('.header--clone') ).hide();
-							$('.header--clone').addClass('mobile-menu');
+							$('.header--clone').addClass('mobile-menu').show();
 							uiFunctions.site.setupMobileMenu();
 						}
-						else if ( sw >= navBreak ) {
+						else if ( sw > navBreak ) {
 							$('.header-container').not( $('.header--clone') ).show();
 							$('.header--clone').removeClass('mobile-menu');
 						}

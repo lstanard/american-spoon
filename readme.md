@@ -52,6 +52,7 @@ Dev notes:
 3. Use https://github.com/filamentgroup/AppendAround to move images around on the About page
 4. Home page updates (blog feed, Instagram feed)
 5. Footer formatting for all layout sizes
+6. Fix product column widths (goes from 4 across to 1 across, no in-between)
 
 Recipe page:
  - Click ingredient name, tooltip pop-up with view product and add to cart

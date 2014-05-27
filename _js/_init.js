@@ -3,6 +3,7 @@
 -------------------------------------------------------------------*/
 
 document.addEventListener("touchstart", function(){}, true);
+uiFunctions.init();
 
 var functionCheck = jRespond([
 		{
@@ -20,7 +21,6 @@ var functionCheck = jRespond([
 	functionCheck.addFunc({
 		breakpoint: '*',
 		enter: function() {
-			uiFunctions.site.setupHeader();
 			uiFunctions.site.setFooterYear();
 			uiFunctions.site.bindLoginPageControls();
 			uiFunctions.site.setHeaderWaypoint();

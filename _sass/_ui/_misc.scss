@@ -3,12 +3,21 @@
 -------------------------------------------------------------------*/
 
 .featured-recipes__rule {
-	background: url('../_img/as_icon_FPO_fork-knife.jpg') no-repeat 50% 50% transparent;
 	border: none;
 	height: 70px;
 	margin: 45px auto 45px auto;
 	position: relative;
+	text-align: center;
 	width: 100%;
+
+	hr {
+		display: none;
+	}
+
+	div {
+		padding: 0 15px;
+		margin: 0 auto;
+	}
 
 	&:before, &:after {
 		border-bottom: 2px solid $footer-social-grey;
@@ -16,13 +25,24 @@
 		display: block;
 		position: absolute;
 		top: 50%;
-		width: 45%;
+		width: 40%;
 	}
 	&:before {
 		left: 0;
 	}
 	&:after {
 		right: 0;
+	}
+
+	@include respond($med) {
+		&:before, &:after {
+			width: 43%;
+		}
+	}
+	@include respond($lrg) {
+		&:before, &:after {
+			width: 46%;
+		}
 	}
 }
 
