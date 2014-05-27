@@ -28,10 +28,18 @@ Tasks for Neal:
 ---------------
 
 1. Home/Shop page lazy load in products (mobile most importantly)
-2. Check for consistency with border colors, move to a variable
-3. Header/navigation styling clean-up (responsive updates as needed)
-4. Home page Instagram feed (use a plugin?)
+	- Load fewer on phones, load more on desktop? 
 
+2. Check for consistency with border colors, move to a variable
+	- Do you have a style guide for this task?
+
+3. Header/navigation styling clean-up (responsive updates as needed)
+
+4. Home page Instagram feed (use a plugin?)
+	- Do you know of a potential plugin I could test out?
+
+5. Program the footer
+	- Do you have the design file available?
 
 Dev notes:
 ----------
