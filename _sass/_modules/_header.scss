@@ -41,6 +41,10 @@ body.header-collapse {
 	#nav-toggle {
 		display: none;
 	}
+	a.mobile__search-btn:link,
+	a.mobile__search-btn:visited {
+		display: none;
+	}
 
 	a.primary-nav__scroll-top:link,
 	a.primary-nav__scroll-top:visited {
@@ -160,6 +164,7 @@ body.header-collapse {
 }
 
 .header__primary__logo {
+	float: left;
 
 	a:link,
 	a:visited {
@@ -168,8 +173,10 @@ body.header-collapse {
 
 	img.header__primary__logo-sm {
 		display: none;
-		margin: 14px 0 0 0;
-		max-width: 188px;
+		// margin: 14px 0 0 0;
+		margin: 17px 0 0 0;
+		// max-width: 188px;
+		max-width: 165px;
 	}
 	img.header__primary__logo-lrg {
 		margin: 16px 0 0 0;
@@ -271,6 +278,23 @@ body.header-collapse {
 		}
 	}
 
+	a.mobile__search-btn:link,
+	a.mobile__search-btn:visited {
+		color: $red;
+		display: block;
+		float: right;
+		font-size: 24px;
+		font-size: 2.4rem;
+		margin: 16px 10px 0 0;
+		text-decoration: none;
+
+		&:hover,
+		&:active,
+		&.active {
+			color: $blue;
+		}
+	}
+
 	#nav-toggle {
 		@include transition(all .35s);
 		@extend .verlag-bold;
@@ -278,13 +302,11 @@ body.header-collapse {
 		border: none;
 		color: #FFF;
 		display: block;
+		float: right;
 		height: 45px;
-		margin: 5px;
-		position: absolute;
-		right: 0;
+		margin: 5px 0 5px 5px;
 		text-align: center;
 		text-transform: uppercase;
-		top: 0;
 		width: 60px;
 
 		&:hover {
@@ -842,7 +864,6 @@ a.header__search-btn:visited {
 
 .header__search {
 	@include transition(height .5s ease);
-	// background-color: rgba(0,0,0,.05);
 	background-color: $lightgrey1;
 	display: block;
 	height: 0;
@@ -872,12 +893,20 @@ a.header__search-btn:visited {
 	}
 
 	.header__search__input {
-		height: 62px;
+		border: none;
+		height: 60px;
 	}
 
-	a.header__search__btn:link,
-	a.header__search__btn:visited {
+}
 
+// Mobile search layout
+
+.mobile-menu {
+	.header__search {
+		z-index: $search-form-mobile;
+
+		&.expanded {
+			height: 230px;
+		}
 	}
-
 }
