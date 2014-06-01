@@ -19,9 +19,10 @@ Page links:
 Questions for Jake:
 -------------------
 
-1. Did we get the fonts figured out? Still need to purchase the web license
+1. Did we get the fonts figured out?
+ - Still need to purchase the web license through typography.com
 2. How should we handle the search functionality? How about a search box at the top of every page for mobile?
- - See: http://creativemornings.com/
+ - For mobile, yes I think that's best. Not sure how thet looks, but feel free to put it in and we can go that route. http://creativemornings.com/ has a nice search dropdown. Would this be a lot to put in? If so, maybe we just do a little fly-out when the icon is clicked.
 3. Ask about secondary navigation changes and placement (see changes made in layout)
 4. Images on the About page
  - Use just 1 image per section (2, 1, 1, 2)
