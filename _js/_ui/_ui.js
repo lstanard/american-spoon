@@ -157,7 +157,7 @@
 						if (setupHeaderCount < 1) {
 
 							// Append all links to the same list
-							$('.mobile-menu .primary-nav__explore li').each(function() {
+							$('.mobile-menu .primary-nav__explore > li').each(function() {
 								$(this).clone().addClass('mobile-menu__item').appendTo('.mobile-menu .primary-nav__shop');
 							});
 							$('.mobile-menu .primary-nav__utility li').each(function() {
@@ -197,7 +197,7 @@
 							navHeight = $nav.innerHeight();
 							$subMenus.each(function() {
 								$(this).css({
-									'height': navHeight
+									'min-height': navHeight
 								});
 							});
 						}

@@ -5,6 +5,7 @@
 $sml: 30.0em; // 480px
 $med: 40.5em; // 648px
 $lrg: 64.0em; // 1024px
+$xlrg: 80.0em; // 1280px <-- recipes grid breaks
 
 @mixin mnw($break) {
 	@if $break == "sml" {
@@ -36,7 +37,7 @@ $lrg: 64.0em; // 1024px
 $break-xs: 480px;
 $break-sm: 768px;
 $break-md: 992px;
-$break-lg: 1200px;
+$break-lg: 1250px;
 
 @mixin respond($media, $type: "min") {
 	@if $media == "xs" {

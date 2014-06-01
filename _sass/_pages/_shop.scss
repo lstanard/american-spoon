@@ -44,8 +44,9 @@
 		a.shop-product__recipe-promo:link,
 		a.shop-product__recipe-promo:visited {
 			display: block;
+			margin: 0 auto;
+			max-width: 285px;
 			text-decoration: none;
-			padding: 20px 0;
 
 			p {
 				@include transition(background-color .25s);
@@ -74,6 +75,11 @@
 					background-color: $blue;
 				}
 			}
+
+			@include respond(1200px, "min") {
+				padding: 20px 0;
+			}
+
 		}
 	}
 }

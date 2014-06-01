@@ -53,11 +53,28 @@ var functionCheck = jRespond([
 	});
 
 	functionCheck.addFunc({
+		breakpoint: 'lrg',
+		enter: function() {
+			console.log('enter lrg');
+			if ( $('body').hasClass('index') ) {
+			}
+		},
+		exit: function() {
+			console.log('exit lrg');
+			if ( $('body').hasClass('index') ) {
+			}
+		}
+	});
+
+	functionCheck.addFunc({
 		breakpoint: 'med-lrg',
 		enter: function() {
 
+			console.log('enter med lrg');
+
 			if ( $('body').hasClass('index') ) {
-				uiFunctions.site.setColumnHeight(['.featured-products__grid li', '.featured-recipes__grid ul li']);
+				uiFunctions.site.setColumnHeight(['.featured-recipes__grid ul li']);
+				uiFunctions.site.setColumnHeight(['.featured-products__grid li']);
 			}
 			if ( $('body').hasClass('product-single') ) {
 				uiFunctions.site.setColumnHeight(['.related-products__grid ul li']);
@@ -69,14 +86,15 @@ var functionCheck = jRespond([
 				uiFunctions.site.setColumnHeight(['.shop-products__grid li']);
 			}
 
-			uiFunctions.site.setColumnHeight(['.footer__primary > .row > div']);
-
 		},
 
 		exit: function() {
 
+			console.log('exit med lrg');
+
 			if ( $('body').hasClass('index') ) {
-				uiFunctions.site.unsetColumnHeight(['.featured-products__grid li', '.featured-recipes__grid ul li']);
+				uiFunctions.site.unsetColumnHeight(['.featured-recipes__grid ul li']);
+				uiFunctions.site.unsetColumnHeight(['.featured-products__grid li']);
 			}
 			if ( $('body').hasClass('product-single') ) {
 				uiFunctions.site.unsetColumnHeight(['.related-products__grid ul li']);
