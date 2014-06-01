@@ -2,7 +2,7 @@
     PAGE: Stores
 -------------------------------------------------------------------*/
 
-.page__stores {
+.page__stores { // store page class for body container
 
 	.store-location:last-child {
 		border-bottom: none;
@@ -24,7 +24,7 @@
 
 }
 
-.store-location {
+.store-location { // container for store locations
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	text-align: center;
 
@@ -59,7 +59,7 @@
 	}
 }
 
-.store-location__meta {
+.store-location__meta { // location information
 	margin: 0 auto;
 	max-width: $store-location-meta;
 
@@ -67,12 +67,19 @@
 		@include respond($med) {
 			width: (($store-location-meta - $gutter * 2) / 3) / $store-location-meta * 100%;
 		}
+		// @include respond(960px) {
+		// 	width: (($store-location-meta - $gutter * 2) / 3) / $store-location-meta * 100%;
+		// }
 	}
 	.col-2-3 {
 		@include respond($med) {
-			padding: 0 0 0 60px;
+			padding: 0 0 0 10em;
 			width: ((($store-location-meta - $gutter * 2) / 3) * 2) / $store-location-meta * 100%;
 		}
+		// @include respond(960px) {
+
+		// 	width: ((($store-location-meta - $gutter * 2) / 3) * 2) / $store-location-meta * 100%;
+		// }
 	}
 }
 
@@ -102,7 +109,7 @@
 	}
 }
 
-.store-location__address {
+.store-location__address { // address for every location
 	line-height: 16px;
 	line-height: 1.6rem;
 	margin-bottom: 15px;
@@ -114,12 +121,12 @@
 	}
 }
 
-.store-location__hours-title {
+.store-location__hours-title { // hour title for every location
 	text-align: left;
 	height: 35px;
 }
 
-.store-location__hours {
+.store-location__hours { // hours for every location
 	margin: 0 0 0 37px;
 	line-height: 22px;
 	line-height: 2.2rem;
@@ -144,6 +151,10 @@
 	}
 }
 
+/**********************/
+/* SPECIFIC LOCATIONS */
+/**********************/
+
 #petoskey {
 	h2, .store-location__hours-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $red; }
 
@@ -157,6 +168,8 @@
 		line-height: 25px;
 		line-height: 2.5rem;
 	}
+
+
 }
 #harbor-springs {
 	h2, .store-location__hours-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $peach; }
