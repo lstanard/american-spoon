@@ -155,7 +155,7 @@ body.header-collapse {
 	}
 
 	@include respond($lrg) {
-		max-height: 130px;
+		// max-height: 130px;
 	}
 }
 
@@ -616,7 +616,7 @@ body.header-collapse {
 
 		&:hover,
 		&:active  {
-			color: $peach;
+			color: $blue;
 		}
 	}
 
@@ -825,6 +825,59 @@ a.shipping-banner--link:visited {
 
 	.as-icon-shipping, p {
 		color: #FFF;
+	}
+
+}
+
+/*------------------------------------------------------------------
+    HEADER / SEARCH MENU
+-------------------------------------------------------------------*/
+
+a.header__search-btn:link,
+a.header__search-btn:visited {
+	&.search-open {
+		color: $blue;
+	}
+}
+
+.header__search {
+	@include transition(height .5s ease);
+	// background-color: rgba(0,0,0,.05);
+	background-color: $lightgrey1;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	z-index: $search-form;
+
+	.container--wide {
+		padding-top: 45px;
+		padding-bottom: 0;
+	}
+
+	&.expanded {
+		height: 150px;
+	}
+
+	.col-3-4 {
+		@include respond($med) {
+			width: calc(((100% - 20px) / 4) * 3);
+		}
+	}
+	.col-1-4 {
+		@include respond($med) {
+			width: calc(((100% - 20px) / 4));
+		}
+	}
+
+	.header__search__input {
+		height: 62px;
+	}
+
+	a.header__search__btn:link,
+	a.header__search__btn:visited {
+
 	}
 
 }

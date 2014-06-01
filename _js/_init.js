@@ -2,7 +2,6 @@
     INITIALIZERS: UI components
 -------------------------------------------------------------------*/
 
-document.addEventListener("touchstart", function(){}, true);
 uiFunctions.init();
 
 var functionCheck = jRespond([

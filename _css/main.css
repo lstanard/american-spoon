@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------
     IMPORTS
 -------------------------------------------------------------------*/
-/* line 5, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,51 +23,51 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /*------------------------------------------------------------------
-    GLOBALz, bitch
+    GLOBAL
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
     Z-INDEX
@@ -505,7 +505,7 @@ body, html {
 }
 
 /* line 11, ../_sass/_global/_columns.scss */
-.col, .col-1-5, .col-2-5, .col-3-5, .col-4-5, .col-1-3, .product-details__share, .recipes__category__list li, .col-2-3, .product-details__meta, .col-1-2, .col-1-4, .col-1-8 {
+.col, .col-1-5, .col-2-5, .col-3-5, .col-4-5, .col-1-3, .product-details__share, .recipes__category__list li, .col-2-3, .product-details__meta, .col-1-2, .col-1-4, .col-3-4, .col-1-8 {
   height: auto;
   margin: 0;
   min-height: 1px;
@@ -513,12 +513,12 @@ body, html {
   width: 100%;
 }
 /* line 18, ../_sass/_global/_columns.scss */
-.col:last-of-type, .col-1-5:last-of-type, .col-2-5:last-of-type, .col-3-5:last-of-type, .col-4-5:last-of-type, .col-1-3:last-of-type, .product-details__share:last-of-type, .recipes__category__list li:last-of-type, .col-2-3:last-of-type, .product-details__meta:last-of-type, .col-1-2:last-of-type, .col-1-4:last-of-type, .col-1-8:last-of-type {
+.col:last-of-type, .col-1-5:last-of-type, .col-2-5:last-of-type, .col-3-5:last-of-type, .col-4-5:last-of-type, .col-1-3:last-of-type, .product-details__share:last-of-type, .recipes__category__list li:last-of-type, .col-2-3:last-of-type, .product-details__meta:last-of-type, .col-1-2:last-of-type, .col-1-4:last-of-type, .col-3-4:last-of-type, .col-1-8:last-of-type {
   margin-right: 0;
 }
 @media (min-width: 40.5em) {
   /* line 11, ../_sass/_global/_columns.scss */
-  .col, .col-1-5, .col-2-5, .col-3-5, .col-4-5, .col-1-3, .product-details__share, .recipes__category__list li, .col-2-3, .product-details__meta, .col-1-2, .col-1-4, .col-1-8 {
+  .col, .col-1-5, .col-2-5, .col-3-5, .col-4-5, .col-1-3, .product-details__share, .recipes__category__list li, .col-2-3, .product-details__meta, .col-1-2, .col-1-4, .col-3-4, .col-1-8 {
     margin-right: 20px;
     float: left;
   }
@@ -699,6 +699,12 @@ body, html {
 }
 @media (min-width: 40.5em) {
   /* line 197, ../_sass/_global/_columns.scss */
+  .container--wide .col-3-4 {
+    width: 71.25%;
+  }
+}
+@media (min-width: 40.5em) {
+  /* line 202, ../_sass/_global/_columns.scss */
   .container--wide .col-1-8 {
     width: 11.04167%;
   }
@@ -1609,13 +1615,6 @@ body.header-collapse .header-container.header--clone {
   }
 }
 
-@media (min-width: 64em) {
-  /* line 25, ../_sass/_modules/_header.scss */
-  .header-container {
-    max-height: 130px;
-  }
-}
-
 /* line 164, ../_sass/_modules/_header.scss */
 .header__primary__logo a:link,
 .header__primary__logo a:visited {
@@ -2077,7 +2076,7 @@ body.header-collapse .header-container.header--clone {
 .primary-nav__utility li > a:link:hover, .primary-nav__utility li > a:link:active,
 .primary-nav__utility li > a:visited:hover,
 .primary-nav__utility li > a:visited:active {
-  color: #fbae4b;
+  color: #344976;
 }
 /* line 627, ../_sass/_modules/_header.scss */
 .primary-nav__utility .utility--search:after,
@@ -2298,6 +2297,55 @@ a.shipping-banner--link:visited:active {
 /* line 826, ../_sass/_modules/_header.scss */
 .shipping-banner--red .as-icon-shipping, .shipping-banner--red p {
   color: #FFF;
+}
+
+/*------------------------------------------------------------------
+    HEADER / SEARCH MENU
+-------------------------------------------------------------------*/
+/* line 838, ../_sass/_modules/_header.scss */
+a.header__search-btn:link.search-open,
+a.header__search-btn:visited.search-open {
+  color: #344976;
+}
+
+/* line 843, ../_sass/_modules/_header.scss */
+.header__search {
+  -moz-transition: height 0.5s ease;
+  -o-transition: height 0.5s ease;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  background-color: #e7e7e7;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: -2;
+}
+/* line 854, ../_sass/_modules/_header.scss */
+.header__search .container--wide {
+  padding-top: 45px;
+  padding-bottom: 0;
+}
+/* line 859, ../_sass/_modules/_header.scss */
+.header__search.expanded {
+  height: 150px;
+}
+@media (min-width: 40.5em) {
+  /* line 863, ../_sass/_modules/_header.scss */
+  .header__search .col-3-4 {
+    width: calc(((100% - 20px) / 4) * 3);
+  }
+}
+@media (min-width: 40.5em) {
+  /* line 868, ../_sass/_modules/_header.scss */
+  .header__search .col-1-4 {
+    width: calc(((100% - 20px) / 4));
+  }
+}
+/* line 874, ../_sass/_modules/_header.scss */
+.header__search .header__search__input {
+  height: 62px;
 }
 
 /*------------------------------------------------------------------

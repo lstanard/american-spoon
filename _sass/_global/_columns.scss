@@ -26,7 +26,7 @@
 
 }
 
-.col-1-5, .col-2-5, .col-3-5, .col-4-5, .col-1-3, .col-2-3, .col-1-2, .col-1-4, .col-1-8 {
+.col-1-5, .col-2-5, .col-3-5, .col-4-5, .col-1-3, .col-2-3, .col-1-2, .col-1-4, .col-3-4, .col-1-8 {
 	@extend .col;
 }
 
@@ -192,6 +192,11 @@
 			&:last-child {
 				margin-right: 0;
 			}
+		}
+	}
+	.col-3-4 {
+		@include respond($med) {
+			width: ((($container-wide - ($gutter * 3)) / 4) * 3) / $container-wide * 100%;
 		}
 	}
 	.col-1-8 {

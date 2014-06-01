@@ -6,6 +6,7 @@ $header: 10000;
 $shipping-banner: 1000;
 $mobile-drop-nav: -1;
 $recipe-figcaption: 900;
+$search-form: -2;
 
 /*------------------------------------------------------------------
     LAYOUT
@@ -15,16 +16,13 @@ $container-narrow: 1000px;
 $container-wide: 1200px;
 $container-full: 1700px;
 $gutter: 20px;
-
 $store-location-meta: 800px;
 
 /*------------------------------------------------------------------
     HEADER
 -------------------------------------------------------------------*/
 
-// $header-nav-break: 640px;
 $header-nav-break: 1025px;
-
 $header-height-lrg: 170px;
 $header-height-sm: 55px;
 $header-container-context: 1200px;
@@ -42,7 +40,6 @@ $blue: #344976;
 $purple: #662D63;
 $pumpkin: #DD691D;
 $yellow-green: #B9BC17;
-// $red: #D2232A; // 210,35,42
 $red: #D1232A;
 
 // Table and div colors
@@ -57,8 +54,6 @@ $primary-subhead-dark: #4c4c4c;
 $primary-headline: #939598;
 $product-quantity: #77787b;
 $secondary-nav: #bcbec0;
-
-// e5e6e7
 
 // Footer colors
 $footer-social-grey: #d0d4d7;
