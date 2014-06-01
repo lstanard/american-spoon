@@ -21,24 +21,12 @@ Questions for Jake:
 
 1. Did we get the fonts figured out?
  - Still need to purchase the web license through typography.com
-2. How should we handle the search functionality? How about a search box at the top of every page for mobile?
- - For mobile, yes I think that's best. Not sure how thet looks, but feel free to put it in and we can go that route. http://creativemornings.com/ has a nice search dropdown. Would this be a lot to put in? If so, maybe we just do a little fly-out when the icon is clicked.
-3. Ask about secondary navigation changes and placement (see changes made in layout)
-4. Images on the About page
- - Use just 1 image per section (2, 1, 1, 2)
- - Dynamically load in additional images via JS
-5. Would like to figure out how to load a limited # of items on the Home page (~3 for mobile, more for desktop). Probably need to coordinate with Joe on this.
-6. Let's talk about the product overlay/hover styling and get that nailed down
- - Whole thing is a button, takes you to the "View product page"
- - Move the "Add to cart" to the top of the button
- - Add a "View product" button in the middle, where the add to cart button is now
- - Put a cart icon inside of the "Add to cart" button, give it a rollover state. Maybe make a ghost button?
-7. Should we add a drop-down arrow to the recipes menu item?
- - Yes
-8. Can we get started on the checkout process page? Neal is ready to go on that
-9. I would like to remove "Search" from the drop-down list and move to it's own easy to access place
- - Good to go
-10. How do we style the search results page?
+2. Would like to figure out how to load a limited # of items on the Home page (~3 for mobile, more for desktop).
+ - Probably need to coordinate with Joe on this.
+3. Can we get started on the checkout process page?
+ - Neal can work on this as soon as it's ready.
+4. How do we style the search results page?
+ - Need to talk with Joe about how search results are generated.
 
 
 Tasks for Neal:
@@ -47,6 +35,7 @@ Tasks for Neal:
 1. Responsive updates to the Stores page (some layout issues while scaling down betwee 640px-980px)
 2. Browser testing (need lots of PC testing, IE9 and up only)
 3. Check for consistency with border colors, move to a variable
+ - Jake is going to provide a style guide for this
 4. Header/navigation styling clean-up (responsive updates as needed)
 5. Home/Shop page lazy load in products (mobile most importantly)
 6. Home page Instagram feed (hold until further feedback)
@@ -55,9 +44,10 @@ Tasks for Neal:
 Dev notes:
 ----------
 
-1. Do not use z-index directly in a SCSS file, see _sass/_global/_variables for z-index values
-2. Use uiFunctions.site object for UI related JavaScript/jQuery functions
-3. Navigation plan:
+1. Do not directly modify .html or .css files, they are being generated via CodeKit (.html and .css files are not committed to the repo)
+2. Do not use z-index directly in a SCSS file, see _sass/_global/_variables for z-index values
+3. Use uiFunctions.site object for UI related JavaScript/jQuery functions
+4. Navigation plan:
  - Full size header disappears below 640px
  - Fixed header w/mobile nav toggle appears below 640px
  - Mobile navigation is created from .header--clone and receives class .mobile-menu below 640
@@ -81,6 +71,15 @@ Misc notes:
 12. Icomoon may not be the best long-term solution for icon fonts, explore another possibility
 13. Secondary nav disappears when you make the browser small, then big again
 14. Center the primary navigation with the shipping banner
+15. Images on the About page
+ - Use just 1 image per section (2, 1, 1, 2)
+ - Dynamically load in additional images via JS
+16. Let's talk about the product overlay/hover styling and get that nailed down
+ - Whole thing is a button, takes you to the "View product page"
+ - Move the "Add to cart" to the top of the button
+ - Add a "View product" button in the middle, where the add to cart button is now
+ - Put a cart icon inside of the "Add to cart" button, give it a rollover state. Maybe make a ghost button?
+17. Add a drop-down arrow to the recipes nav item
 
 
 Recipe page:
