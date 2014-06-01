@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------
     IMPORTS
 -------------------------------------------------------------------*/
-/* line 5, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,45 +23,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -4440,14 +4440,14 @@ a.cart__utility__update:visited span:first-child {
   }
 }
 @media (min-width: 40.5em) {
-  /* line 71, ../_sass/_pages/_stores.scss */
+  /* line 74, ../_sass/_pages/_stores.scss */
   .store-location__meta .col-2-3, .store-location__meta .product-details__meta {
-    padding: 0 0 0 60px;
+    padding: 0 0 0 10em;
     width: 63.33333%;
   }
 }
 
-/* line 79, ../_sass/_pages/_stores.scss */
+/* line 86, ../_sass/_pages/_stores.scss */
 .store-location__address,
 .store-location__phone,
 .store-location__hours {
@@ -4456,7 +4456,7 @@ a.cart__utility__update:visited span:first-child {
   text-align: left;
 }
 @media (min-width: 40.5em) {
-  /* line 79, ../_sass/_pages/_stores.scss */
+  /* line 86, ../_sass/_pages/_stores.scss */
   .store-location__address,
   .store-location__phone,
   .store-location__hours {
@@ -4465,7 +4465,7 @@ a.cart__utility__update:visited span:first-child {
   }
 }
 
-/* line 96, ../_sass/_pages/_stores.scss */
+/* line 103, ../_sass/_pages/_stores.scss */
 .store-location__address span[class*="as-icon"],
 .store-location__phone span[class*="as-icon"],
 .store-location__hours-title span[class*="as-icon"] {
@@ -4476,7 +4476,7 @@ a.cart__utility__update:visited span:first-child {
   vertical-align: middle;
 }
 
-/* line 105, ../_sass/_pages/_stores.scss */
+/* line 112, ../_sass/_pages/_stores.scss */
 .store-location__address {
   line-height: 16px;
   line-height: 1.6rem;
@@ -4484,88 +4484,91 @@ a.cart__utility__update:visited span:first-child {
   margin-top: 1px;
 }
 @media (min-width: 40.5em) {
-  /* line 105, ../_sass/_pages/_stores.scss */
+  /* line 112, ../_sass/_pages/_stores.scss */
   .store-location__address {
     line-height: 28px;
     line-height: 2.8rem;
   }
 }
 
-/* line 117, ../_sass/_pages/_stores.scss */
+/* line 124, ../_sass/_pages/_stores.scss */
 .store-location__hours-title {
   text-align: left;
   height: 35px;
 }
 
-/* line 122, ../_sass/_pages/_stores.scss */
+/* line 129, ../_sass/_pages/_stores.scss */
 .store-location__hours {
   margin: 0 0 0 37px;
   line-height: 22px;
   line-height: 2.2rem;
 }
 @media (min-width: 40.5em) {
-  /* line 122, ../_sass/_pages/_stores.scss */
+  /* line 129, ../_sass/_pages/_stores.scss */
   .store-location__hours {
     line-height: 35px;
     line-height: 3.5rem;
   }
 }
 
-/* line 133, ../_sass/_pages/_stores.scss */
+/* line 140, ../_sass/_pages/_stores.scss */
 .store-location__photo {
   max-height: 378px;
   margin: 30px 0 0 0;
 }
-/* line 137, ../_sass/_pages/_stores.scss */
+/* line 144, ../_sass/_pages/_stores.scss */
 .store-location__photo img {
   max-width: 838px;
   width: 100%;
 }
 @media (min-width: 40.5em) {
-  /* line 133, ../_sass/_pages/_stores.scss */
+  /* line 140, ../_sass/_pages/_stores.scss */
   .store-location__photo {
     margin-top: 0;
   }
 }
 
-/* line 148, ../_sass/_pages/_stores.scss */
+/**********************/
+/* SPECIFIC LOCATIONS */
+/**********************/
+/* line 159, ../_sass/_pages/_stores.scss */
 #petoskey h2, #petoskey .store-location__hours-title, #petoskey .store-location__address span, #petoskey .store-location__phone span, #petoskey .store-location__hours-title span {
   color: #d1232a;
 }
-/* line 150, ../_sass/_pages/_stores.scss */
+/* line 161, ../_sass/_pages/_stores.scss */
 #petoskey .store-location__address,
 #petoskey .store-location__phone,
 #petoskey .store-location__hours {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 156, ../_sass/_pages/_stores.scss */
+/* line 167, ../_sass/_pages/_stores.scss */
 #petoskey .store-location__hours {
   line-height: 25px;
   line-height: 2.5rem;
 }
 
-/* line 162, ../_sass/_pages/_stores.scss */
+/* line 175, ../_sass/_pages/_stores.scss */
 #harbor-springs h2, #harbor-springs .store-location__hours-title, #harbor-springs .store-location__address span, #harbor-springs .store-location__phone span, #harbor-springs .store-location__hours-title span {
   color: #fbae4b;
 }
 
-/* line 165, ../_sass/_pages/_stores.scss */
+/* line 178, ../_sass/_pages/_stores.scss */
 #charlevoix h2, #charlevoix .store-location__hours-title, #charlevoix .store-location__address span, #charlevoix .store-location__phone span, #charlevoix .store-location__hours-title span {
   color: #5c8727;
 }
 
-/* line 168, ../_sass/_pages/_stores.scss */
+/* line 181, ../_sass/_pages/_stores.scss */
 #williamsburg h2, #williamsburg .store-location__hours-title, #williamsburg .store-location__address span, #williamsburg .store-location__phone span, #williamsburg .store-location__hours-title span {
   color: #662d63;
 }
 
-/* line 171, ../_sass/_pages/_stores.scss */
+/* line 184, ../_sass/_pages/_stores.scss */
 #traverse-city h2, #traverse-city .store-location__hours-title, #traverse-city .store-location__address span, #traverse-city .store-location__phone span, #traverse-city .store-location__hours-title span {
   color: #dd691d;
 }
 
-/* line 174, ../_sass/_pages/_stores.scss */
+/* line 187, ../_sass/_pages/_stores.scss */
 #saugatuck h2, #saugatuck .store-location__hours-title, #saugatuck .store-location__address span, #saugatuck .store-location__phone span, #saugatuck .store-location__hours-title span {
   color: #b9bc17;
 }
