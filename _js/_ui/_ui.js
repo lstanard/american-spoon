@@ -110,6 +110,7 @@
 						$('.mobile-menu .mobile__search-btn').on('click tap', function(e) {
 							$(this).toggleClass('active');
 							$('.mobile-menu .header__search').toggleClass('expanded');
+							// $('.mobile-menu .header__search__input').focus();
 							e.preventDefault();
 						});
 

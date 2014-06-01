@@ -352,6 +352,15 @@ body.header-collapse {
 		display: none;
 	}
 
+	ul > li.parentmenu__item > a:link,
+	ul > li.parentmenu__item > a:visited {
+		&:after {
+			content: ">";
+			display: inline-block;
+			float: right;
+		}
+	}
+
 	ul > li > a:link,
 	ul > li > a:visited {
 		display: block;
@@ -373,11 +382,8 @@ body.header-collapse {
 
 		& > li > a:link,
 		& > li > a:visited {
+			@extend .verlag-book;
 			display: block;
-			/* font-size: 14px;
-			font-size: 1.4rem;
-			line-height: 20px;
-			line-height: 2.0rem; */
 			width: 100%;
 
 			&:hover,
@@ -402,6 +408,25 @@ body.header-collapse {
 			display: inline-block;
 			padding-bottom: 10px;
 			position: relative;
+		}
+
+		ul > li.parentmenu__item > a:link,
+		ul > li.parentmenu__item > a:visited {
+
+			&:after {
+				@include rotate(90deg);
+				color: rgba(0,0,0,.3);
+				float: none;
+				margin: 0 0 0 6px;
+				position: relative;
+			}
+
+			&:hover,
+			&:active {
+				&:after {
+					color: $blue;
+				}
+			}
 		}
 
 		ul > li > a:link,
@@ -441,9 +466,11 @@ body.header-collapse {
 				margin: 0;
 				padding: 15px 0 15px 30px;
 			}
-		}
-		// end desktop drop-down menu
+		} // end desktop drop-down menu
 
+		ul.primary-nav__explore li ul {
+			left: -30px;
+		}
 	}
 }
 
@@ -467,15 +494,6 @@ body.header-collapse {
 		span {
 			@include rotate(0deg);
 			margin: 0 0 0 10px;
-		}
-	}
-
-	li.parentmenu__item > a:link,
-	li.parentmenu__item > a:visited {
-		&:after {
-			content: ">";
-			display: inline-block;
-			float: right;
 		}
 	}
 
@@ -508,24 +526,6 @@ body.header-collapse {
 			margin: 0 0 0 15px;
 		}
 
-		li.parentmenu__item > a:link,
-		li.parentmenu__item > a:visited {
-
-			&:after {
-				@include rotate(90deg);
-				color: rgba(0,0,0,.3);
-				float: none;
-				margin: 0 0 0 6px;
-				position: relative;
-			}
-
-			&:hover,
-			&:active {
-				&:after {
-					color: $blue;
-				}
-			}
-		}
 	}
 
 	@include respond(1200px, "min") {
@@ -611,10 +611,9 @@ body.header-collapse {
 
 			&:hover,
 			&:active {
-				color: $red;
+				color: $blue;
 			}
 		}
-
 	}
 
 	@include respond(1300px, "min") {
