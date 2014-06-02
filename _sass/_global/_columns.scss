@@ -149,12 +149,12 @@
 	}
 	.col-2-5 {
 		@include respond($med) {
-			width: ((($container-wide - $gutter ) / 5) * 2) / $container-wide * 100%;
+			// width: ((($container-wide - $gutter ) * 2/5 )) / $container-wide * 100%;
 		}
 	}
 	.col-3-5 {
 		@include respond($med) {
-			width: ((($container-wide - $gutter ) / 5) * 3) / $container-wide * 100%;
+			// width: ((($container-wide - $gutter ) * 3/5 )) / $container-wide * 100%;
 		}
 	}
 

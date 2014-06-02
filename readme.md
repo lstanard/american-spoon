@@ -28,12 +28,13 @@ Questions/Notes for Jake:
 4. How do we style the search results page?
  - Need to talk with Joe about how search results are generated.
 5. Since the shipping banner copy might change, attempting to center the nav text might not be the best idea (See request "Center the primary navigation with the shipping banner")
-
+6. Check out new product overlays
+ - The "Add to cart" button still doesn't seem right
 
 To-do:
 ------
 
-### High priority: ###
+#### High priority: ####
 
 1. Finish footer layout (responsive formatting/troubleshooting)
 1. Responsive updates to the Stores page (some layout issues while scaling down betwee 640px-980px)
@@ -54,13 +55,14 @@ To-do:
 15. Product overlay/hover styling
  - Whole thing is a button, takes you to the "View product page"
  - Move the "Add to cart" to the top of the button
- - Add a "View product" button in the middle, where the add to cart button is now
  - Put a cart icon inside of the "Add to cart" button, give it a rollover state. Maybe make a ghost button?
 16. Recipe page:
+ - Needs responsive styling
  - Click ingredient name, tooltip pop-up with view product and add to cart
+17. Product page image preview functionality (Assign to Neal?)
 
 
-### Lower priority: ###
+#### Lower priority: ####
 
 1. Mobile navigation isn't a scalable solution
 2. Remove < and > from markup and move to CSS :before and :after content types
@@ -73,7 +75,7 @@ Dev notes:
 ----------
 
 1. Do not directly modify .html or .css files, they are being generated via CodeKit (.html and .css files are not committed to the repo)
-2. Do not use z-index directly in a SCSS file, see _sass/_global/_variables for z-index values
+2. Do not use z-index directly in a SCSS file, see _sass/_global/_variables for z-index value variables
 3. Use uiFunctions.site object for UI related JavaScript/jQuery functions
 4. Navigation plan:
  - Full size header disappears below 640px

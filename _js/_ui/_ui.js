@@ -424,6 +424,9 @@
 				uiFunctions.site.setupHeader();
 				uiFunctions.site.setupSearchMenu();
 
+				$('.product-details').appendAround();
+				$('.related-recipes').appendAround();
+
 				$w.resize(function() {
 					sw = document.documentElement.clientWidth;
 					sh = document.documentElement.clientHeight;

@@ -173,9 +173,7 @@ body.header-collapse {
 
 	img.header__primary__logo-sm {
 		display: none;
-		// margin: 14px 0 0 0;
 		margin: 17px 0 0 0;
-		// max-width: 188px;
 		max-width: 165px;
 	}
 	img.header__primary__logo-lrg {
@@ -190,6 +188,10 @@ body.header-collapse {
 	}
 
 	@include respond(1300px, "min") {
+		img.header__primary__logo-sm {
+			margin: 14px 0 0 0;
+			max-width: 188px;
+		}
 		img.header__primary__logo-lrg {
 			margin: 6px 0 0 0;
 			max-width: 155px;
