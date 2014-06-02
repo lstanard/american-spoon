@@ -262,7 +262,8 @@ h5 {
 		}
 	}
 
-	&.store-location__hours-title {
+	&.store-location__hours-title, 
+	&.store-location__address-title  {
 		@extend .verlag-black;
 		text-transform: uppercase;
 		font-size: 18px;

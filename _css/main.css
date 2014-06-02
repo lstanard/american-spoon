@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------
     IMPORTS
 -------------------------------------------------------------------*/
-/* line 5, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,45 +23,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -400,7 +400,7 @@ a.footer__social__blog-link:visited, .product-details__share p, .product-details
 }
 
 /* line 225, ../_sass/_global/_font-imports.scss */
-.verlag-black, .ui-link, a.ui-link--right:link, a.ui-link--right:visited, a.ui-link--left:link, a.ui-link--left:visited, a.ui-link:link, a.ui-link:visited, a.btn:link, a.btn:visited, h4.category__list__recipe-name, h5.store-location__hours-title, p.call-out, .product-grid .featured-product__view-product, .featured-products__grid .featured-product__view-product, .related-products .featured-product__view-product, .shop-products__grid .featured-product__view-product,
+.verlag-black, .ui-link, a.ui-link--right:link, a.ui-link--right:visited, a.ui-link--left:link, a.ui-link--left:visited, a.ui-link:link, a.ui-link:visited, a.btn:link, a.btn:visited, h4.category__list__recipe-name, h5.store-location__hours-title, h5.store-location__address-title, p.call-out, .product-grid .featured-product__view-product, .featured-products__grid .featured-product__view-product, .related-products .featured-product__view-product, .shop-products__grid .featured-product__view-product,
 .product-grid .featured-product__add-to-cart,
 .featured-products__grid .featured-product__add-to-cart,
 .related-products .featured-product__add-to-cart,
@@ -1390,7 +1390,7 @@ h5.footer__primary__contact__head {
   }
 }
 /* line 265, ../_sass/_global/_type.scss */
-h5.store-location__hours-title {
+h5.store-location__hours-title, h5.store-location__address-title {
   text-transform: uppercase;
   font-size: 18px;
   font-size: 1.8rem;
@@ -1399,7 +1399,7 @@ h5.store-location__hours-title {
   letter-spacing: 0.06em;
 }
 
-/* line 277, ../_sass/_global/_type.scss */
+/* line 278, ../_sass/_global/_type.scss */
 h6 {
   font-size: 16px;
   font-size: 1.6rem;
@@ -1408,7 +1408,7 @@ h6 {
 /*------------------------------------------------------------------
 	PARAGRAPH STYLES
 -------------------------------------------------------------------*/
-/* line 288, ../_sass/_global/_type.scss */
+/* line 289, ../_sass/_global/_type.scss */
 p, ol li, ul li {
   color: #77787b;
   font-size: 16px;
@@ -1416,7 +1416,7 @@ p, ol li, ul li {
   line-height: 22px;
   line-height: 2.2rem;
 }
-/* line 296, ../_sass/_global/_type.scss */
+/* line 297, ../_sass/_global/_type.scss */
 p.lead-copy, ol li.lead-copy, ul li.lead-copy {
   font-size: 18px;
   font-size: 1.8rem;
@@ -1424,7 +1424,7 @@ p.lead-copy, ol li.lead-copy, ul li.lead-copy {
   line-height: 2.6rem;
 }
 @media (min-width: 40.5em) {
-  /* line 296, ../_sass/_global/_type.scss */
+  /* line 297, ../_sass/_global/_type.scss */
   p.lead-copy, ol li.lead-copy, ul li.lead-copy {
     font-size: 22px;
     font-size: 2.2rem;
@@ -1433,7 +1433,7 @@ p.lead-copy, ol li.lead-copy, ul li.lead-copy {
   }
 }
 @media (min-width: 40.5em) {
-  /* line 288, ../_sass/_global/_type.scss */
+  /* line 289, ../_sass/_global/_type.scss */
   p, ol li, ul li {
     font-size: 20px;
     font-size: 2.0rem;
@@ -1442,12 +1442,12 @@ p.lead-copy, ol li.lead-copy, ul li.lead-copy {
   }
 }
 
-/* line 318, ../_sass/_global/_type.scss */
+/* line 319, ../_sass/_global/_type.scss */
 p {
   margin: 0 0 30px 0;
 }
 
-/* line 322, ../_sass/_global/_type.scss */
+/* line 323, ../_sass/_global/_type.scss */
 p.call-out {
   font-size: 12px;
   font-size: 1.2rem;
@@ -4765,21 +4765,42 @@ a.cart__utility__update:visited span:first-child {
   margin: 0 auto;
   max-width: 800px;
 }
-@media (min-width: 40.5em) {
-  /* line 66, ../_sass/_pages/_stores.scss */
-  .store-location__meta .col-1-3, .store-location__meta .recipes__category__list li, .recipes__category__list .store-location__meta li {
-    width: 31.66667%;
-  }
+/* line 66, ../_sass/_pages/_stores.scss */
+.store-location__meta .col-2-5 {
+  margin: 0;
 }
 @media (min-width: 40.5em) {
-  /* line 74, ../_sass/_pages/_stores.scss */
-  .store-location__meta .col-2-3 {
-    padding: 0 0 0 10em;
-    width: 63.33333%;
+  /* line 66, ../_sass/_pages/_stores.scss */
+  .store-location__meta .col-2-5 {
+    padding: 0 0 0 4%;
+    width: 45%;
+  }
+}
+@media (min-width: 760px) {
+  /* line 66, ../_sass/_pages/_stores.scss */
+  .store-location__meta .col-2-5 {
+    padding: 0 0 0 8%;
+  }
+}
+/* line 77, ../_sass/_pages/_stores.scss */
+.store-location__meta .col-3-5 {
+  margin: 0;
+}
+@media (min-width: 40.5em) {
+  /* line 77, ../_sass/_pages/_stores.scss */
+  .store-location__meta .col-3-5 {
+    padding: 0 0 0 5%;
+    width: 55.0%;
+  }
+}
+@media (min-width: 760px) {
+  /* line 77, ../_sass/_pages/_stores.scss */
+  .store-location__meta .col-3-5 {
+    padding: 0 0 0 10%;
   }
 }
 
-/* line 86, ../_sass/_pages/_stores.scss */
+/* line 90, ../_sass/_pages/_stores.scss */
 .store-location__address,
 .store-location__phone,
 .store-location__hours {
@@ -4788,19 +4809,33 @@ a.cart__utility__update:visited span:first-child {
   text-align: left;
 }
 @media (min-width: 40.5em) {
-  /* line 86, ../_sass/_pages/_stores.scss */
+  /* line 90, ../_sass/_pages/_stores.scss */
+  .store-location__address,
+  .store-location__phone,
+  .store-location__hours {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 24px;
+    line-height: 2.4rem;
+  }
+}
+@media (min-width: 64em) {
+  /* line 90, ../_sass/_pages/_stores.scss */
   .store-location__address,
   .store-location__phone,
   .store-location__hours {
     font-size: 22px;
     font-size: 2.2rem;
+    line-height: 28px;
+    line-height: 2.8rem;
   }
 }
 
-/* line 103, ../_sass/_pages/_stores.scss */
+/* line 116, ../_sass/_pages/_stores.scss */
 .store-location__address span[class*="as-icon"],
 .store-location__phone span[class*="as-icon"],
-.store-location__hours-title span[class*="as-icon"] {
+.store-location__hours-title span[class*="as-icon"],
+.store-location__address-title span[class*="as-icon"] {
   display: inline-block;
   font-size: 26px;
   font-size: 2.6rem;
@@ -4808,7 +4843,7 @@ a.cart__utility__update:visited span:first-child {
   vertical-align: middle;
 }
 
-/* line 112, ../_sass/_pages/_stores.scss */
+/* line 125, ../_sass/_pages/_stores.scss */
 .store-location__address {
   line-height: 16px;
   line-height: 1.6rem;
@@ -4816,92 +4851,182 @@ a.cart__utility__update:visited span:first-child {
   margin-top: 1px;
 }
 @media (min-width: 40.5em) {
-  /* line 112, ../_sass/_pages/_stores.scss */
+  /* line 125, ../_sass/_pages/_stores.scss */
   .store-location__address {
     line-height: 28px;
     line-height: 2.8rem;
   }
 }
 
-/* line 124, ../_sass/_pages/_stores.scss */
-.store-location__hours-title {
+/* line 137, ../_sass/_pages/_stores.scss */
+.store-location__phone {
+  margin: 15px 0 15px 0;
+}
+
+/* line 141, ../_sass/_pages/_stores.scss */
+.store-location__hours-title,
+.store-location__address-title {
   text-align: left;
   height: 35px;
 }
 
-/* line 129, ../_sass/_pages/_stores.scss */
-.store-location__hours {
-  margin: 0 0 0 37px;
+/* line 147, ../_sass/_pages/_stores.scss */
+.store-location__hours,
+.store-location__address {
+  margin: 0 0 0 35px;
   line-height: 22px;
   line-height: 2.2rem;
 }
 @media (min-width: 40.5em) {
-  /* line 129, ../_sass/_pages/_stores.scss */
-  .store-location__hours {
+  /* line 147, ../_sass/_pages/_stores.scss */
+  .store-location__hours,
+  .store-location__address {
+    margin: 0 0 0 37px;
     line-height: 35px;
     line-height: 3.5rem;
   }
 }
 
-/* line 140, ../_sass/_pages/_stores.scss */
+/* line 160, ../_sass/_pages/_stores.scss */
 .store-location__photo {
   max-height: 378px;
   margin: 30px 0 0 0;
 }
-/* line 144, ../_sass/_pages/_stores.scss */
+@media (min-width: 40.5em) {
+  /* line 160, ../_sass/_pages/_stores.scss */
+  .store-location__photo {
+    margin: 0;
+  }
+}
+/* line 168, ../_sass/_pages/_stores.scss */
 .store-location__photo img {
   max-width: 838px;
   width: 100%;
 }
 @media (min-width: 40.5em) {
-  /* line 140, ../_sass/_pages/_stores.scss */
-  .store-location__photo {
-    margin-top: 0;
+  /* line 168, ../_sass/_pages/_stores.scss */
+  .store-location__photo img {
+    max-height: 545px;
   }
 }
 
-/**********************/
-/* SPECIFIC LOCATIONS */
-/**********************/
-/* line 159, ../_sass/_pages/_stores.scss */
-#petoskey h2, #petoskey .store-location__hours-title, #petoskey .store-location__address span, #petoskey .store-location__phone span, #petoskey .store-location__hours-title span {
+/* line 178, ../_sass/_pages/_stores.scss */
+#petoskey h2, #petoskey .store-location__hours-title, #petoskey .store-location__address-title, #petoskey .store-location__address span, #petoskey .store-location__phone span, #petoskey .store-location__hours-title span {
   color: #d1232a;
 }
-/* line 161, ../_sass/_pages/_stores.scss */
+@media (min-width: 40.5em) {
+  /* line 180, ../_sass/_pages/_stores.scss */
+  #petoskey .store-location__meta {
+    padding: 0 0 0 6%;
+  }
+}
+@media (min-width: 64em) {
+  /* line 180, ../_sass/_pages/_stores.scss */
+  #petoskey .store-location__meta {
+    padding: 0 0 0 12%;
+  }
+}
+/* line 189, ../_sass/_pages/_stores.scss */
+#petoskey .store-location__info {
+  text-align: center;
+}
+/* line 193, ../_sass/_pages/_stores.scss */
+#petoskey .col-2-5 {
+  padding: 0;
+}
+@media (min-width: 30em) {
+  /* line 193, ../_sass/_pages/_stores.scss */
+  #petoskey .col-2-5 {
+    width: 45%;
+    float: left;
+  }
+}
+@media (min-width: 40.5em) {
+  /* line 193, ../_sass/_pages/_stores.scss */
+  #petoskey .col-2-5 {
+    width: 100%;
+  }
+}
+/* line 205, ../_sass/_pages/_stores.scss */
+#petoskey .col-3-5 {
+  padding: 0;
+}
+@media (min-width: 30em) {
+  /* line 205, ../_sass/_pages/_stores.scss */
+  #petoskey .col-3-5 {
+    width: 55.0%;
+    float: left;
+  }
+}
+@media (min-width: 40.5em) {
+  /* line 205, ../_sass/_pages/_stores.scss */
+  #petoskey .col-3-5 {
+    width: 100%;
+  }
+}
+/* line 217, ../_sass/_pages/_stores.scss */
 #petoskey .store-location__address,
 #petoskey .store-location__phone,
 #petoskey .store-location__hours {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 167, ../_sass/_pages/_stores.scss */
+@media (min-width: 40.5em) {
+  /* line 217, ../_sass/_pages/_stores.scss */
+  #petoskey .store-location__address,
+  #petoskey .store-location__phone,
+  #petoskey .store-location__hours {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 24px;
+    line-height: 2.4rem;
+  }
+}
+@media (min-width: 64em) {
+  /* line 217, ../_sass/_pages/_stores.scss */
+  #petoskey .store-location__address,
+  #petoskey .store-location__phone,
+  #petoskey .store-location__hours {
+    font-size: 22px;
+    font-size: 2.2rem;
+    line-height: 28px;
+    line-height: 2.8rem;
+  }
+}
+/* line 236, ../_sass/_pages/_stores.scss */
 #petoskey .store-location__hours {
   line-height: 25px;
   line-height: 2.5rem;
 }
+@media (min-width: 40.5em) {
+  /* line 236, ../_sass/_pages/_stores.scss */
+  #petoskey .store-location__hours {
+    margin: 0 0 30px 37px;
+  }
+}
 
-/* line 175, ../_sass/_pages/_stores.scss */
-#harbor-springs h2, #harbor-springs .store-location__hours-title, #harbor-springs .store-location__address span, #harbor-springs .store-location__phone span, #harbor-springs .store-location__hours-title span {
+/* line 246, ../_sass/_pages/_stores.scss */
+#harbor-springs h2, #harbor-springs .store-location__hours-title, #harbor-springs .store-location__address-title, #harbor-springs .store-location__address span, #harbor-springs .store-location__phone span, #harbor-springs .store-location__hours-title span {
   color: #fbae4b;
 }
 
-/* line 178, ../_sass/_pages/_stores.scss */
-#charlevoix h2, #charlevoix .store-location__hours-title, #charlevoix .store-location__address span, #charlevoix .store-location__phone span, #charlevoix .store-location__hours-title span {
+/* line 249, ../_sass/_pages/_stores.scss */
+#charlevoix h2, #charlevoix .store-location__hours-title, #charlevoix .store-location__address-title, #charlevoix .store-location__address span, #charlevoix .store-location__phone span, #charlevoix .store-location__hours-title span {
   color: #5c8727;
 }
 
-/* line 181, ../_sass/_pages/_stores.scss */
-#williamsburg h2, #williamsburg .store-location__hours-title, #williamsburg .store-location__address span, #williamsburg .store-location__phone span, #williamsburg .store-location__hours-title span {
+/* line 252, ../_sass/_pages/_stores.scss */
+#williamsburg h2, #williamsburg .store-location__hours-title, #williamsburg .store-location__address-title, #williamsburg .store-location__address span, #williamsburg .store-location__phone span, #williamsburg .store-location__hours-title span {
   color: #662d63;
 }
 
-/* line 184, ../_sass/_pages/_stores.scss */
-#traverse-city h2, #traverse-city .store-location__hours-title, #traverse-city .store-location__address span, #traverse-city .store-location__phone span, #traverse-city .store-location__hours-title span {
+/* line 255, ../_sass/_pages/_stores.scss */
+#traverse-city h2, #traverse-city .store-location__hours-title, #traverse-city .store-location__address-title, #traverse-city .store-location__address span, #traverse-city .store-location__phone span, #traverse-city .store-location__hours-title span {
   color: #dd691d;
 }
 
-/* line 187, ../_sass/_pages/_stores.scss */
-#saugatuck h2, #saugatuck .store-location__hours-title, #saugatuck .store-location__address span, #saugatuck .store-location__phone span, #saugatuck .store-location__hours-title span {
+/* line 258, ../_sass/_pages/_stores.scss */
+#saugatuck h2, #saugatuck .store-location__hours-title, #saugatuck .store-location__address-title, #saugatuck .store-location__address span, #saugatuck .store-location__phone span, #saugatuck .store-location__hours-title span {
   color: #b9bc17;
 }
 
