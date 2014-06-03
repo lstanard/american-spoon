@@ -2,302 +2,72 @@
     HEADER
 -------------------------------------------------------------------*/
 
-body {
-	.header-container {
-		&.header--clone {
-			visibility: hidden;
-		}
-		&.header--clone.mobile-menu {
-			visibility: visible;
-		}
+#main {
+	@include respond($header-nav-break) {
+		margin-top: $header-height-lrg + $shipping-banner-height;
 	}
 }
 
-body.header-collapse {
-	.header-container {
-		&.header--clone {
-			top: 0;
-			visibility: visible;
-		}
-	}
-}
-
-.header-container {
+#header {
+	@include transition(height .3s);
 	background-color: #FFF;
-	height: auto;
-	margin: 0;
-	min-height: $header-height-lrg;
-	padding-bottom: 0;
-	padding-top: 0;
-	position: relative;
+	height: $header-height-lrg;
+	left: 0;
+	position: fixed;
+	top: 0;
 	width: 100%;
-	z-index: $header;
+	z-index: $z-header;
 
-	header.container--full {
+	.container--full {
+		@extend .cf;
 		padding-top: 0;
 		padding-bottom: 0;
 	}
 
-	#nav-toggle {
-		display: none;
-	}
-	a.mobile__search-btn:link,
-	a.mobile__search-btn:visited {
-		display: none;
-	}
+	/*------------------------------------------------------------------
+	    HEADER / Logo
+	-------------------------------------------------------------------*/
 
-	a.primary-nav__scroll-top:link,
-	a.primary-nav__scroll-top:visited {
-		display: none;
-	}
-
-	&.header--clone {
-		@include box-shadow(rgba(0,0,0,.1) 0px 2px 6px);
-		height: $header-height-sm;
-		min-height: 0px;
-		position: fixed;
-
-		.header__primary__logo {
-			img.header__primary__logo-sm {
-				display: block;
-			}
-			img.header__primary__logo-lrg {
-				display: none;
-			}
-		}
-
-		@include respond($header-nav-break, "min") {
-			@include transition(all $header-transition-speed);
-			top: -$header-height-sm - 10px;
-
-			.header__primary-nav {
-				height: 55px;
-				padding-top: 0;
-				width: 80%;
-
-				ul li ul {
-					top: 55px;
-				}
-			}
-
-			.header__primary-nav ul > li {
-				margin-left: 0px;
-			}
-
-			.primary-nav__shop,
-			.primary-nav__explore,
-			.primary-nav__utility {
-				height: 55px;
-				margin-top: 0;
-
-				& > li {
-					height: 55px;
-					padding-top: 0;
-
-					& > a:link,
-					& > a:visited {
-						display: inline-block;
-						height: 55px;
-						line-height: 55px;
-					}
-				}
-			}
-
-			.primary-nav__explore {
-				padding-left: 25px;
-
-				&:before {
-					top: 15px;
-				}
-
-				li {
-					margin: 0 25px;
-				}
-			}
-
-			.primary-nav__utility {
-				margin-right: 15px;
-
-				li > a:link,
-				li > a:visited  {
-					color: $primary-copy;
-					line-height: 60px;
-				}
-
-				.utility--search,
-				.utility--account,
-				.utility--cart {
-
-					&:hover,
-					&:active {
-						color: $red;
-					}
-
-					&:after {
-						@include opacity(0);
-						font-size: 0px;
-						font-size: 0rem;
-						height: 0px;
-					}
-				}
-			}
-
-			a.primary-nav__scroll-top:link,
-			a.primary-nav__scroll-top:visited {
-				@include opacity(1);
-				display: none;
-				margin-top: 0;
-				top: 0;
-				visibility: visible;
-				width: 6%;
-
-				@include mnw($med) {
-					display: block;
-				}
-			}
-		}
-	}
-
-	@include respond($lrg) {
-		// max-height: 130px;
-	}
-}
-
-.header__primary__logo {
-	float: left;
-
-	a:link,
-	a:visited {
-		display: inline-block;
-	}
-
-	img.header__primary__logo-sm {
-		display: none;
-		margin: 17px 0 0 0;
-		max-width: 165px;
-	}
-	img.header__primary__logo-lrg {
-		margin: 16px 0 0 0;
-		max-width: 135px;
-		width: 100%;
-	}
-
-	@include respond($med) {
+	.header__primary-logo {
 		float: left;
-		width: 14%;
-	}
 
-	@include respond(1300px, "min") {
-		img.header__primary__logo-sm {
-			margin: 14px 0 0 0;
-			max-width: 188px;
+		a:link,
+		a:visited {
+			display: inline-block;
 		}
-		img.header__primary__logo-lrg {
+
+		.primary-logo__lrg {
 			margin: 6px 0 0 0;
 			max-width: 155px;
-		}
-	}
-
-}
-
-/*------------------------------------------------------------------
-    MOBILE NAVIGATION
--------------------------------------------------------------------*/
-
-.header-container.mobile-menu {
-
-	top: 0 !important;
-
-	.container--full {
-		background-color: #FFF;
-		height: $header-height-sm;
-	}
-
-	nav#nav {
-		@include transition(all .4s);
-		@include box-shadow(rgba(0,0,0,.1) 0px 3px 6px);
-		border-top: 1px solid rgba(0,0,0,.12);
-		left: 0;
-		position: absolute;
-		top: -365px;
-		visibility: visible;
-		width: 100%;
-		z-index: $mobile-drop-nav;
-
-		.primary-nav__shop {
-			li.mobile-menu__item {
-				display: block;
-			}
-			li > a:link,
-			li > a:visited {
-				span {
-					@include rotate(0deg);
-				}
-			}
-		}
-
-		.primary-nav__explore,
-		.primary-nav__utility {
-			display: none;
-		}
-
-		ul li {
-			// position: relative;
-		}
-
-		ul > li > a:link,
-		ul > li > a:visited {
-			border-bottom: 1px solid rgba(0,0,0,.08);
-			line-height: 28px;
-			line-height: 2.8rem;
-		}
-
-		ul li ul.submenu {
-			@include transition(all .4s);
-			background: #FFF;
-			position: absolute;
-			top: 0;
-			visibility: hidden;
 			width: 100%;
+		}
 
-			&.submenu--open {
-				background: #FFF;
-				right: 0 !important;
-				visibility: visible;
-				z-index: $mobile-drop-nav + 2;
-			}
+		.primary-logo__sm {
+			display: none;
+			margin: 17px 0 0 0;
+			max-width: 165px;
+		}
 
-			.submenu__back {
-				span {
-					display: inline-block;
-					float: left;
-				}
-				a:link,
-				a:visited {
-					text-align: right;
-				}
-			}
+		@include respond($header-nav-break) {
+			width: 14%;
 		}
 	}
 
-	a.mobile__search-btn:link,
-	a.mobile__search-btn:visited {
-		color: $red;
+	/*------------------------------------------------------------------
+	    HEADER / Mobile
+	-------------------------------------------------------------------*/
+
+	#mm-header__primary-nav,
+	.primary-nav__btn {
 		display: block;
-		float: right;
-		font-size: 24px;
-		font-size: 2.4rem;
-		margin: 16px 10px 0 0;
-		text-decoration: none;
-
-		&:hover,
-		&:active,
-		&.active {
-			color: $blue;
-		}
 	}
 
-	#nav-toggle {
+	.header__primary-nav {
+		display: none;
+	}
+
+	a.primary-nav__btn:link,
+	a.primary-nav__btn:visited {
 		@include transition(all .35s);
 		@extend .verlag-bold;
 		background-color: $red;
@@ -306,13 +76,21 @@ body.header-collapse {
 		display: block;
 		float: right;
 		height: 45px;
+		line-height: 45px;
+		line-height: 4.5rem;
 		margin: 5px 0 5px 5px;
 		text-align: center;
+		text-decoration: none;
 		text-transform: uppercase;
+		vertical-align: middle;
 		width: 60px;
 
 		&:hover {
 			cursor: pointer;
+		}
+
+		&.active {
+			background-color: $blue;
 		}
 
 		@include respond($header-nav-break, "min") {
@@ -320,48 +98,30 @@ body.header-collapse {
 		}
 	}
 
-	a.primary-nav__scroll-top:link,
-	a.primary-nav__scroll-top:visited {
-		display: none;
-	}
+	/*------------------------------------------------------------------
+	    HEADER / Desktop, fully expanded
+	-------------------------------------------------------------------*/
 
-	&.mobile-menu--open {
+	@include respond($header-nav-break) {
+		position: absolute;
 
-		nav#nav {
-			top: $header-height-sm;
+		#mm-header__primary-nav,
+		.primary-nav__btn {
+			display: none;
 		}
 
-		#nav-toggle {
-			background-color: $blue;
+		.header__primary-nav {
+			display: block;
 		}
-
 	}
-
 }
 
 /*------------------------------------------------------------------
-    PRIMARY NAVIGATION
+    NAVIGATION
 -------------------------------------------------------------------*/
 
 .header__primary-nav {
 	background-color: #FFF;
-
-	ul > li {
-		@include transition(all $header-transition-speed);
-	}
-
-	ul > li.mobile-menu__item {
-		display: none;
-	}
-
-	ul > li.parentmenu__item > a:link,
-	ul > li.parentmenu__item > a:visited {
-		&:after {
-			content: ">";
-			display: inline-block;
-			float: right;
-		}
-	}
 
 	ul > li > a:link,
 	ul > li > a:visited {
@@ -371,8 +131,7 @@ body.header-collapse {
 		text-transform: uppercase;
 	}
 
-	// Begin mobile drop-down menu
-	ul li ul {
+	ul > li > ul {
 		width: 100%;
 
 		& > li {
@@ -382,26 +141,30 @@ body.header-collapse {
 			width: 100%;
 		}
 
-		& > li > a:link,
-		& > li > a:visited {
-			@extend .verlag-book;
-			display: block;
-			width: 100%;
+		// & > li > a:link,
+		// & > li > a:visited {
+		// 	@extend .verlag-book;
+		// 	display: block;
+		// 	width: 100%;
 
-			&:hover,
-			&:active {
-				background-color: rgba(0,0,0,.05);
+		// 	&:hover,
+		// 	&:active {
+		// 		background-color: rgba(0,0,0,.05);
 
-				a:link,
-				a:visited {
-					color: $red;
-					display: block;
-				}
-			}
-		}
+		// 		a:link,
+		// 		a:visited {
+		// 			color: $red;
+		// 			display: block;
+		// 		}
+		// 	}
+		// }
 	}
 
-	@include respond($header-nav-break, "min") {
+	/*------------------------------------------------------------------
+	    NAVIGATION / Desktop, fully expanded
+	-------------------------------------------------------------------*/
+
+	@include respond($header-nav-break) {
 		float: left;
 		padding-top: $header-height-sm;
 		width: 86%;
@@ -412,21 +175,24 @@ body.header-collapse {
 			position: relative;
 		}
 
-		ul > li.parentmenu__item > a:link,
-		ul > li.parentmenu__item > a:visited {
+		ul > li.parentmenu__item {
 
-			&:after {
-				@include rotate(90deg);
-				color: rgba(0,0,0,.3);
-				float: none;
-				margin: 0 0 0 6px;
-				position: relative;
-			}
-
-			&:hover,
-			&:active {
+			a:link,
+			a:visited {
 				&:after {
-					color: $blue;
+					@include rotate(90deg);
+					content: ">";
+					display: inline-block;
+					color: rgba(0,0,0,.3);
+					margin: 0 0 0 6px;
+					position: relative;
+				}
+
+				&:hover,
+				&:active {
+					&:after {
+						color: $blue;
+					}
 				}
 			}
 		}
@@ -436,15 +202,18 @@ body.header-collapse {
 			padding: 0;
 		}
 
-		// Begin desktop drop-down menu
-		ul li:hover {
+		/*------------------------------------------------------------------
+		    NAVIGATION / Desktop, drop-down menus
+		-------------------------------------------------------------------*/
+
+		ul > li:hover {
 			ul {
 				@include opacity(1);
 				visibility: visible;
 			}
 		}
 
-		ul li ul {
+		ul > li > ul {
 			@include transition(opacity .35s);
 			@include box-shadow(rgba(0,0,0,.12) 0px 2px 6px);
 			@include opacity(0);
@@ -468,28 +237,33 @@ body.header-collapse {
 				margin: 0;
 				padding: 15px 0 15px 30px;
 			}
-		} // end desktop drop-down menu
-
-		ul.primary-nav__explore li ul {
-			left: -30px;
 		}
 	}
 }
 
-.primary-nav__shop {
+/*------------------------------------------------------------------
+    NAVIGATION / Mobile
+-------------------------------------------------------------------*/
 
-	li {
-		&:hover {
-			color: $red;
-		}
+#mm-header__primary-nav {
+	ul {
+		padding-top: $header-height-sm;
 	}
+}
 
-	li.primary-nav__shop__lead {
+/*------------------------------------------------------------------
+    NAVIGATION / Shop menu
+-------------------------------------------------------------------*/
+
+.primary-nav {
+	width: 100%;
+
+	li.label {
 		display: none;
 	}
 
-	li.primary-nav__shop__lead > a:link,
-	li.primary-nav__shop__lead > a:visited {
+	li.label > a:link,
+	li.label > a:visited {
 		@extend .verlag-bold;
 		color: $red;
 
@@ -499,21 +273,100 @@ body.header-collapse {
 		}
 	}
 
-	li > a:link,
-	li > a:visited {
+	a:link,
+	a:visited {
 		@extend .verlag-book;
-		color: $primary-copy;
-		font-size: 16px;
-		font-size: 1.6rem;
-		letter-spacing: 0.10em;
+		display: block;
+		width: 100%;
 
 		&:hover,
 		&:active {
-			color: $blue;
+			background-color: rgba(0,0,0,.05);
+
+			a:link,
+			a:visited {
+				color: $red;
+				display: block;
+			}
 		}
 	}
 
-	// Desktop navigation styles
+	/*------------------------------------------------------------------
+	    NAVIGATION / Utility menu
+	-------------------------------------------------------------------*/
+
+	li.primary-nav__utility {
+
+		& > a:link,
+		& > a:visited {
+			color: $red;
+			display: block;
+
+			&:hover,
+			&:active  {
+				color: $blue;
+			}
+		}
+
+		.utility--search,
+		.utility--account,
+		.utility--cart {
+
+			&:after {
+				@include transition(opacity $header-transition-speed);
+				@include opacity(1);
+				@extend .verlag-bold;
+				font-size: 8px;
+				font-size: 0.8rem;
+				height: 10px;
+				line-height: 10px;
+				line-height: 1.0rem;
+				margin: 0 auto;
+			}
+
+			@include mnw($med) {
+				&:after {
+					display: block;
+				}
+			}
+		}
+
+		.utility--search {
+			&:after {
+				content: "Search";
+			}
+		}
+		.utility--account {
+			&:after {
+				content: "Account";
+			}
+		}
+		.utility--cart {
+			&:after {
+				content: "Cart";
+			}
+		}
+
+		@include respond($header-nav-break, "min") {
+			float: right;
+			margin: 0 0 0 5px;
+
+			a:link,
+			a:visited {
+				font-size: 20px;
+				font-size: 2.0rem;
+				min-width: 48px;
+				text-align: center;
+			}
+
+			.utility--search,
+			.utility--account,
+			.utility--cart {
+				text-align: center;
+			}
+		}
+	}
+
 	@include respond($header-nav-break) {
 		float: left;
 		height: 55px;
@@ -527,12 +380,11 @@ body.header-collapse {
 		li > a:visited {
 			margin: 0 0 0 15px;
 		}
-
 	}
 
 	@include respond(1200px, "min") {
 
-		li.primary-nav__shop__lead {
+		li.label {
 			display: inline-block;
 
 			a:link,
@@ -550,364 +402,110 @@ body.header-collapse {
 				}
 			}
 		}
-
 	}
 
-	// 1300px and up, full desktop header
 	@include respond(1300px, "min") {
-
 		li > a:link,
 		li > a:visited {
 			font-size: 19px;
 			font-size: 1.9rem;
 		}
-
 	}
 
 	@include respond(1350px, "min") {
-		margin-left: 30px / $header-container-context * 100%;
+		// margin-left: 30px / $header-container-context * 100%;
 	}
+
 	@include respond(1500px, "min") {
-		margin-left: 75px / $header-container-context * 100%;
+		// margin-left: 75px / $header-container-context * 100%;
+	}
+}
+
+/*------------------------------------------------------------------
+    NAVIGATION / Explore menu
+-------------------------------------------------------------------*/
+
+.nav-divider {
+	&:before {
+		background-color: rgba(0,0,0,.08);
+		content: "";
+		display: block;
+		height: 23px;
+		left: 0;
+		position: absolute;
+		top: 10px;
+		width: 2px;
 	}
 }
 
 .primary-nav__explore {
-	$item-spacing: 12px;
-	position: relative;
 
-	li > a:link,
-	li > a:visited {
+	& > a:link,
+	& > a:visited {
 		@extend .verlag-bold;
 		color: $primary-copy;
 	}
 
-	@include respond($header-nav-break, "min") {
-		float: left;
-		height: 40px;
-		margin-left: $item-spacing * 2;
-		margin-top: 12px;
-		padding-left: $item-spacing;
+	// $item-spacing: 12px;
 
-		&:before {
-			background-color: rgba(0,0,0,.08);
-			content: "";
-			display: block;
-			height: 23px;
-			left: 0;
-			position: absolute;
-			top: 10px;
-			width: 2px;
-		}
+	// @include respond($header-nav-break) {
+	// 	float: left;
+	// 	height: 40px;
+	// 	margin-left: $item-spacing * 2;
+	// 	margin-top: 12px;
+	// 	padding-left: $item-spacing;
 
-		li {
-			margin: 0 $item-spacing;
-			padding: 10px 0 0 0;
-		}
 
-		li > a:link,
-		li > a:visited {
-			font-size: 16px;
-			font-size: 1.6rem;
-			letter-spacing: 0.10em;
+	// 	li {
+	// 		margin: 0 $item-spacing;
+	// 		padding: 10px 0 0 0;
+	// 	}
 
-			&:hover,
-			&:active {
-				color: $blue;
-			}
-		}
-	}
+	// 	li > a:link,
+	// 	li > a:visited {
+	// 		font-size: 16px;
+	// 		font-size: 1.6rem;
+	// 		letter-spacing: 0.10em;
 
-	@include respond(1300px, "min") {
+	// 		&:hover,
+	// 		&:active {
+	// 			color: $blue;
+	// 		}
+	// 	}
+	// }
 
-		li > a:link,
-		li > a:visited {
-			font-size: 19px;
-			font-size: 1.9rem;
-		}
+	// @include respond(1300px, "min") {
+	// 	li > a:link,
+	// 	li > a:visited {
+	// 		font-size: 19px;
+	// 		font-size: 1.9rem;
+	// 	}
 
-	}
-
-}
-
-.primary-nav__utility {
-
-	li > a:link,
-	li > a:visited {
-		color: $red;
-		display: block;
-
-		&:hover,
-		&:active  {
-			color: $blue;
-		}
-	}
-
-	.utility--search,
-	.utility--account,
-	.utility--cart {
-
-		&:after {
-			@include transition(opacity $header-transition-speed);
-			@include opacity(1);
-			@extend .verlag-bold;
-			font-size: 8px;
-			font-size: 0.8rem;
-			height: 10px;
-			line-height: 10px;
-			line-height: 1.0rem;
-			margin: 0 auto;
-		}
-
-		@include mnw($med) {
-			&:after {
-				display: block;
-			}
-		}
-	}
-
-	.utility--search {
-		&:after {
-			content: "Search";
-		}
-	}
-	.utility--account {
-		&:after {
-			content: "Account";
-		}
-	}
-	.utility--cart {
-		&:after {
-			content: "Cart";
-		}
-	}
-
-	@include respond($header-nav-break, "min") {
-		float: right;
-		margin: 10px 0 0 0;
-
-		li {
-			margin: 0 0 0 5px;
-		}
-
-		li > a:link,
-		li > a:visited {
-			font-size: 20px;
-			font-size: 2.0rem;
-			min-width: 48px;
-			text-align: center;
-		}
-
-		.utility--search,
-		.utility--account,
-		.utility--cart {
-			text-align: center;
-		}
-
-	}
-
-	@include respond(1070px, "min") {
-		li {
-			margin: 0 0 0 15px;
-		}
-	}
-
-	@include respond(1450px, "min") {
-		margin-right: 60px;
-	}
-
+	// }
 }
 
 /*------------------------------------------------------------------
-    SCROLL TO TOP LINK
+    HEADER / Desktop, fixed scrolling
 -------------------------------------------------------------------*/
 
-a.primary-nav__scroll-top:link,
-a.primary-nav__scroll-top:visited {
-	@include transition(all .25s);
-	@include opacity(0);
-	background-color: $red;
-	color: #FFF;
-	float: right;
-	font-size: 24px;
-	font-size: 2.4rem;
+#header.header-collapsed {
+	@include box-shadow(rgba(0,0,0,.1) 0px 2px 6px);
 	height: $header-height-sm;
-	max-width: 80px;
-	margin-top: -$header-height-sm / 2;
-	position: relative;
-	text-align: center;
-	text-decoration: none;
-	top: 50%;
-	visibility: hidden;
+	min-height: 0px;
+	position: fixed;
 
-	& > span {
-		display: block;
-		margin-top: 14px;
-	}
-
-	&:hover,
-	&:active {
-		background-color: $blue;
-	}
-
-	@include respond($med) {
-		width: 80px / $header-container-context * 100%;
-	}
-}
-
-/*------------------------------------------------------------------
-    SHIPPING BANNER
--------------------------------------------------------------------*/
-
-a.shipping-banner--link:link,
-a.shipping-banner--link:visited {
-	@include opacity(1);
-	border: 0;
-	display: none;
-	position: relative;
-	text-decoration: none;
-	width: 100%;
-	z-index: $shipping-banner;
-
-	&:hover, &:active {
-		@include opacity(.8);
-	}
-
-	@include respond($header-nav-break, "min") {
-		display: block;
-	}
-}
-
-.shipping-banner {
-	@include transition(all $header-transition-speed);
-	@include opacity(1);
-
-	background-color: #FFF;
-	border-bottom: 2px solid rgba(0,0,0,.08);
-	border-top: 2px solid rgba(0,0,0,.08);
-	height: auto;
-	min-height: $shipping-banner-height;
-	position: relative;
-	text-align: center;
-	vertical-align: middle;
-	visibility: visible;
-	width: 100%;
-	z-index: $shipping-banner;
-
-	.container--wide {
-		padding-top: 0;
-		padding-bottom: 0;
-	}
-
-	.as-icon-shipping {
-		color: $red;
-		display: inline-block;
-		font-size: 36px;
-		font-size: 3.6rem;
-		margin: 0 30px;
-		vertical-align: middle;
-	}
-
-	.divider {
-		@extend .archer-bold;
-		margin: 0 15px;
-	}
-
-	p {
-		color: $red;
-		display: inline-block;
-		font-size: 16px;
-		font-size: 1.6rem;
-		line-height: 45px;
-		margin: 0;
-		vertical-align: middle;
-
-		&.shipping-banner__msg01,
-		&.shipping-banner__msg03 {
-			@extend .archer-bold-ital;
+	.header__primary-logo {
+		.primary-logo__lrg {
+			display: none;
 		}
-		&.shipping-banner__msg02 {
-			@extend .archer-bold;
-			text-transform: uppercase;
-			letter-spacing: 0.09em;
+		.primary-logo__sm {
+			display: block;
 		}
 	}
 
-	&.hidden {
-		visibility: hidden;
-		top: 0;
-	}
-
-}
-
-.shipping-banner--red {
-
-	background-color: $red;
-	border-top: none;
-	border-bottom: none;
-
-	.as-icon-shipping, p {
-		color: #FFF;
-	}
-
-}
-
-/*------------------------------------------------------------------
-    HEADER / SEARCH MENU
--------------------------------------------------------------------*/
-
-a.header__search-btn:link,
-a.header__search-btn:visited {
-	&.search-open {
-		color: $blue;
-	}
-}
-
-.header__search {
-	@include transition(height .5s ease);
-	background-color: $lightgrey1;
-	display: block;
-	height: 0;
-	overflow: hidden;
-	position: relative;
-	width: 100%;
-	z-index: $search-form;
-
-	.container--wide {
-		padding-top: 45px;
-		padding-bottom: 0;
-	}
-
-	&.expanded {
-		height: 150px;
-	}
-
-	.col-3-4 {
-		@include respond($med) {
-			width: calc(((100% - 20px) / 4) * 3);
-		}
-	}
-	.col-1-4 {
-		@include respond($med) {
-			width: calc(((100% - 20px) / 4));
-		}
-	}
-
-	.header__search__input {
-		border: none;
-		height: 60px;
-	}
-
-}
-
-// Mobile search layout
-
-.mobile-menu {
-	.header__search {
-		z-index: $search-form-mobile;
-
-		&.expanded {
-			height: 230px;
+	.header__primary-nav {
+		@include respond($header-nav-break) {
+			padding-top: 0;
 		}
 	}
 }

@@ -25,14 +25,14 @@ body, html {
 -------------------------------------------------------------------*/
 
 #wrapper {
-	@extend .cf;
-	margin-top: $header-height-sm;
-	position: relative;
-	width: 100%;
+	// @extend .cf;
+	// margin-top: $header-height-sm;
+	// position: relative;
+	// width: 100%;
 
-	@include respond($header-nav-break, "min") {
-		margin-top: 0;
-	}
+	// @include respond($header-nav-break, "min") {
+	// 	margin-top: 0;
+	// }
 }
 
 .container {

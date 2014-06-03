@@ -22,7 +22,6 @@ var functionCheck = jRespond([
 		enter: function() {
 			uiFunctions.site.setFooterYear();
 			uiFunctions.site.bindLoginPageControls();
-			uiFunctions.site.setHeaderWaypoint();
 			uiFunctions.site.setupScrollToLinks();
 
 			$('#cart-table').stacktable();
