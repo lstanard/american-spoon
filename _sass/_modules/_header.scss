@@ -69,6 +69,11 @@
 		display: none;
 	}
 
+	nav.mm-opened + #wrapper > #header a.primary-nav__btn:link,
+	nav.mm-opened + #wrapper > #header a.primary-nav__btn:visited {
+		background-color: $blue;
+	}
+
 	a.primary-nav__btn:link,
 	a.primary-nav__btn:visited {
 		@include transition(all .35s);
@@ -229,12 +234,6 @@
 		}
 	}
 
-
-	// @include respond(1350px, "min") {
-		// padding-left: 30px / $header-container-context * 100%;
-	// }
-
-
 	@include respond($header-nav-break) {
 		padding-left: 1%;
 	}
@@ -249,16 +248,6 @@
 	}
 	@include respond(1750px, "min") {
 		padding-left: 8%;
-	}
-}
-
-/*------------------------------------------------------------------
-    NAVIGATION / Mobile
--------------------------------------------------------------------*/
-
-#mm-header__primary-nav {
-	ul {
-		padding-top: $header-height-sm;
 	}
 }
 
@@ -408,6 +397,10 @@
 				top: 10px;
 				width: 2px;
 			}
+
+			ul {
+				left: -5px;
+			}
 		}
 
 		li.label > a:link,
@@ -452,6 +445,58 @@
 			font-size: 1.9rem;
 		}
 	}
+}
+
+/*------------------------------------------------------------------
+    NAVIGATION / Mobile
+-------------------------------------------------------------------*/
+
+#mm-header__primary-nav {
+
+	a:link,
+	a:visited {
+		@extend .verlag-book;
+		color: $primary-copy;
+		display: block;
+		font-size: 14px;
+		font-size: 1.4rem;
+		letter-spacing: 0.06em;
+		padding-left: 20px;
+		width: 100%;
+
+		&:hover,
+		&:active {
+			color: $blue;
+		}
+	}
+
+	ul.primary-nav {
+
+		&.mm-list {
+			margin-top: $header-height-sm - 20;
+		}
+
+		& > li > a:link,
+		& > li > a:visited {
+		}
+
+	}
+
+	ul.mm-list {
+		margin-top: $header-height-sm;
+
+		& > li > a.mm-subopen:after {
+			border-color: $primary-copy;
+		}
+	}
+
+	li.mm-label {
+		display: none;
+	}
+	li.primary-nav__utility__search {
+		display: none;
+	}
+
 }
 
 /*------------------------------------------------------------------
@@ -530,6 +575,9 @@ li.primary-nav__explore {
 			&:before {
 				left: -7px;
 				top: 16px;
+			}
+			ul {
+				left: -15px;
 			}
 		}
 		& > li.primary-nav__utility {

@@ -20,7 +20,8 @@ $mm_subpanelOffset: 40% !default;
 $mm_widescreenMenuWidth: 0.3 !default;
 
 //	Colors
-$mm_baseBg: #333 !default;
+// $mm_baseBg: #333 !default;
+$mm_baseBg: $cart-table-interior !default;
 $mm_pageShadow: 0 0 20px rgba( 0, 0, 0, 0.5 ) !default;
 $mm_color: rgba( 255, 255, 255, 0.6 ) !default;
 $mm_dimmedColor: rgba( 255, 255, 255, 0.3 ) !default;
