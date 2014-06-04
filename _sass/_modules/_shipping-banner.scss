@@ -1,0 +1,95 @@
+/*------------------------------------------------------------------
+    SHIPPING BANNER
+-------------------------------------------------------------------*/
+
+a.shipping-banner--link:link,
+a.shipping-banner--link:visited {
+	@include opacity(1);
+	border: 0;
+	display: none;
+	position: relative;
+	text-decoration: none;
+	width: 100%;
+
+	&:hover, &:active {
+		@include opacity(.8);
+	}
+
+	@include respond($header-nav-break, "min") {
+		display: block;
+	}
+}
+
+.shipping-banner {
+	@include transition(all $header-transition-speed);
+	@include opacity(1);
+
+	background-color: #FFF;
+	border-bottom: 2px solid rgba(0,0,0,.08);
+	border-top: 2px solid rgba(0,0,0,.08);
+	height: auto;
+	min-height: $shipping-banner-height;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	visibility: visible;
+	width: 100%;
+	z-index: $z-shipping-banner;
+
+	.container--wide {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.as-icon-shipping {
+		color: $red;
+		display: inline-block;
+		font-size: 36px;
+		font-size: 3.6rem;
+		margin: 0 30px;
+		vertical-align: middle;
+	}
+
+	.divider {
+		@extend .archer-bold;
+		margin: 0 15px;
+	}
+
+	p {
+		color: $red;
+		display: inline-block;
+		font-size: 16px;
+		font-size: 1.6rem;
+		line-height: 45px;
+		margin: 0;
+		vertical-align: middle;
+
+		&.shipping-banner__msg01,
+		&.shipping-banner__msg03 {
+			@extend .archer-bold-ital;
+		}
+		&.shipping-banner__msg02 {
+			@extend .archer-bold;
+			text-transform: uppercase;
+			letter-spacing: 0.09em;
+		}
+	}
+
+	&.hidden {
+		visibility: hidden;
+		top: 0;
+	}
+
+}
+
+.shipping-banner--red {
+
+	background-color: $red;
+	border-top: none;
+	border-bottom: none;
+
+	.as-icon-shipping, p {
+		color: #FFF;
+	}
+
+}
