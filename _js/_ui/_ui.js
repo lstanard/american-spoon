@@ -142,6 +142,10 @@
 
 					}
 
+					else if (sw <= navBreak) {
+						$('#header').addClass('header-collapsed header-collapsed-visible');
+					}
+
 				},
 
 				bindScrollToTop: function() {
