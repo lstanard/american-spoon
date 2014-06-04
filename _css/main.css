@@ -4934,27 +4934,39 @@ a.cart__utility__update:visited span:first-child {
   }
 }
 
-/* line 246, ../_sass/_pages/_stores.scss */
+/* line 245, ../_sass/_pages/_stores.scss */
+#harbor-springs {
+  background-color: rgba(100, 100, 100, 0.015);
+}
+/* line 247, ../_sass/_pages/_stores.scss */
 #harbor-springs h2, #harbor-springs .store-location__hours-title, #harbor-springs .store-location__address-title, #harbor-springs .store-location__address span, #harbor-springs .store-location__phone span, #harbor-springs .store-location__hours-title span {
   color: #fbae4b;
 }
 
-/* line 249, ../_sass/_pages/_stores.scss */
+/* line 250, ../_sass/_pages/_stores.scss */
 #charlevoix h2, #charlevoix .store-location__hours-title, #charlevoix .store-location__address-title, #charlevoix .store-location__address span, #charlevoix .store-location__phone span, #charlevoix .store-location__hours-title span {
   color: #5c8727;
 }
 
 /* line 252, ../_sass/_pages/_stores.scss */
+#williamsburg {
+  background-color: rgba(100, 100, 100, 0.015);
+}
+/* line 254, ../_sass/_pages/_stores.scss */
 #williamsburg h2, #williamsburg .store-location__hours-title, #williamsburg .store-location__address-title, #williamsburg .store-location__address span, #williamsburg .store-location__phone span, #williamsburg .store-location__hours-title span {
   color: #662d63;
 }
 
-/* line 255, ../_sass/_pages/_stores.scss */
+/* line 257, ../_sass/_pages/_stores.scss */
 #traverse-city h2, #traverse-city .store-location__hours-title, #traverse-city .store-location__address-title, #traverse-city .store-location__address span, #traverse-city .store-location__phone span, #traverse-city .store-location__hours-title span {
   color: #dd691d;
 }
 
-/* line 258, ../_sass/_pages/_stores.scss */
+/* line 259, ../_sass/_pages/_stores.scss */
+#saugatuck {
+  background-color: rgba(100, 100, 100, 0.015);
+}
+/* line 261, ../_sass/_pages/_stores.scss */
 #saugatuck h2, #saugatuck .store-location__hours-title, #saugatuck .store-location__address-title, #saugatuck .store-location__address span, #saugatuck .store-location__phone span, #saugatuck .store-location__hours-title span {
   color: #b9bc17;
 }
