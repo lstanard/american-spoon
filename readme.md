@@ -21,54 +21,55 @@ Questions/Notes for Jake:
 
 1. Did we get the fonts figured out?
  - Still need to purchase the web license through typography.com
+
 2. Would like to figure out how to load a limited # of items on the Home page (~3 for mobile, more for desktop).
  - Probably need to coordinate with Joe on this.
+
 3. Can we get started on the checkout process page?
  - Neal can work on this as soon as it's ready.
+
 4. How do we style the search results page?
  - Need to talk with Joe about how search results are generated.
+
 5. Since the shipping banner copy might change, attempting to center the nav text might not be the best idea (See request "Center the primary navigation with the shipping banner")
+
 6. Check out new product overlays
  - The "Add to cart" button still doesn't seem right
+
 
 To-do:
 ------
 
 #### High priority: ####
 
-1. Finish footer layout (responsive formatting/troubleshooting)
-1. Responsive updates to the Stores page (some layout issues while scaling down betwee 640px-980px)
- - Neal is in the process of working on this
-2. Browser testing (need lots of PC testing, IE9 and up only)
-3. Check for consistency with border colors, move to a variable
- - Jake is going to provide a style guide for this
-4. Header/navigation styling clean-up (responsive updates as needed)
-6. Home page Instagram feed (hold until further feedback)
-7. Login page buttons are too short (min-height disappeared?)
-8. Footer sign-up button not the same height as the form field
-9. Shipping banner text wraps to multiple lines, line-height too high
-10. Back button doesn't disappear from condensed menu drop-downs after scaling down then back up, min-height remains and menus are too tall
-12. Secondary nav disappears when you make the browser small, then big again
-14. Images on the About page
- - Use just 1 image per section (2, 1, 1, 2)
- - Dynamically load in additional images via JS
-15. Product overlay/hover styling
- - Whole thing is a button, takes you to the "View product page"
- - Move the "Add to cart" to the top of the button
- - Put a cart icon inside of the "Add to cart" button, give it a rollover state. Maybe make a ghost button?
-16. Recipe page:
- - Needs responsive styling
- - Click ingredient name, tooltip pop-up with view product and add to cart
-17. Product page image preview functionality (Assign to Neal?)
+- Finish footer layout (responsive formatting/troubleshooting)
+- Responsive updates to the Stores page (some layout issues while scaling down betwee 640px-980px)
+	- Neal is in the process of working on this
+- Browser testing (need lots of PC testing, IE9 and up only)
+- Check for consistency with border colors, move to a variable
+	- Jake is going to provide a style guide for this
+- Home page Instagram feed (hold until further feedback)
+- Login page buttons are too short (min-height disappeared?)
+- Footer sign-up button not the same height as the form field
+- Shipping banner text wraps to multiple lines, line-height too high
+- Secondary nav disappears when you make the browser small, then big again
+- Images on the About page
+	- Use just 1 image per section (2, 1, 1, 2)
+	- Dynamically load in additional images via JS
+- Product overlay/hover styling
+	- Whole thing is a button, takes you to the "View product page"
+	- Move the "Add to cart" to the top of the button
+	- Put a cart icon inside of the "Add to cart" button, give it a rollover state. Maybe make a ghost button?
+- Recipe page:
+	- Needs responsive styling
+	- Click ingredient name, tooltip pop-up with view product and add to cart
+- Product page image preview functionality (Assign to Neal?)
 
 
 #### Lower priority: ####
 
-1. Mobile navigation isn't a scalable solution
-2. Remove < and > from markup and move to CSS :before and :after content types
-3. Use https://github.com/filamentgroup/AppendAround to move images around on the About page
-4. Buttons with a lot of text (checkout buttons on the Cart page) wrap to multiple lines, looks strange
-5. Need to find a new solution for calling JS functionality at different screen sizes, jRespond doesn't allow for overlapping sizes
+- Remove < and > from markup and move to CSS :before and :after content types
+- Buttons with a lot of text (checkout buttons on the Cart page) wrap to multiple lines, looks strange
 
 
 Dev notes:
