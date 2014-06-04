@@ -7,11 +7,9 @@ a.shipping-banner--link:visited {
 	@include opacity(1);
 	border: 0;
 	display: none;
-	position: absolute;
+	position: relative;
 	text-decoration: none;
-	top: $header-height-lrg;
 	width: 100%;
-	z-index: $shipping-banner;
 
 	&:hover, &:active {
 		@include opacity(.8);
@@ -36,7 +34,7 @@ a.shipping-banner--link:visited {
 	vertical-align: middle;
 	visibility: visible;
 	width: 100%;
-	z-index: $shipping-banner;
+	z-index: $z-shipping-banner;
 
 	.container--wide {
 		padding-top: 0;

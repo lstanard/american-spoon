@@ -3,13 +3,16 @@
 -------------------------------------------------------------------*/
 
 #main {
+	padding-top: 60px;
+
 	@include respond($header-nav-break) {
-		margin-top: $header-height-lrg + $shipping-banner-height;
+		margin-top: 212px;
+		padding-top: 0;
 	}
 }
 
 #header {
-	@include transition(height .3s);
+	@include transition(top .3s);
 	background-color: #FFF;
 	height: $header-height-lrg;
 	left: 0;
@@ -121,7 +124,6 @@
 -------------------------------------------------------------------*/
 
 .header__primary-nav {
-	background-color: #FFF;
 
 	ul > li > a:link,
 	ul > li > a:visited {
@@ -140,24 +142,6 @@
 			padding: 0;
 			width: 100%;
 		}
-
-		// & > li > a:link,
-		// & > li > a:visited {
-		// 	@extend .verlag-book;
-		// 	display: block;
-		// 	width: 100%;
-
-		// 	&:hover,
-		// 	&:active {
-		// 		background-color: rgba(0,0,0,.05);
-
-		// 		a:link,
-		// 		a:visited {
-		// 			color: $red;
-		// 			display: block;
-		// 		}
-		// 	}
-		// }
 	}
 
 	/*------------------------------------------------------------------
@@ -165,6 +149,7 @@
 	-------------------------------------------------------------------*/
 
 	@include respond($header-nav-break) {
+		background-color: #FFF;
 		float: left;
 		padding-top: $header-height-sm;
 		width: 86%;
@@ -175,24 +160,22 @@
 			position: relative;
 		}
 
-		ul > li.parentmenu__item {
+		ul > li.parentmenu__item > a:link,
+		ul > li.parentmenu__item > a:visited {
 
-			a:link,
-			a:visited {
+			&:after {
+				@include rotate(90deg);
+				content: ">";
+				display: inline-block;
+				color: rgba(0,0,0,.3);
+				margin: 0 0 0 6px;
+				position: relative;
+			}
+
+			&:hover,
+			&:active {
 				&:after {
-					@include rotate(90deg);
-					content: ">";
-					display: inline-block;
-					color: rgba(0,0,0,.3);
-					margin: 0 0 0 6px;
-					position: relative;
-				}
-
-				&:hover,
-				&:active {
-					&:after {
-						color: $blue;
-					}
+					color: $blue;
 				}
 			}
 		}
@@ -223,6 +206,7 @@
 			top: 45px;
 			width: 340px;
 			visibility: hidden;
+			z-index: $z-drop-down-nav;
 
 			& > li {
 				width: auto;
@@ -236,8 +220,35 @@
 				line-height: 2.0rem;
 				margin: 0;
 				padding: 15px 0 15px 30px;
+
+				&:hover,
+				&:active {
+					background-color: rgba(0,0,0,.05);
+				}
 			}
 		}
+	}
+
+
+	// @include respond(1350px, "min") {
+		// padding-left: 30px / $header-container-context * 100%;
+	// }
+
+
+	@include respond($header-nav-break) {
+		padding-left: 1%;
+	}
+	@include respond(1350px, "min") {
+		padding-left: 3%;
+	}
+	@include respond(1550px, "min") {
+		padding-left: 6%;
+	}
+	@include respond(1650px, "min") {
+		padding-left: 7%;
+	}
+	@include respond(1750px, "min") {
+		padding-left: 8%;
 	}
 }
 
@@ -252,7 +263,7 @@
 }
 
 /*------------------------------------------------------------------
-    NAVIGATION / Shop menu
+    NAVIGATION / Primary menu
 -------------------------------------------------------------------*/
 
 .primary-nav {
@@ -269,25 +280,22 @@
 
 		span {
 			@include rotate(0deg);
-			margin: 0 0 0 10px;
 		}
 	}
 
 	a:link,
 	a:visited {
 		@extend .verlag-book;
+		color: $primary-copy;
 		display: block;
+		font-size: 16px;
+		font-size: 1.6rem;
+		letter-spacing: 0.10em;
 		width: 100%;
 
 		&:hover,
 		&:active {
-			background-color: rgba(0,0,0,.05);
-
-			a:link,
-			a:visited {
-				color: $red;
-				display: block;
-			}
+			color: $blue;
 		}
 	}
 
@@ -301,6 +309,7 @@
 		& > a:visited {
 			color: $red;
 			display: block;
+			letter-spacing: 0;
 
 			&:hover,
 			&:active  {
@@ -355,7 +364,7 @@
 			a:visited {
 				font-size: 20px;
 				font-size: 2.0rem;
-				min-width: 48px;
+				min-width: 38px;
 				text-align: center;
 			}
 
@@ -363,6 +372,12 @@
 			.utility--account,
 			.utility--cart {
 				text-align: center;
+			}
+		}
+		@include respond(1100px) {
+			a:link,
+			a:visited {
+				min-width: 48px;
 			}
 		}
 	}
@@ -375,6 +390,32 @@
 		li {
 			padding: 10px 0 0 0;
 		}
+		li.primary-nav__utility {
+			padding-top: 0;
+		}
+
+		li.nav-divider {
+			margin-left: 20px;
+			padding-left: 12px;
+
+			&:before {
+				background-color: rgba(0,0,0,.08);
+				content: "";
+				display: block;
+				height: 23px;
+				left: 0;
+				position: absolute;
+				top: 10px;
+				width: 2px;
+			}
+		}
+
+		li.label > a:link,
+		li.label > a:visited {
+			span {
+				margin: 0 0 0 10px;
+			}
+		}
 
 		li > a:link,
 		li > a:visited {
@@ -382,7 +423,7 @@
 		}
 	}
 
-	@include respond(1200px, "min") {
+	@include respond(1250px, "min") {
 
 		li.label {
 			display: inline-block;
@@ -411,34 +452,13 @@
 			font-size: 1.9rem;
 		}
 	}
-
-	@include respond(1350px, "min") {
-		// margin-left: 30px / $header-container-context * 100%;
-	}
-
-	@include respond(1500px, "min") {
-		// margin-left: 75px / $header-container-context * 100%;
-	}
 }
 
 /*------------------------------------------------------------------
     NAVIGATION / Explore menu
 -------------------------------------------------------------------*/
 
-.nav-divider {
-	&:before {
-		background-color: rgba(0,0,0,.08);
-		content: "";
-		display: block;
-		height: 23px;
-		left: 0;
-		position: absolute;
-		top: 10px;
-		width: 2px;
-	}
-}
-
-.primary-nav__explore {
+li.primary-nav__explore {
 
 	& > a:link,
 	& > a:visited {
@@ -446,53 +466,34 @@
 		color: $primary-copy;
 	}
 
-	// $item-spacing: 12px;
-
-	// @include respond($header-nav-break) {
-	// 	float: left;
-	// 	height: 40px;
-	// 	margin-left: $item-spacing * 2;
-	// 	margin-top: 12px;
-	// 	padding-left: $item-spacing;
-
-
-	// 	li {
-	// 		margin: 0 $item-spacing;
-	// 		padding: 10px 0 0 0;
-	// 	}
-
-	// 	li > a:link,
-	// 	li > a:visited {
-	// 		font-size: 16px;
-	// 		font-size: 1.6rem;
-	// 		letter-spacing: 0.10em;
-
-	// 		&:hover,
-	// 		&:active {
-	// 			color: $blue;
-	// 		}
-	// 	}
-	// }
-
-	// @include respond(1300px, "min") {
-	// 	li > a:link,
-	// 	li > a:visited {
-	// 		font-size: 19px;
-	// 		font-size: 1.9rem;
-	// 	}
-
-	// }
+	@include respond($header-nav-break) {
+		& > a:link,
+		& > a:visited {
+			margin: 0 12px;
+		}
+	}
 }
 
 /*------------------------------------------------------------------
     HEADER / Desktop, fixed scrolling
 -------------------------------------------------------------------*/
 
+#header {
+	@include transition(top .3s);
+}
+
 #header.header-collapsed {
 	@include box-shadow(rgba(0,0,0,.1) 0px 2px 6px);
 	height: $header-height-sm;
 	min-height: 0px;
+	top: -$header-height-sm;
 	position: fixed;
+	visibility: hidden;
+
+	&.header-collapsed-visible {
+		top: 0;
+		visibility: visible;
+	}
 
 	.header__primary-logo {
 		.primary-logo__lrg {
@@ -503,9 +504,110 @@
 		}
 	}
 
+	a.shipping-banner--link:link,
+	a.shipping-banner--link:visited {
+		display: none;
+	}
+
 	.header__primary-nav {
+
+		ul > li > ul {
+			top: 55px;
+		}
+
 		@include respond($header-nav-break) {
 			padding-top: 0;
+		}
+	}
+
+	.primary-nav {
+		margin-top: 0;
+
+		& > li {
+			padding: 15px 0 12px 0;
+		}
+		li.nav-divider {
+			&:before {
+				left: -7px;
+				top: 16px;
+			}
+		}
+		& > li.primary-nav__utility {
+
+			a:link,
+			a:visited {
+				min-width: 30px;
+			}
+
+			.utility--search,
+			.utility--account,
+			.utility--cart {
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------------------
+    HEADER / SEARCH MENU
+-------------------------------------------------------------------*/
+
+a.header__search-btn:link,
+a.header__search-btn:visited {
+	&.search-open,
+	&.search-open span,
+	&.search-open:after {
+		color: $blue;
+	}
+}
+
+.header__search {
+	@include transition(height .5s ease);
+	background-color: $lightgrey1;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	z-index: $search-form;
+
+	.container--wide {
+		padding-top: 45px;
+		padding-bottom: 0;
+	}
+
+	&.expanded {
+		height: 150px;
+	}
+
+	.col-3-4 {
+		@include respond($med) {
+			width: calc(((100% - 20px) / 4) * 3);
+		}
+	}
+	.col-1-4 {
+		@include respond($med) {
+			width: calc(((100% - 20px) / 4));
+		}
+	}
+
+	.header__search__input {
+		border: none;
+		height: 60px;
+	}
+
+}
+
+// Mobile search layout
+
+.mobile-menu {
+	.header__search {
+		z-index: $search-form-mobile;
+
+		&.expanded {
+			height: 230px;
 		}
 	}
 }

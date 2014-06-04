@@ -94,23 +94,7 @@
 
 						$('.header__search-btn').on('click tap', function(e) {
 							$(this).toggleClass('search-open');
-							e.preventDefault();
-						});
-
-						// Search form for full header view
-						$('.header-container:not(.header--clone) .header__search-btn').on('click tap', function(e) {
-							$('.header-container:not(.header--clone) .header__search').toggleClass('expanded');
-						});
-
-						// Search form for condensed (fixed) header view
-						$('.header-container.header--clone .header__search-btn').on('click tap', function(e) {
-							$('.header-container.header--clone .header__search').toggleClass('expanded');
-						});
-
-						$('.mobile-menu .mobile__search-btn').on('click tap', function(e) {
-							$(this).toggleClass('active');
-							$('.mobile-menu .header__search').toggleClass('expanded');
-							// $('.mobile-menu .header__search__input').focus();
+							$('.header__search').toggleClass('expanded');
 							e.preventDefault();
 						});
 
@@ -137,6 +121,7 @@
 				setHeaderWaypoint: function() {
 
 					if (sw > navBreak) {
+
 						$('body').waypoint(function(direction){
 							if ( direction === 'down' ) {
 								$('#header').addClass('header-collapsed');
@@ -144,7 +129,17 @@
 							else if ( direction === 'up' ){
 								$('#header').removeClass('header-collapsed');
 							}
-						}, { offset: -215 } );
+						}, { offset: -170 } );
+
+						$('body').waypoint(function(direction){
+							if ( direction === 'down' ) {
+								$('#header').addClass('header-collapsed-visible');
+							}
+							else if ( direction === 'up' ){
+								$('#header').removeClass('header-collapsed-visible');
+							}
+						}, { offset: -240 } );
+
 					}
 
 				},
@@ -330,6 +325,7 @@
 
 				uiFunctions.site.setupMobileNavigation();
 				uiFunctions.site.setHeaderWaypoint();
+				uiFunctions.site.setupSearchMenu();
 
 				$('.product-details').appendAround();
 				$('.related-recipes').appendAround();
