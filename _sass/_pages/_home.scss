@@ -24,11 +24,6 @@
 				@include text-shadow(rgba(0,0,0,.5) 0px 0px 12px 6px);
 				position: absolute;
 				color: #FFF;
-				// font-size: 74px;
-				// font-size: 7.4rem;
-				// line-height: 80px;
-				// line-height: 8.0rem;
-				// margin: 0 220px;
 				text-align: center;
 			}
 		}
@@ -128,6 +123,11 @@
 			margin-top: 30px;
 			margin-bottom: 15px;
 		}
+	}
+
+	& + a.btn:link,
+	& + a.btn:visited {
+		width: 50%;
 	}
 
 }

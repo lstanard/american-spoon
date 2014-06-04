@@ -69,7 +69,7 @@ h1 {
 
 	&.page-title {
 		@extend .archer-book;
-		color: $primary-headline;
+		color: #BBB;
 		font-size: 44px;
 		font-size: 4.4rem;
 		line-height: 48px;
@@ -79,12 +79,11 @@ h1 {
 		text-align: center;
 
 		@include respond($med) {
-			font-size: 52px;
-			font-size: 5.2rem;
-			line-height: 56px;
-			line-height: 5.6rem;
+			font-size: 65px;
+			font-size: 6.5rem;
+			line-height: 72px;
+			line-height: 7.2rem;
 			margin-bottom: 75px;
-			// margin-top: 15px;
 		}
 	}
 

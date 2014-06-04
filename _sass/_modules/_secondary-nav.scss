@@ -23,7 +23,7 @@
 
 	ul li a:link,
 	ul li a:visited {
-		@extend .archer-book;
+		@extend .verlag-book;
 		@include border-radius(2px);
 		color: $primary-copy;
 		display: block;
@@ -65,7 +65,8 @@
 		ul li a:visited {
 			background: transparent;
 			color: $secondary-nav;
-			margin: 0 20px;
+			letter-spacing: 0.05em;
+			margin: 0 12px;
 			padding: 0;
 		}
 

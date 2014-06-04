@@ -36,19 +36,21 @@ Questions/Notes for Jake:
 6. Check out new product overlays
  - The "Add to cart" button still doesn't seem right
 
+7. How should we handle the product page image previews? Zoom? Simple swap?
+
 
 To-do:
 ------
 
 #### High priority: ####
 
-- Finish footer layout (responsive formatting/troubleshooting)
-- Responsive updates to the Stores page (some layout issues while scaling down betwee 640px-980px)
-	- Neal is in the process of working on this
 - Browser testing (need lots of PC testing, IE9 and up only)
+- Finish footer layout (responsive formatting/troubleshooting)
+	- Assigned to Neal
+- Responsive updates to the Stores page (some layout issues while scaling down betwee 640px-980px)
+	- Assigned to Neal
 - Check for consistency with border colors, move to a variable
 	- Jake is going to provide a style guide for this
-- Home page Instagram feed (hold until further feedback)
 - Login page buttons are too short (min-height disappeared?)
 - Footer sign-up button not the same height as the form field
 - Shipping banner text wraps to multiple lines, line-height too high
@@ -63,7 +65,8 @@ To-do:
 - Recipe page:
 	- Needs responsive styling
 	- Click ingredient name, tooltip pop-up with view product and add to cart
-- Product page image preview functionality (Assign to Neal?)
+- Product page image preview functionality
+- Home page Instagram feed (hold until further feedback)
 
 
 #### Lower priority: ####
