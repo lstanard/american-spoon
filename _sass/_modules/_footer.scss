@@ -1,4 +1,7 @@
 /*------------------------------------------------------------------
+    SCROLL TO TOP LINK
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
     FOOTER
 -------------------------------------------------------------------*/
 
@@ -111,21 +114,61 @@ $footer-nav-margins: 15px 0 30px 0;
 		}
 	}
 
-	@include respond($med, "min") {
+	@include respond($med) {
+
 		.footer__primary__section01 {
-			padding: 45px;
-			text-align: left;
+			padding: 15px 75px 15px 30px;
+			width: 100%;
+
+			p {
+				margin: 0;
+			}
+			.row > .col-1-2 {
+				width: calc((100% - 20px) / 2);
+			}
+			.row > .col-1-2:nth-child(1) {
+				text-align: right;
+			}
 		}
 		.footer__primary__section02 {
 			border-left: 2px solid #e5e6e7;
-			padding: 45px;
-			padding-top: 60px;
-			padding-left: 75px;
+			width: 100%;
 
 			h5.module__subhead {
 				font-size: 15px;
 				font-size: 1.5rem;
 			}
+		}
+
+		.col-1-2 {
+			width: 100%;
+		}
+
+	}
+
+	@include respond(932px) {
+		.footer__primary__section02 {
+			.col-1-2 {
+				width: calc((100% - 20px) / 2);
+			}
+		}
+	}
+	@include respond($lrg) {
+		.footer__primary__section01 {
+			margin: 0;
+			padding: 0;
+			width: calc(((1/4) * 100%) - 20px);
+
+			.row > .col-1-2 {
+				margin: 0;
+				width: 100%;
+			}
+			.row > .col-1-2:nth-child(1) {
+				text-align: center;
+			}
+		}
+		.footer__primary__section02 {
+			width: calc(((3/4) * 100%) + 20px);
 		}
 	}
 }
@@ -134,10 +177,10 @@ $footer-nav-margins: 15px 0 30px 0;
 	max-width: 95px;
 	width: 100%;
 
-	@include respond($med, "min") {
+	@include respond($med) {
 		max-width: 145px;
 	}
-	@include respond($lrg, "min") {
+	@include respond($lrg) {
 		max-width: 190px;
 	}
 }
@@ -158,10 +201,15 @@ $footer-nav-margins: 15px 0 30px 0;
 		text-decoration: none;
 	}
 
-	@include respond($med, "min") {
-		padding-top: 45px;
+	@include respond($med) {
+		padding-top: 15px;
+		text-align: left;
 	}
-
+	@include respond($lrg) {
+		margin-top: -15px;
+		padding-top: 0;
+		text-align: center;
+	}
 }
 
 .footer__shop__nav01,
@@ -249,7 +297,6 @@ $footer-nav-margins: 15px 0 30px 0;
 
 	@include respond($med) {
 		margin: 0;
-		padding-right: $footer-col-gutter;
 	}
 
 }
@@ -260,6 +307,14 @@ $footer-nav-margins: 15px 0 30px 0;
 	@include respond($med) {
 		margin: 0;
 		padding-right: $footer-col-gutter;
+		padding-top: 30px;
+	}
+	@include respond(932px) {
+		padding-top: 0;
+		width: calc(((1/2) * 100%) - 20px);
+	}
+	@include respond($lrg) {
+		padding-right: 15px;
 	}
 }
 
@@ -268,13 +323,23 @@ $footer-nav-margins: 15px 0 30px 0;
 
 	@include respond($med) {
 		margin: 0;
-		padding-right: $footer-col-gutter;
+		padding-top: 30px;
+	}
+	@include respond(932px) {
+		padding-top: 0;
+		width: calc((1/2) * 100%);
+	}
+	@include respond($lrg) {
+		width: calc((11/20) * 100%);
+	}
+	@include respond(1160px) {
+		width: calc((1/2) * 100%);
 	}
 }
 
 .footer__social__nav01 {
 	@extend .cf;
-	margin: 0 0 45px 0;
+	margin: 0 0 15px 0;
 	width: 100%;
 
 	ul {
@@ -369,8 +434,7 @@ a.footer__social__blog-link:visited {
 	@include respond($med) {
 		font-size: 17px;
 		font-size: 1.7rem;
-		margin-left: 0;
-		margin-right: 0;
+		margin: 15px auto 0 auto;
 	}
 
 }

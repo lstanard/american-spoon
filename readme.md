@@ -45,8 +45,6 @@ To-do:
 #### High priority: ####
 
 - Browser testing (need lots of PC testing, IE9 and up only)
-- Finish footer layout (responsive formatting/troubleshooting)
-	- Assigned to Neal
 - Responsive updates to the Stores page (some layout issues while scaling down betwee 640px-980px)
 	- Assigned to Neal
 - Check for consistency with border colors, move to a variable
