@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------
-    HEADER
+	HEADER
 -------------------------------------------------------------------*/
 
 #main {
@@ -28,7 +28,7 @@
 	}
 
 	/*------------------------------------------------------------------
-	    HEADER / Logo
+		HEADER / Logo
 	-------------------------------------------------------------------*/
 
 	.header__primary-logo {
@@ -57,7 +57,7 @@
 	}
 
 	/*------------------------------------------------------------------
-	    HEADER / Mobile
+		HEADER / Mobile
 	-------------------------------------------------------------------*/
 
 	#mm-header__primary-nav,
@@ -107,7 +107,7 @@
 	}
 
 	/*------------------------------------------------------------------
-	    HEADER / Desktop, fully expanded
+		HEADER / Desktop, fully expanded
 	-------------------------------------------------------------------*/
 
 	@include respond($header-nav-break) {
@@ -125,7 +125,7 @@
 }
 
 /*------------------------------------------------------------------
-    NAVIGATION
+	NAVIGATION
 -------------------------------------------------------------------*/
 
 .header__primary-nav {
@@ -150,7 +150,7 @@
 	}
 
 	/*------------------------------------------------------------------
-	    NAVIGATION / Desktop, fully expanded
+		NAVIGATION / Desktop, fully expanded
 	-------------------------------------------------------------------*/
 
 	@include respond($header-nav-break) {
@@ -191,7 +191,7 @@
 		}
 
 		/*------------------------------------------------------------------
-		    NAVIGATION / Desktop, drop-down menus
+			NAVIGATION / Desktop, drop-down menus
 		-------------------------------------------------------------------*/
 
 		ul > li:hover {
@@ -235,6 +235,7 @@
 	}
 
 	@include respond($header-nav-break) {
+		padding-right: 15px;
 		padding-left: 1%;
 	}
 	@include respond(1350px, "min") {
@@ -252,7 +253,7 @@
 }
 
 /*------------------------------------------------------------------
-    NAVIGATION / Primary menu
+	NAVIGATION / Primary menu
 -------------------------------------------------------------------*/
 
 .primary-nav {
@@ -264,7 +265,7 @@
 
 	li.label > a:link,
 	li.label > a:visited {
-		@extend .verlag-bold;
+		@extend .archer-bold-ital;
 		color: $red;
 
 		span {
@@ -276,9 +277,10 @@
 	a:visited {
 		@extend .verlag-book;
 		color: $primary-copy;
+	    color: #AAA;
 		display: block;
-		font-size: 16px;
-		font-size: 1.6rem;
+		font-size: 15.5px;
+	    font-size: 1.55rem;
 		letter-spacing: 0.10em;
 		width: 100%;
 
@@ -289,7 +291,7 @@
 	}
 
 	/*------------------------------------------------------------------
-	    NAVIGATION / Utility menu
+		NAVIGATION / Utility menu
 	-------------------------------------------------------------------*/
 
 	li.primary-nav__utility {
@@ -317,8 +319,8 @@
 				font-size: 8px;
 				font-size: 0.8rem;
 				height: 10px;
-				line-height: 10px;
-				line-height: 1.0rem;
+				line-height: 0px;
+				line-height: 0rem;
 				margin: 0 auto;
 			}
 
@@ -347,7 +349,7 @@
 
 		@include respond($header-nav-break, "min") {
 			float: right;
-			margin: 0 0 0 5px;
+			margin: 0 0 0 -10px;
 
 			a:link,
 			a:visited {
@@ -388,14 +390,14 @@
 			padding-left: 12px;
 
 			&:before {
-				background-color: rgba(0,0,0,.08);
+				background-color: $bordercolor;
 				content: "";
 				display: block;
-				height: 23px;
+				height: 35px;
 				left: 0;
 				position: absolute;
-				top: 10px;
-				width: 2px;
+				top: 5px;
+				width: 1px;
 			}
 
 			ul {
@@ -423,16 +425,18 @@
 
 			a:link,
 			a:visited {
+				font-size: 21px;
+				font-size: 2.1rem;
 				position: relative;
 				width: 81px;
 
 				&:after {
-					color: rgba(0,0,0,.3);
+					color: $red;
 					content: ":";
 					display: inline-block;
 					position: absolute;
-					right: -1px;
-					top: -3px;
+					right: 6px;
+					top: -2px;
 				}
 			}
 		}
@@ -448,7 +452,7 @@
 }
 
 /*------------------------------------------------------------------
-    NAVIGATION / Mobile
+	NAVIGATION / Mobile
 -------------------------------------------------------------------*/
 
 #mm-header__primary-nav {
@@ -500,7 +504,7 @@
 }
 
 /*------------------------------------------------------------------
-    NAVIGATION / Explore menu
+	NAVIGATION / Explore menu
 -------------------------------------------------------------------*/
 
 li.primary-nav__explore {
@@ -520,7 +524,7 @@ li.primary-nav__explore {
 }
 
 /*------------------------------------------------------------------
-    HEADER / Desktop, fixed scrolling
+	HEADER / Desktop, fixed scrolling
 -------------------------------------------------------------------*/
 
 #header {
@@ -557,7 +561,7 @@ li.primary-nav__explore {
 	.header__primary-nav {
 
 		ul > li > ul {
-			top: 55px;
+			top: 54px;
 		}
 
 		@include respond($header-nav-break) {
@@ -574,7 +578,7 @@ li.primary-nav__explore {
 		li.nav-divider {
 			&:before {
 				left: -7px;
-				top: 16px;
+				top: 10px;
 			}
 			ul {
 				left: -15px;
@@ -599,7 +603,7 @@ li.primary-nav__explore {
 }
 
 /*------------------------------------------------------------------
-    HEADER / SEARCH MENU
+	HEADER / SEARCH MENU
 -------------------------------------------------------------------*/
 
 a.header__search-btn:link,

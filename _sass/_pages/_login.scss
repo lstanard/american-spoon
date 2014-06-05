@@ -15,7 +15,7 @@
 
 .login__current-user,
 .login__create-acct {
-	border: 1px solid $primary-copy-light;
+	border: 1px solid $bordercolor;
 	margin: 0 0 30px 0;
 	padding: 30px;
 
@@ -32,6 +32,11 @@
 	@include respond($med, "min") {
 		margin: 0;
 		padding: 45px;
+
+		a.btn--box:link,
+		a.btn--box:visited {
+			padding: 60px;
+		}
 	}
 }
 

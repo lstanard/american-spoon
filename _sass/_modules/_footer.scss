@@ -1,21 +1,26 @@
 /*------------------------------------------------------------------
-    SCROLL TO TOP LINK
+	SCROLL TO TOP LINK
 -------------------------------------------------------------------*/
+
+.scroll-top {
+	display: none;
+}
+
 /*------------------------------------------------------------------
-    FOOTER
+	FOOTER
 -------------------------------------------------------------------*/
 
 .footer-container {}
 
 /*------------------------------------------------------------------
-    FOOTER: Sign-up form
+	FOOTER: Sign-up form
 -------------------------------------------------------------------*/
 
 .page-home {
 
 	.footer__sign-up {
 		background-image: url('../_img/as_newsletter_background.png');
-		background-color: $lightgrey1;
+		background-color: $bordercolor;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -41,9 +46,11 @@
 }
 
 .footer__sign-up {
-	border-top: 2px solid rgba(0,0,0,.1);
-	border-bottom: 2px solid rgba(0,0,0,.1);
+	background-color: $lightgrey2;
+	border-bottom: 1px solid $bordercolor;
+	border-top: 1px solid $bordercolor;
 	text-align: center;
+
 
 	.footer__sign-up__input {
 		height: 65px;
@@ -71,7 +78,7 @@
 
 a.footer__sign-up__btn:link,
 a.footer__sign-up__btn:visited {
-	height: 57px;
+	height: 64px;
 	line-height: 57px;
 	width: 100%;
 
@@ -131,7 +138,7 @@ $footer-nav-margins: 15px 0 30px 0;
 			}
 		}
 		.footer__primary__section02 {
-			border-left: 2px solid #e5e6e7;
+			border-left: 1px solid $bordercolor;
 			width: 100%;
 
 			h5.module__subhead {
@@ -361,7 +368,6 @@ $footer-nav-margins: 15px 0 30px 0;
 	ul li a:visited {
 		@include transition(all .25s);
 		@include border-radius(50%);
-
 		border: 1px solid $red;
 		color: $red;
 		display: block;
@@ -440,7 +446,7 @@ a.footer__social__blog-link:visited {
 }
 
 /*------------------------------------------------------------------
-    FOOTER: Secondary
+	FOOTER: Secondary
 -------------------------------------------------------------------*/
 
 .footer__secondary {

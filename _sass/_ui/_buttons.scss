@@ -12,7 +12,6 @@
 	text-decoration: none;
 	text-transform: uppercase;
 
-
 	&:hover,
 	&:active {
 		color: $pumpkin;
@@ -45,10 +44,12 @@ a.btn--box:link, a.btn--box:visited {
 	@include transition(all .25s);
 	@extend .verlag-book;
 	color: $primary-copy;
+    color: #aaa;
 	display: block;
 	font-size: 20px;
 	font-size: 2.0rem;
-	padding: 90px 0;
+    letter-spacing: 1px;
+    padding: 70px 0px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -73,11 +74,12 @@ a.btn:link, a.btn:visited {
 
 	display: table;
 	height: 60px;
-	margin: 0 0 20px 0;
-	padding: 0 30px;
+	margin: 0 0 30px 0;
+	padding: 0 20px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
+
 
 	// Wrap label in a <span> for vertical alignment
 	span {

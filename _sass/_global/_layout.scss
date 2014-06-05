@@ -24,17 +24,6 @@ body, html {
     RESPONSIVE CONTAINERS
 -------------------------------------------------------------------*/
 
-#wrapper {
-	// @extend .cf;
-	// margin-top: $header-height-sm;
-	// position: relative;
-	// width: 100%;
-
-	// @include respond($header-nav-break, "min") {
-	// 	margin-top: 0;
-	// }
-}
-
 .container {
 	height: auto;
 	margin: 0 auto;
@@ -48,7 +37,7 @@ body, html {
 		padding-bottom: 5%;
 	}
 	@include respond($lrg, "min") {
-		padding-top: 3%;
+		padding-top: 2%;
 	}
 }
 

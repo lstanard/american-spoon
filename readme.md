@@ -22,21 +22,12 @@ Questions/Notes for Jake:
 1. Did we get the fonts figured out?
  - Still need to purchase the web license through typography.com
 
-2. Would like to figure out how to load a limited # of items on the Home page (~3 for mobile, more for desktop).
- - Probably need to coordinate with Joe on this.
-
-3. Can we get started on the checkout process page?
- - Neal can work on this as soon as it's ready.
-
-4. How do we style the search results page?
+2. How do we style the search results page?
  - Need to talk with Joe about how search results are generated.
 
-5. Since the shipping banner copy might change, attempting to center the nav text might not be the best idea (See request "Center the primary navigation with the shipping banner")
+3. Since the shipping banner copy might change, attempting to center the nav text might not be the best idea (See request "Center the primary navigation with the shipping banner")
 
-6. Check out new product overlays
- - The "Add to cart" button still doesn't seem right
-
-7. How should we handle the product page image previews? Zoom? Simple swap?
+4. How should we handle the product page image previews? Zoom? Simple swap?
 
 
 To-do:
@@ -44,33 +35,42 @@ To-do:
 
 #### High priority: ####
 
+- Pages/sections that need responsive layout fixes:
+	- stores.html (assigned to NS)
+	- recipes-single.html
+	- shop-savories.html
+	- catalog-request.html (minor fixes)
+- Finish styling the navigation (mobile)
+- Finish styling the header (desktop)
+- Header issue when you scale the browser window down then scroll to top
+- Limit loading of products on the home page via CSS/JS
 - Browser testing (need lots of PC testing, IE9 and up only)
-- Responsive updates to the Stores page (some layout issues while scaling down betwee 640px-980px)
-	- Assigned to Neal
-- Check for consistency with border colors, move to a variable
-	- Jake is going to provide a style guide for this
-- Login page buttons are too short (min-height disappeared?)
-- Footer sign-up button not the same height as the form field
+- Recipe page:
+	- Place icons
+	- Needs responsive styling
+	- Click ingredient name, tooltip pop-up with view product and add to cart
+- Product page image preview functionality
 - Shipping banner text wraps to multiple lines, line-height too high
+- Home page Instagram feed (hold until further feedback)
+
+
+#### Low priority: ####
+
 - Secondary nav disappears when you make the browser small, then big again
 - Images on the About page
 	- Use just 1 image per section (2, 1, 1, 2)
 	- Dynamically load in additional images via JS
-- Product overlay/hover styling
-	- Whole thing is a button, takes you to the "View product page"
-	- Move the "Add to cart" to the top of the button
-	- Put a cart icon inside of the "Add to cart" button, give it a rollover state. Maybe make a ghost button?
-- Recipe page:
-	- Needs responsive styling
-	- Click ingredient name, tooltip pop-up with view product and add to cart
-- Product page image preview functionality
-- Home page Instagram feed (hold until further feedback)
-
-
-#### Lower priority: ####
-
 - Remove < and > from markup and move to CSS :before and :after content types
 - Buttons with a lot of text (checkout buttons on the Cart page) wrap to multiple lines, looks strange
+- Recipes jump page grid -> move to an @extend column type
+- Icomoon may not be the best long-term solution for icon fonts, explore another possibility
+- Auto-fill city, state and country via zip code:
+ 	- http://www.zippopotam.us/
+ 	- http://www.getziptastic.com/
+ 		- http://css-tricks.com/using-ziptastic/
+- Style form inputs (select menu, checkbox)
+ 	- http://css-tricks.com/dropdown-default-styling/
+ 	- http://webdesign.tutsplus.com/tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons--webdesign-8953
 
 
 Dev notes:
@@ -84,17 +84,3 @@ Dev notes:
  - Fixed header w/mobile nav toggle appears below 640px
  - Mobile navigation is created from .header--clone and receives class .mobile-menu below 640
  - Desktop header has full, expanded view and a condensed view upon scroll (640px and up)
-
-
-Misc notes:
------------
-
-- Icomoon may not be the best long-term solution for icon fonts, explore another possibility
-- Recipes jump page grid -> move to an @extend column type
-- Auto-fill city, state and country via zip code:
- 	- http://www.zippopotam.us/
- 	- http://www.getziptastic.com/
- 		- http://css-tricks.com/using-ziptastic/
-- Style form inputs (select menu, checkbox)
- 	- http://css-tricks.com/dropdown-default-styling/
- 	- http://webdesign.tutsplus.com/tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons--webdesign-8953

@@ -25,7 +25,7 @@
 }
 
 .store-location {
-	border-bottom: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid $bordercolor;
 	text-align: center;
 
 	.container--narrow {
@@ -68,7 +68,7 @@
 
 		@include respond($med) {
 			padding: 0 0 0 4%;
-			width: (($store-location-meta) * 9 / 20) / $store-location-meta * 100%; 
+			width: (($store-location-meta) * 9 / 20) / $store-location-meta * 100%;
 		}
 		@include respond(760px) {
 			padding: 0 0 0 8%;
@@ -138,13 +138,13 @@
 	margin: 15px 0 15px 0;
 }
 
-.store-location__hours-title, 
-.store-location__address-title { 
+.store-location__hours-title,
+.store-location__address-title {
 	text-align: left;
 	height: 35px;
 }
 
-.store-location__hours, 
+.store-location__hours,
 .store-location__address {
 	margin: 0 0 0 35px;
 	line-height: 22px;
@@ -168,6 +168,7 @@
 	img {
 		max-width: 838px;
 		width: 100%;
+
 		@include respond($med) {
 			max-height: 545px;
 		}

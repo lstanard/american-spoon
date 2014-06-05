@@ -7,7 +7,7 @@ uiFunctions.init();
 var functionCheck = jRespond([
 		{
 			label: 'med-lrg',
-			enter: 648,
+			enter: 1280,
 			exit: 10000
 		},
 		{
@@ -50,7 +50,7 @@ var functionCheck = jRespond([
 			console.log('enter med lrg');
 
 			if ( $('body').hasClass('index') ) {
-				uiFunctions.site.setColumnHeight(['.featured-recipes__grid ul li']);
+				uiFunctions.site.setColumnHeight(['.featured-recipes__grid figure']);
 				uiFunctions.site.setColumnHeight(['.featured-products__grid li']);
 			}
 			if ( $('body').hasClass('product-single') ) {
@@ -70,7 +70,7 @@ var functionCheck = jRespond([
 			console.log('exit med lrg');
 
 			if ( $('body').hasClass('index') ) {
-				uiFunctions.site.unsetColumnHeight(['.featured-recipes__grid ul li']);
+				uiFunctions.site.unsetColumnHeight(['.featured-recipes__grid figure']);
 				uiFunctions.site.unsetColumnHeight(['.featured-products__grid li']);
 			}
 			if ( $('body').hasClass('product-single') ) {

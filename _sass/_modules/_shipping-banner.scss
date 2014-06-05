@@ -5,8 +5,11 @@
 a.shipping-banner--link:link,
 a.shipping-banner--link:visited {
 	@include opacity(1);
+	background: url('../_img/as_shipping-banner_textured_bottom.png') repeat-x center bottom;
 	border: 0;
 	display: none;
+	overflow: visible;
+	padding: 0 0 10px 0;
 	position: relative;
 	text-decoration: none;
 	width: 100%;
@@ -25,8 +28,8 @@ a.shipping-banner--link:visited {
 	@include opacity(1);
 
 	background-color: #FFF;
-	border-bottom: 2px solid rgba(0,0,0,.08);
-	border-top: 2px solid rgba(0,0,0,.08);
+	border-bottom: 2px solid $bordercolor;
+	border-top: 2px solid $bordercolor;
 	height: auto;
 	min-height: $shipping-banner-height;
 	position: relative;

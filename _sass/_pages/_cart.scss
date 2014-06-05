@@ -122,7 +122,7 @@
 // Desktop table
 .cart__items__table {
 	border-spacing: 0;
-	border: 1px solid $cart-table-exterior;
+	border: 1px solid $bordercolor;
 	margin: 0 0 30px 0;
 	width: 100%;
 
@@ -170,12 +170,12 @@
 		}
 		tr {
 			td:last-child {
-				border-right: 1px solid $cart-table-exterior;
+				border-right: 1px solid $bordercolor;
 			}
 		}
 		tr:last-child {
 			td {
-				border-bottom: 1px solid $cart-table-exterior;
+				border-bottom: 1px solid $bordercolor;
 			}
 		}
 	}
@@ -285,7 +285,7 @@ a.cart__utility__update:visited {
 
 .cart__promo-code,
 .cart__promo-gc {
-	border: 1px solid $cart-table-exterior;
+	border: 1px solid $bordercolor;
 	margin: 0 0 30px 0;
 	padding: 30px;
 
@@ -322,12 +322,10 @@ a.cart__utility__update:visited {
 .cart__promo-gc {
 
 	.cart__promo-gc__code {
-		// width: 180px / 488px * 100%;
 		width: 100%;
 	}
 
 	.cart__promo-gc__amt {
-		// width: 135px / 488px * 100%;
 		width: 100%;
 	}
 
@@ -363,7 +361,7 @@ a.cart__utility__update:visited {
 -------------------------------------------------------------------*/
 
 .cart__total {
-	border: 1px solid $cart-table-exterior;
+	border: 1px solid $bordercolor;
 }
 
 .cart__total-amt,
