@@ -44,27 +44,6 @@ var functionCheck = jRespond([
 	});
 
 	functionCheck.addFunc({
-		breakpoint: 'handheld',
-		enter: function() {
-			uiFunctions.site.setupSecondaryNav();
-		}
-	});
-
-	functionCheck.addFunc({
-		breakpoint: 'lrg',
-		enter: function() {
-			console.log('enter lrg');
-			if ( $('body').hasClass('index') ) {
-			}
-		},
-		exit: function() {
-			console.log('exit lrg');
-			if ( $('body').hasClass('index') ) {
-			}
-		}
-	});
-
-	functionCheck.addFunc({
 		breakpoint: 'med-lrg',
 		enter: function() {
 

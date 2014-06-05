@@ -58,13 +58,13 @@
 
 .col-2-5 {
 	@include respond($med) {
-		width: calc((((1/5) * 2) * 100%) - 20px);
+		width: calc(((2/5) * 100%) - 20px);
 	}
 }
 
 .col-3-5 {
 	@include respond($med) {
-		width: calc(((1/5) * 3) * 100%);
+		width: calc((3/5) * 100%);
 	}
 }
 
