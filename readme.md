@@ -25,9 +25,7 @@ Questions/Notes for Jake:
 2. How do we style the search results page?
  - Need to talk with Joe about how search results are generated.
 
-3. Since the shipping banner copy might change, attempting to center the nav text might not be the best idea (See request "Center the primary navigation with the shipping banner")
-
-4. How should we handle the product page image previews? Zoom? Simple swap?
+3. How should we handle the product page image previews? Zoom? Simple swap?
 
 
 To-do:
