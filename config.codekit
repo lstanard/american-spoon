@@ -586,6 +586,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/as_shipping-banner_textured_bottom.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 936,
+		"inputAbbreviatedPath": "\/_img\/as_shipping-banner_textured_bottom.png",
+		"outputAbbreviatedPath": "\/_img\/as_shipping-banner_textured_bottom.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/as_shop_header-graphic.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1896,8 +1907,8 @@
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/readme.md",
 		"outputAbbreviatedPath": "\/readme.html",
 		"outputPathIsOutsideProject": 0,

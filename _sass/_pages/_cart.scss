@@ -194,6 +194,7 @@
 	}
 
 	.items__table-td__product-name {
+		padding-right: 15px;
 		padding-left: 45px;
 		text-align: left;
 
@@ -209,7 +210,7 @@
 		}
 		a:hover,
 		a:active {
-			color: $pumpkin;
+			color: $blue;
 		}
 
 		figure {
@@ -281,6 +282,23 @@ a.cart__utility__update:visited {
 
 .cart__codes {
 	padding: 0 0 60px 0;
+
+	.col-1-2 {
+		float: none;
+		width: 100%;
+
+		@include respond(1025px) {
+			float: left;
+			margin: 0;
+			padding: 0 10px 0 0;
+			width: (1/2) * 100%;
+		}
+	}
+	.col-1-2 + .col-1-2 {
+		@include respond(1025px) {
+			padding: 0 0 0 10px;
+		}
+	}
 }
 
 .cart__promo-code,
@@ -293,13 +311,15 @@ a.cart__utility__update:visited {
 		display: inline-block;
 	}
 
-	@include respond($med, "min") {
+	@include respond(1025px) {
 		margin: 0;
 		padding: 45px;
 	}
 }
 
 .cart__promo-code {
+	float: none;
+	width: 100%;
 
 	input[type="text"] {
 		width: 100%;
@@ -309,7 +329,7 @@ a.cart__utility__update:visited {
 		margin: 0 0 0 15px;
 	}
 
-	@include respond($med, "min") {
+	@include respond(1025px) {
 
 		input[type="text"] {
 			width: 305px / 488px * 100%;
@@ -320,16 +340,22 @@ a.cart__utility__update:visited {
 }
 
 .cart__promo-gc {
+	float: none;
+	width: 100%;
 
 	.cart__promo-gc__code {
+		display: block;
 		width: 100%;
 	}
 
 	.cart__promo-gc__amt {
-		width: 100%;
+		display: inline-block;
+		width: 27%;
 	}
 
 	a {
+		display: block;
+		clear: both;
 		margin: 0 0 0 15px;
 	}
 
@@ -339,17 +365,19 @@ a.cart__utility__update:visited {
 		display: inline-block;
 		font-size: 42px;
 		font-size: 4.2rem;
-		margin: 0 0 6px 20px;
+		margin: 0 0 6px 0;
 		vertical-align: middle;
+		width: 11%;
 	}
 
-	@include respond($med, "min") {
+	@include respond(648px) {
 		.cart__promo-gc__code {
-			width: 180px / 488px * 100%;
+			display: inline-block;
+			width: 53%;
 		}
-
-		.cart__promo-gc__amt {
-			width: 135px / 488px * 100%;
+		.cart__promo-gc__dollar {
+			padding: 0 0 0 20px;
+			width: 16%;
 		}
 	}
 

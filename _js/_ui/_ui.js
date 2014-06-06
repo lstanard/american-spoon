@@ -143,7 +143,8 @@
 					}
 
 					else if (sw <= navBreak) {
-						$('#header').addClass('header-collapsed header-collapsed-visible');
+						$('#header').addClass('header-collapsed-visible').addClass('header-collapsed ');
+						$('body').waypoint('destroy');
 					}
 
 				},
@@ -316,8 +317,16 @@
 						);
 					}
 					else if (sw > navBreak) {
-						// Code to go back to desktop navigation
 						$('#header').removeClass('header-collapsed');
+					}
+				},
+
+				setCartColHeight: function() {
+					if (sw > navBreak && $('body').hasClass('page__cart')) {
+						uiFunctions.site.setColumnHeight(['.cart__codes .col-1-2 div']);
+					}
+					else if (sw <= navBreak && $('body').hasClass('page__cart')) {
+						uiFunctions.site.unsetColumnHeight(['.cart__codes .col-1-2 div']);
 					}
 				}
 
@@ -332,18 +341,21 @@
 					console.log('add to cart');
 				});
 
+				$('#cart-table').stacktable();
+				$('.product-details').appendAround();
+				$('.related-recipes').appendAround();
+
 				uiFunctions.site.setupMobileNavigation();
 				uiFunctions.site.setHeaderWaypoint();
 				uiFunctions.site.setupSearchMenu();
-
-				$('.product-details').appendAround();
-				$('.related-recipes').appendAround();
+				uiFunctions.site.setCartColHeight();
 
 				$w.resize(function() {
 					sw = document.documentElement.clientWidth;
 					sh = document.documentElement.clientHeight;
 					uiFunctions.site.setupMobileNavigation();
 					uiFunctions.site.setHeaderWaypoint();
+					uiFunctions.site.setCartColHeight();
 				});
 
 			}

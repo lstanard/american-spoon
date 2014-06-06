@@ -3,7 +3,7 @@
 -------------------------------------------------------------------*/
 
 #main {
-	padding-top: 60px;
+	padding-top: 55px;
 
 	@include respond($header-nav-break) {
 		margin-top: 212px;
@@ -312,16 +312,20 @@
 		.utility--account,
 		.utility--cart {
 
+			span:first-of-type {
+				display: inline-block;
+				min-width: 17px;
+			}
+
 			&:after {
 				@include transition(opacity $header-transition-speed);
 				@include opacity(1);
 				@extend .verlag-bold;
-				font-size: 8px;
-				font-size: 0.8rem;
 				height: 10px;
 				line-height: 0px;
 				line-height: 0rem;
 				margin: 0 auto;
+				margin-left: 5px;
 			}
 
 			@include mnw($med) {
@@ -363,6 +367,12 @@
 			.utility--account,
 			.utility--cart {
 				text-align: center;
+
+				&:after {
+					font-size: 8px;
+					font-size: 0.8rem;
+					margin-right: 0;
+				}
 			}
 		}
 		@include respond(1100px) {
@@ -457,6 +467,14 @@
 
 #mm-header__primary-nav {
 
+	$nav-bg-color: #d1d3d4;
+	$tab-bg-color: #f2f2f3;
+	$tab-border-color: $bordercolor;
+	$tab-link-color: $red;
+	$tab-arrow-color: $primary-copy;
+
+	background-color: $nav-bg-color;
+
 	a:link,
 	a:visited {
 		@extend .verlag-book;
@@ -474,10 +492,21 @@
 		}
 	}
 
+	ul > li {
+		margin-bottom: 1px;
+		background-color: $tab-bg-color;
+	}
+
+	ul > li > a:link,
+	ul > li > a:visited {
+		color: $tab-link-color;
+		padding: 12px 3% 8px 20px;
+	}
+
 	ul.primary-nav {
 
 		&.mm-list {
-			margin-top: $header-height-sm - 10;
+			margin-top: 35px;
 		}
 
 		& > li > a:link,
@@ -487,10 +516,33 @@
 	}
 
 	ul.mm-list {
-		margin-top: $header-height-sm;
+		margin-top: 55px;
 
+		& > li > a.mm-subopen:before {
+			display: none;
+		}
 		& > li > a.mm-subopen:after {
+			border-color: $tab-arrow-color;
+		}
+
+		a.mm-subclose {
+			color: $primary-copy;
+		}
+		a.mm-subclose:before {
 			border-color: $primary-copy;
+			margin-bottom: -4px;
+		}
+
+		li.mm-subtitle {
+			background-color: rgba(0,0,0,.05);
+
+			a.mm-subclose {
+				background-color: transparent;
+			}
+		}
+
+		li:not(.mm-subtitle):not(.mm-label):not(.mm-noresults):after {
+			display: none;
 		}
 	}
 

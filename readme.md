@@ -35,14 +35,13 @@ To-do:
 
 - Pages/sections that need responsive layout fixes:
 	- stores.html (assigned to NS)
+	- cart.html (minor fixes)
 	- recipes-single.html
 	- shop-savories.html
 	- catalog-request.html (minor fixes)
-- Finish styling the navigation (mobile)
 - Finish styling the header (desktop)
-- Header issue when you scale the browser window down then scroll to top
 - Limit loading of products on the home page via CSS/JS
-- Browser testing (need lots of PC testing, IE9 and up only)
+- Browser testing (need lots of PC testing, IE9, or IE8?, and up only)
 - Recipe page:
 	- Place icons
 	- Needs responsive styling

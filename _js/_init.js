@@ -6,9 +6,14 @@ uiFunctions.init();
 
 var functionCheck = jRespond([
 		{
-			label: 'med-lrg',
+			label: 'lrg',
 			enter: 1280,
 			exit: 10000
+		},
+		{
+			label: 'med',
+			enter: 649,
+			exit: 1279
 		},
 		{
 			label: 'handheld',
@@ -23,8 +28,6 @@ var functionCheck = jRespond([
 			uiFunctions.site.setFooterYear();
 			uiFunctions.site.bindLoginPageControls();
 			uiFunctions.site.setupScrollToLinks();
-
-			$('#cart-table').stacktable();
 
 			var mantleSlider = $('.bxslider').bxSlider({
 				adaptiveHeight: true,
@@ -44,10 +47,8 @@ var functionCheck = jRespond([
 	});
 
 	functionCheck.addFunc({
-		breakpoint: 'med-lrg',
+		breakpoint: 'lrg',
 		enter: function() {
-
-			console.log('enter med lrg');
 
 			if ( $('body').hasClass('index') ) {
 				uiFunctions.site.setColumnHeight(['.featured-recipes__grid figure']);
@@ -66,8 +67,6 @@ var functionCheck = jRespond([
 		},
 
 		exit: function() {
-
-			console.log('exit med lrg');
 
 			if ( $('body').hasClass('index') ) {
 				uiFunctions.site.unsetColumnHeight(['.featured-recipes__grid figure']);

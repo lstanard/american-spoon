@@ -74,6 +74,7 @@
 	}
 	.featured-product__view-product,
 	.featured-product__add-to-cart {
+		@include border-radius(3px);
 		@extend .verlag-black;
 		font-size: 14px;
 		font-size: 1.4rem;
@@ -93,7 +94,6 @@
 		min-width: 260px;
 	}
 	.featured-product__add-to-cart {
-		@include border-radius(3px);
 		background: #FFF;
 		border: 1px solid $red;
 		display: block;
