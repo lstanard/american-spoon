@@ -6,7 +6,7 @@
 	@extend .cf;
 	margin: 60px 0 0 0;
 
-	.recipes-grid__row01 {
+	.recipes-grid__row {
 		@extend .cf;
 	}
 
@@ -16,10 +16,11 @@
 		overflow: hidden;
 	}
 
-	.recipes-grid__pos01,
-	.recipes-grid__pos02,
-	.recipes-grid__pos03,
-	.recipes-grid__pos04 {
+	.recipes-grid__1-3--left,
+	.recipes-grid__2-3--right,
+	.recipes-grid__2-3--left,
+	.recipes-grid__1-3--right,
+	.recipes-grid__full {
 		@extend .recipes-grid__item;
 	}
 
@@ -34,9 +35,10 @@
 			figcaption {
 				@include transition(all .35s);
 				@include opacity(0);
+				border: 1px solid $bordercolor;
 				display: block;
 				height: 100%;
-				padding: 15px;
+				padding: 0;
 				position: absolute;
 				width: 100%;
 				visibility: hidden;
@@ -94,18 +96,24 @@
 			float: left;
 		}
 
-		.recipes-grid__pos01,
-		.recipes-grid__pos04 {
-			width: calc((2/3) * 100%);
-			padding-right: 20px;
+		.recipes-grid__1-3 {
+			width: ((1/3) * 100%);
 		}
-		.recipes-grid__pos04 {
-			padding-right: 0;
+		.recipes-grid__2-3 {
+			width: ((2/3) * 100%);
+		}
+
+		.recipes-grid__1-3--left,
+		.recipes-grid__1-3--right {
+			@extend .recipes-grid__1-3;
+		}
+		.recipes-grid__2-3--right {
+			@extend .recipes-grid__2-3;
 			padding-left: 20px;
 		}
-		.recipes-grid__pos02,
-		.recipes-grid__pos03 {
-			width: calc((1/3) * 100%);
+		.recipes-grid__2-3--left {
+			@extend .recipes-grid__2-3;
+			padding-right: 20px;
 		}
 
 		figure {
@@ -123,6 +131,8 @@
 		.recipes-grid__item {
 			height: 499px;
 		}
-
+		.recipes-grid__full {
+			height: auto;
+		}
 	}
 }

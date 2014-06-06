@@ -3,19 +3,13 @@
 -------------------------------------------------------------------*/
 
 .touch {
-
-	.product-grid {
-		.featured-product__add-to-cart {
-
-		}
-	}
-
 	.recipes-jump__grid {
 		figure {
 			a:link,
 			a:visited {
 				figcaption {
-					top: 0;
+					@include opacity(1);
+					visibility: visible;
 
 					h4 {
 						@include opacity(1);
