@@ -119,6 +119,27 @@ a.btn:link, a.btn:visited {
 		}
 	}
 
+	// Arrows
+
+	&.arrow-right {
+		padding-right: 40px;
+
+		span {
+			position: relative;
+
+			&:after {
+				content: ">";
+				position: absolute;
+				vertical-align: middle;
+				margin: 0 0 0 12px;
+			}
+		}
+
+		@include respond($xlrg) {
+			padding-right: 70px;
+		}
+	}
+
 	// Button sizes
 
 	&.lrg {
@@ -201,7 +222,7 @@ a.btn:link, a.btn:visited {
 		background-color: transparent;
 		border: $border-width;
 		border-style: solid;
-		padding: 0 30px;
+		// padding: 0 30px;
 	}
 
 	&.ghost.red {

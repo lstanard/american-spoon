@@ -33,6 +33,7 @@ To-do:
 
 #### High priority: ####
 
+- Fix JS functionality breaking because of jRespond breakpoints
 - Pages/sections that need responsive layout fixes:
 	- stores.html (assigned to NS)
 	- cart.html (minor fixes)
@@ -43,21 +44,22 @@ To-do:
 - Limit loading of products on the home page via CSS/JS
 - Browser testing (need lots of PC testing, IE9, or IE8?, and up only)
 - Recipe (single) page:
-	- Place icons
-	- Needs responsive styling
+	- Place icons (get from JW)
 	- Click ingredient name, tooltip pop-up with view product and add to cart (confirm before)
-- Product page image preview functionality
 - Shipping banner text wraps to multiple lines, line-height too high
 - Home page Instagram feed (hold until further feedback)
 
 
 #### Low priority: ####
 
+- Home page lazy loading:
+	- Have CMS dump products into an external HTML file
+	- Use AJAX to selectively load in a certain number of products depending on the situation
+- Add block class prefix "btn--" to button class modifiers to avoid overrides later
 - Images on the About page
 	- Use just 1 image per section (2, 1, 1, 2)
 	- Dynamically load in additional images via JS
 - Remove < and > from markup and move to CSS :before and :after content types
-- Buttons with a lot of text (checkout buttons on the Cart page) wrap to multiple lines, looks strange
 - Icomoon may not be the best long-term solution for icon fonts, explore another possibility
 - Auto-fill city, state and country via zip code:
  	- http://www.zippopotam.us/

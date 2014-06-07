@@ -223,10 +223,10 @@ $product-details-context: 620px;
 	}
 
 	@include respond($med) {
-		margin: 0 0 75px 0;
+		margin: 0 0 45px 0;
 	}
 	@include respond($lrg) {
-		margin: 0 0 115px 0;
+		margin: 0 0 75px 0;
 	}
 }
 

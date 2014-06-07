@@ -304,15 +304,6 @@
 
 				},
 
-				bindLoginPageControls: function() {
-
-					$('#login__current-user__btn, #login__create-acct__btn').on('click tap', function(e) {
-						$(this).hide().next('form').fadeIn();
-						e.preventDefault();
-					});
-
-				},
-
 				setupMobileNavigation: function() {
 					if (sw <= navBreak) {
 						$('#header').addClass('header-collapsed');
@@ -330,6 +321,15 @@
 					else if (sw > navBreak) {
 						$('#header').removeClass('header-collapsed');
 					}
+				},
+
+				bindLoginPageControls: function() {
+
+					$('#login__current-user__btn, #login__create-acct__btn').on('click tap', function(e) {
+						$(this).hide().next('form').fadeIn();
+						e.preventDefault();
+					});
+
 				},
 
 				setCartColHeight: function() {
@@ -352,6 +352,7 @@
 					console.log('add to cart');
 				});
 
+				$('#product-preview').imagePreviewer();
 				$('#cart-table').stacktable();
 				$('.product-details').appendAround();
 				$('.related-recipes').appendAround();
