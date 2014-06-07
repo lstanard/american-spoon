@@ -2,6 +2,11 @@
     GLOBAL
 -------------------------------------------------------------------*/
 
+img,
+object {
+	max-width: 100%;
+}
+
 a:link, a:visited {
 	@include transition(color .25s);
 }

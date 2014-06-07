@@ -68,17 +68,50 @@
 }
 
 .recipe {
-
 	header {
 		padding-top: 30px;
 	}
 }
 
-.product-preview__img {
-	img {
+.product-preview {
+
+	& > .col-1-3,
+	& > .col-2-3 {
+		float: none;
 		width: 100%;
 	}
+
+	.product-preview__img {
+		text-align: center;
+
+		img {
+			margin: 0 auto 30px auto;
+		}
+	}
+
+	@include respond(790px) {
+		& > .col-1-3,
+		& > .col-2-3 {
+			float: left;
+			margin: 0;
+		}
+		& > .col-1-3 {
+			padding-right: 10px;
+			width: (1/3 * 100%);
+		}
+		& > .col-2-3 {
+			padding-left: 10px;
+			width: (2/3 * 100%);
+		}
+
+		.product-preview__img {
+			img {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
+
 
 .recipe__product-preview {
 	background-color: $cart-table-interior;
@@ -98,7 +131,7 @@
 			margin: 0;
 		}
 		.col-1-2 + .col-1-2 {
-			padding: 15px 15px 0 15px;
+			padding: 15px;
 		}
 
 		figure {
@@ -125,6 +158,8 @@
 		.product-details__meta__price {
 			font-size: 50px;
 			font-size: 5.0rem;
+			line-height: 48px;
+			line-height: 4.8rem;
 		}
 
 		.product-details__meta,
@@ -151,6 +186,10 @@
 
 		.product-preview__details {
 			padding: 45px;
+
+			.col-1-2 + .col-1-2 {
+				padding-bottom: 0;
+			}
 		}
 
 	}

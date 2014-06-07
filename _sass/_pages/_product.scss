@@ -231,11 +231,23 @@ $product-details-context: 620px;
 }
 
 .product-photos__thumbnails {
+	margin: 0 auto;
 	text-align: center;
 
 	li {
 		display: inline-block;
 		margin: 0 10px 0 0;
+		width: 45px;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	@include respond($lrg) {
+		li {
+			width: 120px;
+		}
 	}
 
 }

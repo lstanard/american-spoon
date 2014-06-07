@@ -35,13 +35,11 @@ To-do:
 
 - Fix JS functionality breaking because of jRespond breakpoints
 - Pages/sections that need responsive layout fixes:
+	- Desktop header (fully expanded and condensed)
 	- stores.html (assigned to NS)
 	- cart.html (minor fixes)
-	- recipes-single.html
-	- shop-savories.html
+	- shop-classics.html
 	- catalog-request.html (minor fixes)
-- Finish styling the header (desktop)
-- Limit loading of products on the home page via CSS/JS
 - Browser testing (need lots of PC testing, IE9, or IE8?, and up only)
 - Recipe (single) page:
 	- Place icons (get from JW)
@@ -52,6 +50,7 @@ To-do:
 
 #### Low priority: ####
 
+- Replace instances of width: calc() to SASS formulas, replace margins with padding as needed
 - Home page lazy loading:
 	- Have CMS dump products into an external HTML file
 	- Use AJAX to selectively load in a certain number of products depending on the situation

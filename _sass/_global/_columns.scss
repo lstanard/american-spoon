@@ -36,10 +36,13 @@
 
 .col-1-2 {
 	@include respond($med) {
-		width: calc((100% - 20px) / 2);
+		margin: 0;
+		padding-right: 10px;
+		width: (1/2 * 100%);
 
 		&:nth-child(2n) {
-			margin-right: 0;
+			padding-right: 0;
+			padding-left: 10px;
 		}
 	}
 }
@@ -173,15 +176,18 @@
 		}
 	}
 
-	.col-1-2 {
-		@include respond($med) {
-			width: calc((100% - 20px) / 2);
+	// .col-1-2 {
+	// 	@include respond($med) {
+	// 		margin: 0;
+	// 		padding-right: 10px;
+	// 		width: (1/2 * 100%);
 
-			&:nth-child(2n) {
-				margin-right: 0;
-			}
-		}
-	}
+	// 		&:nth-child(2n) {
+	// 			padding-right: 0;
+	// 			padding-left: 10px;
+	// 		}
+	// 	}
+	// }
 	.col-1-4 {
 		@include respond($med) {
 			width: (($container-wide - ($gutter * 3)) / 4) / $container-wide * 100%;
