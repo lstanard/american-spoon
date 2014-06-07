@@ -76,10 +76,12 @@
 	.featured-product__add-to-cart {
 		@include border-radius(3px);
 		@extend .verlag-black;
+		display: inline-block;
 		font-size: 14px;
 		font-size: 1.4rem;
 		letter-spacing: 0.05em;
 		margin: 0 auto 15px auto;
+		min-width: 180px;
 		padding: 12px 24px;
 		text-align: center;
 		text-transform: uppercase;
@@ -90,16 +92,14 @@
 		@include transition(all .35s);
 		background-color: $red;
 		color: #FFF;
-		display: inline-block;
-		min-width: 260px;
+		// display: inline-block;
 	}
 	.featured-product__add-to-cart {
 		background: #FFF;
 		border: 1px solid $red;
-		display: block;
+		// display: block;
 		height: 44px;
 		margin: 0px auto 35px;
-		width: 180px;
 	}
 	.featured-product__img {
 		@include opacity(1);
@@ -110,20 +110,20 @@
 		@extend .verlag-black;
 		border-top: 1px solid $bordercolor;
 		color: $lightgrey;
-		font-size: 13.5px;
-		font-size: 1.35rem;
-		line-height: 18.5px;
+		font-size: 18.5px;
+		font-size: 1.85rem;
+		line-height: 22.5px;
+		line-height: 2.25rem;
 		letter-spacing: .4px;
-		line-height: 1.85rem;
-		margin: 0px 0px -2px;
+		margin: 0;
 		padding-top: 18px;
 		text-transform: uppercase;
 	}
 	.featured-product__price {
 		@extend .archer-med;
 		color: $lightgrey;
-		font-size: 16.5px;
-		font-size: 1.65rem;
+		font-size: 21.5px;
+		font-size: 2.15rem;
 		margin-bottom: 30px;
 	}
 
@@ -174,12 +174,17 @@
 		.featured-product__name {
 			@include opacity(1);
 			@include transition(opacity .5s);
+			font-size: 13.5px;
+			font-size: 1.35rem;
 			line-height: 22px;
 			line-height: 2.2rem;
+			margin: 0 0 -2px;
 		}
 		.featured-product__price {
 			@include opacity(1);
 			@include transition(opacity .5s);
+			font-size: 16.5px;
+			font-size: 1.65rem;
 			margin-bottom: 0;
 		}
 
