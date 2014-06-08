@@ -2,45 +2,8 @@
 	SCROLL TO TOP LINK
 -------------------------------------------------------------------*/
 
-a.scroll-top:link,
-a.scroll-top:visited {
-	@include transition(all .5s);
-	@include border-radius(3px);
-	@include opacity(0);
-	background-color: $blue;
-	bottom: 5px;
-	color: #FFF;
-	display: block;
-	font-size: 18px;
-	font-size: 1.8rem;
-	height: 40px;
-	position: fixed;
-	right: 5px;
-	text-align: center;
-	text-decoration: none;
-	vertical-align: middle;
-	visibility: hidden;
-	width: 40px;
-	z-index: $z-scroll-top;
-
-	span {
-		display: block;
-		margin-top: 10px;
-	}
-
-	&.visible {
-		@include opacity(1);
-		visibility: visible;
-	}
-
-	@include respond($med) {
-		bottom: 30px;
-		right: 30px;
-	}
-	@include respond($lrg) {
-		bottom: 50px;
-		right: 50px;
-	}
+.scroll-top {
+	display: none;
 }
 
 /*------------------------------------------------------------------
@@ -135,7 +98,6 @@ $footer-nav-margins: 15px 0 30px 0;
 	background-color: #FFF;
 	height: auto;
 	padding: 0;
-	width: 100%;
 
 	.footer__primary__section01 {
 		padding: 15px;
@@ -225,20 +187,28 @@ $footer-nav-margins: 15px 0 30px 0;
 	@include respond($med) {
 		max-width: 145px;
 	}
-	@include respond($lrg) {
-		max-width: 190px;
+	@include respond($med) {
+		margin: 15px 0 8px 0;
 	}
 }
 
 .footer__primary__contact {
 
+	h5.footer__primary__contact__head {
+		font-size: 24px;
+		font-size: 2.4rem;
+		line-height: 28px;
+		line-height: 2.8rem;
+	}
+
 	p {
 		@extend .archer-med;
 		color: $primary-copy-dark;
-		font-size: 28px;
-		font-size: 2.8rem;
-		line-height: 36px;
-		line-height: 3.6rem;
+		font-size: 20px;
+		font-size: 2.0rem;
+		line-height: 26px;
+		line-height: 2.6rem;
+		margin: 0 0 15px 0;
 	}
 	a:link, a:visited {
 		@extend .archer-med;
@@ -247,7 +217,7 @@ $footer-nav-margins: 15px 0 30px 0;
 	}
 
 	@include respond($med) {
-		padding-top: 15px;
+		padding-top: 45px;
 		text-align: left;
 	}
 	@include respond($lrg) {
@@ -255,6 +225,7 @@ $footer-nav-margins: 15px 0 30px 0;
 		padding-top: 0;
 		text-align: center;
 	}
+
 }
 
 .footer__shop__nav01,
@@ -333,12 +304,13 @@ $footer-nav-margins: 15px 0 30px 0;
 
 	@include respond($med) {
 		margin: 0;
-		padding-right: $footer-col-gutter;
+		padding-right: 15px;
 	}
 }
 
 .footer__browse__nav {
 	margin: $footer-nav-margins;
+	width: calc(((1/3) * 100%) - 15px);
 
 	@include respond($med) {
 		margin: 0;
@@ -351,7 +323,7 @@ $footer-nav-margins: 15px 0 30px 0;
 
 	@include respond($med) {
 		margin: 0;
-		padding-right: $footer-col-gutter;
+		padding-right: 15px;
 		padding-top: 30px;
 	}
 	@include respond(932px) {
@@ -492,10 +464,6 @@ a.footer__social__blog-link:visited {
 	padding-top: 25px;
 	padding-bottom: 25px;
 	text-align: center;
-
-	// &.container--full {
-	// 	max-width: 100%;
-	// }
 }
 
 .footer__secondary__copyright {
