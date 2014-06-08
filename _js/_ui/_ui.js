@@ -118,12 +118,45 @@
 
 				},
 
-				loadDynamicContent: function() {
+				loadDynamicContent: function(imageData) {
 
-					if (sw > navBreak) {
-						// Insert large circular logo on screens above 1024
-						$('.header__primary-logo a').prepend('<img src="_img/as_logo-primary.png" alt="American Spoon - Established 1982" class="primary-logo__lrg">');
-					}
+					function contentLoader(index, info) {
+
+						var entry = this;
+
+						function createImgElem() {
+							// Check if entry.imageElem exists
+							if (!entry.imageElem) {
+								// Create new image element
+								entry.imageElem = $('<img class="' + entry.customClass + '" src="' + entry.image + '" alt="' + entry.altAttr + '">');
+								// Wrap img with parent element if defined in image data object
+								entry.imageElem = entry.parent ? $(entry.imageElem[0]).wrap(entry.parent).parent() : entry.imageElem;
+							}
+						}
+
+						this.insertImage = function() {
+							if ( $(this.target).length > 0 && $(this.target).find(this.imageElem).length === 0 && sw > this.breakpoint ) {
+								createImgElem();
+								this.location === 'prepend' ? $(this.target).prepend(this.imageElem) : $(this.target).append(this.imageElem);
+							}
+						};
+
+						return this;
+
+					};
+
+					// Create individual image instances
+					$.each(imageData, function(i, v) {
+						var imageDetails = contentLoader.call(this, i, v);
+						imageData[i] = imageDetails;
+					});
+
+					// On window resize check for new images to be inserted into DOM
+					$w.on('load resize', function() {
+						$.each(imageData, function(i, v) {
+							v.insertImage();
+						});
+					});
 
 				},
 
@@ -371,7 +404,7 @@
 				uiFunctions.site.setupSearchMenu();
 				uiFunctions.site.setCartColHeight();
 				uiFunctions.site.setupSecondaryNav();
-				uiFunctions.site.loadDynamicContent();
+				uiFunctions.site.loadDynamicContent(dynamicImageData);
 
 				$w.resize(function() {
 					sw = document.documentElement.clientWidth;

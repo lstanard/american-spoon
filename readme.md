@@ -65,10 +65,6 @@ To-do:
 
 - Add block class prefix "btn--" to button class modifiers to avoid overrides later
 
-- Images on the About page
-	- Use just 1 image per section (2, 1, 1, 2)
-	- Dynamically load in additional images via JS
-
 - Remove < and > from markup and move to CSS :before and :after content types
 
 - Icomoon may not be the best long-term solution for icon fonts, explore another possibility
