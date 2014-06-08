@@ -673,7 +673,11 @@ li.primary-nav__explore {
 
 			a:link,
 			a:visited {
-				min-width: 30px;
+				min-width: 26px;
+
+				@include respond(1036px) {
+					min-width: 30px;
+				}
 			}
 
 			.utility--search,
