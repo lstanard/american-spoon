@@ -35,6 +35,8 @@ To-do:
 
 #### High priority: ####
 
+- Bring down the size of the type in the navigation just a little
+
 - Browser testing (need lots of PC testing, IE9, or IE8?, and up only)
 
 - Pages/sections that need responsive layout fixes:

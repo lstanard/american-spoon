@@ -152,13 +152,22 @@
 				bindScrollToTop: function() {
 
 					$(document).ready(function() {
-						$('.primary-nav__scroll-top').on('click', function(e){
+						$('.scroll-top').on('click', function(e){
 							$('html, body').animate({
 								scrollTop: 0
 							}, 1250);
 							e.preventDefault();
 						});
 					});
+
+					$('body').waypoint(function(direction) {
+						if ( direction === 'down' ) {
+							$('.scroll-top').addClass('visible');
+						}
+						else if ( direction === 'up' ) {
+							$('.scroll-top').removeClass('visible');
+						}
+					}, { offset: -560 });
 
 				},
 
@@ -345,7 +354,7 @@
 
 			init: function() {
 
-				document.addEventListener("touchstart", function(){}, true);
+				// document.addEventListener("touchstart", function(){}, true);
 
 				$('#product-preview').imagePreviewer();
 				$('#cart-table').stacktable();
@@ -359,6 +368,7 @@
 				uiFunctions.site.setupSearchMenu();
 				uiFunctions.site.setCartColHeight();
 				uiFunctions.site.setupSecondaryNav();
+				uiFunctions.site.bindScrollToTop();
 
 				$w.resize(function() {
 					sw = document.documentElement.clientWidth;

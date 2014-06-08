@@ -2,8 +2,45 @@
 	SCROLL TO TOP LINK
 -------------------------------------------------------------------*/
 
-.scroll-top {
-	display: none;
+a.scroll-top:link,
+a.scroll-top:visited {
+	@include transition(all .5s);
+	@include border-radius(3px);
+	@include opacity(0);
+	background-color: $blue;
+	bottom: 5px;
+	color: #FFF;
+	display: block;
+	font-size: 18px;
+	font-size: 1.8rem;
+	height: 40px;
+	position: fixed;
+	right: 5px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	visibility: hidden;
+	width: 40px;
+	z-index: $z-scroll-top;
+
+	span {
+		display: block;
+		margin-top: 10px;
+	}
+
+	&.visible {
+		@include opacity(1);
+		visibility: visible;
+	}
+
+	@include respond($med) {
+		bottom: 30px;
+		right: 30px;
+	}
+	@include respond($lrg) {
+		bottom: 50px;
+		right: 50px;
+	}
 }
 
 /*------------------------------------------------------------------
@@ -98,6 +135,7 @@ $footer-nav-margins: 15px 0 30px 0;
 	background-color: #FFF;
 	height: auto;
 	padding: 0;
+	width: 100%;
 
 	.footer__primary__section01 {
 		padding: 15px;
@@ -454,6 +492,10 @@ a.footer__social__blog-link:visited {
 	padding-top: 25px;
 	padding-bottom: 25px;
 	text-align: center;
+
+	// &.container--full {
+	// 	max-width: 100%;
+	// }
 }
 
 .footer__secondary__copyright {

@@ -80,7 +80,7 @@
 		font-size: 14px;
 		font-size: 1.4rem;
 		letter-spacing: 0.05em;
-		margin: 0 auto 15px auto;
+		margin: 0 15px 15px 15px;
 		min-width: 180px;
 		padding: 12px 24px;
 		text-align: center;
@@ -92,14 +92,11 @@
 		@include transition(all .35s);
 		background-color: $red;
 		color: #FFF;
-		// display: inline-block;
 	}
 	.featured-product__add-to-cart {
 		background: #FFF;
 		border: 1px solid $red;
-		// display: block;
-		height: 44px;
-		margin: 0px auto 35px;
+		height: 45px;
 	}
 	.featured-product__img {
 		@include opacity(1);
@@ -142,6 +139,7 @@
 			left: 50%;
 			margin-left: -(225px/2);
 			margin-top: -(52px/2);
+			margin-bottom: 15px;
 			min-width: 0;
 			position: absolute;
 			top: 10%;
@@ -155,6 +153,7 @@
 			display: block;
 			left: 50%;
 			margin-left: -(180px/2);
+			margin-bottom: 35px;
 			height: 52px;
 			position: absolute;
 			bottom: 0;

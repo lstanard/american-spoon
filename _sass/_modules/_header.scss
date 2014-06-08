@@ -12,7 +12,6 @@
 }
 
 #header {
-	@include transition(top .3s);
 	background-color: #FFF;
 	height: $header-height-lrg;
 	left: 0;
@@ -23,6 +22,7 @@
 
 	.container--full {
 		@extend .cf;
+		height: $header-height-lrg;
 		padding-top: 0;
 		padding-bottom: 0;
 	}
@@ -590,6 +590,10 @@ li.primary-nav__explore {
 	top: -$header-height-sm;
 	position: fixed;
 	visibility: hidden;
+
+	.container--full {
+		height: $header-height-sm;
+	}
 
 	&.header-collapsed-visible {
 		top: 0;
