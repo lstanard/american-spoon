@@ -27,6 +27,8 @@ Questions/Notes for Jake:
 
 3. Do we want to have some kind of rollover for the recipes category page?
 
+4. Need to figure out how to handle search (separation of WordPress and Magento makes this tricky)
+
 
 To-do:
 ------
@@ -67,8 +69,6 @@ To-do:
 
 - Remove < and > from markup and move to CSS :before and :after content types
 
-- Icomoon may not be the best long-term solution for icon fonts, explore another possibility
-
 - Auto-fill city, state and country via zip code:
  	- http://www.zippopotam.us/
  	- http://www.getziptastic.com/
@@ -85,8 +85,3 @@ Dev notes:
 1. Do not directly modify .html or .css files, they are being generated via CodeKit (.html and .css files are not committed to the repo)
 2. Do not use z-index directly in a SCSS file, see _sass/_global/_variables for z-index value variables
 3. Use uiFunctions.site object for UI related JavaScript/jQuery functions
-4. Navigation plan:
- - Full size header disappears below 640px
- - Fixed header w/mobile nav toggle appears below 640px
- - Mobile navigation is created from .header--clone and receives class .mobile-menu below 640
- - Desktop header has full, expanded view and a condensed view upon scroll (640px and up)

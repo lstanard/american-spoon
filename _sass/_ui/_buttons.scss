@@ -68,7 +68,6 @@ a.btn:link, a.btn:visited {
 	$border-width: 3px;
 
 	@extend .verlag-black;
-
 	@include border-radius(3px);
 	@include transition(all .25s);
 
@@ -164,8 +163,8 @@ a.btn:link, a.btn:visited {
 	}
 
 	&.red {
-		border-color: $red;
 		background-color: $red;
+		border-color: $red;
 
 		&:hover, &:active {
 			background-color: #FFF;
@@ -175,45 +174,26 @@ a.btn:link, a.btn:visited {
 	&.blue {
 		background-color: $blue;
 		border-color: $blue;
-
-		&:hover, &:active {
-
-		}
 	}
 	&.olive-green {
 		background-color: $olive-green;
-
-		&:hover, &:active {
-
-		}
+		border-color: $olive-green;
 	}
 	&.peach {
 		background-color: $peach;
-
-		&:hover, &:active {
-
-		}
+		border-color: $peach;
 	}
 	&.purple {
 		background-color: $purple;
-
-		&:hover, &:active {
-
-		}
+		border-color: $purple;
 	}
 	&.pumpkin {
 		background-color: $pumpkin;
-
-		&:hover, &:active {
-
-		}
+		border-color: $pumpkin;
 	}
 	&.yellow-green {
 		background-color: $yellow-green;
-
-		&:hover, &:active {
-
-		}
+		border-color: $yellow-green;
 	}
 
 	// Ghost buttons
@@ -222,7 +202,6 @@ a.btn:link, a.btn:visited {
 		background-color: transparent;
 		border: $border-width;
 		border-style: solid;
-		// padding: 0 30px;
 	}
 
 	&.ghost.red {
@@ -288,5 +267,4 @@ a.btn:link, a.btn:visited {
 			color: #FFF;
 		}
 	}
-
 }

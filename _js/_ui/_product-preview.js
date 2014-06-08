@@ -2,6 +2,8 @@
 
 	IMAGE PREVIEWER
 
+	https://github.com/lstanard/jquery.image-preview
+
 	'tap' event in handlers function requires tappy:
 	https://github.com/filamentgroup/tappy
 

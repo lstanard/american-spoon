@@ -718,6 +718,17 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
+	"\/_js\/_ui\/_responsive-image-loader.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_js\/_ui\/_responsive-image-loader.js",
+		"outputAbbreviatedPath": "\/_js\/_ui\/_responsive-image-loader.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
 	"\/_js\/_ui\/_ui.js": {
 		"fileType": 64,
 		"ignore": 1,
