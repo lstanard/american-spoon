@@ -35,15 +35,12 @@ To-do:
 
 #### High priority: ####
 
-- Bring down the size of the type in the navigation just a little
-
 - Browser testing (need lots of PC testing, IE9, or IE8?, and up only)
 
+- Home page mantle (need more direction from JW)
+
 - Pages/sections that need responsive layout fixes:
-	- Desktop header (fully expanded and condensed)
-	- cart.html (minor fixes)
 	- login.html (increase point at which items go to 2 column)
-	- stores.html (assigned to NS)
 
 - Recipe (single) page:
 	- Place icons (get from JW)
