@@ -118,6 +118,15 @@
 
 				},
 
+				loadDynamicContent: function() {
+
+					if (sw > navBreak) {
+						// Insert large circular logo on screens above 1024
+						$('.header__primary-logo a').prepend('<img src="_img/as_logo-primary.png" alt="American Spoon - Established 1982" class="primary-logo__lrg">');
+					}
+
+				},
+
 				setHeaderWaypoint: function() {
 
 					if (sw > navBreak) {
@@ -362,6 +371,7 @@
 				uiFunctions.site.setupSearchMenu();
 				uiFunctions.site.setCartColHeight();
 				uiFunctions.site.setupSecondaryNav();
+				uiFunctions.site.loadDynamicContent();
 
 				$w.resize(function() {
 					sw = document.documentElement.clientWidth;

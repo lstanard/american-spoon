@@ -25,7 +25,7 @@ Questions/Notes for Jake:
 2. How do we style the search results page?
  - Need to talk with Joe about how search results are generated.
 
-3. How should we handle the product page image previews? Zoom? Simple swap?
+3. Do we want to have some kind of rollover for the recipes category page?
 
 
 To-do:
@@ -38,17 +38,20 @@ To-do:
 - Pages/sections that need responsive layout fixes:
 	- Desktop header (fully expanded and condensed)
 	- cart.html (minor fixes)
-	- catalog-request.html (minor fixes)
+	- login.html (increase point at which items go to 2 column)
 	- stores.html (assigned to NS)
 
 - Recipe (single) page:
 	- Place icons (get from JW)
 	- Click ingredient name, tooltip pop-up with view product and add to cart (confirm before)
 
-- Fix JS functionality breaking because of jRespond breakpoints
+- Fix JS functionality breaking because of jRespond breakpoints (product page suggested products)
 
 
 #### Low priority: ####
+
+- Can we perform a quick font audit and see if there are places where we could reduce the number of fonts being loaded on a page?
+	- Example: Recipes category page is loading at least 9 different font sets
 
 - Home page Instagram feed (hold until further feedback)
 
