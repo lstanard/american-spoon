@@ -70,5 +70,29 @@ var dynamicImageData = [
 		location: 'append',
 		customClass: 'desktop-img',
 		parent: '<figure>'
+	},
+	{
+		breakpoint: '648',
+		image: '_img/as_about_photo14.jpg',
+		target: '.page__about #family-business .photo-grid',
+		location: 'append',
+		customClass: 'tablet-img',
+		parent: '<figure>'
+	},
+	{
+		breakpoint: '1025',
+		image: '_img/as_about_photo15.jpg',
+		target: '.page__about #family-business .photo-grid',
+		location: 'append',
+		customClass: 'desktop-img',
+		parent: '<figure>'
+	},
+	{
+		breakpoint: '1025',
+		image: '_img/as_about_photo16.jpg',
+		target: '.page__about #family-business .photo-grid',
+		location: 'append',
+		customClass: 'desktop-img',
+		parent: '<figure>'
 	}
 ];

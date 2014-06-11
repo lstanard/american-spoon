@@ -37,7 +37,7 @@
 		}
 
 		// 4 column grid
-		@include respond(1200px, "min") {
+		@include respond(1024px, "min") {
 			width: calc((100% - 60px) / 4);
 
 			&:nth-child(2n),

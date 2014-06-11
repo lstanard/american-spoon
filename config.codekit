@@ -146,6 +146,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_img\/as_about_illustration01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39884,
+		"inputAbbreviatedPath": "\/_img\/as_about_illustration01.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_about_illustration01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_about_illustration02.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42868,
+		"inputAbbreviatedPath": "\/_img\/as_about_illustration02.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_about_illustration02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/as_about_photo01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -278,6 +300,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/as_about_photo13.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 100644,
+		"inputAbbreviatedPath": "\/_img\/as_about_photo13.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_about_photo13.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_about_photo14.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 152369,
+		"inputAbbreviatedPath": "\/_img\/as_about_photo14.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_about_photo14.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_about_photo15.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_img\/as_about_photo15.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_about_photo15.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_about_photo16.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 93235,
+		"inputAbbreviatedPath": "\/_img\/as_about_photo16.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_about_photo16.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/as_about_pullquote_FPO.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -406,6 +472,28 @@
 		"initialSize": 1.14573e+06,
 		"inputAbbreviatedPath": "\/_img\/as_newsletter_background.png",
 		"outputAbbreviatedPath": "\/_img\/as_newsletter_background.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_photo-grid_overlay-top.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9155,
+		"inputAbbreviatedPath": "\/_img\/as_photo-grid_overlay-top.png",
+		"outputAbbreviatedPath": "\/_img\/as_photo-grid_overlay-top.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_photo-grid_overlay.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9220,
+		"inputAbbreviatedPath": "\/_img\/as_photo-grid_overlay.png",
+		"outputAbbreviatedPath": "\/_img\/as_photo-grid_overlay.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1243,6 +1331,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_sass\/_modules\/_header.scss",
 		"outputAbbreviatedPath": "\/_css\/_header.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_sass\/_modules\/_photo-grid.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_sass\/_modules\/_photo-grid.scss",
+		"outputAbbreviatedPath": "\/_css\/_photo-grid.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

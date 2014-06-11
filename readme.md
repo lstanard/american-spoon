@@ -35,9 +35,14 @@ To-do:
 
 #### High priority: ####
 
+- Add labels to Home mantle carousel
+- Style arrows on the Home mantle carousel
+
 - Browser testing (need lots of PC testing, IE9, or IE8?, and up only)
 
 - Home page mantle (need more direction from JW)
+
+- Home page progressively loading in products
 
 - Pages/sections that need responsive layout fixes:
 	- login.html (increase point at which items go to 2 column)

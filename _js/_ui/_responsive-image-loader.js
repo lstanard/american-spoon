@@ -20,6 +20,8 @@ loadDynamicContent = function(imageData) {
 			if (!entry.imageElem) {
 				// Create new image element
 				entry.imageElem = $('<img class="' + entry.customClass + '" src="' + entry.image + '" alt="' + (entry.altAttr ? entry.altAttr : " ") + '">');
+				// Add class 'img-loaded' to image once element has been created and inserted
+				$(entry.imageElem[0]).addClass('img-loaded');
 				// Wrap img with parent element if defined in image data object
 				entry.imageElem = entry.parent ? $(entry.imageElem[0]).wrap(entry.parent).parent() : entry.imageElem;
 			}
@@ -28,6 +30,8 @@ loadDynamicContent = function(imageData) {
 		this.insertImage = function() {
 			if ( $(this.target).length > 0 && $(this.target).find(this.imageElem).length === 0 && sw > this.breakpoint ) {
 				createImgElem();
+				// $(this.imageElem[0]).addClass('img-visible');
+				$(this.imageElem[0]).find('img').addClass('img-visible');
 				this.location === 'prepend' ? $(this.target).prepend(this.imageElem) : $(this.target).append(this.imageElem);
 			}
 		};

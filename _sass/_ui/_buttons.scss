@@ -2,6 +2,20 @@
     UI: Buttons
 -------------------------------------------------------------------*/
 
+.arrow-right {
+
+	span {
+		position: relative;
+
+		&:after {
+			content: ">";
+			position: absolute;
+			vertical-align: middle;
+			margin: 0 0 0 12px;
+		}
+	}
+}
+
 .ui-link, a.ui-link:link, a.ui-link:visited, {
 	@extend .verlag-black;
 	color: $red;
@@ -121,18 +135,8 @@ a.btn:link, a.btn:visited {
 	// Arrows
 
 	&.arrow-right {
+		@extend .arrow-right;
 		padding-right: 40px;
-
-		span {
-			position: relative;
-
-			&:after {
-				content: ">";
-				position: absolute;
-				vertical-align: middle;
-				margin: 0 0 0 12px;
-			}
-		}
 
 		@include respond($xlrg) {
 			padding-right: 70px;
