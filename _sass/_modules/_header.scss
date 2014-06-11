@@ -179,7 +179,7 @@
 				@include rotate(90deg);
 				content: ">";
 				display: inline-block;
-				color: rgba(0,0,0,.3);
+				color: $red;
 				margin: 0 0 0 6px;
 				position: relative;
 			}
@@ -266,24 +266,9 @@
 .primary-nav {
 	width: 100%;
 
-	li.label {
-		display: none;
-	}
-
-	li.label > a:link,
-	li.label > a:visited {
-		@extend .archer-bold-ital;
-		color: $red;
-
-		span {
-			@include rotate(0deg);
-		}
-	}
-
 	a:link,
 	a:visited {
 		@extend .verlag-book;
-		color: $primary-copy;
 	    color: #AAA;
 		display: block;
 		font-size: 15px;
@@ -294,6 +279,50 @@
 		&:hover,
 		&:active {
 			color: $blue;
+		}
+	}
+
+	li.parentmenu__item {
+		padding: 0 15px;
+
+		& > a:link,
+		& > a:visited {
+			@extend .archer-bold-ital;
+			color: $red;
+			font-size: 18px;
+			font-size: 1.8rem;
+
+			&:hover,
+			&:active {
+				color: $blue;
+			}
+
+			&:after {
+				@extend .verlag-book;
+				color: $red;
+			}
+		}
+
+	}
+
+	/*------------------------------------------------------------------
+		NAVIGATION / Explore menu
+	-------------------------------------------------------------------*/
+
+	li.primary-nav__explore {
+
+		& > a:link,
+		& > a:visited {
+			@extend .verlag-bold;
+			// color: #AAA;
+			margin: 0 8px;
+		}
+
+		@include respond($xlrg) {
+			& > a:link,
+			& > a:visited {
+				margin: 0 12px;
+			}
 		}
 	}
 
@@ -398,8 +427,18 @@
 		li {
 			padding: 10px 0 0 0;
 		}
+
+		li.parentmenu__item {
+			height: 55px;
+		}
+
 		li.primary-nav__utility {
 			padding-top: 0;
+
+			a:link,
+			a:visited {
+				margin: 0 0 0 15px;
+			}
 		}
 
 		li.nav-divider {
@@ -422,17 +461,6 @@
 			}
 		}
 
-		li.label > a:link,
-		li.label > a:visited {
-			span {
-				margin: 0 0 0 10px;
-			}
-		}
-
-		li > a:link,
-		li > a:visited {
-			margin: 0 0 0 15px;
-		}
 		li:nth-child(2) {
 			& > a:link,
 			& > a:visited {
@@ -442,27 +470,6 @@
 	}
 
 	@include respond(1250px, "min") {
-
-		li.label {
-			display: inline-block;
-
-			a:link,
-			a:visited {
-				font-size: 19px;
-				font-size: 1.9rem;
-				position: relative;
-				width: 81px;
-
-				&:after {
-					color: $red;
-					content: ":";
-					display: inline-block;
-					position: absolute;
-					right: 6px;
-					top: -2px;
-				}
-			}
-		}
 
 		li > a:link,
 		li > a:visited {
@@ -575,27 +582,6 @@
 }
 
 /*------------------------------------------------------------------
-	NAVIGATION / Explore menu
--------------------------------------------------------------------*/
-
-li.primary-nav__explore {
-
-	& > a:link,
-	& > a:visited {
-		@extend .verlag-bold;
-		color: $primary-copy;
-		margin: 0 8px;
-	}
-
-	@include respond($xlrg) {
-		& > a:link,
-		& > a:visited {
-			margin: 0 12px;
-		}
-	}
-}
-
-/*------------------------------------------------------------------
 	HEADER / Desktop, fixed scrolling
 -------------------------------------------------------------------*/
 
@@ -621,7 +607,6 @@ li.primary-nav__explore {
 	}
 
 	.header__primary-logo {
-		// new width?
 
 		.primary-logo__lrg {
 			display: none;
@@ -639,10 +624,10 @@ li.primary-nav__explore {
 	}
 
 	.header__primary-nav {
-		// new width?
 
 		ul > li > ul {
 			top: 54px;
+			left: -30px;
 		}
 
 		@include respond($header-nav-break) {
@@ -660,13 +645,18 @@ li.primary-nav__explore {
 		& > li {
 			padding: 15px 0 12px 0;
 		}
+
+		li.parentmenu__item  {
+			margin-left: 30px;
+		}
+
 		li.nav-divider {
 			&:before {
 				left: -7px;
 				top: 10px;
 			}
 			ul {
-				left: -15px;
+				left: 0;
 			}
 		}
 		& > li.primary-nav__utility {

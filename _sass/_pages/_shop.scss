@@ -2,23 +2,39 @@
     PAGE: Shop
 -------------------------------------------------------------------*/
 
-.page__shop {
+header.shop__header {
+	background-image: url('../_img/as_shop_illustration01.jpg');
+	background-repeat: no-repeat;
+	background-position: 0 -30px;
+	@include background-size(60%);
 
-	header {
-		h1.page-title {
-			margin-bottom: 15px;
-			margin-top: 45px;
-		}
-		.lead-copy {
-			margin: 0 auto;
-			text-align: center;
-		}
+	h1.page-title {
+		margin-bottom: 15px;
+		margin-top: 45px;
+	}
+	.lead-copy {
+		margin: 0 auto;
+		text-align: center;
 	}
 
+	@include respond($med) {
+		@include background-size(auto);
+		background-position: -200px -100px;
+	}
+	@include respond($lrg) {
+		background-position: -120px -40px;
+	}
+	@include respond(1280px) {
+		background-position: top left;
+	}
 }
 
 .shop__secondary-nav {
 	@extend .secondary-nav;
+}
+
+.shop__products {
+	border-top: 1px solid $bordercolor;
 }
 
 /*------------------------------------------------------------------
@@ -28,10 +44,9 @@
 .shop-products__grid {
 
 	@extend .product-grid;
-	margin-top: 60px;
+	margin-top: 30px;
 
 	ul {
-		border-top: 1px solid $bordercolor;
 		padding-top: 15px;
 	}
 
