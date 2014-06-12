@@ -8,13 +8,14 @@ header.shop__header {
 	background-position: 0 -30px;
 	@include background-size(60%);
 
+	text-align: center;
+
 	h1.page-title {
 		margin-bottom: 15px;
 		margin-top: 45px;
 	}
 	.lead-copy {
 		margin: 0 auto;
-		text-align: center;
 	}
 
 	@include respond($med) {
@@ -94,7 +95,6 @@ header.shop__header {
 			@include respond(1200px, "min") {
 				padding: 20px 0;
 			}
-
 		}
 	}
 }

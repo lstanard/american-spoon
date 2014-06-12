@@ -1,0 +1,46 @@
+/*------------------------------------------------------------------
+    MODULE: Share these
+-------------------------------------------------------------------*/
+
+.share-module {
+	border: 1px solid $bordercolor;
+	display: inline-block;
+	margin: 45px auto 0 auto;
+	padding: 12px 24px 10px 24px;
+	width: auto;
+
+	.share-module__label {
+		@extend .verlag-book;
+		color: $primary-copy;
+		display: inline-block;
+		font-size: 13px;
+		font-size: 1.3rem;
+		letter-spacing: 0.08em;
+		margin: 0;
+		text-transform: uppercase;
+	}
+
+	a:link,
+	a:visited {
+		color: $bordercolor;
+		display: inline-block;
+		font-size: 24px;
+		font-size: 2.4rem;
+		height: 25px;
+		margin: 0 12px 0 20px;
+		text-decoration: none;
+		vertical-align: middle;
+
+		&:hover,
+		&:active {
+			color: $blue;
+		}
+	}
+
+	a + a:link,
+	a + a:visited {
+		border-left: 1px solid $bordercolor;
+		margin: 0;
+		padding: 0 0 0 20px;
+	}
+}
