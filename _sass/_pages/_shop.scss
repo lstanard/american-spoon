@@ -5,12 +5,13 @@
 header.shop__header {
 	background-image: url('../_img/as_shop_illustration01.jpg');
 	background-repeat: no-repeat;
-	background-position: 0 -30px;
+	background-position: 0 -45px;
 	@include background-size(60%);
 
 	text-align: center;
 
 	h1.page-title {
+		color: $blue;
 		margin-bottom: 15px;
 		margin-top: 45px;
 	}
@@ -18,14 +19,26 @@ header.shop__header {
 		margin: 0 auto;
 	}
 
+	@include respond(480px) {
+		background-position: 0 -60px;
+	}
 	@include respond($med) {
 		@include background-size(auto);
 		background-position: -200px -100px;
 	}
 	@include respond($lrg) {
-		background-position: -120px -40px;
+		background-position: -120px -45px;
 	}
-	@include respond(1280px) {
+	@include respond(1100px) {
+		background-position: -120px -60px;
+	}
+	@include respond(1250px) {
+		background-position: -90px -45px;
+	}
+	@include respond(1350px) {
+		background-position: 0 -45px;
+	}
+	@include respond(1500px) {
 		background-position: top left;
 	}
 }
@@ -62,34 +75,16 @@ header.shop__header {
 			display: block;
 			margin: 0 auto;
 			max-width: 285px;
+			text-align: center;
 			text-decoration: none;
 
-			p {
-				@include transition(background-color .25s);
-				@extend .archer-bold;
-				background-color: $red;
-				color: #FFF;
-				display: block;
-				font-size: 16px;
-				font-size: 1.6rem;
-				margin: 0;
-				padding: 6px 0;
-				text-decoration: none;
-				text-transform: uppercase;
-			}
 			img {
 				border: none;
 				display: block;
-				margin: 0;
+				margin: 0 auto;
+				max-width: 248px;
 				padding: 0;
 				width: 100%;
-			}
-
-			&:hover,
-			&:active {
-				p {
-					background-color: $blue;
-				}
 			}
 
 			@include respond(1200px, "min") {

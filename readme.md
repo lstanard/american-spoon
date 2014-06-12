@@ -2,9 +2,7 @@ Page links:
 -----------
 
  - Home: http://www.spoon.com/designtmp/index.html
- - Shop: http://www.spoon.com/designtmp/shop-classics.html
- - Shop (option 2): http://www.spoon.com/designtmp/shop-savories.html
- - Shop (long scrolling): http://www.spoon.com/designtmp/shop-classics02.html
+ - Shop: http://www.spoon.com/designtmp/shop.html
  - Product page: http://www.spoon.com/designtmp/product-page.html
  - Login: http://www.spoon.com/designtmp/login.html
  - Catalog request: http://www.spoon.com/designtmp/catalog-request.html
@@ -36,6 +34,7 @@ To-do:
 #### High priority: ####
 
 - Add labels to Home mantle carousel
+
 - Style arrows on the Home mantle carousel
 
 - Browser testing (need lots of PC testing, IE9, or IE8?, and up only)

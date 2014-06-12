@@ -136,6 +136,7 @@
 -------------------------------------------------------------------*/
 
 .header__primary-nav {
+	text-align: center;
 
 	ul > li > a:link,
 	ul > li > a:visited {
@@ -215,6 +216,7 @@
 			background-color: #FFF;
 			left: -15px;
 			position: absolute;
+			text-align: left;
 			top: 45px;
 			width: 340px;
 			visibility: hidden;
@@ -243,19 +245,6 @@
 
 	@include respond($header-nav-break) {
 		padding-right: 15px;
-		padding-left: 1%;
-	}
-	@include respond(1450px, "min") {
-		padding-left: 3%;
-	}
-	@include respond(1550px, "min") {
-		padding-left: 6%;
-	}
-	@include respond(1650px, "min") {
-		padding-left: 7%;
-	}
-	@include respond(1750px, "min") {
-		padding-left: 8%;
 	}
 }
 
@@ -289,8 +278,8 @@
 		& > a:visited {
 			@extend .archer-bold-ital;
 			color: $red;
-			font-size: 18px;
-			font-size: 1.8rem;
+			font-size: 19px;
+			font-size: 1.9rem;
 
 			&:hover,
 			&:active {
@@ -302,7 +291,6 @@
 				color: $red;
 			}
 		}
-
 	}
 
 	/*------------------------------------------------------------------

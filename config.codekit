@@ -696,6 +696,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/as_shop_illustration01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55177,
+		"inputAbbreviatedPath": "\/_img\/as_shop_illustration01.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_shop_illustration01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/as_shop_recipe-promo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -714,6 +725,17 @@
 		"initialSize": 312064,
 		"inputAbbreviatedPath": "\/_img\/as_store-location_petoskey.jpg",
 		"outputAbbreviatedPath": "\/_img\/as_store-location_petoskey.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/business-week-logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5134,
+		"inputAbbreviatedPath": "\/_img\/business-week-logo.jpg",
+		"outputAbbreviatedPath": "\/_img\/business-week-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -758,6 +780,39 @@
 		"initialSize": 396,
 		"inputAbbreviatedPath": "\/_img\/inline-laptop_40x42.png",
 		"outputAbbreviatedPath": "\/_img\/inline-laptop_40x42.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/nat-geo-logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7716,
+		"inputAbbreviatedPath": "\/_img\/nat-geo-logo.jpg",
+		"outputAbbreviatedPath": "\/_img\/nat-geo-logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/nyt-logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4964,
+		"inputAbbreviatedPath": "\/_img\/nyt-logo.jpg",
+		"outputAbbreviatedPath": "\/_img\/nyt-logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/vogue-logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5794,
+		"inputAbbreviatedPath": "\/_img\/vogue-logo.jpg",
+		"outputAbbreviatedPath": "\/_img\/vogue-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1110,21 +1165,12 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1
 		},
-	"\/_kit\/shop-classics.kit": {
+	"\/_kit\/shop.kit": {
 		"fileType": 2048,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_kit\/shop-classics.kit",
-		"outputAbbreviatedPath": "\/shop-classics.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_kit\/shop-savories.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_kit\/shop-savories.kit",
-		"outputAbbreviatedPath": "\/shop-savories.html",
+		"inputAbbreviatedPath": "\/_kit\/shop.kit",
+		"outputAbbreviatedPath": "\/shop.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1395,6 +1441,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_sass\/_modules\/_secondary-nav.scss",
 		"outputAbbreviatedPath": "\/_css\/_secondary-nav.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_sass\/_modules\/_share.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_sass\/_modules\/_share.scss",
+		"outputAbbreviatedPath": "\/_css\/_share.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -2076,24 +2138,6 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/recipes.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/shop-classics.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/shop-classics.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/shop-savories.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/shop-savories.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
