@@ -14,24 +14,6 @@
 		}
 	}
 
-	.photo-overlay {
-		content: "";
-		display: block;
-		height: 16px;
-		position: absolute;
-		width: 100%;
-	}
-	.photo-overlay--top {
-		@extend .photo-overlay;
-		background: url(../_img/as_photo-grid_overlay-top.png) repeat-x center bottom;
-		top: 0;
-	}
-	.photo-overlay--btm {
-		@extend .photo-overlay;
-		background: url(../_img/as_photo-grid_overlay.png) repeat-x center bottom;
-		bottom: 0;
-	}
-
 	.tablet-img,
 	.desktop-img {
 		display: none;

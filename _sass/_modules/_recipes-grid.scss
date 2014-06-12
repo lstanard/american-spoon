@@ -1,5 +1,178 @@
 /*------------------------------------------------------------------
-    MODULE: Recipes grid
+    MODULE: Recipes grid / rollover
+-------------------------------------------------------------------*/
+
+.recipe-grid__rollover {
+
+	a:link,
+	a:visited {
+		display: block;
+		position: relative;
+		text-decoration: none;
+
+		figcaption {
+			@include transition(all .35s);
+			@include opacity(0);
+			border: 1px solid $bordercolor;
+			display: block;
+			height: 100%;
+			padding: 0;
+			position: absolute;
+			width: 100%;
+			visibility: hidden;
+
+			h4 {
+				@extend .verlag-black;
+				@include transition(all .5s);
+				@include opacity(0);
+				background-color: rgba(255,255,255,.85);
+				color: $pumpkin;
+				display: table;
+				font-size: 19px;
+				font-size: 1.9rem;
+				height: 100%;
+				line-height: 24px;
+				line-height: 2.4rem;
+				padding: 0 45px;
+				position: absolute;
+				text-align: center;
+				text-transform: uppercase;
+				width: 100%;
+
+				span {
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+
+	&:hover {
+
+		a:link, a:visited {
+			figcaption {
+				@include opacity(1);
+				border: none;
+				top: 0;
+				visibility: visible;
+
+				h4 {
+					@include opacity(1);
+				}
+			}
+		}
+	}
+
+	@include respond($med) {
+		a:link,
+		a:visited {
+			figcaption {
+				padding: 0;
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------------------
+    MODULE: Recipes grid / grid 2.0
+-------------------------------------------------------------------*/
+
+.recipes-grid {
+	@extend .cf;
+
+	$recipes-gutter: 20px;
+
+	.grid-row {
+		@extend .cf;
+	}
+
+	.grid-group01 {
+		float: left;
+		width: ((900/1200) * 100%);
+	}
+	.grid-group02 {
+		float: left;
+		width: ((300/1200) * 100%);
+	}
+
+	.grid-item {
+		float: left;
+		margin-bottom: $recipes-gutter;
+		position: relative;
+
+		img {
+			display: block;
+		}
+	}
+
+	.grid-item--sm {
+		@extend .grid-item;
+		height: 100%;
+		padding-right: $recipes-gutter;
+		width: ((320/900) * 100%);
+	}
+	.grid-item--med {
+		@extend .grid-item;
+		padding-right: $recipes-gutter;
+		width: ((580/900) * 100%);
+	}
+	.grid-item--lrg {
+		@extend .grid-item;
+		padding-right: $recipes-gutter;
+		width: ((900/1200) * 100%);
+	}
+	.grid-item--tall {
+		@extend .grid-item;
+	}
+	.grid-item--lrg + .grid-item--sm {
+		padding-right: 0;
+		width: ((300/1200) * 100%);
+	}
+
+	.grid-module--cta {
+		background-color: $blue;
+		height: 100%;
+		min-height: 270px;
+		padding: 30px;
+		text-align: left;
+		vertical-align: middle;
+		width: 100%;
+
+		.as-icon-pinterest {
+			color: #FFF;
+			display: block;
+			font-size: 40px;
+			font-size: 4.0rem;
+		}
+		p {
+			@extend .archer-med-ital;
+			color: #FFF;
+			display: block;
+			font-size: 18px;
+			font-size: 1.8rem;
+		}
+		a:link,
+		a:visited {
+			color: #FFF;
+
+			&:hover,
+			&:active {
+				color: $pumpkin;
+			}
+		}
+	}
+
+	figure {
+		@extend .recipe-grid__rollover;
+	}
+}
+
+/*------------------------------------------------------------------
+    MODULE: Recipes grid / grid 1.0
 -------------------------------------------------------------------*/
 
 .recipes-jump__grid {
@@ -8,6 +181,10 @@
 
 	.recipes-grid__row {
 		@extend .cf;
+	}
+
+	figure {
+		@extend .recipe-grid__rollover;
 	}
 
 	.recipes-grid__item {
@@ -22,72 +199,6 @@
 	.recipes-grid__1-3--right,
 	.recipes-grid__full {
 		@extend .recipes-grid__item;
-	}
-
-	figure {
-
-		a:link,
-		a:visited {
-			display: block;
-			position: relative;
-			text-decoration: none;
-
-			figcaption {
-				@include transition(all .35s);
-				@include opacity(0);
-				border: 1px solid $bordercolor;
-				display: block;
-				height: 100%;
-				padding: 0;
-				position: absolute;
-				width: 100%;
-				visibility: hidden;
-
-				h4 {
-					@extend .verlag-black;
-					@include transition(all .5s);
-					@include opacity(0);
-					background-color: rgba(255,255,255,.85);
-					color: $pumpkin;
-					display: table;
-					font-size: 19px;
-					font-size: 1.9rem;
-					height: 100%;
-					line-height: 24px;
-					line-height: 2.4rem;
-					padding: 0 45px;
-					position: absolute;
-					text-align: center;
-					text-transform: uppercase;
-					width: 100%;
-
-					span {
-						display: table-cell;
-						vertical-align: middle;
-					}
-				}
-			}
-		}
-
-		img {
-			width: 100%;
-		}
-
-		&:hover {
-
-			a:link, a:visited {
-				figcaption {
-					@include opacity(1);
-					top: 0;
-					visibility: visible;
-
-					h4 {
-						@include opacity(1);
-					}
-				}
-			}
-
-		}
 	}
 
 	@include respond($med) {
@@ -107,27 +218,19 @@
 		.recipes-grid__1-3--right {
 			@extend .recipes-grid__1-3;
 		}
+
 		.recipes-grid__2-3--right {
 			@extend .recipes-grid__2-3;
 			padding-left: 20px;
 		}
+
 		.recipes-grid__2-3--left {
 			@extend .recipes-grid__2-3;
 			padding-right: 20px;
 		}
-
-		figure {
-			a:link,
-			a:visited {
-				figcaption {
-					padding: 0;
-				}
-			}
-		}
 	}
 
 	@include respond($xlrg) {
-
 		.recipes-grid__item {
 			height: 499px;
 		}

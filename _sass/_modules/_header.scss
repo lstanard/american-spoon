@@ -299,6 +299,10 @@
 
 	li.primary-nav__explore {
 
+		&:nth-child(5) {
+			margin-right: 75px;
+		}
+
 		& > a:link,
 		& > a:visited {
 			@extend .verlag-bold;

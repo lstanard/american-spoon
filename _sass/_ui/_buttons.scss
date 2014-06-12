@@ -271,4 +271,14 @@ a.btn:link, a.btn:visited {
 			color: #FFF;
 		}
 	}
+	&.ghost.white {
+		border-color: #FFF;
+		color: #FFF;
+
+		&:hover, &:active {
+			background-color: $blue;
+			border-color: $blue;
+			color: #FFF;
+		}
+	}
 }

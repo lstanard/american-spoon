@@ -2,6 +2,27 @@
     UI: Misc
 -------------------------------------------------------------------*/
 
+.ragged-overlay {
+	content: "";
+	display: block;
+	height: 16px;
+	position: absolute;
+	width: 100%;
+	z-index: 0;
+}
+
+.ragged-overlay--top {
+	@extend .ragged-overlay;
+	background: url(../_img/as_photo-grid_overlay-top.png) repeat-x center bottom;
+	top: 0;
+}
+
+.ragged-overlay--btm {
+	@extend .ragged-overlay;
+	background: url(../_img/as_photo-grid_overlay.png) repeat-x center bottom;
+	bottom: 0;
+}
+
 .featured-recipes__rule {
 	border: none;
 	height: 70px;
