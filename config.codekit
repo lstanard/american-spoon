@@ -146,6 +146,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_img\/appetizers.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 707484,
+		"inputAbbreviatedPath": "\/_img\/appetizers.png",
+		"outputAbbreviatedPath": "\/_img\/appetizers.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/as_about_illustration01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -894,6 +905,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/cookies.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.19264e+06,
+		"inputAbbreviatedPath": "\/_img\/cookies.png",
+		"outputAbbreviatedPath": "\/_img\/cookies.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/inline-flatware_197x500.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -927,6 +949,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/meat.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 760528,
+		"inputAbbreviatedPath": "\/_img\/meat.png",
+		"outputAbbreviatedPath": "\/_img\/meat.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/nat-geo-logo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -945,6 +978,72 @@
 		"initialSize": 4964,
 		"inputAbbreviatedPath": "\/_img\/nyt-logo.jpg",
 		"outputAbbreviatedPath": "\/_img\/nyt-logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/pancakes.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 315837,
+		"inputAbbreviatedPath": "\/_img\/pancakes.png",
+		"outputAbbreviatedPath": "\/_img\/pancakes.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/pies.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 392804,
+		"inputAbbreviatedPath": "\/_img\/pies.png",
+		"outputAbbreviatedPath": "\/_img\/pies.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/salads.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 364752,
+		"inputAbbreviatedPath": "\/_img\/salads.png",
+		"outputAbbreviatedPath": "\/_img\/salads.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/sandwiches.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 312040,
+		"inputAbbreviatedPath": "\/_img\/sandwiches.png",
+		"outputAbbreviatedPath": "\/_img\/sandwiches.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/simple.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 719268,
+		"inputAbbreviatedPath": "\/_img\/simple.png",
+		"outputAbbreviatedPath": "\/_img\/simple.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/tacos.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 718573,
+		"inputAbbreviatedPath": "\/_img\/tacos.png",
+		"outputAbbreviatedPath": "\/_img\/tacos.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1764,6 +1863,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/_sass\/_pages\/_shop.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_sass\/_pages\/_shop.scss",
+		"outputAbbreviatedPath": "\/_css\/_shop.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/_sass\/_pages\/_stores.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -2249,6 +2364,18 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/readme.html",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/readme.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/readme.md",
+		"outputAbbreviatedPath": "\/readme.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},

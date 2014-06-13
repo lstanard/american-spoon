@@ -195,6 +195,10 @@
 
 	figure {
 		@extend .recipe-grid__rollover;
+
+		img {
+			display: block;
+		}
 	}
 
 	.recipes-grid__item {

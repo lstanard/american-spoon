@@ -51,6 +51,10 @@
 
 	figure {
 
+		img {
+			display: block;
+		}
+
 		a:link,
 		a:visited {
 			text-decoration: none;
@@ -67,8 +71,54 @@
 			}
 		}
 
-		img {
+		.rcl-graphic {
+			position: relative;
 			width: 100%;
+
+			.rcl-graphic__label {
+				@extend .verlag-black;
+				@include transition(opacity .25s);
+				@include opacity(0);
+				color: $red;
+				display: inline-block;
+				font-size: 19px;
+				font-size: 1.9rem;
+				left: 50%;
+				letter-spacing: 0.05em;
+				margin: 0 0 0 -67px;
+				position: absolute;
+				text-align: center;
+				text-transform: uppercase;
+				top: 50%;
+			}
+
+			&:before {
+				@include transition(opacity .25s);
+				@include opacity(0);
+				background-color: rgba(255,255,255,.92);
+				border-top: 5px solid $red;
+				bottom: 0;
+				content: "";
+				display: block;
+				height: 100%;
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 100%;
+			}
+
+			&:hover {
+				@include box-shadow(rgba(0,0,0,.18) 0px 1px 6px);
+
+				.rcl-graphic__label {
+					@include opacity(1);
+				}
+
+				&:before {
+					@include opacity(1);
+				}
+			}
 		}
 
 		figcaption {
