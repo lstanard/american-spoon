@@ -31,6 +31,48 @@ Questions/Notes for Jake:
 To-do:
 ------
 
+[X] 1. Lets get rid of ArcherMediumItalic!!!
+
+[X] Super heads (shop, about)
+[X] font-size: 1.5rem
+[X] letter-spacing: .1rem
+[X] margin-top: change from 30 to 20px
+
+NEWLETTER
+[X] Change background color to: #fafafa
+[X] Change ‘Get news from Up North’ to ArcherItalicLight
+[X] Change the ‘Sign up to receive…’ line to ArcherBook, same styles as the About_intro copy
+
+ALL ABOVE 1200 ~ 1300
+
+FOOTER
+- More tweaks to come with this
+[X] Make background white
+[X] Overall should be more like the PDF
+[X] Less gaps between the links
+[X] Left side with logo can be a lot wider, taking up more like a 33%/66% split
+[X] Icons can be smaller
+
+SHOP PAGE
+Shop Header:
+- Above SHOP super head: 4.5% margin
+- change header to padding-bottom to 4.5%
+
+Shop Grid:
+- Change the top margin above the first row of products and below the rule line to be similar to how the header is. If they can scale fairly even, great.
+- Same comment for the bottom of the products and the large buttons. See if we can get equal margins between the last row and before the buttons, and then similar spacing between the buttons and the newsletter sign up.
+
+Will need a page with a second category included. So, ‘Spoon Fruit & Butter’ would have a second category below the first set of products. For a heading, I think we could just repeat the first one with another fruit illustration. Otherwise, we just do the name and then a rule line like the ‘You May Also Like’ heading on the product page. Thought?
+
+ABOUT PAGE
+- Reduce space about ‘ABOUT’ to padding top 2%. Trying to make the distance above it and below it the same.
+- Place %nbsp; between every and jar in the intro section. Widow on laptop. Do the same in the next paragraph with anywhere and else.
+- Add a little space between ‘The American Spoon Story and the copy. 20px or so.
+- Add a little space after the green pull quote in the Our Kitchen section.
+- Capitalize Farmers in Fruits & Farmers
+- Add &nbsp; at the end of that first paragraph
+
+
 #### High priority: ####
 
 - Add labels to Home mantle carousel
@@ -38,10 +80,6 @@ To-do:
 - Style arrows on the Home mantle carousel
 
 - Browser testing (need lots of PC testing, IE9, or IE8?, and up only)
-
-- Home page mantle (need more direction from JW)
-
-- Home page progressively loading in products
 
 - Pages/sections that need responsive layout fixes:
 	- login.html (increase point at which items go to 2 column)
@@ -54,6 +92,8 @@ To-do:
 
 
 #### Low priority: ####
+
+- Home page progressively loading in products
 
 - Can we perform a quick font audit and see if there are places where we could reduce the number of fonts being loaded on a page?
 	- Example: Recipes category page is loading at least 9 different font sets

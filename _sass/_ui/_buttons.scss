@@ -83,7 +83,7 @@ a.btn:link, a.btn:visited {
 
 	@extend .verlag-black;
 	@include border-radius(3px);
-	@include transition(all .25s);
+	@include transition(all .2s);
 
 	display: table;
 	height: 60px;
