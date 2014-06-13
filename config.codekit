@@ -949,6 +949,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/ui-mantle-arrow--next.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1763,
+		"inputAbbreviatedPath": "\/_img\/ui-mantle-arrow--next.png",
+		"outputAbbreviatedPath": "\/_img\/ui-mantle-arrow--next.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/ui-mantle-arrow--previous.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1807,
+		"inputAbbreviatedPath": "\/_img\/ui-mantle-arrow--previous.png",
+		"outputAbbreviatedPath": "\/_img\/ui-mantle-arrow--previous.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/vogue-logo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -965,10 +987,10 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_data\/dynamic_image-data.js",
-		"outputAbbreviatedPath": "\/_js\/_data\/dynamic_image-data.min.js",
+		"outputAbbreviatedPath": "\/_js\/_data\/min\/dynamic_image-data-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
 	"\/_js\/_data\/dynamic_image-data.min.js": {
@@ -976,7 +998,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_data\/dynamic_image-data.min.js",
-		"outputAbbreviatedPath": "\/_js\/_data\/dynamic_image-data.min.min.js",
+		"outputAbbreviatedPath": "\/_js\/_data\/min\/dynamic_image-data.min-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -987,7 +1009,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_init.js",
-		"outputAbbreviatedPath": "\/_js\/_init.min.js",
+		"outputAbbreviatedPath": "\/_js\/min\/_init-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -998,7 +1020,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_ui\/_product-preview.js",
-		"outputAbbreviatedPath": "\/_js\/_ui\/_product-preview.min.js",
+		"outputAbbreviatedPath": "\/_js\/_ui\/min\/_product-preview-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1009,7 +1031,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_ui\/_responsive-image-loader.js",
-		"outputAbbreviatedPath": "\/_js\/_ui\/_responsive-image-loader.min.js",
+		"outputAbbreviatedPath": "\/_js\/_ui\/min\/_responsive-image-loader-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1020,7 +1042,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_ui\/_ui.js",
-		"outputAbbreviatedPath": "\/_js\/_ui\/_ui.min.js",
+		"outputAbbreviatedPath": "\/_js\/_ui\/min\/_ui-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1031,7 +1053,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_utility.js",
-		"outputAbbreviatedPath": "\/_js\/_utility.min.js",
+		"outputAbbreviatedPath": "\/_js\/min\/_utility-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1042,7 +1064,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_vendor\/jquery-1.11.0.min.js",
-		"outputAbbreviatedPath": "\/_js\/_vendor\/jquery-1.11.0.min.min.js",
+		"outputAbbreviatedPath": "\/_js\/_vendor\/min\/jquery-1.11.0.min-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1053,7 +1075,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_vendor\/jquery.bxslider.js",
-		"outputAbbreviatedPath": "\/_js\/_vendor\/jquery.bxslider.min.js",
+		"outputAbbreviatedPath": "\/_js\/_vendor\/min\/jquery.bxslider-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1064,7 +1086,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_vendor\/jquery.bxslider.min.js",
-		"outputAbbreviatedPath": "\/_js\/_vendor\/jquery.bxslider.min.min.js",
+		"outputAbbreviatedPath": "\/_js\/_vendor\/min\/jquery.bxslider.min-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1075,7 +1097,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_vendor\/jquery.mmenu.js",
-		"outputAbbreviatedPath": "\/_js\/_vendor\/jquery.mmenu.min.js",
+		"outputAbbreviatedPath": "\/_js\/_vendor\/min\/jquery.mmenu-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1086,7 +1108,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_vendor\/jquery.mmenu.min.js",
-		"outputAbbreviatedPath": "\/_js\/_vendor\/jquery.mmenu.min.min.js",
+		"outputAbbreviatedPath": "\/_js\/_vendor\/min\/jquery.mmenu.min-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1097,7 +1119,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_vendor\/jRespond.min.js",
-		"outputAbbreviatedPath": "\/_js\/_vendor\/jRespond.min.min.js",
+		"outputAbbreviatedPath": "\/_js\/_vendor\/min\/jRespond.min-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1108,7 +1130,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_vendor\/modernizr-2.6.2-respond-1.1.0.min.js",
-		"outputAbbreviatedPath": "\/_js\/_vendor\/modernizr-2.6.2-respond-1.1.0.min.min.js",
+		"outputAbbreviatedPath": "\/_js\/_vendor\/min\/modernizr-2.6.2-respond-1.1.0.min-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1119,7 +1141,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_vendor\/placeholders.min.js",
-		"outputAbbreviatedPath": "\/_js\/_vendor\/placeholders.min.min.js",
+		"outputAbbreviatedPath": "\/_js\/_vendor\/min\/placeholders.min-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1130,7 +1152,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_vendor\/stacktable.js",
-		"outputAbbreviatedPath": "\/_js\/_vendor\/stacktable.min.js",
+		"outputAbbreviatedPath": "\/_js\/_vendor\/min\/stacktable-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1141,7 +1163,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_vendor\/stacktable.min.js",
-		"outputAbbreviatedPath": "\/_js\/_vendor\/stacktable.min.min.js",
+		"outputAbbreviatedPath": "\/_js\/_vendor\/min\/stacktable.min-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1152,7 +1174,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_vendor\/waypoints.js",
-		"outputAbbreviatedPath": "\/_js\/_vendor\/waypoints.min.js",
+		"outputAbbreviatedPath": "\/_js\/_vendor\/min\/waypoints-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1163,7 +1185,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/_vendor\/waypoints.min.js",
-		"outputAbbreviatedPath": "\/_js\/_vendor\/waypoints.min.min.js",
+		"outputAbbreviatedPath": "\/_js\/_vendor\/min\/waypoints.min-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1174,7 +1196,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/main.js",
-		"outputAbbreviatedPath": "\/_js\/main.min.js",
+		"outputAbbreviatedPath": "\/_js\/min\/main-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1185,7 +1207,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/main.min.js",
-		"outputAbbreviatedPath": "\/_js\/main.min.min.js",
+		"outputAbbreviatedPath": "\/_js\/min\/main.min-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1196,7 +1218,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_global\/_footer.kit",
-		"outputAbbreviatedPath": "\/_kit\/_footer.html",
+		"outputAbbreviatedPath": "\/_kit\/_global\/_footer.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1205,7 +1227,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_global\/_head.kit",
-		"outputAbbreviatedPath": "\/_kit\/_head.html",
+		"outputAbbreviatedPath": "\/_kit\/_global\/_head.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1214,7 +1236,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_global\/_header.kit",
-		"outputAbbreviatedPath": "\/_kit\/_header.html",
+		"outputAbbreviatedPath": "\/_kit\/_global\/_header.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1223,7 +1245,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/_global\/_shipping-banner.kit",
-		"outputAbbreviatedPath": "\/_kit\/_shipping-banner.html",
+		"outputAbbreviatedPath": "\/_kit\/_global\/_shipping-banner.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1234,7 +1256,7 @@
 		"inputAbbreviatedPath": "\/_kit\/about.kit",
 		"outputAbbreviatedPath": "\/about.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 1
 		},
 	"\/_kit\/cart.kit": {
 		"fileType": 2048,
@@ -1243,7 +1265,7 @@
 		"inputAbbreviatedPath": "\/_kit\/cart.kit",
 		"outputAbbreviatedPath": "\/cart.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 1
 		},
 	"\/_kit\/catalog-request.kit": {
 		"fileType": 2048,
@@ -1252,7 +1274,7 @@
 		"inputAbbreviatedPath": "\/_kit\/catalog-request.kit",
 		"outputAbbreviatedPath": "\/catalog-request.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 1
 		},
 	"\/_kit\/index.kit": {
 		"fileType": 2048,
@@ -1261,7 +1283,7 @@
 		"inputAbbreviatedPath": "\/_kit\/index.kit",
 		"outputAbbreviatedPath": "\/index.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 1
 		},
 	"\/_kit\/login.kit": {
 		"fileType": 2048,
@@ -1270,7 +1292,7 @@
 		"inputAbbreviatedPath": "\/_kit\/login.kit",
 		"outputAbbreviatedPath": "\/login.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 1
 		},
 	"\/_kit\/product-page.kit": {
 		"fileType": 2048,
@@ -1279,7 +1301,7 @@
 		"inputAbbreviatedPath": "\/_kit\/product-page.kit",
 		"outputAbbreviatedPath": "\/product-page.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 1
 		},
 	"\/_kit\/recipes-category.kit": {
 		"fileType": 2048,
@@ -1315,7 +1337,7 @@
 		"inputAbbreviatedPath": "\/_kit\/shop.kit",
 		"outputAbbreviatedPath": "\/shop.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 1
 		},
 	"\/_kit\/stores.kit": {
 		"fileType": 2048,
@@ -1324,7 +1346,7 @@
 		"inputAbbreviatedPath": "\/_kit\/stores.kit",
 		"outputAbbreviatedPath": "\/stores.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 1
 		},
 	"\/_sass\/_global\/_columns.scss": {
 		"createSourceMap": 0,
@@ -1772,7 +1794,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		},
 	"\/_sass\/_plugins\/_jquery-bxslider.scss": {
 		"createSourceMap": 0,
@@ -2242,8 +2264,8 @@
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/readme.md",
 		"outputAbbreviatedPath": "\/readme.html",
 		"outputPathIsOutsideProject": 0,
@@ -2276,29 +2298,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/shop-classics.html": {
+	"\/shop.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/shop-classics.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/shop-classics02.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/shop-classics02.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/shop-savories.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/shop-savories.html",
+		"inputAbbreviatedPath": "\/shop.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2311,20 +2315,11 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/style.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/style.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Neal Stanard",
+"lastSavedByUser": "Charlie Stanard",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -2339,7 +2334,7 @@
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, ff 17, opera 12.1",
 	"autoSyncProjectSettingsFile": 1,
-	"browserRefreshDelay": 0.25,
+	"browserRefreshDelay": 0,
 	"coffeeAutoOutputPathRelativePath": "",
 	"coffeeAutoOutputPathReplace1": "",
 	"coffeeAutoOutputPathReplace2": "",
@@ -2485,11 +2480,11 @@
 	"javascriptAutoOutputPathRelativePath": "\/min",
 	"javascriptAutoOutputPathReplace1": "",
 	"javascriptAutoOutputPathReplace2": "",
-	"javascriptAutoOutputPathStyle": 0,
+	"javascriptAutoOutputPathStyle": 2,
 	"javascriptCreateSourceMap": 1,
-	"javascriptOutputStyle": 0,
-	"javascriptOutputSuffix": ".min",
-	"javascriptSyntaxCheckerStyle": 0,
+	"javascriptOutputStyle": 1,
+	"javascriptOutputSuffix": "-ck",
+	"javascriptSyntaxCheckerStyle": 1,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
 		"asi": {
@@ -2863,10 +2858,10 @@
 			"flagValue": -1
 			}
 		},
-	"kitAutoOutputPathRelativePath": "..\/",
+	"kitAutoOutputPathRelativePath": "",
 	"kitAutoOutputPathReplace1": "",
 	"kitAutoOutputPathReplace2": "",
-	"kitAutoOutputPathStyle": 2,
+	"kitAutoOutputPathStyle": 0,
 	"lessAllowInsecureImports": 0,
 	"lessAutoOutputPathRelativePath": "..\/css",
 	"lessAutoOutputPathReplace1": "less",
@@ -2888,7 +2883,7 @@
 	"markdownEnableSmartyPants": 1,
 	"markdownExpandTabs": 1,
 	"reloadFileURLs": 0,
-	"sassAutoOutputPathRelativePath": "..\/_css",
+	"sassAutoOutputPathRelativePath": "..\/css",
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 2,

@@ -6,7 +6,7 @@
 	border: 1px solid $bordercolor;
 	display: inline-block;
 	margin: 45px auto 0 auto;
-	padding: 12px 24px 10px 24px;
+	padding: 12px 12px 10px 12px;
 	width: auto;
 
 	.share-module__label {
@@ -42,5 +42,9 @@
 		border-left: 1px solid $bordercolor;
 		margin: 0;
 		padding: 0 0 0 20px;
+	}
+
+	@include respond($med) {
+		padding: 12px 24px 10px 24px;
 	}
 }

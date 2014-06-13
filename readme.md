@@ -77,8 +77,6 @@ ABOUT PAGE
 
 - Add labels to Home mantle carousel
 
-- Style arrows on the Home mantle carousel
-
 - Browser testing (need lots of PC testing, IE9, or IE8?, and up only)
 
 - Pages/sections that need responsive layout fixes:
