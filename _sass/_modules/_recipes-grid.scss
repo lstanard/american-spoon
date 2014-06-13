@@ -90,17 +90,7 @@
 		@extend .cf;
 	}
 
-	.grid-group01 {
-		float: left;
-		width: ((900/1200) * 100%);
-	}
-	.grid-group02 {
-		float: left;
-		width: ((300/1200) * 100%);
-	}
-
 	.grid-item {
-		float: left;
 		margin-bottom: $recipes-gutter;
 		position: relative;
 
@@ -109,34 +99,16 @@
 		}
 	}
 
-	.grid-item--sm {
-		@extend .grid-item;
-		height: 100%;
-		padding-right: $recipes-gutter;
-		width: ((320/900) * 100%);
-	}
-	.grid-item--med {
-		@extend .grid-item;
-		padding-right: $recipes-gutter;
-		width: ((580/900) * 100%);
-	}
-	.grid-item--lrg {
-		@extend .grid-item;
-		padding-right: $recipes-gutter;
-		width: ((900/1200) * 100%);
-	}
+	.grid-item--sm,
+	.grid-item--med,
+	.grid-item--lrg,
 	.grid-item--tall {
 		@extend .grid-item;
-	}
-	.grid-item--lrg + .grid-item--sm {
-		padding-right: 0;
-		width: ((300/1200) * 100%);
 	}
 
 	.grid-module--cta {
 		background-color: $blue;
 		height: 100%;
-		min-height: 270px;
 		padding: 30px;
 		text-align: left;
 		vertical-align: middle;
@@ -163,6 +135,44 @@
 			&:active {
 				color: $pumpkin;
 			}
+		}
+	}
+
+	@include respond($med) {
+
+		.grid-group01 {
+			float: left;
+			width: ((900/1200) * 100%);
+		}
+		.grid-group02 {
+			float: left;
+			width: ((300/1200) * 100%);
+		}
+
+		.grid-item {
+			float: left;
+		}
+
+		.grid-item--sm {
+			height: 100%;
+			padding-right: $recipes-gutter;
+			width: ((320/900) * 100%);
+		}
+		.grid-item--med {
+			padding-right: $recipes-gutter;
+			width: ((580/900) * 100%);
+		}
+		.grid-item--lrg {
+			padding-right: $recipes-gutter;
+			width: ((900/1200) * 100%);
+		}
+		.grid-item--lrg + .grid-item--sm {
+			padding-right: 0;
+			width: ((300/1200) * 100%);
+		}
+		.grid-module--cta {
+			min-height: 270px;
+
 		}
 	}
 

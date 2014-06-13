@@ -31,27 +31,27 @@ Questions/Notes for Jake:
 To-do:
 ------
 
-[X] 1. Lets get rid of ArcherMediumItalic!!!
+~~1. Lets get rid of ArcherMediumItalic!!!~~
 
-[X] Super heads (shop, about)
-[X] font-size: 1.5rem
-[X] letter-spacing: .1rem
-[X] margin-top: change from 30 to 20px
+- ~~Super heads (shop, about)~~
+- ~~font-size: 1.5rem~~
+- ~~letter-spacing: .1rem~~
+- ~~margin-top: change from 30 to 20px~~
 
 NEWLETTER
-[X] Change background color to: #fafafa
-[X] Change ‘Get news from Up North’ to ArcherItalicLight
-[X] Change the ‘Sign up to receive…’ line to ArcherBook, same styles as the About_intro copy
+- ~~Change background color to: #fafafa~~
+- ~~Change ‘Get news from Up North’ to ArcherItalicLight~~
+- ~~Change the ‘Sign up to receive…’ line to ArcherBook, same styles as the About_intro copy~~
 
-ALL ABOVE 1200 ~ 1300
+ALL ABOVE 1200 ~~ 1300
 
 FOOTER
-- More tweaks to come with this
-[X] Make background white
-[X] Overall should be more like the PDF
-[X] Less gaps between the links
-[X] Left side with logo can be a lot wider, taking up more like a 33%/66% split
-[X] Icons can be smaller
+More tweaks to come with this
+- ~~Make background white~~
+- ~~Overall should be more like the PDF~~
+- ~~Less gaps between the links~~
+- ~~Left side with logo can be a lot wider, taking up more like a 33%/66% split~~
+- ~~Icons can be smaller~~
 
 SHOP PAGE
 Shop Header:
@@ -84,7 +84,6 @@ ABOUT PAGE
 
 - Recipe (single) page:
 	- Place icons (get from JW)
-	- Click ingredient name, tooltip pop-up with view product and add to cart (confirm before)
 
 - Fix JS functionality breaking because of jRespond breakpoints (product page suggested products)
 
@@ -93,27 +92,9 @@ ABOUT PAGE
 
 - Home page progressively loading in products
 
-- Can we perform a quick font audit and see if there are places where we could reduce the number of fonts being loaded on a page?
-	- Example: Recipes category page is loading at least 9 different font sets
-
-- Home page Instagram feed (hold until further feedback)
-
 - Shipping banner text wraps to multiple lines, line-height too high
 
-- Replace instances of width: calc() to SASS formulas, replace margins with padding as needed
-
-- Home page lazy loading:
-	- Have CMS dump products into an external HTML file
-	- Use AJAX to selectively load in a certain number of products depending on the situation
-
 - Add block class prefix "btn--" to button class modifiers to avoid overrides later
-
-- Remove < and > from markup and move to CSS :before and :after content types
-
-- Auto-fill city, state and country via zip code:
- 	- http://www.zippopotam.us/
- 	- http://www.getziptastic.com/
- 		- http://css-tricks.com/using-ziptastic/
 
 - Style form inputs (select menu, checkbox)
  	- http://css-tricks.com/dropdown-default-styling/
