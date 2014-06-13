@@ -326,7 +326,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 110275,
 		"inputAbbreviatedPath": "\/_img\/as_about_photo15.jpg",
 		"outputAbbreviatedPath": "\/_img\/as_about_photo15.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -373,6 +373,28 @@
 		"initialSize": 99771,
 		"inputAbbreviatedPath": "\/_img\/as_home-feature-module_photo01.jpg",
 		"outputAbbreviatedPath": "\/_img\/as_home-feature-module_photo01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_home-feature-module_photo02.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49923,
+		"inputAbbreviatedPath": "\/_img\/as_home-feature-module_photo02.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_home-feature-module_photo02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_home-feature-module_photo03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 50131,
+		"inputAbbreviatedPath": "\/_img\/as_home-feature-module_photo03.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_home-feature-module_photo03.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -469,7 +491,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 131983,
+		"initialSize": 131293,
 		"inputAbbreviatedPath": "\/_img\/as_illustration_01.png",
 		"outputAbbreviatedPath": "\/_img\/as_illustration_01.png",
 		"outputPathIsOutsideProject": 0,
@@ -1318,7 +1340,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_global\/_font-imports.scss": {
 		"createSourceMap": 0,
@@ -1334,7 +1356,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_global\/_global.scss": {
 		"createSourceMap": 0,
@@ -1350,7 +1372,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_global\/_layout.scss": {
 		"createSourceMap": 0,
@@ -1366,7 +1388,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_global\/_touch.scss": {
 		"createSourceMap": 0,
@@ -1382,7 +1404,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_global\/_type.scss": {
 		"createSourceMap": 0,
@@ -1398,7 +1420,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_global\/_utility.scss": {
 		"createSourceMap": 0,
@@ -1414,7 +1436,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_global\/_variables.scss": {
 		"createSourceMap": 0,
@@ -1430,7 +1452,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_mixins\/_media-queries.scss": {
 		"createSourceMap": 0,
@@ -1446,7 +1468,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_mixins\/_styles.scss": {
 		"createSourceMap": 0,
@@ -1462,7 +1484,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_modules\/_footer.scss": {
 		"createSourceMap": 0,
@@ -1478,7 +1500,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_modules\/_header.scss": {
 		"createSourceMap": 0,
@@ -1494,7 +1516,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_modules\/_photo-grid.scss": {
 		"createSourceMap": 0,
@@ -1510,7 +1532,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_modules\/_product-grid.scss": {
 		"createSourceMap": 0,
@@ -1526,7 +1548,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_modules\/_recipes-grid.scss": {
 		"createSourceMap": 0,
@@ -1542,7 +1564,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_modules\/_secondary-nav.scss": {
 		"createSourceMap": 0,
@@ -1558,7 +1580,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_modules\/_share.scss": {
 		"createSourceMap": 0,
@@ -1574,7 +1596,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_modules\/_shipping-banner.scss": {
 		"createSourceMap": 0,
@@ -1590,7 +1612,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_pages\/_about.scss": {
 		"createSourceMap": 0,
@@ -1606,7 +1628,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_pages\/_cart.scss": {
 		"createSourceMap": 0,
@@ -1622,7 +1644,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_pages\/_catalog-request.scss": {
 		"createSourceMap": 0,
@@ -1638,7 +1660,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_pages\/_home.scss": {
 		"createSourceMap": 0,
@@ -1654,7 +1676,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_pages\/_login.scss": {
 		"createSourceMap": 0,
@@ -1670,7 +1692,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_pages\/_main.scss": {
 		"createSourceMap": 0,
@@ -1686,7 +1708,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_pages\/_product.scss": {
 		"createSourceMap": 0,
@@ -1702,7 +1724,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_pages\/_recipes.scss": {
 		"createSourceMap": 0,
@@ -1718,7 +1740,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_pages\/_shop.scss": {
 		"createSourceMap": 0,
@@ -1734,7 +1756,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_pages\/_stores.scss": {
 		"createSourceMap": 0,
@@ -1750,7 +1772,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/_jquery-bxslider.scss": {
 		"createSourceMap": 0,
@@ -1766,7 +1788,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/_jquery-collapsible.scss": {
 		"createSourceMap": 0,
@@ -1782,7 +1804,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/_jquery-mmenu-all.scss": {
 		"createSourceMap": 0,
@@ -1798,7 +1820,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/_jquery-mmenu.scss": {
 		"createSourceMap": 0,
@@ -1814,7 +1836,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/_jquery-stacktable.scss": {
 		"createSourceMap": 0,
@@ -1830,7 +1852,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/addons\/jquery.mmenu.counters.scss": {
 		"createSourceMap": 0,
@@ -1846,7 +1868,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/addons\/jquery.mmenu.dragopen.scss": {
 		"createSourceMap": 0,
@@ -1862,7 +1884,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/addons\/jquery.mmenu.header.scss": {
 		"createSourceMap": 0,
@@ -1878,7 +1900,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/addons\/jquery.mmenu.labels.scss": {
 		"createSourceMap": 0,
@@ -1894,7 +1916,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/addons\/jquery.mmenu.searchfield.scss": {
 		"createSourceMap": 0,
@@ -1910,7 +1932,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/extensions\/jquery.mmenu.effects.scss": {
 		"createSourceMap": 0,
@@ -1926,7 +1948,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/extensions\/jquery.mmenu.fullscreen.scss": {
 		"createSourceMap": 0,
@@ -1942,7 +1964,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/extensions\/jquery.mmenu.ie8.scss": {
 		"createSourceMap": 0,
@@ -1958,7 +1980,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/extensions\/jquery.mmenu.positioning.scss": {
 		"createSourceMap": 0,
@@ -1974,7 +1996,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/extensions\/jquery.mmenu.themes.scss": {
 		"createSourceMap": 0,
@@ -1990,7 +2012,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/extensions\/jquery.mmenu.widescreen.scss": {
 		"createSourceMap": 0,
@@ -2006,7 +2028,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/inc\/_arrows.scss": {
 		"createSourceMap": 0,
@@ -2022,7 +2044,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/inc\/_colors.scss": {
 		"createSourceMap": 0,
@@ -2038,7 +2060,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/inc\/_sizing.scss": {
 		"createSourceMap": 0,
@@ -2054,7 +2076,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_plugins\/inc\/_variables.scss": {
 		"createSourceMap": 0,
@@ -2070,7 +2092,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_ui\/_buttons.scss": {
 		"createSourceMap": 0,
@@ -2086,7 +2108,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_ui\/_forms.scss": {
 		"createSourceMap": 0,
@@ -2102,7 +2124,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/_ui\/_misc.scss": {
 		"createSourceMap": 0,
@@ -2118,7 +2140,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/main.scss": {
 		"createSourceMap": 0,
@@ -2134,7 +2156,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/_sass\/scss_style-guide.scss": {
 		"createSourceMap": 0,
@@ -2150,7 +2172,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/about.html": {
 		"fileType": 8192,
@@ -2254,11 +2276,29 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/shop.html": {
+	"\/shop-classics.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/shop.html",
+		"inputAbbreviatedPath": "\/shop-classics.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/shop-classics02.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/shop-classics02.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/shop-savories.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/shop-savories.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2271,11 +2311,20 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/style.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/style.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Charlie Stanard",
+"lastSavedByUser": "Neal Stanard",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -2847,7 +2896,7 @@
 	"sassDebugStyle": 0,
 	"sassDecimalPrecision": 5,
 	"sassOutputStyle": 0,
-	"sassUseLibsass": 1,
+	"sassUseLibsass": 0,
 	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
 	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs",
