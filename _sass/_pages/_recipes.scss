@@ -256,7 +256,9 @@
 }
 
 .recipe__card {
-
+	.col-1-2:nth-child(1n) {
+		padding-right: 30px;
+	}
 	.recipe__ingredients {
 		margin: 0 0 60px 0;
 
