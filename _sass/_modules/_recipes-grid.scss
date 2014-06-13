@@ -187,7 +187,7 @@
 
 .recipes-jump__grid {
 	@extend .cf;
-	margin: 60px 0 0 0;
+	margin: 0 0 0 0;
 
 	.recipes-grid__row {
 		@extend .cf;
@@ -241,9 +241,7 @@
 	}
 
 	@include respond($xlrg) {
-		.recipes-grid__item {
-			height: 499px;
-		}
+		.recipes-grid__item {}
 		.recipes-grid__full {
 			height: auto;
 		}
