@@ -18,7 +18,10 @@ header.shop__header {
 	.lead-copy {
 		margin: 0 auto;
 	}
-
+	.container--wide {
+		padding-top: 4.5%;
+	}
+	
 	@include respond(480px) {
 		background-position: 0 -60px;
 	}

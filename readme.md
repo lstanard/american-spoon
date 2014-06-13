@@ -55,7 +55,7 @@ FOOTER
 
 SHOP PAGE
 Shop Header:
-- Above SHOP super head: 4.5% margin
+- ~~Above SHOP super head: 4.5% margin~~
 - change header to padding-bottom to 4.5%
 
 Shop Grid:
@@ -128,3 +128,13 @@ Dev notes:
 1. Do not directly modify .html or .css files, they are being generated via CodeKit (.html and .css files are not committed to the repo)
 2. Do not use z-index directly in a SCSS file, see _sass/_global/_variables for z-index value variables
 3. Use uiFunctions.site object for UI related JavaScript/jQuery functions
+
+Neal To Do:
+-----------
+
+1. Mantle work
+	- nav circles with stylezzz
+2. Play with instagram API (Pull most recent instagram photo)
+3. PC testing (IE)
+
+
