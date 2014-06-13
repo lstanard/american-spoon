@@ -78,7 +78,6 @@
 	}
 
 	@include respond($med) {
-		min-height: 500px;
 
 		ul {
 			li {
@@ -90,6 +89,9 @@
 				}
 			}
 		}
+	}
+	@include respond(932px) {
+		min-height: 500px;	
 	}
 }
 
@@ -151,12 +153,14 @@
 	}
 
 	ul > li {
+		border-bottom: 1px solid #dddddd;
 		margin-top: 0;
 		margin-bottom: 30px;
 	}
 
 	@include respond($med) {
 		ul > li {
+			border-bottom: none;
 			margin-top: 30px;
 			margin-bottom: 15px;
 		}
