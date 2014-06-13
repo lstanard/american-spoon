@@ -112,6 +112,7 @@
 
 	h2.about__subhead {
 		color: $blue;
+		margin-bottom: 60px;
 	}
 
 	blockquote {
@@ -129,7 +130,7 @@
 	@include respond($med, "min") {
 		header {
 			.container--wide {
-				padding-top: 3%;
+				padding-top: 2%;
 				padding-bottom: 3%;
 			}
 			h1.about__page-title {
@@ -195,6 +196,7 @@
 		}
 
 		blockquote {
+			margin-bottom: 30px;
 			margin-top: 90px;
 			padding: 30px 120px;
 		}

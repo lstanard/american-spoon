@@ -65,12 +65,12 @@ Shop Grid:
 Will need a page with a second category included. So, ‘Spoon Fruit & Butter’ would have a second category below the first set of products. For a heading, I think we could just repeat the first one with another fruit illustration. Otherwise, we just do the name and then a rule line like the ‘You May Also Like’ heading on the product page. Thought?
 
 ABOUT PAGE
-- Reduce space about ‘ABOUT’ to padding top 2%. Trying to make the distance above it and below it the same.
-- Place %nbsp; between every and jar in the intro section. Widow on laptop. Do the same in the next paragraph with anywhere and else.
-- Add a little space between ‘The American Spoon Story and the copy. 20px or so.
-- Add a little space after the green pull quote in the Our Kitchen section.
-- Capitalize Farmers in Fruits & Farmers
-- Add &nbsp; at the end of that first paragraph
+- ~~Reduce space about ‘ABOUT’ to padding top 2%. Trying to make the distance above it and below it the same.~~
+- ~~Place %nbsp; between every and jar in the intro section. Widow on laptop. Do the same in the next paragraph with anywhere and else.~~
+- ~~Add a little space between ‘The American Spoon Story and the copy. 20px or so.~~
+- ~~Add a little space after the green pull quote in the Our Kitchen section.~~
+- ~~Capitalize Farmers in Fruits & Farmers~~
+- ~~Add &nbsp; at the end of that first paragraph~~
 
 
 #### High priority: ####
