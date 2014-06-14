@@ -6,12 +6,26 @@
 
 	ul {
 		@extend .cf;
-		padding-bottom: 30px;
+		padding-bottom: 25px;
 	}
 
 	ul > li {
-		text-align: center;
+		border-bottom: 1px solid #dddddd;
+		margin-bottom: 15px;
+		margin-top: 0;
 		padding: 0;
+		text-align: center;
+
+		&:first-child {
+			a.product-grid__link:link,
+			a.product-grid__link:visited,
+			a.featured-product__link:link,
+			a.featured-product__link:visited,
+			a.shop-product__link:link,
+			a.shop-product__link:visited {
+				padding-top: 0;
+			}
+		}
 
 		// 2 column grid
 		@include respond($med) {
@@ -25,7 +39,7 @@
 		}
 
 		// 3 column grid
-		@include respond(790px, "min") {
+		@include respond(790px) {
 			width: calc((100% - 40px) / 3);
 
 			&:nth-child(2n) {
@@ -37,7 +51,7 @@
 		}
 
 		// 4 column grid
-		@include respond(1024px, "min") {
+		@include respond($lrg) {
 			width: calc((100% - 60px) / 4);
 
 			&:nth-child(2n),
@@ -60,7 +74,7 @@
 		color: $primary-copy;
 		display: block;
 		margin: 0 auto;
-		padding: 15px 0;
+		padding: 25px 0;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
@@ -129,7 +143,24 @@
 	@include respond($med) {
 
 		ul {
-			padding-bottom: 45px;
+			padding-bottom: 0;
+		}
+
+		ul > li {
+			border-bottom: none;
+			margin-top: 30px;
+			margin-bottom: 15px;
+
+			&:first-child {
+				a.product-grid__link:link,
+				a.product-grid__link:visited,
+				a.featured-product__link:link,
+				a.featured-product__link:visited,
+				a.shop-product__link:link,
+				a.shop-product__link:visited {
+					padding-top: 15px;
+				}
+			}
 		}
 
 		a.product-grid__link:link,
@@ -233,6 +264,34 @@
 			}
 			.featured-product__add-to-cart {
 				@include opacity(1);
+			}
+		}
+
+		// 2 column grid
+		@include respond($med) {
+			ul > li {
+				&:nth-child(1),
+				&:nth-child(2) {
+					margin-top: 0;
+				}
+			}
+		}
+
+		// 3 column grid
+		@include respond(790px) {
+			ul > li {
+				&:nth-child(3) {
+					margin-top: 0;
+				}
+			}
+		}
+
+		// 4 column grid
+		@include respond($lrg) {
+			ul > li {
+				&:nth-child(4) {
+					margin-top: 0;
+				}
 			}
 		}
 	}

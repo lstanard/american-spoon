@@ -5,39 +5,8 @@
 $sml: 30.0em; // 480px
 $med: 40.5em; // 648px
 $lrg: 64.0em; // 1024px
-$xlrg: 80.0em; // 1280px <-- recipes grid breaks
-
-@mixin mnw($break) {
-	@if $break == "sml" {
-		@media (min-width: $sml) {
-			@content;
-		}
-	}
-	@else if $break == "med" {
-		@media (min-width: $med) {
-			@content;
-		}
-	}
-	@else if $break == "lrg" {
-		@media (min-width: $lrg) {
-			@content;
-		}
-	}
-	@else {
-		@media (min-width: $break) {
-			@content;
-		}
-	}
-}
-
-/*------------------------------------------------------------------
-    MEDIA QUERIES: Min/max width "respond"
--------------------------------------------------------------------*/
-
-$break-xs: 480px;
-$break-sm: 768px;
-$break-md: 992px;
-$break-lg: 1250px;
+$xlrg: 80.0em; // 1280px
+$xxlrg: 92.0em; // 1472px
 
 @mixin respond($media, $type: "min") {
 	@if $media == "xs" {

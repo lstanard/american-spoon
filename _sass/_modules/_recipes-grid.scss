@@ -78,7 +78,7 @@
 }
 
 /*------------------------------------------------------------------
-    MODULE: Recipes grid / grid 2.0
+    MODULE: Recipes grid / Home page
 -------------------------------------------------------------------*/
 
 .recipes-grid {
@@ -142,37 +142,34 @@
 
 		.grid-group01 {
 			float: left;
-			width: ((900/1200) * 100%);
+			width: (900/1200) * 100%;
 		}
 		.grid-group02 {
 			float: left;
-			width: ((300/1200) * 100%);
+			width: (300/1200) * 100%;
 		}
-
 		.grid-item {
 			float: left;
 		}
-
 		.grid-item--sm {
 			height: 100%;
 			padding-right: $recipes-gutter;
-			width: ((320/900) * 100%);
+			width: (320/900) * 100%;
 		}
 		.grid-item--med {
 			padding-right: $recipes-gutter;
-			width: ((580/900) * 100%);
+			width: (580/900) * 100%;
 		}
 		.grid-item--lrg {
 			padding-right: $recipes-gutter;
-			width: ((900/1200) * 100%);
+			width: (900/1200) * 100%;
 		}
 		.grid-item--lrg + .grid-item--sm {
 			padding-right: 0;
-			width: ((300/1200) * 100%);
+			width: (300/1200) * 100%;
 		}
 		.grid-module--cta {
 			min-height: 270px;
-
 		}
 	}
 
@@ -222,10 +219,11 @@
 		}
 
 		.recipes-grid__1-3 {
-			width: ((1/3) * 100%);
+			width: (1/3) * 100%;
 		}
+
 		.recipes-grid__2-3 {
-			width: ((2/3) * 100%);
+			width: (2/3) * 100%;
 		}
 
 		.recipes-grid__1-3--left,
@@ -245,7 +243,6 @@
 	}
 
 	@include respond($xlrg) {
-		.recipes-grid__item {}
 		.recipes-grid__full {
 			height: auto;
 		}

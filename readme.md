@@ -3,6 +3,7 @@ Page links:
 
  - Home: http://www.spoon.com/designtmp/index.html
  - Shop: http://www.spoon.com/designtmp/shop.html
+ - Shop (multiple categories): http://www.spoon.com/designtmp/shop_2.html
  - Product page: http://www.spoon.com/designtmp/product-page.html
  - Login: http://www.spoon.com/designtmp/login.html
  - Catalog request: http://www.spoon.com/designtmp/catalog-request.html

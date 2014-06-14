@@ -5,11 +5,9 @@
 a.shipping-banner--link:link,
 a.shipping-banner--link:visited {
 	@include opacity(1);
-	// background: url('../_img/as_shipping-banner_textured_bottom.png') repeat-x center bottom;
 	border: 0;
 	display: none;
 	overflow: visible;
-	// padding: 0 0 10px 0;
 	position: relative;
 	text-decoration: none;
 	width: 100%;
@@ -82,11 +80,9 @@ a.shipping-banner--link:visited {
 		visibility: hidden;
 		top: 0;
 	}
-
 }
 
 .shipping-banner--red {
-
 	background-color: $red;
 	border-top: none;
 	border-bottom: none;
@@ -94,5 +90,4 @@ a.shipping-banner--link:visited {
 	.as-icon-shipping, p {
 		color: #FFF;
 	}
-
 }

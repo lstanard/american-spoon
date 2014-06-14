@@ -7,21 +7,16 @@ header.shop__header {
 	background-repeat: no-repeat;
 	background-position: 0 -45px;
 	border-bottom: 1px solid $bordercolor;
-	@include background-size(60%);
-
+	@include background-size(65%);
 	text-align: center;
 
 	h1.page-title {
 		color: $blue;
 		margin-bottom: 15px;
-		margin-top: 45px;
+		margin-top: 30px;
 	}
 	.lead-copy {
 		margin: 0 auto;
-	}
-	.container--wide {
-		padding-top: 8%;
-		padding-bottom: 8%;
 	}
 
 	@include respond(480px) {
@@ -30,13 +25,13 @@ header.shop__header {
 	@include respond($med) {
 		@include background-size(auto);
 		background-position: -200px -100px;
+
+		h1.page-title {
+			margin-top: 45px;
+		}
 	}
 	@include respond($lrg) {
 		background-position: -120px -45px;
-		.container--wide {
-			padding-top: 4.5%;
-			padding-bottom: 4.5%;
-		}
 	}
 	@include respond(1100px) {
 		background-position: -120px -60px;
@@ -52,6 +47,12 @@ header.shop__header {
 	}
 }
 
+body.shop--multi-cat {
+	header.shop__header {
+		border-bottom: none;
+	}
+}
+
 .shop__secondary-nav {
 	@extend .secondary-nav;
 }
@@ -60,26 +61,8 @@ header.shop__header {
     PAGE: Shop / Category page
 -------------------------------------------------------------------*/
 
-.shop__products {
-	padding-top: 30px;
-
-	.container--wide {
-		padding-bottom: 0;
-	}
-}
-
 .shop-products__grid {
 	@extend .product-grid;
-
-	ul {
-		padding-top: 15px;
-		padding-bottom: 0;
-	}
-
-	ul > li {
-		margin-top: 30px;
-		margin-bottom: 15px;
-	}
 
 	ul > li {
 		a.shop-product__recipe-promo:link,
@@ -87,6 +70,7 @@ header.shop__header {
 			display: block;
 			margin: 0 auto;
 			max-width: 285px;
+			padding: 25px 0;
 			text-align: center;
 			text-decoration: none;
 

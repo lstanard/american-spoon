@@ -2,17 +2,6 @@
     PAGE: Login
 -------------------------------------------------------------------*/
 
-.page__login {
-
-	.main-container {
-		.container--narrow {
-			padding-bottom: 8%;
-			padding-top: 5%;
-		}
-	}
-
-}
-
 .login__current-user,
 .login__create-acct {
 	border: 1px solid $bordercolor;
@@ -58,7 +47,4 @@
 			color: $primary-copy;
 		}
 	}
-
 }
-
-.login__create-acct {}

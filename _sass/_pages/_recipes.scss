@@ -23,7 +23,6 @@
 	@extend .cf;
 
 	li {
-
 		$margin: (20/1200 * 100%);
 
 		padding-bottom: 45px;
@@ -189,10 +188,6 @@
 .recipe__product-preview {
 	background-color: $cart-table-interior;
 	border-bottom: 1px solid $bordercolor;
-
-	.container--wide {
-		padding-bottom: 3%;
-	}
 
 	.product-preview__details {
 		background-color: #FFF;

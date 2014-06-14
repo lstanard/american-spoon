@@ -3,7 +3,7 @@
 -------------------------------------------------------------------*/
 
 .section-illustration {
-	margin: 30px 0 0 0;
+	margin: 0;
 	position: relative;
 	text-align: center;
 	width: 100%;
@@ -79,11 +79,6 @@
 	header {
 		text-align: center;
 
-		.container--wide {
-			padding-top: 10%;
-			padding-bottom: 10%;
-		}
-
 		h1.about__page-title {
 			@extend .archer-light-ital;
 			color: $red;
@@ -114,7 +109,6 @@
 
 	h2.about__subhead {
 		color: $blue;
-		margin-bottom: 60px;
 	}
 
 	blockquote {
@@ -131,10 +125,6 @@
 
 	@include respond($med, "min") {
 		header {
-			.container--wide {
-				padding-top: 2%;
-				padding-bottom: 3%;
-			}
 			h1.about__page-title {
 				font-size: 38px;
 				font-size: 3.8rem;

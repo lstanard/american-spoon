@@ -2,59 +2,23 @@
     PAGE: Stores
 -------------------------------------------------------------------*/
 
-.page__stores { // store page class for body container
-
+.page__stores {
 	.store-location:last-child {
 		border-bottom: none;
 	}
-
-	main#main {
-		section:first-of-type {
-			margin-top: 45px;
-		}
-	}
-
-	@include respond($med) {
-		main#main {
-			section:first-of-type {
-				margin-top: 0;
-			}
-		}
-	}
-
 }
 
 .store-location {
 	border-bottom: 1px solid $bordercolor;
 	text-align: center;
 
-	.container--narrow {
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
-
-	&#petoskey {
-		.container--wide {
-			padding-bottom: 60px;
-			padding-top: 0;
-		}
-	}
-
 	.store-location__info {
 		@extend .archer-med;
 	}
 
 	@include respond($med) {
-		.container--narrow {
-			padding-top: 90px;
-			padding-bottom: 90px;
-		}
 		&#petoskey {
 			text-align: left;
-
-			.container--wide {
-				padding-bottom: 0;
-			}
 		}
 	}
 }

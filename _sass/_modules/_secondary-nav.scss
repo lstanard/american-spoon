@@ -40,7 +40,7 @@
 		}
 	}
 
-	@include respond($med, "min") {
+	@include respond($med) {
 
 		h4 {
 			display: none;
@@ -50,7 +50,7 @@
 			background-color: transparent;
 			border: 1px solid $bordercolor;
 			display: inline-block;
-			margin: 0 auto 45px auto;
+			margin: 0 auto;
 			min-width: 1px;
 			padding: 12px 20px;
 			text-align: center;
@@ -69,15 +69,13 @@
 			margin: 0 12px;
 			padding: 0;
 		}
-
 	}
-
 }
 
 .pagination {
 
 	.container--wide {
-		padding-bottom: 4.5%;
+		padding-top: 0;
 	}
 
 	nav {

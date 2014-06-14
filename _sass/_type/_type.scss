@@ -41,7 +41,6 @@ body {
 	font-size: 3.6rem;
 	line-height: 42px;
 	line-height: 4.2rem;
-	margin-top: 30px;
 	margin-bottom: 45px;
 	text-align: center;
 
@@ -50,7 +49,6 @@ body {
 		font-size: 5.0rem;
 		line-height: 46px;
 		line-height: 4.6rem;
-		margin-top: 45px;
 	}
 }
 
@@ -157,12 +155,12 @@ h2 {
 		font-size: 1.5rem;
 		padding: 0 30px 10px 30px;
 		letter-spacing: 0.1em;
-		margin: 75px auto 15px auto;
+		margin: 60px auto 15px auto;
 		text-transform: uppercase;
 		width: auto;
 
 		@include respond($med) {
-			margin-top: 20px;
+			margin-top: 0;
 		}
 	}
 

@@ -2,12 +2,6 @@
     PAGE: Home / Mantle
 -------------------------------------------------------------------*/
 
-.page-home {
-	.main-container {
-		padding-top: 0;
-	}
-}
-
 .home-mantle {
 	height: auto;
 
@@ -91,7 +85,7 @@
 		}
 	}
 	@include respond(932px) {
-		min-height: 500px;	
+		min-height: 500px;
 	}
 }
 
@@ -136,35 +130,11 @@
 		a:link, a:visited {
 			float: right;
 		}
-
-		a.featured-products__shop-link:link,
-		a.featured-products__shop-link:visited {
-			// margin: 0;
-		}
 	}
 }
 
 .featured-products__grid {
-
 	@extend .product-grid;
-
-	ul {
-		padding-top: 30px;
-	}
-
-	ul > li {
-		border-bottom: 1px solid #dddddd;
-		margin-top: 0;
-		margin-bottom: 30px;
-	}
-
-	@include respond($med) {
-		ul > li {
-			border-bottom: none;
-			margin-top: 30px;
-			margin-bottom: 15px;
-		}
-	}
 
 	& + a.btn:link,
 	& + a.btn:visited {
@@ -182,7 +152,6 @@
 	position: relative;
 	text-align: center;
 
-
 	a.btn:link, a.btn:visited {
 		margin-left: auto;
 		margin-right: auto;
@@ -190,7 +159,6 @@
 	}
 
 	@include respond($lrg) {
-
 		&:before {
 			background: url('../_img/as_illustration_01.png') no-repeat 0px 0px;
 			content: "";
@@ -290,7 +258,7 @@
 				font-size: 1.1rem;
 			}
 		}
-		
+
 		@include respond(1250px) {
 			text-align: left;
 		}

@@ -9,7 +9,7 @@
 		@include respond($med) {
 			margin: 0;
 			padding-right: 10px;
-			width: (1/2 * 100%);
+			width: (1/2) * 100%;
 
 			& + .col-1-2 {
 				padding-right: 0;

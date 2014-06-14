@@ -306,7 +306,6 @@
 		& > a:link,
 		& > a:visited {
 			@extend .verlag-bold;
-			// color: #AAA;
 			margin: 0 8px;
 		}
 
@@ -356,7 +355,7 @@
 				margin-left: 5px;
 			}
 
-			@include mnw($med) {
+			@include respond($med) {
 				&:after {
 					display: block;
 				}
@@ -585,7 +584,6 @@
 	li.primary-nav__utility__search {
 		display: none;
 	}
-
 }
 
 /*------------------------------------------------------------------
@@ -691,7 +689,6 @@
 	a.shipping-banner--link:visited {
 		display: none;
 	}
-
 }
 
 /*------------------------------------------------------------------
@@ -718,8 +715,8 @@ a.header__search-btn:visited {
 	z-index: $search-form;
 
 	.container--wide {
-		padding-top: 45px;
-		padding-bottom: 0;
+		// padding-top: 45px;
+		// padding-bottom: 0;
 	}
 
 	&.expanded {

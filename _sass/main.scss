@@ -18,22 +18,25 @@
 
 @import "_global/_variables";
 @import "_mixins/_media-queries";
-@import "_mixins/_styles";
-
 @import "_global/_global";
 @import "_global/_utility";
-@import "_global/_font-imports";
 @import "_global/_layout";
 @import "_global/_columns";
-@import "_ui/_forms";
-@import "_ui/_buttons";
-@import "_ui/_misc";
 
 /*------------------------------------------------------------------
     TYPE
 -------------------------------------------------------------------*/
 
-@import "_global/_type";
+@import "_type/_font-imports";
+@import "_type/_type";
+
+/*------------------------------------------------------------------
+    UI ELEMENTS
+-------------------------------------------------------------------*/
+
+@import "_ui/_forms";
+@import "_ui/_buttons";
+@import "_ui/_misc";
 
 /*------------------------------------------------------------------
     MODULES
@@ -52,7 +55,6 @@
     PAGES
 -------------------------------------------------------------------*/
 
-@import "_pages/_main";
 @import "_pages/_about";
 @import "_pages/_home";
 @import "_pages/_product";

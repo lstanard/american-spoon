@@ -76,9 +76,7 @@ a.scroll-top:visited {
 		a.footer__sign-up__btn:visited {
 			height: 85px;
 		}
-
 	}
-
 }
 
 .footer__sign-up {
@@ -93,11 +91,6 @@ a.scroll-top:visited {
 		margin: 0 0 15px 0;
 		width: 100%;
 	}
-
-	.container--narrow {
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
 }
 
 .footer__sign-up__form {
@@ -107,7 +100,7 @@ a.scroll-top:visited {
 }
 
 .footer__sign-up__input {
-	@include mnw(med) {
+	@include respond(med) {
 		float: left;
 	}
 }
@@ -118,7 +111,7 @@ a.footer__sign-up__btn:visited {
 	line-height: 57px;
 	width: 100%;
 
-	@include mnw(med) {
+	@include respond(med) {
 		float: right;
 	}
 }

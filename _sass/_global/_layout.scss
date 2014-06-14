@@ -24,6 +24,10 @@ body, html {
     RESPONSIVE CONTAINERS
 -------------------------------------------------------------------*/
 
+.main-container {
+	width: 100%;
+}
+
 .container {
 	height: auto;
 	margin: 0 auto;
@@ -33,11 +37,16 @@ body, html {
 	width: 100%;
 
 	@include respond($med) {
-		padding-top: 5%;
-		padding-bottom: 2%;
+		padding-top: 8%;
+		padding-bottom: 8%;
 	}
 	@include respond($lrg) {
-		padding-top: 2%;
+		padding-top: 4.5%;
+		padding-bottom: 4.5%;
+	}
+	@include respond($xlrg) {
+		padding-top: 5%;
+		padding-bottom: 5%;
 	}
 }
 
@@ -56,7 +65,7 @@ body, html {
 	@extend .container;
 	max-width: $container-wide;
 
-	@include mnw(1250px) {
+	@include respond(1250px) {
 		padding-left: 0;
 		padding-right: 0;
 	}

@@ -74,7 +74,6 @@ a.btn--box:link, a.btn--box:visited {
 		border-color: $red;
 		color: #FFF;
 	}
-
 }
 
 a.btn:link, a.btn:visited {
@@ -93,8 +92,7 @@ a.btn:link, a.btn:visited {
 	text-decoration: none;
 	text-transform: uppercase;
 
-
-	// Wrap label in a <span> for vertical alignment
+	// Wrap label in a <span> for middle vertical alignment
 	span {
 		display: table-cell;
 		font-size: 13px;

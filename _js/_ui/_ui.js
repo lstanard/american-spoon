@@ -153,9 +153,7 @@
 
 					$(document).ready(function() {
 						$('.scroll-top').on('tap click', function(e){
-							$('html, body').animate({
-								scrollTop: 0
-							}, 1250);
+							$('html, body').scrollTop(0);
 							e.preventDefault();
 						});
 					});

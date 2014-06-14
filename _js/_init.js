@@ -37,6 +37,5 @@ var functionCheck = jRespond([
 					$slideElement.addClass('active').siblings().removeClass('active');
 				}
 			});
-
 		}
 	});
