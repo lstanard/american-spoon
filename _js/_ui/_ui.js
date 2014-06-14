@@ -330,6 +330,12 @@
 					}
 				},
 
+				destroyMobileNav: function() {
+ +					if (sw >= navBreak)
+ +						$('#mm-header__primary-nav').trigger('close');
+ +
+ +				},
+
 				bindLoginPageControls: function() {
 
 					$('#login__current-user__btn, #login__create-acct__btn').on('click tap', function(e) {
@@ -386,6 +392,22 @@
 
 			init: function() {
 
+				$(document).ready(function() {
+					var mantleSlider = $('.bxslider').bxSlider({
+						adaptiveHeight: false,
+						slideWidth: 1200,
+						onSliderLoad: function(currentSlide, currentIndex) {
+							$(currentSlide).addClass('active');
+						},
+						onSlideNext: function($slideElement, oldIndex, newIndex) {
+							$slideElement.addClass('active').siblings().removeClass('active');
+						},
+						onSlidePrev: function($slideElement, oldIndex, newIndex) {
+							$slideElement.addClass('active').siblings().removeClass('active');
+						}
+					});
+				});
+
 				$('#product-preview').imagePreviewer();
 				$('#cart-table').stacktable();
 				$('.product-details').appendAround();
@@ -405,6 +427,7 @@
 					sh = document.documentElement.clientHeight;
 					uiFunctions.site.setupMobileNavigation();
 					uiFunctions.site.setHeaderWaypoint();
+					uiFunctions.site.destroyMobileNav();
 					uiFunctions.site.setColHeights();
 					uiFunctions.site.setupSecondaryNav();
 				});

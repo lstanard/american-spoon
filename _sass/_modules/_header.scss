@@ -355,7 +355,7 @@
 				margin-left: 5px;
 			}
 
-			@include respond($med) {
+			@include respond($header-nav-break) {
 				&:after {
 					display: block;
 				}

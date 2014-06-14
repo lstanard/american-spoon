@@ -21,19 +21,5 @@ var functionCheck = jRespond([
 			uiFunctions.site.setFooterYear();
 			uiFunctions.site.bindLoginPageControls();
 			uiFunctions.site.setupScrollToLinks();
-
-			var mantleSlider = $('.bxslider').bxSlider({
-				adaptiveHeight: true,
-				slideWidth: 1200,
-				onSliderLoad: function(currentSlide, currentIndex) {
-					$(currentSlide).addClass('active');
-				},
-				onSlideNext: function($slideElement, oldIndex, newIndex) {
-					$slideElement.addClass('active').siblings().removeClass('active');
-				},
-				onSlidePrev: function($slideElement, oldIndex, newIndex) {
-					$slideElement.addClass('active').siblings().removeClass('active');
-				}
-			});
 		}
 	});
