@@ -2,8 +2,6 @@
     INITIALIZERS: UI components
 -------------------------------------------------------------------*/
 
-uiFunctions.init();
-
 var functionCheck = jRespond([
 		{
 			label: 'med',
