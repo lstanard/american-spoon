@@ -125,7 +125,7 @@
 		color: $lightgrey;
 		font-size: 16.5px;
 		font-size: 1.65rem;
-		letter-spacing: .4px;
+		letter-spacing: .5px;
 		line-height: 22px;
 		line-height: 2.2rem;
 		margin-bottom: 5px;
@@ -223,8 +223,8 @@
 			@include opacity(1);
 			@include transition(opacity .5s);
 			border-top: 1px solid $bordercolor;
-			font-size: 16.5px;
-			font-size: 1.65rem;
+			font-size: 13px;
+			font-size: 1.3rem;
 			line-height: 22px;
 			line-height: 2.2rem;
 			margin: 0 0 -2px;
