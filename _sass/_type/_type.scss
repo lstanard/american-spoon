@@ -49,6 +49,7 @@ body {
 		font-size: 5.0rem;
 		line-height: 46px;
 		line-height: 4.6rem;
+		margin-bottom: 60px;
 	}
 }
 
@@ -84,7 +85,6 @@ h1 {
 		font-size: 4.2rem;
 		line-height: 46px;
 		line-height: 4.6rem;
-		margin-top: 15px;
 		margin-bottom: 30px;
 		text-align: center;
 
@@ -94,7 +94,6 @@ h1 {
 			line-height: 56px;
 			line-height: 5.6rem;
 			margin-bottom: 45px;
-			margin-top: 30px;
 		}
 	}
 
@@ -107,15 +106,6 @@ h1 {
 	&.featured-products__headline {
 		font-size: 30px;
 		font-size: 3.0rem;
-	}
-
-	&.related-products__headline {
-		@extend .verlag-book;
-		border-bottom: 1px solid $bordercolor;
-		font-size: 16px;
-		font-size: 1.6rem;
-		padding: 0 0 15px 0;
-		text-transform: uppercase;
 	}
 
 	&.prodcut-details__product-name {
@@ -161,6 +151,7 @@ h2 {
 
 		@include respond($med) {
 			margin-top: 0;
+			margin-bottom: 45px;
 		}
 	}
 
@@ -341,6 +332,18 @@ h5 {
 		color: $primary-copy;
 		font-size: 16px;
 		font-size: 1.6rem;
+		text-transform: uppercase;
+	}
+
+	&.related-products__headline {
+		@extend .verlag-book;
+		border-bottom: 1px solid $bordercolor;
+		color: $primary-copy;
+		font-size: 16px;
+		font-size: 1.6rem;
+		line-height: 24px;
+		line-height: 2.4rem;
+		padding: 0 0 15px 0;
 		text-transform: uppercase;
 	}
 

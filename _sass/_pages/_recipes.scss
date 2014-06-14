@@ -4,9 +4,12 @@
 
 .recipes-jump,
 .page__recipes__category {
-
-	header {
+	header.main-header {
 		text-align: center;
+
+		.container--wide {
+			padding-bottom: 0;
+		}
 
 		.lead-copy {
 			margin: 0 auto 45px auto;
@@ -78,7 +81,7 @@
 				@extend .verlag-black;
 				@include transition(opacity .25s);
 				@include opacity(0);
-				color: $red;
+				color: $pumpkin;
 				display: inline-block;
 				font-size: 19px;
 				font-size: 1.9rem;
@@ -94,8 +97,7 @@
 			&:before {
 				@include transition(opacity .25s);
 				@include opacity(0);
-				background-color: rgba(255,255,255,.92);
-				border-top: 5px solid $red;
+				background-color: rgba(255,255,255,.85);
 				bottom: 0;
 				content: "";
 				display: block;
@@ -108,7 +110,6 @@
 			}
 
 			&:hover {
-				@include box-shadow(rgba(0,0,0,.18) 0px 1px 6px);
 
 				.rcl-graphic__label {
 					@include opacity(1);

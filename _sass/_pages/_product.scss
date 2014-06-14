@@ -258,6 +258,10 @@ $product-details-context: 620px;
 
 .related-products {
 
+	header {
+		margin-bottom: 45px;
+	}
+
 	@extend .product-grid;
 
 	ul > li {
@@ -265,7 +269,7 @@ $product-details-context: 620px;
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
-	
+
 	@include respond($med) {
 		ul > li {
 			border-bottom: none;

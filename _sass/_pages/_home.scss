@@ -93,12 +93,6 @@
     PAGE: Home / Featured Products
 -------------------------------------------------------------------*/
 
-.featured-products {
-	@include respond($med) {
-		padding: 4.333333333% 0 0 0;
-	}
-}
-
 .featured-products__header {
 	@extend .cf;
 	border-bottom: 1px solid $bordercolor;
@@ -123,6 +117,7 @@
 
 	@include respond($med) {
 		padding: 0 30px 0 5px;
+		margin-bottom: 45px;
 
 		h1 {
 			float: left;
@@ -135,6 +130,7 @@
 
 .featured-products__grid {
 	@extend .product-grid;
+	margin-bottom: 60px;
 
 	& + a.btn:link,
 	& + a.btn:visited {
@@ -166,7 +162,7 @@
 			height: 242px;
 			left: 0;
 			position: absolute;
-			top: -120px;
+			top: -90px;
 			width: 294px;
 			z-index: 1;
 		}
@@ -174,6 +170,8 @@
 }
 
 .featured-recipes__header {
+	padding-top: 15px;
+
 	h3 {
 		color: $blue;
 	}

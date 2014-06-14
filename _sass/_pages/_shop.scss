@@ -13,7 +13,7 @@ header.shop__header {
 	h1.page-title {
 		color: $blue;
 		margin-bottom: 15px;
-		margin-top: 30px;
+		// margin-top: 30px;
 	}
 	.lead-copy {
 		margin: 0 auto;
@@ -27,7 +27,7 @@ header.shop__header {
 		background-position: -200px -100px;
 
 		h1.page-title {
-			margin-top: 45px;
+			// margin-top: 45px;
 		}
 	}
 	@include respond($lrg) {

@@ -331,10 +331,9 @@
 				},
 
 				destroyMobileNav: function() {
- +					if (sw >= navBreak)
- +						$('#mm-header__primary-nav').trigger('close');
- +
- +				},
+					if (sw >= navBreak)
+						$('#mm-header__primary-nav').trigger('close');
+				},
 
 				bindLoginPageControls: function() {
 
