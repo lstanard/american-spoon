@@ -75,75 +75,81 @@
 }
 
 .pagination {
-	height: 95px;
-	width: 100%;
 
-	ul {
+	.container--wide {
+		padding-bottom: 4.5%;
+	}
+
+	nav {
 		@extend .cf;
-		border-bottom: 1px solid $bordercolor;
-		border-top: 1px solid $bordercolor;
 		height: 95px;
 		width: 100%;
-	}
 
-	ul li {
-		display: block;
-		margin: 0;
-		padding: 0;
-	}
-
-	ul li a:link,
-	ul li a:visited {
-		display: block;
-		height: 48px;
-		font-size: 16px;
-		font-size: 1.6rem;
-		line-height: 50px;
-		padding: 0;
-		text-align: center;
-		width: 100%;
-	}
-
-	ul li a.pagination__prev:link,
-	ul li a.pagination__prev:visited {
-		&:before {
-			display: inline-block;
-			content: "<";
-			margin: 0 15px 0 0;
+		ul {
+			@extend .cf;
+			border-bottom: 1px solid $bordercolor;
+			border-top: 1px solid $bordercolor;
+			height: 95px;
+			width: 100%;
 		}
-	}
-
-	ul li a.pagination__next:link,
-	ul li a.pagination__next:visited {
-		&:after {
-			display: inline-block;
-			content: ">";
-			margin: 0 0 0 15px;
-		}
-	}
-
-	@include respond($med, "min") {
 
 		ul li {
-			float: left;
-			width: 50%;
+			display: block;
+			margin: 0;
+			padding: 0;
 		}
 
 		ul li a:link,
 		ul li a:visited {
-			height: 93px;
+			display: block;
+			height: 48px;
 			font-size: 16px;
 			font-size: 1.6rem;
-			letter-spacing: 1px;
-			line-height: 95px;
-			line-height: 9.5rem;
+			line-height: 50px;
+			padding: 0;
+			text-align: center;
+			width: 100%;
 		}
 
 		ul li a.pagination__prev:link,
 		ul li a.pagination__prev:visited {
-			border-right: 1px solid $bordercolor;
+			&:before {
+				display: inline-block;
+				content: "<";
+				margin: 0 15px 0 0;
+			}
 		}
 
-	}
+		ul li a.pagination__next:link,
+		ul li a.pagination__next:visited {
+			&:after {
+				display: inline-block;
+				content: ">";
+				margin: 0 0 0 15px;
+			}
+		}
 
+		@include respond($med, "min") {
+
+			ul li {
+				float: left;
+				width: 50%;
+			}
+
+			ul li a:link,
+			ul li a:visited {
+				height: 93px;
+				font-size: 16px;
+				font-size: 1.6rem;
+				letter-spacing: 1px;
+				line-height: 95px;
+				line-height: 9.5rem;
+			}
+
+			ul li a.pagination__prev:link,
+			ul li a.pagination__prev:visited {
+				border-right: 1px solid $bordercolor;
+			}
+		}
+	}
 }

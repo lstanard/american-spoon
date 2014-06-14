@@ -62,6 +62,10 @@ header.shop__header {
 
 .shop__products {
 	padding-top: 30px;
+
+	.container--wide {
+		padding-bottom: 0;
+	}
 }
 
 .shop-products__grid {
@@ -69,6 +73,7 @@ header.shop__header {
 
 	ul {
 		padding-top: 15px;
+		padding-bottom: 0;
 	}
 
 	ul > li {
@@ -99,12 +104,4 @@ header.shop__header {
 			}
 		}
 	}
-}
-
-/*------------------------------------------------------------------
-    PAGE: Shop / Pagination
--------------------------------------------------------------------*/
-
-.shop__pagination {
-	@extend .pagination;
 }
