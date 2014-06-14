@@ -50,6 +50,10 @@ header.shop__header {
 body.shop--multi-cat {
 	header.shop__header {
 		border-bottom: none;
+
+		.container--wide {
+			padding-bottom: 0;
+		}
 	}
 }
 
@@ -60,6 +64,12 @@ body.shop--multi-cat {
 /*------------------------------------------------------------------
     PAGE: Shop / Category page
 -------------------------------------------------------------------*/
+
+.shop__products + .shop__products {
+	.container--wide {
+		padding-top: 0;
+	}
+}
 
 .shop-products__grid {
 	@extend .product-grid;
