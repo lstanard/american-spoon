@@ -157,9 +157,13 @@ h2 {
 		font-size: 1.5rem;
 		padding: 0 30px 10px 30px;
 		letter-spacing: 0.1em;
-		margin: 20px auto 15px auto;
+		margin: 75px auto 15px auto;
 		text-transform: uppercase;
 		width: auto;
+
+		@include respond($med) {
+			margin-top: 20px;
+		}
 	}
 
 	&.login__header {
@@ -194,13 +198,24 @@ h2 {
 
 h3 {
 
-	@extend .archer-med-ital;
+	@extend .archer-light-ital;
 	font-size: 30px;
 	font-size: 3.0rem;
 	line-height: 34px;
 	line-height: 3.4rem;
 	margin: 0 0 60px 0;
 	text-align: center;
+
+	&.shop__section-head {
+		border-bottom: 1px solid $bordercolor;
+		color: $primary-headline;
+		font-size: 30px;
+		font-size: 3.0rem;
+		line-height: 50px;
+		line-height: 5.0rem;
+		margin: 0;
+		text-align: left;
+	}
 
 	&.recipes-jump__headline {
 		color: $blue;
@@ -221,7 +236,6 @@ h3 {
 	}
 
 	&.footer__sign-up__head {
-		@extend .archer-med-ital;
 		color: $red;
 		font-size: 36px;
 		font-size: 3.6rem;

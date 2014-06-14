@@ -6,6 +6,7 @@ header.shop__header {
 	background-image: url('../_img/as_shop_illustration01.jpg');
 	background-repeat: no-repeat;
 	background-position: 0 -45px;
+	border-bottom: 1px solid $bordercolor;
 	@include background-size(60%);
 
 	text-align: center;
@@ -19,9 +20,10 @@ header.shop__header {
 		margin: 0 auto;
 	}
 	.container--wide {
-		padding-top: 4.5%;
+		padding-top: 8%;
+		padding-bottom: 8%;
 	}
-	
+
 	@include respond(480px) {
 		background-position: 0 -60px;
 	}
@@ -31,6 +33,10 @@ header.shop__header {
 	}
 	@include respond($lrg) {
 		background-position: -120px -45px;
+		.container--wide {
+			padding-top: 4.5%;
+			padding-bottom: 4.5%;
+		}
 	}
 	@include respond(1100px) {
 		background-position: -120px -60px;
@@ -50,18 +56,16 @@ header.shop__header {
 	@extend .secondary-nav;
 }
 
-.shop__products {
-	border-top: 1px solid $bordercolor;
-}
-
 /*------------------------------------------------------------------
     PAGE: Shop / Category page
 -------------------------------------------------------------------*/
 
-.shop-products__grid {
+.shop__products {
+	padding-top: 30px;
+}
 
+.shop-products__grid {
 	@extend .product-grid;
-	margin-top: 30px;
 
 	ul {
 		padding-top: 15px;
