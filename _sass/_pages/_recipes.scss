@@ -68,7 +68,7 @@
 			&:hover,
 			&:active {
 				h4 {
-					color: $red;
+					color: $blue;
 				}
 			}
 		}
@@ -81,7 +81,7 @@
 				@extend .verlag-black;
 				@include transition(opacity .25s);
 				@include opacity(0);
-				color: $pumpkin;
+				color: $blue;
 				display: inline-block;
 				font-size: 19px;
 				font-size: 1.9rem;
