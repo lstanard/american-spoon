@@ -100,8 +100,14 @@
 											<input type="text" id="address__zip">
 										</div>
 										<div class="col-1-2">
-											<label for="address__country">Country</label>
-											<select name="country" id="address__country"></select>
+											<label for="country_id">Country</label>
+											<select name="country_id" id="country" title="Country">
+												<option value="">&nbsp;</option>
+												<option value="CA">Canada</option>
+												<option value="UM">U.S. Minor Outlying Islands</option>
+												<option value="VI">U.S. Virgin Islands</option>
+												<option value="US" selected="selected">United States</option>
+											</select>
 										</div>
 									</div>
 									<div class="form__group">
@@ -121,8 +127,26 @@
 									</div>
 									<div class="form__group">
 										<div class="col-1-2">
-											<label for="referrer">Where did you hear about us?</label>
-											<select name="country" id="address__country"></select>
+											<label for="heardofus">Where did you hear about us?</label>
+											<select name="heardofus" id="heardof">
+												<option selected="" value="">Choose one</option>
+													<option value="C14">Charlevoix Store</option>
+													<option value="CAFE14">Spoon Café</option>
+													<option value="F14">Friend/Relative</option>
+													<option value="GG14">Given Gift</option>
+													<option value="HS14">Harbor Springs Store</option>
+													<option value="M14">Mailed To/Received Catalog</option>
+													<option value="OS14">Other Retail Store</option>
+													<option value="P14">Petoskey Store</option>
+													<option value="PC14">Previous Spoon Customer</option>
+													<option value="PR14">Miscellaneous Press</option>
+													<option value="R14">GT Resort Store</option>
+													<option value="S14">Saugatuck Store</option>
+													<option value="TC14">Traverse City Store</option>
+													<option value="UK14">Not Sure</option>
+													<option value="WEB14">Web Search/Link</option>
+													<option value="PINTEREST">Pinterest</option>
+											</select>
 										</div>
 										<div class="col-1-2">&nbsp;</div>
 									</div>
