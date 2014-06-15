@@ -393,8 +393,11 @@
 
 				$(document).ready(function() {
 					var mantleSlider = $('.bxslider').bxSlider({
-						adaptiveHeight: false,
+						adaptiveHeight: true,
 						slideWidth: 1200,
+						onSlideAfter: function($slideElement) {
+							$slideElement.addClass('active').siblings().removeClass('active');
+						},
 						onSliderLoad: function(currentSlide, currentIndex) {
 							$(currentSlide).addClass('active');
 						},
