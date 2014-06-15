@@ -95,6 +95,9 @@ h1 {
 			line-height: 5.6rem;
 			margin-bottom: 45px;
 		}
+		@include respond($lrg) {
+			margin-bottom: 60px;
+		}
 	}
 
 	&.section__headline {
