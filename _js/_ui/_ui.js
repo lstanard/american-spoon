@@ -40,52 +40,49 @@
 
 				setColumnHeight: function(selectorArray) {
 
-					$(document).ready(function() {
+					var selectors = new Array(),
+						currentTallest = 0,
+						currentRowStart = 0,
+						rowDivs = new Array(),
+						$el,
+						topPosition = 0;
 
-						var selectors = new Array(),
-							currentTallest = 0,
-							currentRowStart = 0,
-							rowDivs = new Array(),
-							$el,
-							topPosition = 0;
+					$.each(selectorArray, function(index, value){
+						selectors.push($(value));
+					});
 
-						$.each(selectorArray, function(index, value){
-							selectors.push($(value));
-						});
+					function setHeights() {
 
-						function setHeights() {
+						$.each(selectors, function() {
 
-							$.each(selectors, function() {
+							$el = $(this);
+							topPostion = $el.position().top;
 
-								$el = $(this);
-								topPostion = $el.position().top;
-
-								if (currentRowStart != topPostion) {
-
-									for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-										rowDivs[currentDiv].height(currentTallest);
-									}
-
-									rowDivs.length = 0;
-									currentRowStart = topPostion;
-									currentTallest = $el.height();
-									rowDivs.push($el);
-
-								} else {
-									rowDivs.push($el);
-									currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-								}
+							if (currentRowStart != topPostion) {
 
 								for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
 									rowDivs[currentDiv].height(currentTallest);
 								}
 
-							});
-						}
+								rowDivs.length = 0;
+								currentRowStart = topPostion;
+								currentTallest = $el.height();
+								rowDivs.push($el);
 
-						setHeights();
+							} else {
+								rowDivs.push($el);
+								currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+							}
 
-					});
+							for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+								rowDivs[currentDiv].height(currentTallest);
+							}
+
+						});
+					}
+
+					setHeights();
+
 				},
 
 				setupSearchMenu: function() {
@@ -366,26 +363,26 @@
 					if (sw > 1200 && $('body').hasClass('index')) {
 						uiFunctions.site.setColumnHeight(['.featured-products__grid li']);
 					}
-					if (sw > 1200 && $('body').hasClass('product-single')) {
+					if (sw > 648 && $('body').hasClass('product-single')) {
 						uiFunctions.site.setColumnHeight(['.related-products__grid ul li']);
 					}
 					if (sw > 1200 && $('body').hasClass('page__recipes__category')) {
 						uiFunctions.site.setColumnHeight(['.recipes__category__list li']);
 					}
-					if (sw > 1200 && $('body').hasClass('page__shop') || $('body').hasClass('page__shop-option02')) {
+					if (sw > 648 && $('body').hasClass('page__shop') || $('body').hasClass('page__shop-option02')) {
 						uiFunctions.site.setColumnHeight(['.shop-products__grid li']);
 					}
 
 					if (sw <= 1200 && $('body').hasClass('index') ) {
 						uiFunctions.site.unsetColumnHeight(['.featured-products__grid li']);
 					}
-					if (sw <= 1200 && $('body').hasClass('product-single') ) {
+					if (sw <= 648 && $('body').hasClass('product-single') ) {
 						uiFunctions.site.unsetColumnHeight(['.related-products__grid ul li']);
 					}
 					if (sw <= 1200 && $('body').hasClass('page__recipes__category')) {
 						uiFunctions.site.unsetColumnHeight(['.recipes__category__list li']);
 					}
-					if (sw <= 1200 && $('body').hasClass('page__shop') || $('body').hasClass('page__shop-option02')) {
+					if (sw <= 648 && $('body').hasClass('page__shop') || $('body').hasClass('page__shop-option02')) {
 						uiFunctions.site.unsetColumnHeight(['.shop-products__grid li']);
 					}
 				}
@@ -395,6 +392,7 @@
 			init: function() {
 
 				$(document).ready(function() {
+
 					var mantleSlider = $('.bxslider').bxSlider({
 						adaptiveHeight: true,
 						slideWidth: 1200,
@@ -411,21 +409,24 @@
 							$slideElement.addClass('active').siblings().removeClass('active');
 						}
 					});
+
+					uiFunctions.site.setColHeights();
+
+					$('#product-preview').imagePreviewer();
+					$('#cart-table').stacktable();
+					$('.product-details').appendAround();
+					$('.related-recipes').appendAround();
+
 				});
 
 				uiFunctions.site.detectScrollBarWidth();
 
-				$('#product-preview').imagePreviewer();
-				$('#cart-table').stacktable();
-				$('.product-details').appendAround();
-				$('.related-recipes').appendAround();
 
 				loadDynamicContent(dynamicImageData);
 
 				uiFunctions.site.setupMobileNavigation();
 				uiFunctions.site.setHeaderWaypoint();
 				uiFunctions.site.setupSearchMenu();
-				uiFunctions.site.setColHeights();
 				uiFunctions.site.setupSecondaryNav();
 				uiFunctions.site.bindScrollToTop();
 				uiFunctions.site.setFooterYear();
