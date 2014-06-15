@@ -1,5 +1,13 @@
 var dynamicImageData = [
 	{
+		breakpoint: '940',
+		image: '_img/as_home_recipe-cta.gif',
+		target: '.page-home .grid-module--cta a',
+		location: 'prepend',
+		customClass: 'home-recipe-cta--copy',
+		altAttr: 'Take a look at our Pinterest page to find delicious recipes that use Spoon products'
+	},
+	{
 		breakpoint: '648',
 		image: '_img/as_about_photo01.jpg',
 		target: '.page__about .about__intro .photo-grid',

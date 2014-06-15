@@ -123,37 +123,25 @@
 	.grid-module--cta {
 		background-color: $blue;
 		height: 100%;
-		padding: 30px;
-		text-align: left;
+		text-align: center;
 		vertical-align: middle;
 		width: 100%;
 
-		.as-icon-pinterest {
-			color: #FFF;
-			display: block;
-			font-size: 40px;
-			font-size: 4.0rem;
+		img {
+			max-width: 300px;
+			margin: 0 auto;
+			width: 100%;
 		}
-		p {
-			@extend .archer-med-ital;
-			color: #FFF;
-			display: block;
-			font-size: 18px;
-			font-size: 1.8rem;
-		}
-		a:link,
-		a:visited {
-			color: #FFF;
 
-			&:hover,
-			&:active {
-				color: $pumpkin;
-			}
+		img.home-recipe-cta--copy {
+			display: none !important;
+		}
+		img.home-recipe-cta--simple {
+			display: block !important;
 		}
 	}
 
 	@include respond($med) {
-
 		.grid-group01 {
 			float: left;
 			width: (900/1200) * 100%;
@@ -182,8 +170,15 @@
 			padding-right: 0;
 			width: (300/1200) * 100%;
 		}
-		.grid-module--cta {
-			min-height: 270px;
+	}
+	@include respond(940px) {
+		.grid-item {
+			img.home-recipe-cta--copy {
+				display: block !important;
+			}
+			img.home-recipe-cta--simple {
+				display: none !important;
+			}
 		}
 	}
 

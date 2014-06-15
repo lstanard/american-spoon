@@ -147,7 +147,9 @@
 
 					$(document).ready(function() {
 						$('.scroll-top').on('tap click', function(e){
-							$('html, body').scrollTop(0);
+							$('html, body').animate({
+								scrollTop: 0
+							}, 750);
 							e.preventDefault();
 						});
 					});
