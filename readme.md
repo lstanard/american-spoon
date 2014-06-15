@@ -58,12 +58,4 @@ Dev notes:
 2. Do not use z-index directly in a SCSS file, see _sass/_global/_variables for z-index value variables
 3. Use uiFunctions.site object for UI related JavaScript/jQuery functions
 
-Neal To Do:
------------
-
-1. Mantle work
-	- nav circles with stylezzz
-2. Play with instagram API (Pull most recent instagram photo)
-3. PC testing (IE)
-
 

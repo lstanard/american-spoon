@@ -7,6 +7,7 @@
 	var $w = $(window),
 		sw = document.documentElement.clientWidth,
 		sh = document.documentElement.clientHeight,
+		iw = window.innerWidth;
 		navBreak = 1024,
 		setupHeaderCount = 0;
 
@@ -331,7 +332,7 @@
 				},
 
 				destroyMobileNav: function() {
-					if (sw >= navBreak)
+					if (iw >= navBreak)
 						$('#mm-header__primary-nav').trigger('close');
 				},
 
@@ -393,8 +394,11 @@
 
 				$(document).ready(function() {
 					var mantleSlider = $('.bxslider').bxSlider({
-						adaptiveHeight: false,
+						adaptiveHeight: true,
 						slideWidth: 1200,
+						onSlideAfter: function($slideElement) {
+							$slideElement.addClass('active').siblings().removeClass('active');
+						},
 						onSliderLoad: function(currentSlide, currentIndex) {
 							$(currentSlide).addClass('active');
 						},
@@ -424,6 +428,8 @@
 				$w.resize(function() {
 					sw = document.documentElement.clientWidth;
 					sh = document.documentElement.clientHeight;
+					iw = window.innerWidth;
+
 					uiFunctions.site.setupMobileNavigation();
 					uiFunctions.site.setHeaderWaypoint();
 					uiFunctions.site.destroyMobileNav();
