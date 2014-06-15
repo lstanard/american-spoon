@@ -1,5 +1,6 @@
 .secondary-nav {
 	text-align: center;
+	margin: 0 auto;
 	width: 100%;
 
 	h4 {
@@ -41,7 +42,6 @@
 	}
 
 	@include respond($med) {
-
 		h4 {
 			display: none;
 		}
@@ -65,10 +65,19 @@
 		ul li a:visited {
 			background: transparent;
 			color: $secondary-nav;
-			letter-spacing: 0.05em;
-			margin: 0 12px;
+			letter-spacing: 0.02em;
+			margin: 0 8px;
 			padding: 0;
 		}
+	}
+	@include respond($lrg) {
+		max-width: 80%;
+	}
+	@include respond(1115px) {
+		max-width: 70%;
+	}
+	@include respond($xlrg) {
+		max-width: 100%;
 	}
 }
 
