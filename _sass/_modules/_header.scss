@@ -12,8 +12,9 @@
 }
 
 #header {
+	@include box-shadow(rgba(0,0,0,.1) 0px 2px 6px);
 	background-color: #FFF;
-	height: $header-height-lrg;
+	height: $header-height-sm;
 	left: 0;
 	position: fixed;
 	top: 0;
@@ -22,7 +23,7 @@
 
 	.container--full {
 		@extend .cf;
-		height: $header-height-lrg;
+		height: $header-height-sm;
 		padding-top: 0;
 		padding-bottom: 0;
 	}
@@ -40,13 +41,14 @@
 		}
 
 		.primary-logo__lrg {
-			margin: 22px 0 0 0;
+			display: none;
+			margin: 24px 0 0 0;
 			max-width: 125px;
 			width: 100%;
 		}
 
 		.primary-logo__sm {
-			display: none;
+			display: block;
 			margin: 17px 0 0 0;
 			max-width: 165px;
 		}
@@ -60,6 +62,13 @@
 
 		@include respond($header-nav-break) {
 			width: 14%;
+
+			.primary-logo__sm {
+				display: none !important;
+			}
+			.primary-logo__lrg {
+				display: block !important;
+			}
 		}
 	}
 
@@ -118,7 +127,13 @@
 	-------------------------------------------------------------------*/
 
 	@include respond($header-nav-break) {
+		@include box-shadow(none);
+		height: $header-height-lrg;
 		position: absolute;
+
+		.container--full {
+			height: $header-height-lrg;
+		}
 
 		#mm-header__primary-nav,
 		.primary-nav__btn {
@@ -209,6 +224,12 @@
 			}
 		}
 
+		ul > li:first-child {
+			& > ul {
+				left: -30px;
+			}
+		}
+
 		ul > li > ul {
 			@include transition(opacity .35s);
 			@include box-shadow(rgba(0,0,0,.12) 0px 2px 6px);
@@ -260,8 +281,8 @@
 		@extend .verlag-book;
 	    color: #AAA;
 		display: block;
-		font-size: 15px;
-	    font-size: 1.5rem;
+		font-size: 13px;
+	    font-size: 1.3rem;
 		letter-spacing: 0.10em;
 		width: 100%;
 
@@ -272,14 +293,18 @@
 	}
 
 	li.parentmenu__item {
-		padding: 0 15px;
+		padding: 0 8px;
+
+		&:first-of-type {
+			padding-left: 0;
+		}
 
 		& > a:link,
 		& > a:visited {
 			@extend .archer-bold-ital;
 			color: $red;
-			font-size: 19px;
-			font-size: 1.9rem;
+			font-size: 14px;
+			font-size: 1.4rem;
 
 			&:hover,
 			&:active {
@@ -298,10 +323,6 @@
 	-------------------------------------------------------------------*/
 
 	li.primary-nav__explore {
-
-		// &:nth-child(5) {
-		// 	margin-right: 75px;
-		// }
 
 		& > a:link,
 		& > a:visited {
@@ -378,14 +399,14 @@
 			}
 		}
 
-		@include respond($header-nav-break, "min") {
+		@include respond($header-nav-break) {
 			float: right;
 			margin: 0 0 0 -10px;
 
 			a:link,
 			a:visited {
-				font-size: 20px;
-				font-size: 2.0rem;
+				font-size: 14px;
+				font-size: 1.4rem;
 				min-width: 38px;
 				text-align: center;
 			}
@@ -433,7 +454,7 @@
 		}
 
 		li.nav-divider {
-			margin-left: 20px;
+			margin-left: 10px;
 			padding-left: 12px;
 
 			&:before {
@@ -460,20 +481,69 @@
 		}
 	}
 
-	@include respond(1250px, "min") {
+	@include respond(1100px) {
+		li.parentmenu__item {
+			& > a:link,
+			& > a:visited {
+				font-size: 16px;
+				font-size: 1.6rem;
+			}
+		}
+		li.primary-nav__utility {
+			a:link,
+			a:visited {
+				font-size: 16px;
+				font-size: 1.6rem;
+			}
+		}
+		li > a:link,
+		li > a:visited {
+			font-size: 15px;
+			font-size: 1.5rem;
+		}
+	}
+	@include respond(1250px) {
+		li.parentmenu__item {
+			padding: 0 15px;
 
+			& > a:link,
+			& > a:visited {
+				font-size: 18px;
+				font-size: 1.8rem;
+			}
+		}
+		li.primary-nav__utility {
+			a:link,
+			a:visited {
+				font-size: 20px;
+				font-size: 2.0rem;
+			}
+		}
 		li > a:link,
 		li > a:visited {
 			font-size: 16px;
 			font-size: 1.6rem;
 		}
+		li.nav-divider {
+			margin-left: 15px;
+		}
 	}
 
-	@include respond(1350px, "min") {
+	@include respond(1350px) {
 		li > a:link,
 		li > a:visited {
 			font-size: 17px;
 			font-size: 1.7rem;
+		}
+		li.parentmenu__item {
+			& > a:link,
+			& > a:visited {
+				font-size: 19px;
+				font-size: 1.9rem;
+			}
+		}
+		li.nav-divider {
+			margin-left: 20px;
 		}
 	}
 }
@@ -614,10 +684,10 @@
 	.header__primary-logo {
 
 		.primary-logo__lrg {
-			display: none;
+			display: none !important;
 		}
 		.primary-logo__sm {
-			display: block;
+			display: block !important;
 		}
 
 		@include respond($header-nav-break) {

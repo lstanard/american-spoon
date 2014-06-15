@@ -30,3 +30,11 @@
 	text-indent: 100%;
 	white-space: nowrap;
 }
+
+.scrollbar-measure {
+	width: 100px;
+	height: 100px;
+	overflow: scroll;
+	position: absolute;
+	top: -9999px;
+}

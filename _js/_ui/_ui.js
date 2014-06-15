@@ -8,6 +8,7 @@
 		sw = document.documentElement.clientWidth,
 		sh = document.documentElement.clientHeight,
 		iw = window.innerWidth;
+		scrollbarWidth = 0,
 		navBreak = 1024,
 		setupHeaderCount = 0;
 
@@ -35,7 +36,6 @@
 						});
 
 					});
-
 				},
 
 				setColumnHeight: function(selectorArray) {
@@ -86,7 +86,6 @@
 						setHeights();
 
 					});
-
 				},
 
 				setupSearchMenu: function() {
@@ -100,7 +99,6 @@
 						});
 
 					});
-
 				},
 
 				setupScrollToLinks: function() {
@@ -116,7 +114,6 @@
 						}
 						e.preventDefault();
 					});
-
 				},
 
 				setHeaderWaypoint: function() {
@@ -144,10 +141,9 @@
 					}
 
 					else if (sw <= navBreak) {
-						$('#header').addClass('header-collapsed-visible').addClass('header-collapsed ');
+						$('#header').addClass('header-collapsed-visible').addClass('header-collapsed');
 						$('body').waypoint('destroy');
 					}
-
 				},
 
 				bindScrollToTop: function() {
@@ -167,7 +163,6 @@
 							$('.scroll-top').removeClass('visible');
 						}
 					}, { offset: -560 });
-
 				},
 
 				setupSecondaryNav: function() {
@@ -309,7 +304,16 @@
 						})(jQuery, window, document);
 
 					}
+				},
 
+				detectScrollBarWidth: function() {
+					// http://davidwalsh.name/detect-scrollbar-width
+					var scrollDiv = document.createElement("div");
+					scrollDiv.className = "scrollbar-measure";
+					document.body.appendChild(scrollDiv);
+					scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+					document.body.removeChild(scrollDiv);
+					navBreak = navBreak - scrollbarWidth;
 				},
 
 				setupMobileNavigation: function() {
@@ -332,7 +336,7 @@
 				},
 
 				destroyMobileNav: function() {
-					if (iw >= navBreak)
+					if (sw >= navBreak)
 						$('#mm-header__primary-nav').trigger('close');
 				},
 
@@ -342,7 +346,6 @@
 						$(this).hide().next('form').fadeIn();
 						e.preventDefault();
 					});
-
 				},
 
 				setColHeights: function() {
@@ -385,7 +388,6 @@
 					if (sw <= 1200 && $('body').hasClass('page__shop') || $('body').hasClass('page__shop-option02')) {
 						uiFunctions.site.unsetColumnHeight(['.shop-products__grid li']);
 					}
-
 				}
 
 			},
@@ -411,6 +413,8 @@
 					});
 				});
 
+				uiFunctions.site.detectScrollBarWidth();
+
 				$('#product-preview').imagePreviewer();
 				$('#cart-table').stacktable();
 				$('.product-details').appendAround();
@@ -424,6 +428,9 @@
 				uiFunctions.site.setColHeights();
 				uiFunctions.site.setupSecondaryNav();
 				uiFunctions.site.bindScrollToTop();
+				uiFunctions.site.setFooterYear();
+				uiFunctions.site.bindLoginPageControls();
+				uiFunctions.site.setupScrollToLinks();
 
 				$w.resize(function() {
 					sw = document.documentElement.clientWidth;

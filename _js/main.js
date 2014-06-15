@@ -1,10 +1,12 @@
-// @codekit-append "_data/dynamic_image-data.min.js";
-// @codekit-append "_utility.js"
-// @codekit-append "_ui/_ui.js"
-// @codekit-append "_ui/_product-preview.js"
-// @codekit-append "_ui/_responsive-image-loader.js"
-// @codekit-append "_init.js"
+// @codekit-prepend "_data/dynamic_image-data.min.js";
+// @codekit-prepend "_utility.js"
+// @codekit-prepend "_ui/_ui.js"
+// @codekit-prepend "_ui/_product-preview.js"
+// @codekit-prepend "_ui/_responsive-image-loader.js"
+// @codekit-prepend "_init.js"
 
 /*------------------------------------------------------------------
-    MAIN
+	INITIALIZERS: UI components
 -------------------------------------------------------------------*/
+
+uiFunctions.init();

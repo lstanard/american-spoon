@@ -1,13 +1,5 @@
 var dynamicImageData = [
 	{
-		breakpoint: '1025',
-		image: '_img/as_logo-primary.png',
-		target: '.header__primary-logo a',
-		location: 'prepend',
-		customClass: 'primary-logo__lrg',
-		altAttr: 'American Spoon - Established 1982'
-	},
-	{
 		breakpoint: '648',
 		image: '_img/as_about_photo01.jpg',
 		target: '.page__about .about__intro .photo-grid',

@@ -10,10 +10,16 @@ header.shop__header {
 	@include background-size(65%);
 	text-align: center;
 
+	h2.page-super {
+		margin-top: 60px;
+
+		@include respond($med) {
+			margin-top: 0;
+		}
+	}
 	h1.page-title {
 		color: $blue;
 		margin-bottom: 15px;
-		// margin-top: 30px;
 	}
 	.lead-copy {
 		margin: 0 auto;

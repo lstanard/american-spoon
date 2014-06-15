@@ -28,9 +28,8 @@ loadDynamicContent = function(imageData) {
 		}
 
 		this.insertImage = function() {
-			if ( $(this.target).length > 0 && $(this.target).find(this.imageElem).length === 0 && sw > this.breakpoint ) {
+			if ( $(this.target).length > 0 && $(this.target).find(this.imageElem).length === 0 && sw >= this.breakpoint ) {
 				createImgElem();
-				// $(this.imageElem[0]).addClass('img-visible');
 				$(this.imageElem[0]).find('img').addClass('img-visible');
 				this.location === 'prepend' ? $(this.target).prepend(this.imageElem) : $(this.target).append(this.imageElem);
 			}
