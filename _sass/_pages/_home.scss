@@ -5,9 +5,13 @@
 .home-mantle {
 	height: auto;
 
+	.bx-pager {
+		display: none !important;
+	}
+
 	.bx-wrapper .bx-controls-direction a {
 		display: block;
-		height: 72px;
+		height: 30px;
 		width: 26px;
 
 		&:hover,
@@ -45,13 +49,13 @@
 					padding: 75px 14% 0 14%;
 				}
 				@include respond(800px) {
-					padding: 90px 15% 0 15%;
+					padding: 90px 10% 0 10%;
 				}
 				@include respond(850px) {
-					padding: 120px 15% 0 15%;
+					padding: 120px 10% 0 10%;
 				}
 				@include respond($lrg) {
-					padding: 185px 15% 0 15%;
+					padding: 185px 10% 0 10%;
 				}
 
 				h3 {
@@ -72,12 +76,20 @@
 
 				p {
 					@extend .archer-med;
-					font-size: 22px;
-					font-size: 2.2rem;
-					line-height: 30px;
-					line-height: 3rem;
+					font-size: 18px;
+					font-size: 1.8rem;
+					line-height: 25px;
+					line-height: 2.5rem;
+					margin-bottom: 15px;
 					color: #FFF;
 
+					@include respond(600px) {
+						font-size: 22px;
+						font-size: 2.2rem;
+						line-height: 30px;
+						line-height: 3rem;
+						margin-bottom: 30px;
+					}
 					@include respond(850px) {
 						font-size: 25px;
 						font-size: 2.5rem;
@@ -86,9 +98,17 @@
 					}
 				}
 
-				a:link,
-				a:visited {
+				a.btn:link,
+				a.btn:visited {
 					margin: 0 auto;
+				}
+
+				@include respond(600px, "max") {
+					a.btn:link,
+					a.btn:visited {
+						border: none;
+						padding: 0;
+					}
 				}
 			}
 		}
