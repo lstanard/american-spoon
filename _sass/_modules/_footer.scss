@@ -144,11 +144,20 @@ $footer-primary-right: 1054px;
 	}
 
 	.footer__primary__section01 {
-		padding: 70px 80px;
+		padding: 30px 30px 0 30px;
 		text-align: center;
+
+		.col-1-2 {
+			float: none;
+
+			@include respond($med) {
+				float: left;
+				width: (1/2) * 100%;
+			}
+		}
 	}
 	.footer__primary__section02 {
-		padding: 70px 0;
+		padding: 30px 0;
 
 		h5.module__subhead {
 			@extend .verlag-bold;
@@ -163,6 +172,7 @@ $footer-primary-right: 1054px;
 	@include respond($med) {
 
 		.footer__primary__section01 {
+			padding: 70px 40px 0 40px;
 			width: 100%;
 
 			p {
@@ -171,6 +181,7 @@ $footer-primary-right: 1054px;
 		}
 		.footer__primary__section02 {
 			border-left: 1px solid $bordercolor;
+			padding: 70px 0;
 			width: 100%;
 
 			h5.module__subhead {
@@ -184,6 +195,7 @@ $footer-primary-right: 1054px;
 		.footer__primary__section01 {
 			float: left;
 			margin: 0;
+			text-align: left;
 			width: ($footer-primary-left/$outer-footer-wrapper) * 100%;
 		}
 		.footer__primary__section02 {
@@ -192,14 +204,10 @@ $footer-primary-right: 1054px;
 			width: ($footer-primary-right/$outer-footer-wrapper) * 100%;
 		}
 	}
-}
-
-.footer__primary__logo {
-	max-width: 95px;
-	width: 100%;
-
-	@include respond($med) {
-		max-width: 170px;
+	@include respond($xlrg) {
+		.footer__primary__section01 {
+			padding: 70px 80px 0 80px;
+		}
 	}
 }
 
@@ -227,9 +235,22 @@ $footer-primary-right: 1054px;
 		text-decoration: none;
 	}
 
+	.footer__primary__logo {
+		max-width: 170px;
+		width: 100%;
+	}
+
 	@include respond($med) {
-		padding-top: 40px;
-		text-align: left;
+		padding-top: 38px;
+	}
+	@include respond($lrg) {
+		padding-top: 12px;
+	}
+	@include respond(1140px) {
+		padding-top: 25px;
+	}
+	@include respond($xlrg) {
+		padding-top: 30px;
 	}
 }
 
@@ -239,15 +260,15 @@ $footer-primary-right: 1054px;
 .footer__company__nav01 {
 
 	ul > li {
-		margin: 0 0 15px 0;
+		margin: 0 0 6px 0;
 	}
 
 	ul > li > a:link,
 	ul > li > a:visited {
 		@extend .verlag-book;
 		color: $primary-headline;
-		font-size: 18px;
-		font-size: 1.8rem;
+		font-size: 15px;
+		font-size: 1.5rem;
 		letter-spacing: 0.05em;
 		text-decoration: none;
 
@@ -258,11 +279,9 @@ $footer-primary-right: 1054px;
 	}
 
 	@include respond($med) {
-
 		ul > li {
 			margin: 0;
 		}
-
 		ul > li > a:link,
 		ul > li > a:visited {
 			font-size: 14px;
@@ -280,18 +299,17 @@ $footer-col-margin-sm: 45px;
 .footer__company__nav,
 .footer__social__nav {
 	margin: 0 0 45px 0;
-	padding: 0 30px;
+	padding: 0 3%;
 }
 
 .footer__shop__nav {
-
 	@include respond($med) {
 		float: left;
 		margin: 0 0 45px 0;
-		padding: 0 45px 0 90px;
+		padding: 0 3%;
 		width: (1/2) * 100%;
 	}
-	@include respond(1200px) {
+	@include respond(890px) {
 		margin: 0;
 		padding: 0 $footer-col-margin-sm 0 50px;
 		width: (368px/$footer-primary-right) * 100%;
@@ -305,14 +323,16 @@ $footer-col-margin-sm: 45px;
 }
 
 .footer__browse__nav {
-
-	@include respond($med) {
+	@include respond(480px) {
 		float: left;
 		margin: 0 0 45px 0;
-		padding: 0 90px 0 45px;
+		padding: 0 6% 0 3%;
 		width: (1/2) * 100%;
 	}
-	@include respond(1200px) {
+	@include respond($med) {
+		padding: 0 3% 0 0;
+	}
+	@include respond(890px) {
 		margin: 0;
 		padding: 0 $footer-col-margin-sm 0 0;
 		width: (152px/$footer-primary-right) * 100%;
@@ -326,14 +346,16 @@ $footer-col-margin-sm: 45px;
 }
 
 .footer__company__nav {
-
-	@include respond($med) {
+	@include respond(480px) {
 		float: left;
 		margin: 0 0 45px 0;
-		padding: 0 45px 0 90px;
+		padding: 0 3% 0 0;
 		width: (1/2) * 100%;
 	}
-	@include respond(1200px) {
+	@include respond($med) {
+		padding: 0 3%;
+	}
+	@include respond(890px) {
 		margin: 0;
 		padding: 0 $footer-col-margin-sm 0 0;
 		width: (231px/$footer-primary-right) * 100%;
@@ -347,14 +369,12 @@ $footer-col-margin-sm: 45px;
 }
 
 .footer__social__nav {
-
 	@include respond($med) {
 		float: left;
 		margin: 0 0 45px 0;
-		padding: 0 90px 0 45px;
 		width: (1/2) * 100%;
 	}
-	@include respond(1200px) {
+	@include respond(890px) {
 		margin: 0;
 		padding: 0 30px 0 0;
 		width: (303px/$footer-primary-right) * 100%;
@@ -376,9 +396,22 @@ $footer-col-margin-sm: 45px;
 		width: (1/2) * 100%;
 	}
 
-	.footer__shop__nav02 {
-		float: right;
+	@include respond($lrg) {
+		.col-1-2 {
+			float: none;
+			width: 100%;
+		}
+	}
+	@include respond($xlrg) {
+		.col-1-2 {
+			float: left;
+			margin: 0;
+			padding: 0;
+			width: (1/2) * 100%;
+		}
+	}
 
+	.footer__shop__nav02 {
 		ul > li > a:link,
 		ul > li > a:visited {
 			color: $red;
@@ -404,6 +437,13 @@ $footer-col-margin-sm: 45px;
 					color: $blue;
 				}
 			}
+		}
+
+		@include respond($lrg) {
+			float: left;
+		}
+		@include respond($xlrg) {
+			float: right;
 		}
 	}
 }
