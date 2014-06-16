@@ -7,7 +7,6 @@
 	var $w = $(window),
 		sw = document.documentElement.clientWidth,
 		sh = document.documentElement.clientHeight,
-		iw = window.innerWidth;
 		scrollbarWidth = 0,
 		navBreak = 1024,
 		setupHeaderCount = 0;
@@ -438,7 +437,6 @@
 				$w.resize(function() {
 					sw = document.documentElement.clientWidth;
 					sh = document.documentElement.clientHeight;
-					iw = window.innerWidth;
 
 					uiFunctions.site.setupMobileNavigation();
 					uiFunctions.site.setHeaderWaypoint();

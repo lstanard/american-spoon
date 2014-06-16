@@ -22,6 +22,47 @@ body {
 	HEADLINES
 -------------------------------------------------------------------*/
 
+.page-title {
+	@extend .archer-light-ital;
+	color: #BBB;
+	font-size: 42px;
+	font-size: 4.2rem;
+	line-height: 46px;
+	line-height: 4.6rem;
+	margin-bottom: 30px;
+	text-align: center;
+
+	@include respond($med) {
+		font-size: 50px;
+		font-size: 5.0rem;
+		line-height: 56px;
+		line-height: 5.6rem;
+		margin-bottom: 45px;
+	}
+	@include respond($lrg) {
+		margin-bottom: 60px;
+	}
+}
+
+.page-super {
+	@extend .verlag-bold;
+	border-bottom: 1px solid $bordercolor;
+	color: #BBB;
+	display: inline-block;
+	font-size: 15px;
+	font-size: 1.5rem;
+	padding: 0 30px 10px 30px;
+	letter-spacing: 0.1em;
+	margin: 15px auto 30px auto;
+	text-transform: uppercase;
+	width: auto;
+
+	@include respond($med) {
+		margin-top: 0;
+		margin-bottom: 45px;
+	}
+}
+
 .module__subhead {
 	@extend .verlag-book;
 	border-bottom: 1px solid $bordercolor;
@@ -78,28 +119,6 @@ h1 {
 	line-height: 50px;
 	line-height: 5.0rem;
 
-	&.page-title {
-		@extend .archer-light-ital;
-		color: #BBB;
-		font-size: 42px;
-		font-size: 4.2rem;
-		line-height: 46px;
-		line-height: 4.6rem;
-		margin-bottom: 30px;
-		text-align: center;
-
-		@include respond($med) {
-			font-size: 50px;
-			font-size: 5.0rem;
-			line-height: 56px;
-			line-height: 5.6rem;
-			margin-bottom: 45px;
-		}
-		@include respond($lrg) {
-			margin-bottom: 60px;
-		}
-	}
-
 	&.section__headline {
 		font-size: 28px;
 		font-size: 2.8rem;
@@ -134,29 +153,9 @@ h1 {
 }
 
 h2 {
-
 	color: $red;
 	font-size: 36px;
 	font-size: 3.6rem;
-
-	&.page-super {
-		@extend .verlag-bold;
-		border-bottom: 1px solid $bordercolor;
-		color: #BBB;
-		display: inline-block;
-		font-size: 15px;
-		font-size: 1.5rem;
-		padding: 0 30px 10px 30px;
-		letter-spacing: 0.1em;
-		margin: 15px auto;
-		text-transform: uppercase;
-		width: auto;
-
-		@include respond($med) {
-			margin-top: 0;
-			margin-bottom: 45px;
-		}
-	}
 
 	&.login__header {
 		@extend .verlag-bold;
@@ -175,14 +174,13 @@ h2 {
 		font-size: 3.6rem;
 		line-height: 42px;
 		line-height: 4.2rem;
-		margin: 0 0 30px 0;
-		text-align: center;
+		margin: 0 0 15px 0;
 
 		@include respond($med) {
-			font-size: 66px;
-			font-size: 6.6rem;
-			line-height: 74px;
-			line-height: 7.4rem;
+			font-size: 46px;
+			font-size: 4.6rem;
+			line-height: 58px;
+			line-height: 5.8rem;
 		}
 	}
 
@@ -330,10 +328,10 @@ h5 {
 	&.store-location__address-title  {
 		@extend .verlag-black;
 		text-transform: uppercase;
-		font-size: 18px;
-		font-size: 1.8rem;
-		line-height: 35px;
-		line-height: 3.5rem;
+		font-size: 12px;
+		font-size: 1.2rem;
+		line-height: 18px;
+		line-height: 1.8rem;
 		letter-spacing: 0.06em;
 	}
 

@@ -30,6 +30,38 @@
 	bottom: 0;
 }
 
+.section-illustration {
+	margin: 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+
+	img {
+		position: relative;
+		margin: 0 auto;
+		z-index: 1;
+		width: 50%;
+	}
+
+	&:after {
+		border-top: 1px solid $bordercolor;
+		content: "";
+		display: block;
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		z-index: 0;
+	}
+
+	@include respond($med) {
+		img {
+			border-left: 40px solid #FFF;
+			border-right: 40px solid #FFF;
+			width: 392px;
+		}
+	}
+}
+
 .featured-recipes__rule {
 	border: none;
 	height: 70px;
