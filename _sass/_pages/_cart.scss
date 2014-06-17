@@ -244,8 +244,30 @@
 }
 
 .cart__options {
+	a.cart__utility__continue:link,
+	a.cart__utility__continue:visited {
+		float: left;
+		display: inline-block;
+	}
+	a.cart__utility__update:link,
+	a.cart__utility__update:visited {
+		float: right;
+		display: inline-block;
+	}
+}
+
+.cart__gift-box {
+	text-align: center;
+
 	p {
+		display: inline-block;
 		text-align: center;
+		vertical-align: middle;
+	}
+	.icon-ui-icon__gift-box {
+		display: inline-block;
+		vertical-align: middle;
+		margin: -35px 5px 0 0;
 	}
 }
 
@@ -254,8 +276,8 @@ a.cart__utility__continue:visited,
 a.cart__utility__update:link,
 a.cart__utility__update:visited {
 	display: block;
-	line-height: 34px;
-	line-height: 3.4rem;
+	// line-height: 34px;
+	// line-height: 3.4rem;
 
 	span {
 		display: inline-block;
@@ -290,6 +312,7 @@ a.cart__utility__update:visited {
 
 	.col-1-2 {
 		float: none;
+		padding: 0;
 		width: 100%;
 
 		@include respond($lrg) {
@@ -323,6 +346,8 @@ a.cart__utility__update:visited {
 }
 
 .cart__promo-code {
+
+	$parent-width: 499px;
 	float: none;
 	width: 100%;
 
@@ -330,35 +355,42 @@ a.cart__utility__update:visited {
 		width: 100%;
 	}
 
-	a {
-		margin: 0 0 0 15px;
+	a.ui-link:link,
+	a.ui-link:visited {
+		display: block;
+		margin: 12px 0 0 0;
 	}
 
 	@include respond($lrg) {
+		a.ui-link:link,
+		a.ui-link:visited {
+			display: inline-block;
+			margin: 0 0 0 15px;
+		}
 		input[type="text"] {
-			width: (305px/488px) * 100%;
+			width: (290px/$parent-width) * 100%;
 		}
 	}
 }
 
 .cart__promo-gc {
+
+	$parent-width: 499px;
 	float: none;
-	width: 100%; // 591px
+	width: 100%;
+
+	fieldset {
+		vertical-align: middle;
+	}
 
 	.cart__promo-gc__code {
-		display: block;
-		// width: 100%;
+		display: inline-block;
+		width: (300px/$parent-width) * 100%;
 	}
 
 	.cart__promo-gc__amt {
 		display: inline-block;
-		// width: 27%;
-	}
-
-	a {
-		display: block;
-		clear: both;
-		margin: 0 0 0 15px;
+		width: (136px/$parent-width) * 100%;
 	}
 
 	.cart__promo-gc__dollar {
@@ -368,18 +400,33 @@ a.cart__utility__update:visited {
 		font-size: 42px;
 		font-size: 4.2rem;
 		margin: 0 0 6px 0;
+		text-align: right;
 		vertical-align: middle;
-		// width: 11%;
+		width: (55px/$parent-width) * 100%;
 	}
 
-	@include respond($med) {
+	a {
+		clear: both;
+		display: block;
+		vertical-align: middle;
+		width: 100%;
+	}
+
+	@include respond(480px) {
 		.cart__promo-gc__code {
-			display: inline-block;
-			// width: 53%;
+			width: (180px/$parent-width) * 100%;
+		}
+		.cart__promo-gc__amt {
+			width: (136px/$parent-width) * 100%;
 		}
 		.cart__promo-gc__dollar {
-			padding: 0 0 0 20px;
-			// width: 16%;
+			width: (55px/$parent-width) * 100%;
+		}
+		a {
+			clear: none;
+			display: inline-block;
+			margin: 0 0 0 15px;
+			width: auto;
 		}
 	}
 }
