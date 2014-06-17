@@ -144,7 +144,8 @@ $footer-primary-right: 1054px;
 	}
 
 	.footer__primary__section01 {
-		padding: 30px 30px 0 30px;
+		border-bottom: 1px solid $bordercolor;
+		padding: 30px;
 		text-align: center;
 
 		.col-1-2 {
@@ -172,7 +173,7 @@ $footer-primary-right: 1054px;
 	@include respond($med) {
 
 		.footer__primary__section01 {
-			padding: 70px 40px 0 40px;
+			padding: 45px 40px;
 			width: 100%;
 
 			p {
@@ -193,6 +194,7 @@ $footer-primary-right: 1054px;
 
 	@include respond($lrg) {
 		.footer__primary__section01 {
+			border-bottom: none;
 			float: left;
 			margin: 0;
 			text-align: left;
@@ -372,6 +374,7 @@ $footer-col-margin-sm: 45px;
 	@include respond($med) {
 		float: left;
 		margin: 0 0 45px 0;
+		padding-left: 0;
 		width: (1/2) * 100%;
 	}
 	@include respond(890px) {
@@ -461,7 +464,8 @@ $footer-col-margin-sm: 45px;
 	ul li {
 		display: inline-block;
 		margin-right: 6px;
-		width: 54px;
+		margin-bottom: 6px;
+		width: 75px;
 
 		&:last-of-type {
 			margin-right: 0;
@@ -475,21 +479,21 @@ $footer-col-margin-sm: 45px;
 		border: 1px solid $cart-table-exterior;
 		color: $cart-table-exterior;
 		display: block;
-		font-size: 22px;
-		font-size: 2.2rem;
-		height: 54px;
-		line-height: 54px;
-		line-height: 5.4rem;
+		font-size: 32px;
+		font-size: 3.2rem;
+		height: 75px;
+		line-height: 75px;
+		line-height: 7.5rem;
 		text-align: center;
 		text-decoration: none;
 		vertical-align: middle;
-		width: 54px;
+		width: 75px;
 
 		span {
 			display: block;
-			height: 54px;
-			line-height: 54px;
-			line-height: 5.4rem;
+			height: 75px;
+			line-height: 75px;
+			line-height: 7.5rem;
 		}
 		span.mls {
 			display: none;
@@ -506,11 +510,74 @@ $footer-col-margin-sm: 45px;
 	@include respond($med) {
 		margin: 0;
 
+		ul {
+			text-align: left;
+		}
+
 		ul li {
+			width: 54px;
+
 			& + li {
 				& + li {
 					margin-right: 0;
 				}
+			}
+		}
+
+		ul li a:link,
+		ul li a:visited {
+			font-size: 22px;
+			font-size: 2.2rem;
+			height: 54px;
+			line-height: 54px;
+			line-height: 5.4rem;
+			width: 54px;
+
+			span {
+				height: 54px;
+				line-height: 54px;
+				line-height: 5.4rem;
+			}
+		}
+	}
+	@include respond($lrg) {
+		ul li {
+			margin-right: 10px;
+			width: 45px;
+		}
+		ul li a:link,
+		ul li a:visited {
+			font-size: 20px;
+			font-size: 2.0rem;
+			height: 45px;
+			line-height: 45px;
+			line-height: 4.5rem;
+			width: 45px;
+
+			span {
+				height: 45px;
+				line-height: 45px;
+				line-height: 4.5rem;
+			}
+		}
+	}
+	@include respond($xlrg) {
+		ul li {
+			width: 54px;
+		}
+		ul li a:link,
+		ul li a:visited {
+			font-size: 22px;
+			font-size: 2.2rem;
+			height: 54px;
+			line-height: 54px;
+			line-height: 5.4rem;
+			width: 54px;
+
+			span {
+				height: 54px;
+				line-height: 54px;
+				line-height: 5.4rem;
 			}
 		}
 	}

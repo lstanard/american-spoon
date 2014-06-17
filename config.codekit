@@ -905,6 +905,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/as_stores_illustration01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31885,
+		"inputAbbreviatedPath": "\/_img\/as_stores_illustration01.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_stores_illustration01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_stores_map_petoskey.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33003,
+		"inputAbbreviatedPath": "\/_img\/as_stores_map_petoskey.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_stores_map_petoskey.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_stores_photo01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 162145,
+		"inputAbbreviatedPath": "\/_img\/as_stores_photo01.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_stores_photo01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_stores_photo02.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 84456,
+		"inputAbbreviatedPath": "\/_img\/as_stores_photo02.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_stores_photo02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_stores_spoon-cafe_illustration.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15391,
+		"inputAbbreviatedPath": "\/_img\/as_stores_spoon-cafe_illustration.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_stores_spoon-cafe_illustration.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/business-week-logo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
