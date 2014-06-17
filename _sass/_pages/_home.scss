@@ -191,15 +191,29 @@
 		width: 50%;
 	}
 
+	/*fourth and above*/
+	ul {
+		li:nth-child(n+4) {
+			display: none;
+			@include respond($med) {
+				display: list-item;
+			}
+		}
+	}
+
+	/*fifth and above*/
 	ul {
 		li:nth-child(n+5) {
-			display: none;
+			@include respond($med) {
+				display: none;
+			}
 			@include respond(790px) {
 				display: list-item;
 			}
 		}
 	}
 
+	/*seventh and above*/
 	ul {
 		li:nth-child(n+7) {
 			@include respond(790px) {
