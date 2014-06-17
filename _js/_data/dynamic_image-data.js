@@ -110,5 +110,22 @@ var dynamicImageData = [
 		location: 'append',
 		customClass: 'desktop-img',
 		parent: '<figure>'
+	},
+
+	{
+		breakpoint: '633',
+		image: '_img/as_cafe_photo02.jpg',
+		target: '.page__cafe .cafe__photo-grid01',
+		location: 'append',
+		customClass: 'tablet-img',
+		parent: '<figure>'
+	},
+	{
+		breakpoint: '1025',
+		image: '_img/as_cafe_photo03.jpg',
+		target: '.page__cafe .cafe__photo-grid01',
+		location: 'append',
+		customClass: 'desktop-img',
+		parent: '<figure>'
 	}
 ];
