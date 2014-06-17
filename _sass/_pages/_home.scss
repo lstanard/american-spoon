@@ -244,6 +244,13 @@
 		img {
 			border: 1px solid $bordercolor;
 			max-width: 366px;
+
+			@include respond($med) {
+				max-width: 100%
+			}
+			@include respond($xlrg) {
+				max-width: 366px;
+			}
 		}
 
 		figure {
