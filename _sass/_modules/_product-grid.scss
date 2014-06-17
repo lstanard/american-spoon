@@ -262,6 +262,7 @@
 			.featured-product__price {
 				@include opacity(0);
 			}
+			.featured-product__product-name,
 			.featured-product__add-to-cart {
 				@include opacity(1);
 			}
