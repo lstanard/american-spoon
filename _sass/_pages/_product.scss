@@ -7,11 +7,13 @@ $product-details-context: 620px;
 .product-wrapper {
 
 	.product-details__mobile,
-	.related-recipes__mobile {
+	.related-recipes__mobile,
+	.product-preview__mobile {
 		display: block;
 	}
 	.product-details__desktop,
-	.related-recipes__desktop {
+	.related-recipes__desktop,
+	.product-preview__desktop {
 		display: none;
 	}
 
@@ -19,11 +21,13 @@ $product-details-context: 620px;
 		padding: 60px 0 90px 0;
 
 		.product-details__mobile,
-		.related-recipes__mobile {
+		.related-recipes__mobile,
+		.product-preview__mobile {
 			display: none;
 		}
 		.product-details__desktop,
-		.related-recipes__desktop {
+		.related-recipes__desktop,
+		.product-preview__desktop {
 			display: block;
 		}
 
@@ -105,7 +109,9 @@ $product-details-context: 620px;
 		font-size: 18px;
 		font-size: 1.8rem;
 		height: 58px;
+		letter-spacing: 0.08em;
 		line-height: 60px;
+		line-height: 6.0rem;
 		padding: 0 75px 0 15px;
 		text-transform: uppercase;
 		width: 180px / $form-context * 100%;
@@ -153,10 +159,6 @@ $product-details-context: 620px;
 
 .product-details__description {
 	margin: 30px 0 45px 0;
-
-	p {
-		@extend .archer-med;
-	}
 }
 
 /*------------------------------------------------------------------

@@ -361,7 +361,7 @@
 						uiFunctions.site.unsetColumnHeight(['.careers-list li']);
 					}
 
-					if (sw > 1200 && $('body').hasClass('index')) {
+					if (sw > 648 && $('body').hasClass('index')) {
 						uiFunctions.site.setColumnHeight(['.featured-products__grid li']);
 					}
 					if (sw > 648 && $('body').hasClass('product-single')) {
@@ -374,7 +374,7 @@
 						uiFunctions.site.setColumnHeight(['.shop-products__grid li']);
 					}
 
-					if (sw <= 1200 && $('body').hasClass('index') ) {
+					if (sw <= 648 && $('body').hasClass('index') ) {
 						uiFunctions.site.unsetColumnHeight(['.featured-products__grid li']);
 					}
 					if (sw <= 648 && $('body').hasClass('product-single') ) {
@@ -420,13 +420,16 @@
 					});
 					feed.run();
 
-					uiFunctions.site.setColHeights();
-
 					$('#product-preview').imagePreviewer();
 					$('#cart-table').stacktable();
+					$('#product-preview').appendAround();
 					$('.product-details').appendAround();
 					$('.related-recipes').appendAround();
 
+				});
+
+				$w.on('load', function() {
+					uiFunctions.site.setColHeights();
 				});
 
 				uiFunctions.site.detectScrollBarWidth();
