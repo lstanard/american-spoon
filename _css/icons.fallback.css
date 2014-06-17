@@ -1,10 +1,15 @@
 
+.icon-ui-icon__gift-box {
+	background-image: url('../_img/ui-icon__gift-box.png');
+	background-repeat: no-repeat;
+}
+
 .icon-inline-flatware_26x67 {
-	background-image: url('_img/inline-flatware_26x67.png');
+	background-image: url('../_img/inline-flatware_26x67.png');
 	background-repeat: no-repeat;
 }
 
 .icon-inline-laptop_40x42 {
-	background-image: url('png/inline-laptop_40x42.png');
+	background-image: url('../_img/inline-laptop_40x42.png');
 	background-repeat: no-repeat;
 }

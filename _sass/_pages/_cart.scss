@@ -243,6 +243,12 @@
 
 }
 
+.cart__options {
+	p {
+		text-align: center;
+	}
+}
+
 a.cart__utility__continue:link,
 a.cart__utility__continue:visited,
 a.cart__utility__update:link,
@@ -256,7 +262,7 @@ a.cart__utility__update:visited {
 		vertical-align: middle;
 	}
 
-	@include respond($med, "min") {
+	@include respond($med) {
 		float: left;
 	}
 }
@@ -270,7 +276,7 @@ a.cart__utility__update:visited {
 		margin-top: -3px;
 	}
 
-	@include respond($med, "min") {
+	@include respond($med) {
 		float: right;
 	}
 }
@@ -286,7 +292,7 @@ a.cart__utility__update:visited {
 		float: none;
 		width: 100%;
 
-		@include respond(1025px) {
+		@include respond($lrg) {
 			float: left;
 			margin: 0;
 			padding: 0 10px 0 0;
@@ -294,7 +300,7 @@ a.cart__utility__update:visited {
 		}
 	}
 	.col-1-2 + .col-1-2 {
-		@include respond(1025px) {
+		@include respond($lrg) {
 			padding: 0 0 0 10px;
 		}
 	}
@@ -310,7 +316,7 @@ a.cart__utility__update:visited {
 		display: inline-block;
 	}
 
-	@include respond(1025px) {
+	@include respond($lrg) {
 		margin: 0;
 		padding: 45px;
 	}
@@ -328,28 +334,25 @@ a.cart__utility__update:visited {
 		margin: 0 0 0 15px;
 	}
 
-	@include respond(1025px) {
-
+	@include respond($lrg) {
 		input[type="text"] {
-			width: 305px / 488px * 100%;
+			width: (305px/488px) * 100%;
 		}
-
 	}
-
 }
 
 .cart__promo-gc {
 	float: none;
-	width: 100%;
+	width: 100%; // 591px
 
 	.cart__promo-gc__code {
 		display: block;
-		width: 100%;
+		// width: 100%;
 	}
 
 	.cart__promo-gc__amt {
 		display: inline-block;
-		width: 27%;
+		// width: 27%;
 	}
 
 	a {
@@ -366,17 +369,17 @@ a.cart__utility__update:visited {
 		font-size: 4.2rem;
 		margin: 0 0 6px 0;
 		vertical-align: middle;
-		width: 11%;
+		// width: 11%;
 	}
 
-	@include respond(648px) {
+	@include respond($med) {
 		.cart__promo-gc__code {
 			display: inline-block;
-			width: 53%;
+			// width: 53%;
 		}
 		.cart__promo-gc__dollar {
 			padding: 0 0 0 20px;
-			width: 16%;
+			// width: 16%;
 		}
 	}
 }
@@ -394,7 +397,7 @@ a.cart__utility__update:visited {
 
 	padding: 15px;
 
-	@include respond($med, "min") {
+	@include respond($med) {
 		padding: 45px;
 	}
 }
@@ -417,7 +420,7 @@ a.cart__utility__update:visited {
 		vertical-align: middle;
 	}
 
-	@include respond($med, "min") {
+	@include respond($med) {
 		min-height: 230px;
 		padding: 0;
 
