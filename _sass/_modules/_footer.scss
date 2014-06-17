@@ -325,12 +325,11 @@ $footer-col-margin-sm: 45px;
 }
 
 .footer__browse__nav {
-	@include respond(480px) {
-		float: left;
-		margin: 0 0 45px 0;
-		padding: 0 6% 0 3%;
-		width: (1/2) * 100%;
-	}
+	float: left;
+	margin: 0 0 45px 0;
+	padding: 0 6% 0 3%;
+	width: (1/2) * 100%;
+
 	@include respond($med) {
 		padding: 0 3% 0 0;
 	}
@@ -348,12 +347,11 @@ $footer-col-margin-sm: 45px;
 }
 
 .footer__company__nav {
-	@include respond(480px) {
-		float: left;
-		margin: 0 0 45px 0;
-		padding: 0 3% 0 0;
-		width: (1/2) * 100%;
-	}
+	float: left;
+	margin: 0 0 45px 0;
+	padding: 0 3% 0 0;
+	width: (1/2) * 100%;
+
 	@include respond($med) {
 		padding: 0 3%;
 	}
