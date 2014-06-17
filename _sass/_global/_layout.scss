@@ -37,15 +37,15 @@ body, html {
 	width: 100%;
 
 	@include respond($med) {
-		padding-top: 8%;
+		padding-top: 6%;
 		padding-bottom: 8%;
 	}
 	@include respond($lrg) {
-		padding-top: 4.5%;
+		padding-top: 3.5%;
 		padding-bottom: 4.5%;
 	}
 	@include respond($xlrg) {
-		padding-top: 5%;
+		padding-top: 4%;
 		padding-bottom: 5%;
 	}
 }
