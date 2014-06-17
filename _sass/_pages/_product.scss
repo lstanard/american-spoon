@@ -6,13 +6,9 @@ $product-details-context: 620px;
 
 .product-wrapper {
 
-	.product-details__mobile,
-	.related-recipes__mobile,
 	.product-preview__mobile {
 		display: block;
 	}
-	.product-details__desktop,
-	.related-recipes__desktop,
 	.product-preview__desktop {
 		display: none;
 	}
@@ -20,13 +16,9 @@ $product-details-context: 620px;
 	@include respond($med) {
 		padding: 60px 0 90px 0;
 
-		.product-details__mobile,
-		.related-recipes__mobile,
 		.product-preview__mobile {
 			display: none;
 		}
-		.product-details__desktop,
-		.related-recipes__desktop,
 		.product-preview__desktop {
 			display: block;
 		}

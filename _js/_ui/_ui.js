@@ -423,10 +423,7 @@
 
 					$('#product-preview').imagePreviewer();
 					$('#cart-table').stacktable();
-					$('#product-preview').appendAround();
-					$('.product-details').appendAround();
-					$('.related-recipes').appendAround();
-
+					$('.product-photos').appendAround();
 				});
 
 				$w.on('load', function() {
