@@ -1125,6 +1125,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/ui-icon__gift-box.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 811,
+		"inputAbbreviatedPath": "\/_img\/ui-icon__gift-box.png",
+		"outputAbbreviatedPath": "\/_img\/ui-icon__gift-box.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/ui-mantle-arrow--next.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1210,8 +1221,8 @@
 		"outputAbbreviatedPath": "\/_js\/_ui\/min\/_ui-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 0
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/_js\/_utility.js": {
 		"fileType": 64,
@@ -1223,6 +1234,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
+		},
+	"\/_js\/_vendor\/instafeed.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_js\/_vendor\/instafeed.min.js",
+		"outputAbbreviatedPath": "\/_js\/_vendor\/min\/instafeed.min-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/_js\/_vendor\/jquery-1.11.0.min.js": {
 		"fileType": 64,
@@ -1364,8 +1386,8 @@
 		"outputAbbreviatedPath": "\/_js\/min\/main.min-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 0
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/_kit\/_global\/_footer.kit": {
 		"fileType": 2048,
@@ -1429,6 +1451,15 @@
 		"outputAbbreviatedPath": "\/catalog-request.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1
+		},
+	"\/_kit\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_kit\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/_kit\/index.kit": {
 		"fileType": 2048,

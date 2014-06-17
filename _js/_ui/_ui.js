@@ -390,10 +390,6 @@
 
 			},
 
-			instafeed: function() {
-
-			},
-
 			init: function() {
 
 				$(document).ready(function() {
@@ -434,7 +430,6 @@
 				});
 
 				uiFunctions.site.detectScrollBarWidth();
-
 
 				loadDynamicContent(dynamicImageData);
 
