@@ -390,6 +390,10 @@
 
 			},
 
+			instafeed: function() {
+
+			},
+
 			init: function() {
 
 				$(document).ready(function() {
@@ -410,6 +414,15 @@
 							$slideElement.addClass('active').siblings().removeClass('active');
 						}
 					});
+
+					var feed = new Instafeed({
+						get: 'user',
+						userId: 297620473,
+						limit: 1,
+						resolution: 'standard_resolution',
+						accessToken: '297620473.467ede5.171eabc183ba422eb49bbc58e526c50b'
+					});
+					feed.run();
 
 					uiFunctions.site.setColHeights();
 
