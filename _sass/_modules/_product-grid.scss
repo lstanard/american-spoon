@@ -2,6 +2,27 @@
     MODULE: Products grid
 -------------------------------------------------------------------*/
 
+.index {
+	.product-grid {
+
+
+		@include respond($med) {
+			a.product-grid__link:hover,
+			a.product-grid__link:active,
+			a.featured-product__link:hover,
+			a.featured-product__link:active,
+			a.shop-product__link:hover,
+			a.shop-product__link:active {
+				
+				span.featured-product__view-product {
+					@include opacity(1);
+					top: 70%;
+				}
+			}
+		}
+	}
+}
+
 .product-grid {
 
 	ul {
@@ -276,7 +297,7 @@
 
 			span.featured-product__view-product {
 				@include opacity(1);
-				top: 70%;
+				top: 43%;
 			}
 			.featured-product__name,
 			.featured-product__price {
