@@ -27,12 +27,12 @@
 
 	.container--wide {
 		@include respond($med) {
-			padding-top: 6%;
+			padding-top: 5%;
 			padding-bottom: 5%;
 		}
 		@include respond($lrg) {
-			padding-top: 3%;
-			padding-bottom: 2%;
+			padding-top: 5%;
+			padding-bottom: 5%;
 		}
 	}
 
@@ -83,22 +83,14 @@
 		margin: 0;
 
 		@include respond($med) {
-			// padding: 0 0 0 4%;
 			width: (($store-location-meta) * 9 / 20) / $store-location-meta * 100%;
-		}
-		@include respond(760px) {
-			// padding: 0 0 0 8%;
 		}
 	}
 	.col-3-5 {
 		margin: 0;
 
 		@include respond($med) {
-			// padding: 0 0 0 5%;
 			width: (($store-location-meta) * 11 / 20) / $store-location-meta * 100%;
-		}
-		@include respond(760px) {
-			// padding: 0 0 0 10%;
 		}
 	}
 }
@@ -246,25 +238,20 @@
 }
 
 #petoskey {
-	border-bottom: none;
-
 	h2, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $red; }
 }
 #harbor-springs {
-	background-color: rgba(100, 100, 100, 0.015);
 	h2, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $peach; }
 }
 #charlevoix {
 	h2, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $olive-green; }
 }
 #williamsburg {
-	background-color: rgba(100, 100, 100, 0.015);
 	h2, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $brown; }
 }
 #traverse-city {
 	h2, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $pumpkin; }
 }
 #saugatuck {
-	background-color: rgba(100, 100, 100, 0.015);
 	h2, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $yellow-green; }
 }

@@ -327,13 +327,13 @@
 		& > a:link,
 		& > a:visited {
 			@extend .verlag-bold;
-			margin: 0 8px;
+			margin: 0 10px;
 		}
 
 		@include respond($xlrg) {
 			& > a:link,
 			& > a:visited {
-				margin: 0 12px;
+				margin: 0 16px;
 			}
 		}
 	}
