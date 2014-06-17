@@ -111,7 +111,6 @@ var dynamicImageData = [
 		customClass: 'desktop-img',
 		parent: '<figure>'
 	},
-
 	{
 		breakpoint: '633',
 		image: '_img/as_cafe_photo02.jpg',
@@ -124,6 +123,38 @@ var dynamicImageData = [
 		breakpoint: '1025',
 		image: '_img/as_cafe_photo03.jpg',
 		target: '.page__cafe .cafe__photo-grid01',
+		location: 'append',
+		customClass: 'desktop-img',
+		parent: '<figure>'
+	},
+	{
+		breakpoint: '633',
+		image: '_img/as_cafe_photo05.jpg',
+		target: '.page__cafe .cafe__photo-grid02',
+		location: 'append',
+		customClass: 'tablet-img',
+		parent: '<figure>'
+	},
+	{
+		breakpoint: '1025',
+		image: '_img/as_cafe_photo06.jpg',
+		target: '.page__cafe .cafe__photo-grid02',
+		location: 'append',
+		customClass: 'desktop-img',
+		parent: '<figure>'
+	},
+	{
+		breakpoint: '633',
+		image: '_img/as_cafe_photo08.jpg',
+		target: '.page__cafe .cafe__photo-grid03',
+		location: 'append',
+		customClass: 'tablet-img',
+		parent: '<figure>'
+	},
+	{
+		breakpoint: '1025',
+		image: '_img/as_cafe_photo09.jpg',
+		target: '.page__cafe .cafe__photo-grid03',
 		location: 'append',
 		customClass: 'desktop-img',
 		parent: '<figure>'

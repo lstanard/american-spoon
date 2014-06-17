@@ -186,11 +186,6 @@
 		padding-top: 0;
 	}
 
-	& + a.btn:link,
-	& + a.btn:visited {
-		width: 50%;
-	}
-
 	/*fourth and above*/
 	ul {
 		li:nth-child(n+4) {

@@ -76,7 +76,7 @@ body {
 	text-transform: uppercase;
 }
 
-.about__subhead {
+.section-subhead--lrg {
 	@extend .archer-light-ital;
 	font-size: 36px;
 	font-size: 3.6rem;
@@ -95,7 +95,7 @@ body {
 }
 
 .section__subhead {
-	@extend .about__subhead;
+	@extend .section-subhead--lrg;
 	color: $primary-headline;
 	margin-bottom: 15px;
 

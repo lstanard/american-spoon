@@ -418,12 +418,15 @@
 						resolution: 'standard_resolution',
 						accessToken: '297620473.467ede5.171eabc183ba422eb49bbc58e526c50b'
 					});
-					if($('body').hasClass('index'))
-						feed.run();
 
-					$('#product-preview').imagePreviewer();
+					if ($('body').hasClass('index')) {
+						feed.run();
+					}
+
 					$('#cart-table').stacktable();
 					$('.product-photos').appendAround();
+					$('#product-preview').imagePreviewer();
+
 				});
 
 				$w.on('load', function() {
