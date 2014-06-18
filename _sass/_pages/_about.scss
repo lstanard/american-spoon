@@ -75,7 +75,7 @@
 		}
 	}
 
-	h2.about__subhead {
+	.section-subhead--lrg {
 		color: $blue;
 	}
 
@@ -128,7 +128,7 @@
 .about__our-kitchen {
 
 	h2 {
-		@extend .about__subhead;
+		@extend .section-subhead--lrg;
 		color: $olive-green;
 	}
 
@@ -168,7 +168,7 @@
 .about__fruits-and-farmers {
 
 	h2 {
-		@extend .about__subhead;
+		@extend .section-subhead--lrg;
 		color: $peach;
 	}
 
@@ -208,7 +208,7 @@
 .about__press {
 
 	h2 {
-		@extend .about__subhead;
+		@extend .section-subhead--lrg;
 		color: $red;
 	}
 
@@ -286,7 +286,7 @@
 .about__family-business {
 
 	h2 {
-		@extend .about__subhead;
+		@extend .section-subhead--lrg;
 		color: $peach;
 	}
 
@@ -295,7 +295,7 @@
 .about__careers {
 
 	h2 {
-		@extend .about__subhead;
+		@extend .section-subhead--lrg;
 		color: $pumpkin;
 	}
 

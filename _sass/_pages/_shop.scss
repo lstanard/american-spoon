@@ -83,7 +83,7 @@ body.shop--multi-cat {
 	ul > li {
 		a.shop-product__recipe-promo:link,
 		a.shop-product__recipe-promo:visited {
-			display: block;
+			display: none;
 			margin: 0 auto;
 			max-width: 285px;
 			padding: 25px 0;
@@ -99,7 +99,10 @@ body.shop--multi-cat {
 				width: 100%;
 			}
 
-			@include respond(1200px, "min") {
+			@include respond($med) {
+				display: block;
+			}
+			@include respond($xlrg) {
 				padding: 20px 0;
 			}
 		}
