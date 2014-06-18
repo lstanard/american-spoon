@@ -431,14 +431,12 @@
 
 				});
 
-				$w.on('load', function() {
+				$(window).load(function(){
 					uiFunctions.site.setColHeights();
 				});
 
-				uiFunctions.site.detectScrollBarWidth();
-
 				loadDynamicContent(dynamicImageData);
-
+				uiFunctions.site.detectScrollBarWidth();
 				uiFunctions.site.setupMobileNavigation();
 				uiFunctions.site.setHeaderWaypoint();
 				uiFunctions.site.setupSearchMenu();
@@ -448,14 +446,16 @@
 				uiFunctions.site.bindLoginPageControls();
 				uiFunctions.site.setupScrollToLinks();
 
+				$w.smartresize(function() {
+					uiFunctions.site.setColHeights();
+				});
+
 				$w.resize(function() {
 					sw = document.documentElement.clientWidth;
 					sh = document.documentElement.clientHeight;
-
 					uiFunctions.site.setupMobileNavigation();
 					uiFunctions.site.setHeaderWaypoint();
 					uiFunctions.site.destroyMobileNav();
-					uiFunctions.site.setColHeights();
 					uiFunctions.site.setupSecondaryNav();
 				});
 			}
