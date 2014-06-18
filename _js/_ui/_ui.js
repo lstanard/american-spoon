@@ -21,19 +21,14 @@
 				},
 
 				unsetColumnHeight: function(selectorArray) {
-
 					$(document).ready(function() {
-
 						var selectors = new Array();
-
 						$.each(selectorArray, function(index, value){
 							selectors.push($(value));
 						});
-
 						$.each(selectors, function() {
 							$(this).css('height', '');
 						});
-
 					});
 				},
 
@@ -90,6 +85,12 @@
 
 						$('.header__search-btn').on('click tap', function(e) {
 							$(this).toggleClass('search-open');
+							$('.header__search').toggleClass('expanded');
+							e.preventDefault();
+						});
+
+						$('.search-close').on('click tap', function(e) {
+							$('.header__search-btn').toggleClass('search-open');
 							$('.header__search').toggleClass('expanded');
 							e.preventDefault();
 						});

@@ -2,6 +2,7 @@ Page links:
 -----------
 
  - Home: http://www.spoon.com/designtmp/index.html
+ - Cafe: http://www.spoon.com/designtmp/cafe.html
  - Shop: http://www.spoon.com/designtmp/shop.html
  - Shop (multiple categories): http://www.spoon.com/designtmp/shop_2.html
  - Product page: http://www.spoon.com/designtmp/product-page.html
@@ -13,43 +14,6 @@ Page links:
  - Recipes single: http://www.spoon.com/designtmp/recipes-single.html
  - Stores: http://www.spoon.com/designtmp/stores.html
  - About: http://www.spoon.com/designtmp/about.html
-
-
-Questions/Notes for Jake:
--------------------------
-
-1. Did we get the fonts figured out?
- - Still need to purchase the web license through typography.com
-
-2. How do we style the search results page?
- - Need to talk with Joe about how search results are generated.
-
-3. Do we want to have some kind of rollover for the recipes category page?
-
-4. Need to figure out how to handle search (separation of WordPress and Magento makes this tricky)
-
-
-To-do:
-------
-
-Shop Grid:
-- Change the top margin above the first row of products and below the rule line to be similar to how the header is. If they can scale fairly even, great.
-- Same comment for the bottom of the products and the large buttons. See if we can get equal margins between the last row and before the buttons, and then similar spacing between the buttons and the newsletter sign up.
-
-Will need a page with a second category included. So, ‘Spoon Fruit & Butter’ would have a second category below the first set of products. For a heading, I think we could just repeat the first one with another fruit illustration. Otherwise, we just do the name and then a rule line like the ‘You May Also Like’ heading on the product page. Thought?
-
-- Add labels to Home mantle carousel
-
-- Browser testing (need lots of PC testing, IE9, or IE8?, and up only)
-
-- Pages/sections that need responsive layout fixes:
-	- login.html (increase point at which items go to 2 column)
-
-- Recipe (single) page:
-	- Place icons (get from JW)
-
-- Fix JS functionality breaking because of jRespond breakpoints (product page suggested products)
-
 
 Dev notes:
 ----------

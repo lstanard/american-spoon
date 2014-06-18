@@ -301,7 +301,7 @@
 
 		& > a:link,
 		& > a:visited {
-			@extend .archer-bold-ital;
+			@extend .archer-bold;
 			color: $red;
 			font-size: 14px;
 			font-size: 1.4rem;
@@ -786,7 +786,7 @@ a.header__search-btn:visited {
 }
 
 .header__search {
-	@include transition(height .5s ease);
+	@include transition(height .35s ease);
 	background-color: $lightgrey1;
 	display: block;
 	height: 0;
@@ -813,6 +813,19 @@ a.header__search-btn:visited {
 		@include respond($med) {
 			width: calc(((100% - 20px) / 4));
 		}
+	}
+
+	a.search-close:link,
+	a.search-close:visited {
+		@extend .verlag-bold;
+		color: #AAA;
+		display: block;
+		font-size: 32px;
+		font-size: 3.2rem;
+		position: absolute;
+		right: -45px;
+		text-decoration: none;
+		top: 15px;
 	}
 
 	.header__search__input {
