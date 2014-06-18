@@ -398,7 +398,7 @@
 					var mantleSlider = $('.bxslider').bxSlider({
 						adaptiveHeight: true,
 						slideWidth: 1200,
-						onSlideAfter: function($slideElement) {
+						onSlideBefore: function($slideElement) {
 							$slideElement.addClass('active').siblings().removeClass('active');
 						},
 						onSliderLoad: function(currentSlide, currentIndex) {
