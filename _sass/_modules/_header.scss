@@ -804,28 +804,49 @@ a.header__search-btn:visited {
 		height: 150px;
 	}
 
-	.col-3-4 {
+	.col-3-5 {
 		@include respond($med) {
-			width: calc(((100% - 20px) / 4) * 3);
+			margin: 0;
+			padding: 0 10px 0 0;
+			width: (3/5) * 100%;
 		}
 	}
-	.col-1-4 {
+	.col-2-5 {
 		@include respond($med) {
-			width: calc(((100% - 20px) / 4));
+			margin: 0;
+			padding: 0 0 0 10px;
+			width: (2/5) * 100%;
 		}
+	}
+
+	a.header__search__btn:link,
+	a.header__search__btn:visited {
+		float: left;
+		width: 83%;
 	}
 
 	a.search-close:link,
 	a.search-close:visited {
 		@extend .verlag-bold;
+		border: 1px solid #AAA;
 		color: #AAA;
 		display: block;
-		font-size: 32px;
-		font-size: 3.2rem;
-		position: absolute;
-		right: -45px;
+		float: left;
+		font-size: 42px;
+		font-size: 4.2rem;
+		height: 60px;
+		line-height: 60px;
+		line-height: 6.0rem;
+		margin: 0 0 0 20px;
+		text-align: center;
 		text-decoration: none;
-		top: 15px;
+		width: 60px;
+
+		span {
+			display: block;
+			line-height: 50px;
+			line-height: 5.0rem;
+		}
 	}
 
 	.header__search__input {

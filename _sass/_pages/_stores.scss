@@ -9,7 +9,12 @@
 
 		h1.page-title {
 			color: $red;
+			margin: 0 auto;
 			margin-bottom: 30px;
+
+			@include respond($med) {
+				max-width: 65%;
+			}
 		}
 		.lead-copy {
 			margin-bottom: 45px;
