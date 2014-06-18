@@ -290,7 +290,7 @@
 
 		img {
 			border: 1px solid $bordercolor;
-			max-width: 366px;
+			width: 100%;
 
 			@include respond($med) {
 				max-width: 100%
