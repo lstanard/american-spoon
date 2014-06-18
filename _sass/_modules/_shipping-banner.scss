@@ -71,6 +71,8 @@ a.shipping-banner--link:visited {
 		}
 		&.shipping-banner__msg02 {
 			@extend .archer-bold;
+			font-size: 18px;
+			font-size: 1.8rem;
 			text-transform: uppercase;
 			letter-spacing: 0.09em;
 		}

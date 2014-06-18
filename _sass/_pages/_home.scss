@@ -160,6 +160,8 @@
 	h1 {
 		line-height: 40px;
 		line-height: 4rem;
+		font-size: 40px;
+		font-size: 4rem;
 	}
 
 	@include respond($med) {
