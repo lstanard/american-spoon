@@ -372,9 +372,9 @@
 	}
 
 	@include respond($lrg) {
-
 		&:before {
-			background: url('../_img/as_illustration_02.png') no-repeat 0px 0px;
+			@include scale(.9);
+			background: url('../_img/as_illustration_02.png') no-repeat right top;
 			content: "";
 			display: block;
 			height: 287px;
@@ -383,6 +383,11 @@
 			top: -165px;
 			width: 294px;
 			z-index: 1;
+		}
+	}
+	@include respond($xlrg) {
+		&:before {
+			@include scale(.95);
 		}
 	}
 }

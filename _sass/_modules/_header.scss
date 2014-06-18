@@ -776,6 +776,30 @@
 	HEADER / SEARCH MENU
 -------------------------------------------------------------------*/
 
+a.primary-nav__search:link,
+a.primary-nav__search:visited {
+	color: $red;
+	display: block;
+	font-size: 24px;
+	font-size: 2.4rem;
+	position: absolute;
+	right: 90px;
+	text-decoration: none;
+	top: 15px;
+
+	&.search-open {
+		color: $blue;
+	}
+
+	@include respond($med) {
+		right: 120px;
+	}
+
+	@include respond($header-nav-break) {
+		display: none;
+	}
+}
+
 a.header__search-btn:link,
 a.header__search-btn:visited {
 	&.search-open,
@@ -787,6 +811,7 @@ a.header__search-btn:visited {
 
 .header__search {
 	@include transition(height .35s ease);
+	@include box-shadow(rgba(0,0,0,.15) 0px 2px 6px);
 	background-color: $lightgrey1;
 	display: block;
 	height: 0;
@@ -796,33 +821,42 @@ a.header__search-btn:visited {
 	z-index: $search-form;
 
 	.container--wide {
-		padding-top: 45px;
 		padding-bottom: 0;
+		padding-top: 15px;
+
+		@include respond($med) {
+			padding-top: 45px;
+		}
 	}
 
 	&.expanded {
-		height: 150px;
+		height: 175px;
+
+		@include respond($med) {
+			height: 150px;
+		}
 	}
 
 	.col-3-5 {
 		@include respond($med) {
 			margin: 0;
 			padding: 0 10px 0 0;
-			width: (3/5) * 100%;
+			width: (800px/1200px) * 100%;
 		}
 	}
 	.col-2-5 {
 		@include respond($med) {
 			margin: 0;
 			padding: 0 0 0 10px;
-			width: (2/5) * 100%;
+			width: (400px/1200px) * 100%;
 		}
 	}
 
 	a.header__search__btn:link,
 	a.header__search__btn:visited {
 		float: left;
-		width: 83%;
+		margin: 0;
+		width: (312px/400px) * 100%;
 	}
 
 	a.search-close:link,
@@ -840,7 +874,7 @@ a.header__search-btn:visited {
 		margin: 0 0 0 20px;
 		text-align: center;
 		text-decoration: none;
-		width: 60px;
+		width: (60px/400px) * 100%;
 
 		span {
 			display: block;
@@ -853,7 +887,6 @@ a.header__search-btn:visited {
 		border: none;
 		height: 60px;
 	}
-
 }
 
 // Mobile search layout

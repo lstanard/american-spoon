@@ -136,7 +136,7 @@
 			}
 		}
 
-		@include respond($med, "min") {
+		@include respond($med) {
 
 			ul li {
 				float: left;

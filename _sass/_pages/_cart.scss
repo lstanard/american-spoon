@@ -144,19 +144,19 @@
 	}
 
 	th.items__table-th__product-name {
-		width: 616px / 1200px * 100%;
+		width: (616px/1200px) * 100%;
 	}
 	th.items__table-th__price {
-		width: 146px / 1200px * 100%;
+		width: (146px/1200px) * 100%;
 	}
 	th.items__table-th__quantity {
-		width: 146px / 1200px * 100%;
+		width: (146px/1200px) * 100%;
 	}
 	th.items__table-th__subtotal {
-		width: 146px / 1200px * 100%;
+		width: (146px/1200px) * 100%;
 	}
 	th.items__table-th__remove {
-		width: 146px / 1200px * 100%;
+		width: (146px/1200px) * 100%;
 	}
 
 	// Table products
@@ -276,8 +276,6 @@ a.cart__utility__continue:visited,
 a.cart__utility__update:link,
 a.cart__utility__update:visited {
 	display: block;
-	// line-height: 34px;
-	// line-height: 3.4rem;
 
 	span {
 		display: inline-block;
@@ -468,7 +466,7 @@ a.cart__utility__update:visited {
 	}
 
 	@include respond($med) {
-		min-height: 230px;
+		height: 230px;
 		padding: 0;
 
 		p {

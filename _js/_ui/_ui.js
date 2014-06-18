@@ -83,7 +83,7 @@
 
 					$(document).ready(function() {
 
-						$('.header__search-btn').on('click tap', function(e) {
+						$('.header__search-btn, .primary-nav__search').on('click tap', function(e) {
 							$(this).toggleClass('search-open');
 							$('.header__search').toggleClass('expanded');
 							e.preventDefault();

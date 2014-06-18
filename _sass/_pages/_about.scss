@@ -4,11 +4,6 @@
 
 .page__about {
 
-	p {
-		// font-size: 18px;
-		// font-size: 1.8rem; <-- BAD NEEDS MOVED ELSEWHERE
-	}
-
 	.lead-copy {
 		margin: 0 auto;
 		text-align: center;
@@ -200,9 +195,7 @@
 			margin: 0;
 			padding: 75px 0;
 		}
-
 	}
-
 }
 
 .about__press {
@@ -358,13 +351,13 @@
 		.careers-list {
 			li {
 				float: left;
-				margin: 0 10px 20px 0;
+				margin: 0 0 20px 0;
 				padding: 45px;
 				width: calc((100% - 20px) / 2);
 
 				&:nth-child(2n) {
 					margin-right: 0;
-					margin-left: 10px;
+					margin-left: 0;
 				}
 			}
 		}

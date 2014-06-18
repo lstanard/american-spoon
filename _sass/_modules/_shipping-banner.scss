@@ -16,7 +16,7 @@ a.shipping-banner--link:visited {
 		@include opacity(.8);
 	}
 
-	@include respond($header-nav-break, "min") {
+	@include respond($header-nav-break) {
 		display: block;
 	}
 }

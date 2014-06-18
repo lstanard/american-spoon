@@ -18,7 +18,7 @@
 		padding-bottom: 15px;
 	}
 
-	@include respond($med, "min") {
+	@include respond($med) {
 		margin: 0;
 		padding: 45px;
 
