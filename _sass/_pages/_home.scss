@@ -6,7 +6,7 @@
 	height: auto;
 
 	.bx-pager {
-		@include respond(599px, "max") {			
+		@include respond($med, "max") {			
 			display: none !important;
 		}
 	}
@@ -51,7 +51,13 @@
 				color: #FFF;
 				text-align: center;
 				
-				@include respond(520px) {
+				@include respond(340px) {
+					padding: 20px 12% 0 12%;
+				}	
+				@include respond(420px) {
+					padding: 30px 12% 0 12%;
+				}				
+				@include respond(440px) {
 					padding: 45px 12% 0 12%;
 				}
 				@include respond(700px) {
@@ -69,12 +75,18 @@
 
 				h3 {
 					@extend .archer-bold-ital;
-					margin: 0 0 15px 0;
+					margin: 0 0 5px 0;
 					font-size: 20px;
 					font-size: 2rem;
 					line-height: 28px;
 					line-height: 2.8rem;
 
+					@include respond(370px) {
+						font-size: 325px;
+						font-size: 2.5rem;
+						line-height: 30px;
+						line-height: 3rem;
+					}
 					@include respond(420px) {
 						font-size: 30px;
 						font-size: 3rem;
@@ -97,13 +109,29 @@
 
 				p {
 					@extend .archer-med;
-					font-size: 15px;
-					font-size: 1.5rem;
-					line-height: 15px;
-					line-height: 1.5rem;
-					margin-bottom: 15px;
+					font-size: 16px;
+					font-size: 1.6rem;
+					line-height: 16px;
+					line-height: 1.6rem;
+					margin-bottom: 5px;
 					color: #FFF;
 
+					@include respond(370px) {
+						font-size: 18px;
+						font-size: 1.8rem;
+						line-height: 20px;
+						line-height: 2rem;
+					}
+					@include respond(400px) {
+						margin-bottom: 15px;
+					}
+					@include respond(500px) {
+						font-size: 20px;
+						font-size: 2rem;
+						line-height: 25px;
+						line-height: 2.5rem;
+						margin-bottom: 20px;
+					}
 					@include respond(600px) {
 						font-size: 22px;
 						font-size: 2.2rem;
