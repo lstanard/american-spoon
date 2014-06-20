@@ -2,6 +2,12 @@
     PAGE: Recipes / Landing page
 -------------------------------------------------------------------*/
 
+.recipes-jump {
+	h1.page-title {
+		margin-bottom: 5px;
+	}
+}
+
 .recipes-jump,
 .page__recipes__category {
 	header.main-header {
@@ -11,9 +17,12 @@
 			padding-bottom: 0;
 		}
 
+		h2.page-super {
+			margin-bottom: 35px;
+		}
+
 		h1.page-title {
 			color: $blue;
-			margin-bottom: 0;
 		}
 
 		.lead-copy {

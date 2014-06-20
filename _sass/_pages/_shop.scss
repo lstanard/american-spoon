@@ -11,6 +11,7 @@ header.shop__header {
 	text-align: center;
 
 	h2.page-super {
+		margin-bottom: 35px;
 		margin-top: 60px;
 
 		@include respond($med) {
@@ -19,7 +20,7 @@ header.shop__header {
 	}
 	h1.page-title {
 		color: $red;
-		margin-bottom: 15px;
+		margin-bottom: 5px;
 	}
 	.lead-copy {
 		margin: 0 auto;
@@ -31,10 +32,6 @@ header.shop__header {
 	@include respond($med) {
 		@include background-size(auto);
 		background-position: -200px -100px;
-
-		h1.page-title {
-			// margin-top: 45px;
-		}
 	}
 	@include respond($lrg) {
 		background-position: -120px -45px;
