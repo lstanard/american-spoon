@@ -6,13 +6,19 @@
 	height: auto;
 
 	.bx-pager {
-		display: none !important;
+		@include respond($med, "max") {			
+			display: none !important;
+		}
 	}
 
 	.bx-wrapper .bx-controls-direction a {
 		display: block;
 		height: 30px;
 		width: 26px;
+
+		@include respond(600px) {
+			height: 60px;
+		}
 
 		&:hover,
 		&:active {
@@ -41,32 +47,59 @@
 			.home-mantle__copy-wrapper {
 				@include text-shadow(rgba(0,0,0,.7) 0px 0px 14px 8px);
 				position: absolute;
-				padding: 45px 12% 0 12%;
+				padding: 15px 11% 0 11%;
 				color: #FFF;
 				text-align: center;
-
+				
+				@include respond(340px) {
+					padding: 20px 12% 0 12%;
+				}	
+				@include respond(420px) {
+					padding: 30px 12% 0 12%;
+				}				
+				@include respond(440px) {
+					padding: 45px 12% 0 12%;
+				}
 				@include respond(700px) {
 					padding: 75px 14% 0 14%;
 				}
 				@include respond(800px) {
 					padding: 90px 10% 0 10%;
 				}
-				@include respond(850px) {
+				@include respond(820px) {
 					padding: 120px 10% 0 10%;
 				}
-				@include respond($lrg) {
+				@include respond(980px) {
 					padding: 185px 10% 0 10%;
 				}
 
 				h3 {
 					@extend .archer-bold-ital;
-					margin: 0 0 15px 0;
-					font-size: 40px;
-					font-size: 4rem;
-					line-height: 48px;
-					line-height: 4.8rem;
+					margin: 0 0 5px 0;
+					font-size: 20px;
+					font-size: 2rem;
+					line-height: 28px;
+					line-height: 2.8rem;
 
-					@include respond(850px) {
+					@include respond(370px) {
+						font-size: 325px;
+						font-size: 2.5rem;
+						line-height: 30px;
+						line-height: 3rem;
+					}
+					@include respond(420px) {
+						font-size: 30px;
+						font-size: 3rem;
+						line-height: 38px;
+						line-height: 3.8rem;
+					}
+					@include respond(520px) {
+						font-size: 40px;
+						font-size: 4rem;
+						line-height: 48px;
+						line-height: 4.8rem;
+					}
+					@include respond(820px) {
 						font-size: 60px;
 						font-size: 6rem;
 						line-height: 68px;
@@ -76,13 +109,29 @@
 
 				p {
 					@extend .archer-med;
-					font-size: 18px;
-					font-size: 1.8rem;
-					line-height: 25px;
-					line-height: 2.5rem;
-					margin-bottom: 15px;
+					font-size: 16px;
+					font-size: 1.6rem;
+					line-height: 16px;
+					line-height: 1.6rem;
+					margin-bottom: 5px;
 					color: #FFF;
 
+					@include respond(370px) {
+						font-size: 18px;
+						font-size: 1.8rem;
+						line-height: 20px;
+						line-height: 2rem;
+					}
+					@include respond(400px) {
+						margin-bottom: 15px;
+					}
+					@include respond(500px) {
+						font-size: 20px;
+						font-size: 2rem;
+						line-height: 25px;
+						line-height: 2.5rem;
+						margin-bottom: 20px;
+					}
 					@include respond(600px) {
 						font-size: 22px;
 						font-size: 2.2rem;
@@ -103,11 +152,12 @@
 					margin: 0 auto;
 				}
 
-				@include respond(600px, "max") {
+				@include respond(599px, "max") {
 					a.btn:link,
 					a.btn:visited {
 						border: none;
-						padding: 0;
+						padding: 0 5px 0 5px;
+						height: 30px;
 					}
 				}
 			}
