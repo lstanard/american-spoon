@@ -195,7 +195,7 @@
 	@extend .cf;
 	margin: 0 0 0 0;
 
-	.recipes-grid__row {
+	.rg__row {
 		@extend .cf;
 	}
 
@@ -207,52 +207,52 @@
 		}
 	}
 
-	.recipes-grid__item {
+	.rg__item {
 		position: relative;
 		margin-bottom: 20px;
 		overflow: hidden;
 	}
 
-	.recipes-grid__1-3--left,
-	.recipes-grid__2-3--right,
-	.recipes-grid__2-3--left,
-	.recipes-grid__1-3--right,
-	.recipes-grid__full {
-		@extend .recipes-grid__item;
+	.rg__1-3--left,
+	.rg__2-3--right,
+	.rg__2-3--left,
+	.rg__1-3--right,
+	.rg__full {
+		@extend .rg__item;
 	}
 
 	@include respond($med) {
 
-		.recipes-grid__item {
+		.rg__item {
 			float: left;
 		}
 
-		.recipes-grid__1-3 {
+		.rg__1-3 {
 			width: (1/3) * 100%;
 		}
 
-		.recipes-grid__2-3 {
+		.rg__2-3 {
 			width: (2/3) * 100%;
 		}
 
-		.recipes-grid__1-3--left,
-		.recipes-grid__1-3--right {
-			@extend .recipes-grid__1-3;
+		.rg__1-3--left,
+		.rg__1-3--right {
+			@extend .rg__1-3;
 		}
 
-		.recipes-grid__2-3--right {
-			@extend .recipes-grid__2-3;
+		.rg__2-3--right {
+			@extend .rg__2-3;
 			padding-left: 20px;
 		}
 
-		.recipes-grid__2-3--left {
-			@extend .recipes-grid__2-3;
+		.rg__2-3--left {
+			@extend .rg__2-3;
 			padding-right: 20px;
 		}
 	}
 
 	@include respond($xlrg) {
-		.recipes-grid__full {
+		.rg__full {
 			height: auto;
 		}
 	}
