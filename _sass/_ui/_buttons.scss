@@ -55,7 +55,7 @@ a.ui-link--left:link, a.ui-link--left:visited {
 }
 
 a.btn--box:link, a.btn--box:visited {
-	@include transition(all .25s);
+	@include transition(all .15s);
 	@extend .verlag-book;
 	color: $primary-copy;
     color: #aaa;
