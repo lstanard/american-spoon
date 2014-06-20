@@ -90,7 +90,7 @@
 						});
 
 						$('.search-close').on('click tap', function(e) {
-							$('.header__search-btn').toggleClass('search-open');
+							$('.header__search-btn, .primary-nav__search').toggleClass('search-open');
 							$('.header__search').toggleClass('expanded');
 							e.preventDefault();
 						});
