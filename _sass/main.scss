@@ -39,15 +39,20 @@
 @import "_ui/_misc";
 
 /*------------------------------------------------------------------
+    PARTIALS
+-------------------------------------------------------------------*/
+
+@import "_partials/_header";
+@import "_partials/_footer";
+@import "_partials/_shipping-banner";
+
+/*------------------------------------------------------------------
     MODULES
 -------------------------------------------------------------------*/
 
-@import "_modules/_header";
-@import "_modules/_footer";
 @import "_modules/_product-grid";
 @import "_modules/_recipes-grid";
 @import "_modules/_secondary-nav";
-@import "_modules/_shipping-banner";
 @import "_modules/_photo-grid";
 @import "_modules/_share";
 
