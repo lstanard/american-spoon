@@ -209,13 +209,11 @@
 	}
 	@include respond(800px) {
 		img {
-			margin-top: 45px;
 			max-width: 75%;
 		}
 	}
 	@include respond($lrg) {
 		img {
-			margin-top: 0;
 			max-width: 472px;
 		}
 	}
@@ -267,7 +265,7 @@
 a.spoon-cafe-module.btn:link,
 a.spoon-cafe-module.btn:visited {
 	@include border-radius(0);
-	border: 3px solid $blue;
+	border: 2px solid $blue;
 	color: $blue;
 	display: table;
 	height: auto;
@@ -303,14 +301,24 @@ a.spoon-cafe-module.btn:visited {
 	border-bottom: none;
 
 	.container--full:first-of-type {
-		padding-top: 0;
 		padding-bottom: 0;
+		padding-top: 0;
+	}
+
+	.container--wide {
+		padding-bottom: 8%;
+		padding-top: 8%;
+
+		@include respond($xlrg) {
+			padding-bottom: 7%;
+			padding-top: 7%;
+		}
 	}
 
 	.module__subhead {
 		@extend .verlag-bold;
-		padding-bottom: 5px;
 		margin-bottom: 15px;
+		padding-bottom: 5px;
 	}
 
 	.col-2-5 {
@@ -329,9 +337,6 @@ a.spoon-cafe-module.btn:visited {
 		margin: 0;
 		width: 100%;
 
-		@include respond($med) {
-			padding-top: 45px;
-		}
 		@include respond(800px) {
 			float: left;
 			width: (3/5) * 100%;
