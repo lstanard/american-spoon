@@ -6,7 +6,7 @@
 	height: auto;
 
 	.bx-pager {
-		@include respond($med, "max") {			
+		@include respond($med, "max") {
 			display: none !important;
 		}
 	}
@@ -50,13 +50,13 @@
 				padding: 15px 11% 0 11%;
 				color: #FFF;
 				text-align: center;
-				
+
 				@include respond(340px) {
 					padding: 20px 12% 0 12%;
-				}	
+				}
 				@include respond(420px) {
 					padding: 30px 12% 0 12%;
-				}				
+				}
 				@include respond(440px) {
 					padding: 45px 12% 0 12%;
 				}
@@ -185,6 +185,7 @@
 	@extend .cf;
 	border-bottom: 1px solid $bordercolor;
 	padding: 0 0 25px 0;
+	text-align: left;
 
 	a.featured-products__shop-link:link,
 	a.featured-products__shop-link:visited {

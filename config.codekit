@@ -1015,6 +1015,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/as_stores_illustration02.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 153077,
+		"inputAbbreviatedPath": "\/_img\/as_stores_illustration02.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_stores_illustration02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/as_stores_map_petoskey.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1048,6 +1059,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/as_stores_photo03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 192408,
+		"inputAbbreviatedPath": "\/_img\/as_stores_photo03.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_stores_photo03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_stores_photo04.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 241091,
+		"inputAbbreviatedPath": "\/_img\/as_stores_photo04.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_stores_photo04.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_stores_photo05.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 317395,
+		"inputAbbreviatedPath": "\/_img\/as_stores_photo05.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_stores_photo05.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/as_stores_spoon-cafe_illustration.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1055,6 +1099,17 @@
 		"initialSize": 15391,
 		"inputAbbreviatedPath": "\/_img\/as_stores_spoon-cafe_illustration.jpg",
 		"outputAbbreviatedPath": "\/_img\/as_stores_spoon-cafe_illustration.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_stores_spoon-cafe_illustration2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8343,
+		"inputAbbreviatedPath": "\/_img\/as_stores_spoon-cafe_illustration2.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_stores_spoon-cafe_illustration2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

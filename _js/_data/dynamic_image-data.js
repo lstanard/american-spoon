@@ -9,7 +9,7 @@ var dynamicImageData = [
 	},
 	{
 		breakpoint: '633',
-		image: '_img/as_stores_photo02.jpg',
+		image: '_img/as_stores_photo04.jpg',
 		target: '.page__stores .photo-grid',
 		location: 'append',
 		customClass: 'tablet-img',
@@ -17,7 +17,7 @@ var dynamicImageData = [
 	},
 	{
 		breakpoint: '1025',
-		image: '_img/as_about_photo03.jpg',
+		image: '_img/as_stores_photo05.jpg',
 		target: '.page__stores .photo-grid',
 		location: 'append',
 		customClass: 'desktop-img',

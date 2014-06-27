@@ -332,7 +332,8 @@ h5 {
 	}
 
 	&.store-location__hours-title,
-	&.store-location__address-title  {
+	&.store-location__address-title,
+	&.store-location__phone-title  {
 		@extend .verlag-black;
 		text-transform: uppercase;
 		font-size: 12px;
@@ -363,14 +364,11 @@ h5 {
 		padding: 0 0 15px 0;
 		text-transform: uppercase;
 	}
-
 }
 
 h6 {
-
 	font-size: 16px;
 	font-size: 1.6rem;
-
 }
 
 /*------------------------------------------------------------------
