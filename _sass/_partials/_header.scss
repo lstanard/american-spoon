@@ -3,11 +3,58 @@
 -------------------------------------------------------------------*/
 
 #main {
-	padding-top: 55px;
+	padding-top: 55px + $header-contact-height;
+
+	@include respond(480px) {
+		padding-top: 55px;
+	}
 
 	@include respond($header-nav-break) {
 		margin-top: 212px;
 		padding-top: 0;
+	}
+}
+
+.header__contact {
+	background: #FFF;
+	border-bottom: 1px solid $bordercolor;
+	height: $header-contact-height;
+	padding: 9px 11px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: $z-header + 1;
+
+	p {
+		float: left;
+		margin: 0;
+		padding: 0;
+
+		& + p {
+			float: right;
+		}
+
+		a:link,
+		a:visited {
+			color: $primary-copy;
+			display: inline-block;
+			text-decoration: none;
+
+			span {
+				margin-right: 6px;
+				margin-bottom: 3px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.icon-ui-icon__envelope {
+		display: inline-block;
+	}
+
+	@include respond(480px) {
+		display: none;
 	}
 }
 
@@ -17,9 +64,13 @@
 	height: $header-height-sm;
 	left: 0;
 	position: fixed;
-	top: 0;
+	top: $header-contact-height;
 	width: 100%;
 	z-index: $z-header;
+
+	@include respond(480px) {
+		top: 0;
+	}
 
 	.container--full {
 		@extend .cf;
@@ -595,7 +646,11 @@
 	ul.primary-nav {
 
 		&.mm-list {
-			margin-top: 35px;
+			margin-top: 35px + $header-contact-height;
+
+			@include respond(480px) {
+				margin-top: 35px;
+			}
 		}
 	}
 
@@ -608,8 +663,11 @@
 	}
 
 	ul.mm-list {
-		// margin-top: 55px;
-		margin-top: 35px;
+		margin-top: 35px + $header-contact-height;
+
+		@include respond(480px) {
+			margin-top: 35px;
+		}
 
 		li.parentmenu__item {
 			padding-left: 0;
@@ -668,17 +726,25 @@
 	@include box-shadow(rgba(0,0,0,.1) 0px 2px 6px);
 	height: $header-height-sm;
 	min-height: 0px;
-	top: -$header-height-sm;
+	top: $header-contact-height;
 	position: fixed;
 	visibility: hidden;
+
+	@include respond(480px) {
+		top: 0;
+	}
 
 	.container--full {
 		height: $header-height-sm;
 	}
 
 	&.header-collapsed-visible {
-		top: 0;
+		top: $header-contact-height;
 		visibility: visible;
+
+		@include respond(480px) {
+			top: 0;
+		}
 	}
 
 	.header__primary-logo {

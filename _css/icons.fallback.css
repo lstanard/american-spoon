@@ -1,4 +1,7 @@
-
+ .icon-ui-icon__envelope {
+	background-image: url('../_img/ui-icon__envelope.png');
+	background-repeat: no-repeat;
+}
 
 .icon-ui-icon__gift-box {
 	background-image: url('../_img/ui-icon__gift-box.png');
