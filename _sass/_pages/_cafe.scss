@@ -8,6 +8,45 @@
 	h1.page-title {
 		color: $red;
 	}
+
+	.cafe-header__intro {
+		text-align: center;
+
+		.cafe-header__graphic {
+			display: block;
+
+			span {
+				img {
+					display: block;
+					margin: 0 auto 15px auto;
+					max-width: 342px;
+					width: 100%;
+				}
+			}
+		}
+
+		@include respond($lrg) {
+
+			.cafe-header__graphic {
+				display: table;
+				float: left;
+				min-height: 224px;
+				width: (342px/1200px) * 100%;
+
+				span {
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+
+			p {
+				float: left;
+				padding-left: 60px;
+				text-align: left;
+				width: (858px/1200px) * 100%;
+			}
+		}
+	}
 }
 
 .cafe-menu {
@@ -64,6 +103,16 @@
 				margin: 0;
 			}
 		}
+	}
+
+	.cafe-menu__disclaimer {
+		@extend .verlag-book;
+		font-size: 12px;
+		font-size: 1.2rem;
+		letter-spacing: 0.08em;
+		margin: 25px 0 0 0;
+		text-align: center;
+		text-transform: uppercase;
 	}
 
 	@include respond($med) {
