@@ -1,0 +1,135 @@
+/*------------------------------------------------------------------
+	HEADER / SEARCH MENU
+-------------------------------------------------------------------*/
+
+a.primary-nav__search:link,
+a.primary-nav__search:visited {
+	color: $red;
+	display: block;
+	font-size: 24px;
+	font-size: 2.4rem;
+	position: absolute;
+	right: 90px;
+	text-decoration: none;
+	top: 15px;
+
+	&.search-open {
+		color: $blue;
+	}
+
+	@include respond($med) {
+		right: 120px;
+	}
+
+	@include respond($header-nav-break) {
+		display: none;
+	}
+}
+
+a.header__search-btn:link,
+a.header__search-btn:visited {
+	&.search-open,
+	&.search-open span,
+	&.search-open:after {
+		color: $blue;
+	}
+}
+
+.header__search {
+	@include transition(height .35s ease);
+	@include box-shadow(rgba(0,0,0,.15) 0px 2px 6px);
+	background-color: $lightgrey1;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	z-index: $search-form;
+
+	.container--wide {
+		padding-bottom: 0;
+		padding-top: 15px;
+
+		@include respond($med) {
+			padding-top: 45px;
+		}
+	}
+
+	&.expanded {
+		height: 175px;
+
+		@include respond($med) {
+			height: 150px;
+		}
+	}
+
+	.col-3-5 {
+		@include respond($med) {
+			margin: 0;
+			padding: 0 10px 0 0;
+			width: (800px/1200px) * 100%;
+		}
+	}
+	.col-2-5 {
+		@include respond($med) {
+			margin: 0;
+			padding: 0 0 0 10px;
+			width: (400px/1200px) * 100%;
+		}
+	}
+
+	a.header__search__btn:link,
+	a.header__search__btn:visited {
+		float: left;
+		margin: 0;
+		width: (312px/400px) * 100%;
+	}
+
+	a.search-close:link,
+	a.search-close:visited {
+		@include transition(all .15s);
+		@extend .verlag-bold;
+		border: 1px solid #AAA;
+		color: #AAA;
+		display: block;
+		float: left;
+		font-size: 42px;
+		font-size: 4.2rem;
+		height: 60px;
+		line-height: 60px;
+		line-height: 6.0rem;
+		margin: 0 0 0 12px;
+		text-align: center;
+		text-decoration: none;
+		width: (60px/400px) * 100%;
+
+		span {
+			display: block;
+			line-height: 50px;
+			line-height: 5.0rem;
+		}
+
+		&:hover,
+		&:active {
+			background-color: #AAA;
+			color: $lightgrey1;
+		}
+	}
+
+	.header__search__input {
+		border: none;
+		height: 60px;
+	}
+}
+
+// Mobile search layout
+
+.mobile-menu {
+	.header__search {
+		z-index: $search-form-mobile;
+
+		&.expanded {
+			height: 230px;
+		}
+	}
+}
