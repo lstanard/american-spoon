@@ -2,169 +2,37 @@
     PAGE: Home / Mantle
 -------------------------------------------------------------------*/
 
+$home-mantle-height: 700px;
+// $home-mantle-break-one: 565px;
+$home-mantle-break-one: $med;
+$home-mantle-break-two: $lrg;
+
 .home-mantle {
+	background-color: #efefef;
+	width: 100%;
+}
+
+.home-mantle__wrapper {
+	@extend .row;
 	height: auto;
+	margin: 0 auto;
+	max-width: 1700px;
 
-	.bx-pager {
-		@include respond($med, "max") {
-			display: none !important;
-		}
-	}
-
-	.bx-wrapper .bx-controls-direction a {
+	img {
 		display: block;
-		height: 30px;
-		width: 26px;
-
-		@include respond(600px) {
-			height: 60px;
-		}
-
-		&:hover,
-		&:active {
-			background-position: 50% 50%;
-		}
 	}
+}
 
-	.bx-wrapper .bx-prev {
-		background: url('../_img/ui-mantle-arrow--previous.svg') no-repeat 50% 50%;
-		left: 4%;
-	}
+.home-mantle__featured {
+	@include background-size(cover);
+	overflow: hidden;
+	position: relative;
 
-	.bx-wrapper .bx-next {
-		background: url('../_img/ui-mantle-arrow--next.svg') no-repeat 50% 50%;
-		right: 4%;
-	}
+	.mantle-feature-bgd {
+		display: none;
 
-	ul {
-		@extend .cf;
-
-		li {
-			@include transition(opacity .5s);
-			@include opacity(.2);
-			position: relative;
-
-			.home-mantle__copy-wrapper {
-				@include text-shadow(rgba(0,0,0,.7) 0px 0px 14px 8px);
-				position: absolute;
-				padding: 15px 11% 0 11%;
-				color: #FFF;
-				text-align: center;
-
-				@include respond(340px) {
-					padding: 20px 12% 0 12%;
-				}
-				@include respond(420px) {
-					padding: 30px 12% 0 12%;
-				}
-				@include respond(440px) {
-					padding: 45px 12% 0 12%;
-				}
-				@include respond(700px) {
-					padding: 75px 14% 0 14%;
-				}
-				@include respond(800px) {
-					padding: 90px 10% 0 10%;
-				}
-				@include respond(820px) {
-					padding: 120px 10% 0 10%;
-				}
-				@include respond(980px) {
-					padding: 185px 10% 0 10%;
-				}
-
-				h3 {
-					@extend .archer-bold-ital;
-					margin: 0 0 5px 0;
-					font-size: 20px;
-					font-size: 2rem;
-					line-height: 28px;
-					line-height: 2.8rem;
-
-					@include respond(370px) {
-						font-size: 325px;
-						font-size: 2.5rem;
-						line-height: 30px;
-						line-height: 3rem;
-					}
-					@include respond(420px) {
-						font-size: 30px;
-						font-size: 3rem;
-						line-height: 38px;
-						line-height: 3.8rem;
-					}
-					@include respond(520px) {
-						font-size: 40px;
-						font-size: 4rem;
-						line-height: 48px;
-						line-height: 4.8rem;
-					}
-					@include respond(820px) {
-						font-size: 60px;
-						font-size: 6rem;
-						line-height: 68px;
-						line-height: 6.8rem;
-					}
-				}
-
-				p {
-					@extend .archer-med;
-					font-size: 16px;
-					font-size: 1.6rem;
-					line-height: 16px;
-					line-height: 1.6rem;
-					margin-bottom: 5px;
-					color: #FFF;
-
-					@include respond(370px) {
-						font-size: 18px;
-						font-size: 1.8rem;
-						line-height: 20px;
-						line-height: 2rem;
-					}
-					@include respond(400px) {
-						margin-bottom: 15px;
-					}
-					@include respond(500px) {
-						font-size: 20px;
-						font-size: 2rem;
-						line-height: 25px;
-						line-height: 2.5rem;
-						margin-bottom: 20px;
-					}
-					@include respond(600px) {
-						font-size: 22px;
-						font-size: 2.2rem;
-						line-height: 30px;
-						line-height: 3rem;
-						margin-bottom: 30px;
-					}
-					@include respond(850px) {
-						font-size: 25px;
-						font-size: 2.5rem;
-						line-height: 34px;
-						line-height: 3.4rem;
-					}
-				}
-
-				a.btn:link,
-				a.btn:visited {
-					margin: 0 auto;
-				}
-
-				@include respond(599px, "max") {
-					a.btn:link,
-					a.btn:visited {
-						border: none;
-						padding: 0 5px 0 5px;
-						height: 30px;
-					}
-				}
-			}
-		}
-
-		li.active {
-			@include opacity(1);
+		@include respond($home-mantle-break-two) {
+			display: block;
 		}
 	}
 
@@ -172,8 +40,157 @@
 		width: 100%;
 	}
 
-	@include respond(932px) {
-		min-height: 500px;
+	div {
+		display: table;
+		height: 100%;
+		margin: 0 auto;
+		max-width: 510px;
+		padding: 45px 3%;
+		position: relative;
+		text-align: center;
+		width: 100%;
+
+		div {
+			display: table-cell;
+			padding: 0;
+			position: relative;
+			vertical-align: middle;
+			width: auto;
+		}
+
+		@include respond($home-mantle-break-one) {
+			padding: 60px 3%;
+
+			div {
+				padding: 0;
+			}
+		}
+
+		@include respond($home-mantle-break-two) {
+			display: block;
+			left: 50%;
+			margin-left: -(510px/2);
+			padding-top: 60px;
+			position: absolute;
+			text-align: left;
+
+			div {
+				display: block;
+				position: relative;
+			}
+		}
+		@include respond(1150px) {
+			padding-top: 90px;
+		}
+		@include respond(1300px) {
+			padding-top: 120px;
+		}
+		@include respond(1500px) {
+			padding-top: 175px;
+		}
+	}
+
+	h3 {
+		@include text-shadow(rgba(0,0,0,.35) 2px 2px 6px);
+		@extend .verlag-black;
+		color: #FFF;
+		font-size: 42px;
+		font-size: 4.2rem;
+		line-height: 46px;
+		line-height: 4.6rem;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+
+		@include respond($home-mantle-break-two) {
+			font-size: 52px;
+			font-size: 5.2rem;
+			line-height: 60px;
+			line-height: 6.0rem;
+			text-align: left;
+		}
+		@include respond(1300px) {
+			font-size: 66px;
+			font-size: 6.6rem;
+			line-height: 72px;
+			line-height: 7.2rem;
+			text-align: left;
+		}
+	}
+
+	p {
+		@include text-shadow(rgba(0,0,0,.5) 2px 2px 3px);
+		@extend .archer-med;
+		color: #FFF;
+		font-size: 18px;
+		font-size: 1.8rem;
+		line-height: 24px;
+		line-height: 2.4rem;
+
+		@include respond($home-mantle-break-one) {
+			font-size: 24px;
+			font-size: 2.4rem;
+			line-height: 32px;
+			line-height: 3.2rem;
+		}
+	}
+
+	a.btn:link,
+	a.btn:visited {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+
+		@include respond($home-mantle-break-two) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	@include respond($home-mantle-break-one) {
+		width: 100%;
+	}
+	@include respond($home-mantle-break-two) {
+		float: left;
+		width: (2/3) * 100%;
+	}
+}
+
+.home-mantle__secondary {
+	@extend .row;
+
+	.secondary__module {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+
+		img {
+			margin: 0 auto;
+			width: 100%;
+		}
+
+		@include respond($home-mantle-break-one) {
+			float: left;
+			width: (1/2) * 100%;
+		}
+		@include respond($home-mantle-break-two) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	.secondary__top {
+		@extend .secondary__module;
+	}
+	.secondary__btm {
+		@extend .secondary__module;
+	}
+
+	@include respond($home-mantle-break-one) {
+		width: 100%;
+	}
+	@include respond($home-mantle-break-two) {
+		float: left;
+		width: (1/3) * 100%;
 	}
 }
 
@@ -183,50 +200,74 @@
 
 .featured-products__header {
 	@extend .cf;
-	border-bottom: 1px solid $bordercolor;
-	padding: 0 0 25px 0;
-	text-align: left;
+	padding: 35px 0 15px 0;
+	text-align: center;
 
 	a.featured-products__shop-link:link,
 	a.featured-products__shop-link:visited {
 		@extend .verlag-black;
 		color: $primary-copy;
-		display: block;
+		display: none;
 		font-size: 12px;
 		font-size: 1.2rem;
 		letter-spacing: 0.05em;
-		margin: 0 0 0 0;
+		margin: 0;
 		text-transform: uppercase;
 		text-decoration: none;
-
-		@include respond($med) {
-			margin: 18px 0 0 0;
-		}
 
 		&:hover, &:active {
 			color: $red;
 		}
+
+		@include respond($lrg) {
+			display: block;
+		}
 	}
 
-	h1 {
-		line-height: 40px;
-		line-height: 4rem;
+	h1.featured-products__headline {
+		border-bottom: 1px solid $bordercolor;
+		color: $red;
+		display: inline-block;
 		font-size: 40px;
 		font-size: 4rem;
+		line-height: 40px;
+		line-height: 4rem;
+		margin: 0 auto;
+		padding-bottom: 15px;
+		text-align: center;
+		width: auto;
+
+		@include respond($lrg) {
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+		@include respond($xlrg) {
+			text-align: left;
+		}
 	}
 
 	@include respond($med) {
-		padding: 0 30px 0 5px;
+		padding: 15px 0 30px 0;
+	}
+
+	@include respond($lrg) {
+		border-bottom: 1px solid $bordercolor;
 		margin-bottom: 45px;
+		padding: 30px 30px 0 5px;
+		text-align: left;
 
 		h1 {
 			float: left;
 			line-height: 50px;
 			line-height: 5rem;
 		}
+
 		a:link, a:visited {
 			float: right;
 		}
+	}
+	@include respond($xlrg) {
+		padding-top: 0;
 	}
 }
 

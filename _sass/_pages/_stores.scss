@@ -270,7 +270,7 @@ a.spoon-cafe-module.btn:visited {
 	display: table;
 	height: auto;
 	margin: 30px 0 0 0;
-	min-height: 60px;
+	height: 60px;
 	padding: 15px 30px;
 	position: relative;
 	text-align: center;
@@ -284,7 +284,7 @@ a.spoon-cafe-module.btn:visited {
 	}
 
 	@include respond($lrg) {
-		min-height: 106px;
+		height: 106px;
 	}
 	@include respond($xlrg) {
 		background: url('../_img/as_stores_spoon-cafe_illustration2.jpg') no-repeat 470px 50%;
