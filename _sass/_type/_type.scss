@@ -79,6 +79,7 @@ body {
 
 .section-subhead--lrg {
 	@extend .archer-light-ital;
+	color: $red;
 	font-size: 36px;
 	font-size: 3.6rem;
 	line-height: 42px;
@@ -174,6 +175,17 @@ h2 {
 		text-align: center;
 		text-transform: uppercase;
 	}
+}
+
+h3 {
+
+	@extend .archer-light-ital;
+	font-size: 30px;
+	font-size: 3.0rem;
+	line-height: 34px;
+	line-height: 3.4rem;
+	margin: 0 0 60px 0;
+	text-align: center;
 
 	&.store-location__title {
 		@extend .archer-med-ital;
@@ -190,18 +202,6 @@ h2 {
 			line-height: 5.8rem;
 		}
 	}
-
-}
-
-h3 {
-
-	@extend .archer-light-ital;
-	font-size: 30px;
-	font-size: 3.0rem;
-	line-height: 34px;
-	line-height: 3.4rem;
-	margin: 0 0 60px 0;
-	text-align: center;
 
 	&.shop__section-head {
 		border-bottom: 1px solid $bordercolor;

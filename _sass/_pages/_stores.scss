@@ -7,7 +7,7 @@
 	header.main-header {
 		text-align: center;
 
-		h1.page-title {
+		.page-title {
 			color: $red;
 			margin: 0 auto;
 			margin-bottom: 5px;
@@ -346,25 +346,25 @@ a.spoon-cafe-module.btn:visited {
 		}
 	}
 
-	h2 {
+	h3 {
 		margin-top: 15px;
 		margin-bottom: 5px;
 	}
 
-	h2, .store-location__phone-title, .module__subhead, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $blue; }
+	h3, .store-location__phone-title, .module__subhead, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $blue; }
 }
 #harbor-springs {
-	h2, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $peach; }
+	h3, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $peach; }
 }
 #charlevoix {
-	h2, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $olive-green; }
+	h3, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $olive-green; }
 }
 #williamsburg {
-	h2, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $brown; }
+	h3, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $brown; }
 }
 #traverse-city {
-	h2, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $pumpkin; }
+	h3, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $pumpkin; }
 }
 #saugatuck {
-	h2, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $yellow-green; }
+	h3, .store-location__hours-title, .store-location__address-title, .store-location__address span, .store-location__phone span, .store-location__hours-title span { color: $yellow-green; }
 }

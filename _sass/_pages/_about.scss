@@ -42,7 +42,7 @@
 	header {
 		text-align: center;
 
-		h1.about__page-title {
+		.about__page-title {
 			@extend .archer-light-ital;
 			color: $red;
 			font-size: 24px;
@@ -88,7 +88,7 @@
 
 	@include respond($med, "min") {
 		header {
-			h1.about__page-title {
+			.about__page-title {
 				font-size: 38px;
 				font-size: 3.8rem;
 				line-height: 50px;
@@ -122,7 +122,7 @@
 
 .about__our-kitchen {
 
-	h2 {
+	h3 {
 		@extend .section-subhead--lrg;
 		color: $olive-green;
 	}
@@ -162,7 +162,7 @@
 
 .about__fruits-and-farmers {
 
-	h2 {
+	h3 {
 		@extend .section-subhead--lrg;
 		color: $peach;
 	}
@@ -200,7 +200,7 @@
 
 .about__press {
 
-	h2 {
+	h3 {
 		@extend .section-subhead--lrg;
 		color: $red;
 	}
@@ -278,7 +278,7 @@
 
 .about__family-business {
 
-	h2 {
+	h3 {
 		@extend .section-subhead--lrg;
 		color: $peach;
 	}
@@ -287,7 +287,7 @@
 
 .about__careers {
 
-	h2 {
+	h3 {
 		@extend .section-subhead--lrg;
 		color: $pumpkin;
 	}

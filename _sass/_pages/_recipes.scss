@@ -3,7 +3,7 @@
 -------------------------------------------------------------------*/
 
 .recipes-jump {
-	h1.page-title {
+	.page-title {
 		margin-bottom: 5px;
 	}
 }
@@ -18,11 +18,11 @@
 			padding-bottom: 0;
 		}
 
-		h2.page-super {
+		.page-super {
 			margin-bottom: 35px;
 		}
 
-		h1.page-title {
+		.page-title {
 			color: $blue;
 		}
 
@@ -155,7 +155,7 @@
 
 .page__recipes__single {
 
-	h1.page-title {
+	.page-title {
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 680px;

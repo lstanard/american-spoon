@@ -1639,9 +1639,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_kit\/about.kit",
-		"outputAbbreviatedPath": "\/_kit\/about.html",
+		"outputAbbreviatedPath": "\/about.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 1
 		},
 	"\/_kit\/cafe.kit": {
 		"fileType": 2048,
