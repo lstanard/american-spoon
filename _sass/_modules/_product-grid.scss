@@ -2,7 +2,7 @@
     MODULE: Products grid
 -------------------------------------------------------------------*/
 
-.product-grid {
+%product-grid {
 
 	ul {
 		@extend .cf;
@@ -18,11 +18,7 @@
 
 		&:first-child {
 			a.product-grid__link:link,
-			a.product-grid__link:visited,
-			a.featured-product__link:link,
-			a.featured-product__link:visited,
-			a.shop-product__link:link,
-			a.shop-product__link:visited {
+			a.product-grid__link:visited {
 				padding-top: 0;
 			}
 		}
@@ -65,11 +61,7 @@
 	}
 
 	a.product-grid__link:link,
-	a.product-grid__link:visited,
-	a.featured-product__link:link,
-	a.featured-product__link:visited,
-	a.shop-product__link:link,
-	a.shop-product__link:visited {
+	a.product-grid__link:visited {
 		@extend .cf;
 		color: $primary-copy;
 		display: block;
@@ -81,14 +73,14 @@
 		width: 100%;
 	}
 
-	.featured-product__img,
-	.featured-product__name,
-	.featured-product__price {
+	.product__img,
+	.product__name,
+	.product__price {
 		display: block;
 		margin: 0 auto;
 	}
-	.featured-product__view-product,
-	.featured-product__add-to-cart {
+	.product__view-product,
+	.product__add-to-cart {
 		@include border-radius(3px);
 		@extend .verlag-black;
 		display: inline-block;
@@ -103,24 +95,24 @@
 		vertical-align: middle;
 		width: auto;
 	}
-	.featured-product__view-product {
+	.product__view-product {
 		@include transition(all .35s);
 		background-color: $red;
 		margin-right: 15px;
 		color: #FFF;
 	}
-	.featured-product__add-to-cart {
+	.product__add-to-cart {
 		background: #FFF;
 		border: 1px solid $red;
 		height: 45px;
 	}
-	.featured-product__img {
+	.product__img {
 		@include opacity(1);
 		@include transition(all .25s);
 		margin-bottom: 25px;
 		max-width: 50%;
 	}
-	.featured-product__name {
+	.product__name {
 		@extend .verlag-bold;
 		color: $lightgrey;
 		font-size: 16.5px;
@@ -132,7 +124,7 @@
 		padding-top: 18px;
 		text-transform: uppercase;
 	}
-	.featured-product__price {
+	.product__price {
 		@extend .archer-med;
 		color: $lightgrey;
 		font-size: 21.5px;
@@ -153,26 +145,18 @@
 
 			&:first-child {
 				a.product-grid__link:link,
-				a.product-grid__link:visited,
-				a.featured-product__link:link,
-				a.featured-product__link:visited,
-				a.shop-product__link:link,
-				a.shop-product__link:visited {
+				a.product-grid__link:visited {
 					padding-top: 15px;
 				}
 			}
 		}
 
 		a.product-grid__link:link,
-		a.product-grid__link:visited,
-		a.featured-product__link:link,
-		a.featured-product__link:visited,
-		a.shop-product__link:link,
-		a.shop-product__link:visited {
+		a.product-grid__link:visited {
 			padding: 15px 25px;
 		}
 
-		.featured-product__view-product {
+		.product__view-product {
 			@include opacity(0);
 			background-color: transparent;
 			color: $red;
@@ -191,7 +175,7 @@
 			z-index: 1;
 		}
 
-		.featured-product__add-to-cart {
+		.product__add-to-cart {
 			@include transition(opacity .6s);
 			@include opacity(0);
 			bottom: 0;
@@ -216,10 +200,10 @@
 			}
 		}
 
-		.featured-product__img {
+		.product__img {
 			max-width: 100%;
 		}
-		.featured-product__name {
+		.product__name {
 			@include opacity(1);
 			@include transition(opacity .5s);
 			border-top: 1px solid $bordercolor;
@@ -229,7 +213,7 @@
 			line-height: 2.2rem;
 			margin: 0 0 -2px;
 		}
-		.featured-product__price {
+		.product__price {
 			@include opacity(1);
 			@include transition(opacity .5s);
 			font-size: 16.5px;
@@ -238,11 +222,7 @@
 		}
 
 		a.product-grid__link:hover,
-		a.product-grid__link:active,
-		a.featured-product__link:hover,
-		a.featured-product__link:active,
-		a.shop-product__link:hover,
-		a.shop-product__link:active {
+		a.product-grid__link:active {
 			@include box-shadow(rgba(0,0,0,.15) 0px 0px 6px);
 			border-top: 5px solid $red;
 			margin-top: -5px;
@@ -254,16 +234,16 @@
 				color: $red;
 			}
 
-			span.featured-product__view-product {
+			span.product__view-product {
 				@include opacity(1);
 				top: 43%;
 			}
-			.featured-product__name,
-			.featured-product__price {
+			.product__name,
+			.product__price {
 				@include opacity(0);
 			}
 			.featured-product__product-name,
-			.featured-product__add-to-cart {
+			.product__add-to-cart {
 				@include opacity(1);
 			}
 		}

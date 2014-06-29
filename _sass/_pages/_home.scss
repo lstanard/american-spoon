@@ -272,7 +272,7 @@ $home-mantle-break-two: $lrg;
 }
 
 .featured-products__grid {
-	@extend .product-grid;
+	@extend %product-grid;
 	margin-bottom: 60px;
 	padding-top: 30px;
 

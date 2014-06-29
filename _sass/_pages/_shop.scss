@@ -75,7 +75,7 @@ body.shop--multi-cat {
 }
 
 .shop-products__grid {
-	@extend .product-grid;
+	@extend %product-grid;
 
 	ul > li {
 		a.shop-product__recipe-promo:link,
