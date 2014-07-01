@@ -85,12 +85,16 @@ a.btn:link, a.btn:visited {
 	@include transition(all .2s);
 
 	display: table;
-	height: 60px;
+	height: 45px;
 	margin: 0 0 30px 0;
 	padding: 0 20px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
+
+	@include respond($lrg) {
+		height: 60px;
+	}
 
 	// Wrap label in a <span> for middle vertical alignment
 	span {

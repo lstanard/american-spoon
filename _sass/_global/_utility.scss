@@ -6,6 +6,19 @@
     UTILITY: Misc
 -------------------------------------------------------------------*/
 
+.imitate-table {
+	display: table;
+	height: 100%;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.imitate-tablecell {
+	display: table-cell;
+	vertical-align: middle;
+	width: auto;
+}
+
 .cf {
 	zoom:1;
 

@@ -35,3 +35,28 @@ $xxlrg: 92.0em; // 1472px
 		}
 	}
 }
+
+/*------------------------------------------------------------------
+    VISIBILITY CLASSES
+-------------------------------------------------------------------*/
+
+.visible-sml {
+	display: none;
+
+	@include respond($sml) { display: block; }
+	@include respond($med) { display: none; }
+}
+
+.visible-med {
+	display: none;
+
+	@include respond($med) { display: block; }
+	@include respond($lrg) { display: none; }
+}
+
+.visible-lrg {
+	display: none;
+
+	@include respond($lrg) { display: block; }
+	@include respond($xlrg) { display: none; }
+}

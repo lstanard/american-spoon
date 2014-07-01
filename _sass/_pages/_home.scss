@@ -40,53 +40,24 @@ $home-mantle-break-two: $lrg;
 		width: 100%;
 	}
 
-	div {
-		display: table;
+	.mantle-feature-copy {
 		height: 100%;
 		margin: 0 auto;
-		max-width: 510px;
+		// max-width: 510px;
 		padding: 45px 3%;
 		position: relative;
 		text-align: center;
-		width: 100%;
-
-		div {
-			display: table-cell;
-			padding: 0;
-			position: relative;
-			vertical-align: middle;
-			width: auto;
-		}
 
 		@include respond($home-mantle-break-one) {
 			padding: 60px 3%;
-
-			div {
-				padding: 0;
-			}
 		}
-
 		@include respond($home-mantle-break-two) {
-			display: block;
 			left: 50%;
 			margin-left: -(510px/2);
-			padding-top: 60px;
+			max-width: 510px;
+			padding: 0;
 			position: absolute;
 			text-align: left;
-
-			div {
-				display: block;
-				position: relative;
-			}
-		}
-		@include respond(1150px) {
-			padding-top: 90px;
-		}
-		@include respond(1300px) {
-			padding-top: 120px;
-		}
-		@include respond(1500px) {
-			padding-top: 175px;
 		}
 	}
 
@@ -94,10 +65,10 @@ $home-mantle-break-two: $lrg;
 		@include text-shadow(rgba(0,0,0,.35) 2px 2px 6px);
 		@extend .verlag-black;
 		color: #FFF;
-		font-size: 42px;
-		font-size: 4.2rem;
-		line-height: 46px;
-		line-height: 4.6rem;
+		font-size: 47px;
+		font-size: 4.7rem;
+		line-height: 50px;
+		line-height: 5.0rem;
 		margin-bottom: 15px;
 		text-transform: uppercase;
 
