@@ -12,30 +12,24 @@
 
 		figcaption {
 			@include transition(all .25s);
-			@include opacity(0);
-			border: 1px solid $bordercolor;
 			display: block;
+			float: left;
 			height: 100%;
-			padding: 0;
-			position: absolute;
-			width: 100%;
-			visibility: hidden;
+			padding: 0 2% 0 0;
+			text-align: left;
+			width: 57%;
 
 			h4 {
 				@extend .verlag-black;
 				@include transition(all .25s);
-				@include opacity(0);
-				background-color: rgba(255,255,255,.9);
 				color: $blue;
 				display: table;
-				font-size: 15px;
-				font-size: 1.5rem;
+				font-size: 17px;
+				font-size: 1.7rem;
 				height: 100%;
-				line-height: 22px;
-				line-height: 2.2rem;
-				padding: 0 15px;
-				position: absolute;
-				text-align: center;
+				line-height: 18px;
+				line-height: 1.8rem;
+				padding: 5% 2% 0 0;
 				text-transform: uppercase;
 				width: 100%;
 
@@ -44,15 +38,22 @@
 					vertical-align: middle;
 				}
 			}
+
+			.view-recipe-link {
+				@extend .archer-book;
+				color: #344976;
+				display: block;
+				font-size: 16px;
+				font-size: 1.6rem;
+				letter-spacing: 1.25px;
+				line-height: 20px;
+				line-height: 2.0rem;
+				margin-top: 4%;
+			}
 		}
 	}
 
-	img {
-		width: 100%;
-	}
-
 	&:hover {
-
 		a:link, a:visited {
 			figcaption {
 				@include opacity(1);
@@ -71,7 +72,29 @@
 		a:link,
 		a:visited {
 			figcaption {
+				@include opacity(0);
+				border: 1px solid $bordercolor;
+				float: none;
 				padding: 0;
+				position: absolute;
+				visibility: hidden;
+				width: 100%;
+
+				h4 {
+					@include opacity(0);
+					background-color: rgba(255,255,255,.9);
+					font-size: 16px;
+					font-size: 1.6rem;
+					padding: 0 15px;
+					position: absolute;
+					text-align: center;
+				}
+
+				.view-recipe-link {
+					display: none;
+					font-size: 20px;
+					font-size: 2.0rem;
+				}
 			}
 		}
 	}
@@ -105,11 +128,28 @@
 	}
 
 	.grid-item {
+		border: 2px solid $blue;
 		margin-bottom: $recipes-gutter;
 		position: relative;
 
+		a:link,
+		a:visited {
+			@extend .cf;
+			display: block;
+		}
+
 		img {
 			display: block;
+		}
+		img.photo-sm {
+			display: block;
+			float: left;
+			margin-right: 3%;
+			width: 40%;
+		}
+		img.photo-lrg {
+			display: none;
+			width: 100%;
 		}
 	}
 
@@ -121,23 +161,27 @@
 	}
 
 	.grid-module--cta {
-		background-color: $blue;
-		height: 100%;
-		text-align: center;
-		vertical-align: middle;
-		width: 100%;
+		display: none;
 
-		img {
-			max-width: 300px;
-			margin: 0 auto;
+		div {
+			background-color: $blue;
+			height: 100%;
+			text-align: center;
+			vertical-align: middle;
 			width: 100%;
-		}
 
-		img.home-recipe-cta--copy {
-			display: none !important;
-		}
-		img.home-recipe-cta--simple {
-			display: block !important;
+			img {
+				max-width: 300px;
+				margin: 0 auto;
+				width: 100%;
+			}
+
+			img.home-recipe-cta--copy {
+				display: none !important;
+			}
+			img.home-recipe-cta--simple {
+				display: block !important;
+			}
 		}
 	}
 
@@ -150,9 +194,19 @@
 			float: left;
 			width: (300/1200) * 100%;
 		}
+
 		.grid-item {
+			border: none;
 			float: left;
+
+			img.photo-sm {
+				display: none;
+			}
+			img.photo-lrg {
+				display: block;
+			}
 		}
+
 		.grid-item--sm {
 			height: 100%;
 			padding-right: $recipes-gutter;
@@ -170,7 +224,12 @@
 			padding-right: 0;
 			width: (300/1200) * 100%;
 		}
+
+		.grid-module--cta {
+			display: block;
+		}
 	}
+
 	@include respond(940px) {
 		.grid-item {
 			img.home-recipe-cta--copy {

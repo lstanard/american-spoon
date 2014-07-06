@@ -3,20 +3,20 @@
 -------------------------------------------------------------------*/
 
 .touch {
-	.recipes-jump__grid,
-	.recipes-grid {
-		figure {
-			a:link,
-			a:visited {
-				figcaption {
-					@include opacity(1);
-					visibility: visible;
+	// .recipes-jump__grid,
+	// .recipes-grid {
+	// 	figure {
+	// 		a:link,
+	// 		a:visited {
+	// 			figcaption {
+	// 				@include opacity(1);
+	// 				visibility: visible;
 
-					h4 {
-						@include opacity(1);
-					}
-				}
-			}
-		}
-	}
+	// 				h4 {
+	// 					@include opacity(1);
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
