@@ -4,6 +4,15 @@
 
 .page-home {
 
+	#header {
+		@include box-shadow(rgba(0,0,0,.15) 0px 2px 6px);
+		z-index: $z-header;
+	}
+
+	#header.header-collapsed {
+		@include box-shadow(rgba(0,0,0,.1) 0px 2px 6px);
+	}
+
 	a.shipping-banner--link:link,
 	a.shipping-banner--link:visited {
 		display: none;
@@ -20,9 +29,9 @@
     PAGE: Home / Mantle
 -------------------------------------------------------------------*/
 
-$home-mantle-height: 700px;
-$home-mantle-break-one: $med;
-$home-mantle-break-two: $lrg;
+$home-mantle-height: 824px;
+$home-mantle-break-one: 750px;
+$home-mantle-break-two: 1200px;
 
 .home-mantle {
 	background-color: #efefef;
@@ -33,7 +42,7 @@ $home-mantle-break-two: $lrg;
 	@extend .row;
 	height: auto;
 	margin: 0 auto;
-	max-width: 1700px;
+	max-width: 1800px;
 
 	img {
 		display: block;
@@ -60,7 +69,6 @@ $home-mantle-break-two: $lrg;
 	.mantle-feature-copy {
 		height: 100%;
 		margin: 0 auto;
-		// max-width: 510px;
 		padding: 45px 3%;
 		position: relative;
 		text-align: center;
@@ -75,6 +83,14 @@ $home-mantle-break-two: $lrg;
 			padding: 0;
 			position: absolute;
 			text-align: left;
+		}
+	}
+
+	.imitate-table {
+		min-height: 300px;
+
+		@include respond($home-mantle-break-two) {
+			min-height: auto;
 		}
 	}
 
