@@ -57,24 +57,18 @@ a.shipping-banner--link:visited {
 	}
 
 	p {
+		@extend .archer-bold-ital;
 		color: $red;
 		display: inline-block;
 		font-size: 16px;
 		font-size: 1.6rem;
+		letter-spacing: 0.09em;
 		line-height: 45px;
 		margin: 0;
 		vertical-align: middle;
 
-		&.shipping-banner__msg01,
-		&.shipping-banner__msg03 {
-			@extend .archer-bold-ital;
-		}
-		&.shipping-banner__msg02 {
+		strong {
 			@extend .archer-bold;
-			font-size: 18px;
-			font-size: 1.8rem;
-			text-transform: uppercase;
-			letter-spacing: 0.09em;
 		}
 	}
 
