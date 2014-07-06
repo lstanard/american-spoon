@@ -1,9 +1,26 @@
 /*------------------------------------------------------------------
+    PAGE: Home
+-------------------------------------------------------------------*/
+
+.page-home {
+
+	a.shipping-banner--link:link,
+	a.shipping-banner--link:visited {
+		display: none;
+	}
+
+	#main {
+		@include respond($header-nav-break) {
+			margin-top: 212px - $shipping-banner-height;
+		}
+	}
+}
+
+/*------------------------------------------------------------------
     PAGE: Home / Mantle
 -------------------------------------------------------------------*/
 
 $home-mantle-height: 700px;
-// $home-mantle-break-one: 565px;
 $home-mantle-break-one: $med;
 $home-mantle-break-two: $lrg;
 
