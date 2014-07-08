@@ -117,9 +117,11 @@
 			}
 
 			&:before {
-				@include transition(opacity .25s);
+				@include box-shadow(rgba(0,0,0,.15) 0px 0px 6px);
 				@include opacity(0);
+				@include transition(opacity .25s);
 				background-color: rgba(255,255,255,.9);
+				border-top: 5px solid $blue;
 				bottom: 0;
 				content: "";
 				display: block;
@@ -242,7 +244,10 @@
 			line-height: 32px;
 			line-height: 3.2rem;
 			margin: 0 0 30px 0;
-			text-align: left;
+
+			@include respond($med) {
+				text-align: left;
+			}
 		}
 
 		.product-details__meta__price {

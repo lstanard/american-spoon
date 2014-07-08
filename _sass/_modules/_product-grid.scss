@@ -79,6 +79,7 @@
 		display: block;
 		margin: 0 auto;
 	}
+
 	.product__view-product,
 	.product__add-to-cart {
 		@include border-radius(3px);
@@ -95,23 +96,27 @@
 		vertical-align: middle;
 		width: auto;
 	}
+
 	.product__view-product {
 		@include transition(all .35s);
 		background-color: $red;
 		margin-right: 15px;
 		color: #FFF;
 	}
+
 	.product__add-to-cart {
 		background: #FFF;
 		border: 1px solid $red;
 		height: 45px;
 	}
+
 	.product__img {
 		@include opacity(1);
 		@include transition(all .25s);
 		margin-bottom: 25px;
 		max-width: 50%;
 	}
+
 	.product__name {
 		@extend .verlag-bold;
 		color: $lightgrey;
@@ -124,6 +129,7 @@
 		padding-top: 18px;
 		text-transform: uppercase;
 	}
+
 	.product__price {
 		@extend .archer-med;
 		color: $lightgrey;

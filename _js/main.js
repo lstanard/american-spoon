@@ -1,4 +1,4 @@
-// @codekit-prepend "_data/dynamic_image-data.min.js";
+// @codekit-prepend "_data/dynamic_image-data.js";
 // @codekit-prepend "_utility.js"
 // @codekit-prepend "_ui/_ui.js"
 // @codekit-prepend "_ui/_product-preview.js"

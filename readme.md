@@ -23,3 +23,7 @@ Dev notes:
 3. Use uiFunctions.site object for UI related JavaScript/jQuery functions
 
 
+TO DO:
+------
+
+- Make recipe category page match the Home recipe page mobile layout (?)

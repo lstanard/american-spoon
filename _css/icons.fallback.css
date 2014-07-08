@@ -1,3 +1,8 @@
+ .icon-ui-icon__star {
+	background-image: url('png/ui-icon__star.png');
+	background-repeat: no-repeat;
+}
+
  .icon-ui-icon__envelope {
 	background-image: url('../_img/ui-icon__envelope.png');
 	background-repeat: no-repeat;

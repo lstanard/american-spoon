@@ -1,12 +1,12 @@
 var dynamicImageData = [
-	{
-		breakpoint: '940',
-		image: '_img/as_home_recipe-cta.gif',
-		target: '.page-home .grid-module--cta a',
-		location: 'prepend',
-		customClass: 'home-recipe-cta--copy',
-		altAttr: 'Take a look at our Pinterest page to find delicious recipes that use Spoon products'
-	},
+	// {
+	// 	breakpoint: '940',
+	// 	image: '_img/as_home_recipe-cta.gif',
+	// 	target: '.page-home .grid-module--cta a',
+	// 	location: 'prepend',
+	// 	customClass: 'home-recipe-cta--copy',
+	// 	altAttr: 'Take a look at our Pinterest page to find delicious recipes that use Spoon products'
+	// },
 	{
 		breakpoint: '633',
 		image: '_img/as_stores_photo04.jpg',

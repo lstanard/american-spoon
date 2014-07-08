@@ -2,35 +2,13 @@
     PAGE: Home
 -------------------------------------------------------------------*/
 
-.page-home {
-
-	#header {
-		@include box-shadow(rgba(0,0,0,.15) 0px 2px 6px);
-		z-index: $z-header;
-	}
-
-	#header.header-collapsed {
-		@include box-shadow(rgba(0,0,0,.1) 0px 2px 6px);
-	}
-
-	a.shipping-banner--link:link,
-	a.shipping-banner--link:visited {
-		display: none;
-	}
-
-	#main {
-		@include respond($header-nav-break) {
-			margin-top: 212px - $shipping-banner-height;
-		}
-	}
-}
-
 /*------------------------------------------------------------------
     PAGE: Home / Mantle
 -------------------------------------------------------------------*/
 
 $home-mantle-height: 824px;
-$home-mantle-break-one: 750px;
+$home-mantle-break-mobile: 451px;
+$home-mantle-break-one: 700px;
 $home-mantle-break-two: 1200px;
 
 .home-mantle {
@@ -69,17 +47,18 @@ $home-mantle-break-two: 1200px;
 	.mantle-feature-copy {
 		height: 100%;
 		margin: 0 auto;
-		padding: 45px 3%;
+		padding: 0 3%;
 		position: relative;
 		text-align: center;
 
-		@include respond($home-mantle-break-one) {
-			padding: 60px 3%;
+		@include respond($home-mantle-break-mobile) {
+			padding-top: 0;
+			padding-bottom: 0;
 		}
 		@include respond($home-mantle-break-two) {
 			left: 50%;
-			margin-left: -(510px/2);
-			max-width: 510px;
+			margin-left: -(530px/2);
+			max-width: 530px;
 			padding: 0;
 			position: absolute;
 			text-align: left;
@@ -87,8 +66,11 @@ $home-mantle-break-two: 1200px;
 	}
 
 	.imitate-table {
-		min-height: 300px;
+		min-height: 400px;
 
+		@include respond($home-mantle-break-mobile) {
+			min-height: 450px;
+		}
 		@include respond($home-mantle-break-two) {
 			min-height: auto;
 		}
@@ -105,11 +87,13 @@ $home-mantle-break-two: 1200px;
 		margin-bottom: 15px;
 		text-transform: uppercase;
 
+		@include respond($home-mantle-break-mobile) {
+			font-size: 60px;
+			font-size: 6.0rem;
+			line-height: 52px;
+			line-height: 5.2rem;
+		}
 		@include respond($home-mantle-break-two) {
-			font-size: 52px;
-			font-size: 5.2rem;
-			line-height: 60px;
-			line-height: 6.0rem;
 			text-align: left;
 		}
 		@include respond(1300px) {
@@ -125,14 +109,14 @@ $home-mantle-break-two: 1200px;
 		@include text-shadow(rgba(0,0,0,.5) 2px 2px 3px);
 		@extend .archer-med;
 		color: #FFF;
-		font-size: 18px;
-		font-size: 1.8rem;
-		line-height: 24px;
-		line-height: 2.4rem;
+		font-size: 22px;
+		font-size: 2.2rem;
+		line-height: 28px;
+		line-height: 2.8rem;
 
-		@include respond($home-mantle-break-one) {
-			font-size: 24px;
-			font-size: 2.4rem;
+		@include respond($home-mantle-break-mobile) {
+			font-size: 25px;
+			font-size: 2.5rem;
 			line-height: 32px;
 			line-height: 3.2rem;
 		}
@@ -163,6 +147,8 @@ $home-mantle-break-two: 1200px;
 	@extend .row;
 
 	.secondary__module {
+		@include transition(opacity .25s);
+		@include opacity(1);
 		overflow: hidden;
 		position: relative;
 		width: 100%;
@@ -170,6 +156,10 @@ $home-mantle-break-two: 1200px;
 		img {
 			margin: 0 auto;
 			width: 100%;
+		}
+
+		&:hover {
+			@include opacity(.8);
 		}
 
 		@include respond($home-mantle-break-one) {

@@ -163,7 +163,11 @@ a.btn:link, a.btn:visited {
 		height: 60px;
 		margin-left: auto;
 		margin-right: auto;
-		width: 50%;
+		width: 75%;
+
+		@include respond($med) {
+			width: 50%;
+		}
 	}
 
 	// Solid buttons

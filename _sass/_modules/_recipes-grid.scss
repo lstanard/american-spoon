@@ -17,6 +17,7 @@
 			height: 100%;
 			padding: 0 2% 0 0;
 			text-align: left;
+			top: 0;
 			width: 57%;
 
 			h4 {
@@ -58,7 +59,7 @@
 			figcaption {
 				@include opacity(1);
 				border: none;
-				top: 0;
+				// top: 0;
 				visibility: visible;
 
 				h4 {
@@ -81,8 +82,10 @@
 				width: 100%;
 
 				h4 {
+					@include box-shadow(rgba(0,0,0,.15) 0px 0px 6px);
 					@include opacity(0);
 					background-color: rgba(255,255,255,.9);
+					border-top: 5px solid $blue;
 					font-size: 16px;
 					font-size: 1.6rem;
 					padding: 0 15px;
@@ -263,13 +266,13 @@
 
 		img {
 			display: block;
+			width: 100%;
 		}
 	}
 
 	.rg__item {
 		position: relative;
 		margin-bottom: 20px;
-		overflow: hidden;
 	}
 
 	.rg__1-3--left,

@@ -16,6 +16,7 @@
 .catalog-request__share {
 	display: block;
 	margin-top: 30px;
+	margin-bottom: 60px;
 	text-align: center;
 	width: 100%;
 }
@@ -25,7 +26,16 @@
 -------------------------------------------------------------------*/
 
 .catalog-request__form {
+
+	.form__referrer {
+		padding-top: 20px;
+	}
+
 	@include respond($med) {
 		padding-left: 60px;
+
+		.form__referrer {
+			padding-top: 0;
+		}
 	}
 }

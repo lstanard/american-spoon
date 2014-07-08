@@ -24,6 +24,7 @@ header.shop__header {
 	}
 	.lead-copy {
 		margin: 0 auto 45px auto;
+		max-width: 1000px;
 	}
 
 	@include respond(480px) {

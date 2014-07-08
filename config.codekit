@@ -282,7 +282,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 89423,
+		"initialSize": 100497,
 		"inputAbbreviatedPath": "\/_img\/as_about_photo10.jpg",
 		"outputAbbreviatedPath": "\/_img\/as_about_photo10.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -480,7 +480,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 129883,
+		"initialSize": 138012,
 		"inputAbbreviatedPath": "\/_img\/as_catalog-request_catalog-cover.jpg",
 		"outputAbbreviatedPath": "\/_img\/as_catalog-request_catalog-cover.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1213,6 +1213,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/Charlevoix_Map.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14421,
+		"inputAbbreviatedPath": "\/_img\/Charlevoix_Map.png",
+		"outputAbbreviatedPath": "\/_img\/Charlevoix_Map.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/controls.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1231,6 +1242,17 @@
 		"initialSize": 1.19264e+06,
 		"inputAbbreviatedPath": "\/_img\/cookies.png",
 		"outputAbbreviatedPath": "\/_img\/cookies.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/HarborSprings_map.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41555,
+		"inputAbbreviatedPath": "\/_img\/HarborSprings_map.png",
+		"outputAbbreviatedPath": "\/_img\/HarborSprings_map.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1367,6 +1389,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_img\/Saugatauk_map.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23525,
+		"inputAbbreviatedPath": "\/_img\/Saugatauk_map.png",
+		"outputAbbreviatedPath": "\/_img\/Saugatauk_map.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_img\/simple.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1385,6 +1418,17 @@
 		"initialSize": 718573,
 		"inputAbbreviatedPath": "\/_img\/tacos.png",
 		"outputAbbreviatedPath": "\/_img\/tacos.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/TraverseCity_map.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7779,
+		"inputAbbreviatedPath": "\/_img\/TraverseCity_map.png",
+		"outputAbbreviatedPath": "\/_img\/TraverseCity_map.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1444,25 +1488,25 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_js\/_data\/dynamic_image-data.js": {
-		"fileType": 64,
+	"\/_img\/Williamsburg_map.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
+		"initialSize": 40511,
+		"inputAbbreviatedPath": "\/_img\/Williamsburg_map.png",
+		"outputAbbreviatedPath": "\/_img\/Williamsburg_map.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_js\/_data\/dynamic_image-data.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/_js\/_data\/dynamic_image-data.js",
 		"outputAbbreviatedPath": "\/_js\/_data\/dynamic_image-data.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 0
-		},
-	"\/_js\/_data\/dynamic_image-data.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_js\/_data\/dynamic_image-data.min.js",
-		"outputAbbreviatedPath": "\/_js\/_data\/min\/dynamic_image-data.min-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
@@ -1650,7 +1694,7 @@
 		"outputAbbreviatedPath": "\/_js\/main.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
+		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
 	"\/_js\/main.min.js": {
