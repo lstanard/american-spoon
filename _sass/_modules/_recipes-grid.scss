@@ -6,6 +6,7 @@
 
 	a:link,
 	a:visited {
+		@extend .cf;
 		display: block;
 		position: relative;
 		text-decoration: none;

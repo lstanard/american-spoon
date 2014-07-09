@@ -18,12 +18,5 @@ Page links:
 Dev notes:
 ----------
 
-1. Do not directly modify .html or .css files, they are being generated via CodeKit (.html and .css files are not committed to the repo)
-2. Do not use z-index directly in a SCSS file, see _sass/_global/_variables for z-index value variables
-3. Use uiFunctions.site object for UI related JavaScript/jQuery functions
-
-
-TO DO:
-------
-
-- Make recipe category page match the Home recipe page mobile layout (?)
+ - Do not directly modify .html or .css files, they are being generated via CodeKit (.html and .css files are not committed to the repo)
+ - All JavaScript not located within the "_vendor" folder are being compiled into main.js via CodeKit (all pages reference the minified main.min.js)
