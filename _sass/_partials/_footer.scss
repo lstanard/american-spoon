@@ -58,10 +58,16 @@ a.scroll-top:visited {
 		background-size: cover;
 		border-top: none;
 
+		.container--narrow {
+			@include respond($lrg) {
+				padding-top: 4%;
+			}
+		}
+
 		h3.footer__sign-up__head {
 			font-size: 4.2rem;
 			line-height: 4.4rem;
-			margin: 0 0 60px 0;
+			margin: 0 0 50px 0;
 		}
 
 		.footer__sign-up__input {

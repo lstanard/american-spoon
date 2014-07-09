@@ -137,15 +137,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_css\/main.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_css\/main.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/_img\/appetizers.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -535,7 +526,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 143818,
+		"initialSize": 203155,
 		"inputAbbreviatedPath": "\/_img\/as_home_mantle_secondary-01.jpg",
 		"outputAbbreviatedPath": "\/_img\/as_home_mantle_secondary-01.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -546,9 +537,20 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 93349,
+		"initialSize": 118796,
 		"inputAbbreviatedPath": "\/_img\/as_home_mantle_secondary-02.jpg",
 		"outputAbbreviatedPath": "\/_img\/as_home_mantle_secondary-02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/as_home_recipe-cta.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63676,
+		"inputAbbreviatedPath": "\/_img\/as_home_recipe-cta.jpg",
+		"outputAbbreviatedPath": "\/_img\/as_home_recipe-cta.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1451,6 +1453,17 @@
 		"initialSize": 811,
 		"inputAbbreviatedPath": "\/_img\/ui-icon__gift-box.png",
 		"outputAbbreviatedPath": "\/_img\/ui-icon__gift-box.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_img\/ui-icon__star.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 291,
+		"inputAbbreviatedPath": "\/_img\/ui-icon__star.png",
+		"outputAbbreviatedPath": "\/_img\/ui-icon__star.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3023,7 +3036,7 @@
 	"javascriptAutoOutputPathStyle": 2,
 	"javascriptCreateSourceMap": 1,
 	"javascriptOutputStyle": 1,
-	"javascriptOutputSuffix": "-ck",
+	"javascriptOutputSuffix": ".min",
 	"javascriptSyntaxCheckerStyle": 1,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {

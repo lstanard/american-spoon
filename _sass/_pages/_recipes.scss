@@ -43,11 +43,11 @@
 	li {
 		$margin: (20/1200 * 100%);
 
-		padding-bottom: 45px;
 
 		@include respond($med) {
 			float: left;
 			margin-right: $margin;
+			padding-bottom: 45px;
 			width: (100% - $margin) / 2;
 
 			&:nth-child(2n) {
@@ -67,6 +67,9 @@
 	}
 
 	figure {
+		@extend .cf;
+		border: 2px solid $blue;
+		margin-bottom: 20px;
 		text-align: center;
 
 		img {
@@ -91,9 +94,11 @@
 		}
 
 		.rcl-graphic {
+			float: left;
 			position: relative;
 			text-align: center;
-			width: 100%;
+			margin-right: 3%;
+			width: 30%;
 
 			img {
 				margin: 0 auto;
@@ -104,7 +109,7 @@
 				@include transition(opacity .25s);
 				@include opacity(0);
 				color: $blue;
-				display: inline-block;
+				display: none;
 				font-size: 19px;
 				font-size: 1.9rem;
 				left: 50%;
@@ -124,7 +129,7 @@
 				border-top: 5px solid $blue;
 				bottom: 0;
 				content: "";
-				display: block;
+				display: none;
 				height: 100%;
 				left: 0;
 				position: absolute;
@@ -146,7 +151,38 @@
 		}
 
 		figcaption {
-			display: block;
+			float: left;
+			text-align: left;
+			width: 67%;
+		}
+
+		@include respond($med) {
+			border: none;
+			margin-bottom: 0;
+
+			.rcl-graphic {
+				float: none;
+				margin-right: auto;
+				width: 100%;
+
+				img {
+					max-width: auto;
+				}
+
+				.rcl-graphic__label {
+					display: inline-block;
+				}
+
+				&:before {
+					display: block;
+				}
+			}
+
+			figcaption {
+				float: none;
+				text-align: center;
+				width: 100%;
+			}
 		}
 	}
 }

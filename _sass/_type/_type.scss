@@ -245,13 +245,13 @@ h3 {
 
 		span {
 			@extend .archer-book;
-			color: $primary-copy;
+			color: #555;
 			display: block;
 			font-size: 20px;
 			font-size: 2.0rem;
 			line-height: 28px;
 			line-height: 2.8rem;
-			margin-top: 15px;
+			margin-top: 7px;
 		}
 
 		@include respond($med) {
@@ -282,12 +282,20 @@ h4 {
 
 	&.category__list__recipe-name {
 		@extend .verlag-black;
-		color: $primary-copy;
+		color: $blue;
 		text-transform: uppercase;
 		font-size: 16px;
 		font-size: 1.6rem;
-		margin: 30px 60px;
-		text-align: center;
+		margin: 0;
+		padding: 5% 2% 0 0;
+		text-align: left;
+
+		@include respond($med) {
+			color: $primary-copy;
+			margin: 30px 60px;
+			padding: 0;
+			text-align: center;
+		}
 	}
 
 	&.product-preview__subhead {

@@ -39,18 +39,6 @@
 					vertical-align: middle;
 				}
 			}
-
-			.view-recipe-link {
-				@extend .archer-book;
-				color: #344976;
-				display: block;
-				font-size: 16px;
-				font-size: 1.6rem;
-				letter-spacing: 1.25px;
-				line-height: 20px;
-				line-height: 2.0rem;
-				margin-top: 4%;
-			}
 		}
 	}
 
@@ -59,7 +47,6 @@
 			figcaption {
 				@include opacity(1);
 				border: none;
-				// top: 0;
 				visibility: visible;
 
 				h4 {
@@ -92,15 +79,10 @@
 					position: absolute;
 					text-align: center;
 				}
-
-				.view-recipe-link {
-					display: none;
-					font-size: 20px;
-					font-size: 2.0rem;
-				}
 			}
 		}
 	}
+
 	@include respond($lrg) {
 		a:link,
 		a:visited {
@@ -114,6 +96,24 @@
 				}
 			}
 		}
+	}
+}
+
+.view-recipe-link {
+	@extend .archer-book;
+	color: #344976;
+	display: block;
+	font-size: 16px;
+	font-size: 1.6rem;
+	letter-spacing: 1.25px;
+	line-height: 20px;
+	line-height: 2.0rem;
+	margin-top: 4%;
+
+	@include respond($med) {
+		display: none;
+		font-size: 20px;
+		font-size: 2.0rem;
 	}
 }
 
